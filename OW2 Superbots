@@ -24,7 +24,7 @@ settings
 
 			enabled maps
 			{
-				Hanamura Winter 972777519512063901
+				Horizon Lunar Colony 972777519512068154
 			}
 		}
 
@@ -53,7 +53,7 @@ settings
 				Blizzard World Winter
 				Eichenwalde Halloween
 				Hollywood Halloween
-				King's Row
+				King's Row Winter
 			}
 		}
 
@@ -174,13 +174,13 @@ settings
 			Echo
 			{
 				Damage Dealt: 250%
-				Flight Cooldown Time: 50%
-				Focusing Beam: Off
+				Flight Cooldown Time: 40%
+				Focusing Beam Cooldown Time: 150%
 				Health: 125%
 				No Ammunition Requirement: On
-				Sticky Bombs Cooldown Time: 0%
-				Ultimate Generation - Combat Duplicate: 10%
-				Ultimate Generation - Passive Duplicate: 400%
+				Sticky Bombs Cooldown Time: 15%
+				Ultimate Generation - Combat Duplicate: 50%
+				Ultimate Generation - Passive Duplicate: 200%
 			}
 
 			Genji
@@ -394,12 +394,12 @@ settings
 			Roadhog
 			{
 				Chain Hook Cooldown Time: 50%
+				Damage Dealt: 115%
 				Healing Dealt: 200%
-				Health: 125%
+				Health: 150%
 				No Ammunition Requirement: On
-				Pig Pen Cooldown Time: 75%
+				Take a Breather Cooldown Time: 175%
 				Take a Breather Maximum Time: 50%
-				Take a Breather Recharge Rate: 45%
 				Ultimate Generation - Combat Whole Hog: 50%
 				Whole Hog Knockback Scalar: 0%
 			}
@@ -636,6 +636,8 @@ settings
 			Echo
 			{
 				Flight Cooldown Time: 10%
+				Focusing Beam Cooldown Time: 150%
+				Sticky Bombs Cooldown Time: 15%
 			}
 
 			Genji
@@ -842,6 +844,8 @@ settings
 				Pig Pen Cooldown Time: 75%
 				Quick Melee: Off
 				Spawn With Ultimate Ready: On
+				Take a Breather Cooldown Time: 150%
+				Take a Breather Recharge Rate: 45%
 				Ultimate Generation - Combat Whole Hog: 500%
 				Ultimate Generation - Passive Whole Hog: 300%
 				Whole Hog Knockback Scalar: 0%
@@ -1051,7 +1055,7 @@ rule("CREATED BY CEL#1115")
 
 	actions
 	{
-		Disable Inspector Recording;
+		disabled Disable Inspector Recording;
 		"Relic descriptions."
 		Global.RelicDescriptions = Array(Custom String("+200% HEALING DEALT/RECEIVED \r\n+50% DAMAGE AT FULL HP \r\n+10% HP/SEC"),
 			Custom String("+100% MOVEMENT SPEED \r\n+DAMAGE BASED ON SPEED \r\n-7 SECOND RESPAWN TIMER"), Custom String(
@@ -1311,7 +1315,7 @@ rule("HOST HUD (Server Load) [Added by Arkhanglesk#11200]")
 	{
 		Ongoing - Each Player;
 		Team 1;
-		All;
+		Slot 0;
 	}
 
 	conditions
@@ -1322,13 +1326,13 @@ rule("HOST HUD (Server Load) [Added by Arkhanglesk#11200]")
 	actions
 	{
 		If(Event Player == Host Player);
-			"Server Load Display (Host player only)"
+			"Server Load (As this number approaches or exceeds 100, it becomes increasingly likely that the instance will be shut down because it is consuming too many resources)"
 			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load", Server Load), Null, Right, 1, Color(White), Color(
 				White), Color(White), Visible To and String, Default Visibility);
-			"Average Server Load Display (Host player only)"
+			"Average Server Load"
 			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (AVG)", Server Load Average), Null, Right, 2, Color(
 				White), Color(White), Color(White), Visible To and String, Default Visibility);
-			"Server Load Peak Display (Host player only)"
+			"Server Load Peak (Max/2s)"
 			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (MAX/2s)", Server Load Peak), Null, Right, 3, Color(
 				White), Color(White), Color(White), Visible To and String, Default Visibility);
 	}
@@ -3061,7 +3065,7 @@ rule("DOOMFIST Super 2 - Super Punch")
 	}
 }
 
-rule("ECHO Laser")
+rule("ECHO Laser [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3084,32 +3088,13 @@ rule("ECHO Laser")
 		Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 7 * Global.SuperbotLevel + 7);
 		Wait(0.050, Ignore Condition);
 		Loop If Condition Is True;
+		disabled Small Message(Event Player, Custom String(" {0} ACTIVATING QUANTUM BEAM", Hero Icon String(Hero(Echo))));
+		disabled Wait(5.500, Ignore Condition);
+		Small Message(Event Player, Custom String(" {0} QUANTUM BEAM RECHARGING", Hero Icon String(Hero(Echo))));
 	}
 }
 
-rule("ECHO Auto Secondary Fire [Broken in OW2; fixed by Arkhanglesk#11200]")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Echo;
-	}
-
-	conditions
-	{
-		Is Button Held(Event Player, Button(Secondary Fire)) == True;
-	}
-
-	actions
-	{
-		Press Button(Event Player, Button(Secondary Fire));
-		Wait(0.800, Ignore Condition);
-		Loop If Condition Is True;
-	}
-}
-
-rule("ECHO Ultimate [Broken in OW2; rework by Arkhanglesk#11200]")
+rule("ECHO Ultimate Activate [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3129,23 +3114,49 @@ rule("ECHO Ultimate [Broken in OW2; rework by Arkhanglesk#11200]")
 
 	actions
 	{
-		Disallow Button(Event Player, Button(Primary Fire));
-		Disallow Button(Event Player, Button(Secondary Fire));
-		Wait(0.250, Ignore Condition);
-		Small Message(Event Player, Custom String(" {0} ACTIVATING QUANTUM BEAM", Hero Icon String(Hero(Echo))));
+		Wait(0.150, Ignore Condition);
+		Small Message(Event Player, Custom String(" {0} OVERDRIVE: FREE FLIGHT + STICKY BOMB AUTO FIRE", Hero Icon String(Hero(Echo))));
 		Communicate(Event Player, Voice Line Up);
-		Play Effect(All Players(All Teams), Buff Explosion Sound, Color(White), Event Player, 200);
-		Wait(0.300, Ignore Condition);
 		Set Ultimate Charge(Event Player, 0);
-		Set Ultimate Ability Enabled(Event Player, False);
-		Set Ability 2 Enabled(Event Player, True);
-		Press Button(Event Player, Button(Ability 2));
-		Wait(2.500, Ignore Condition);
-		Small Message(Event Player, Custom String(" {0} QUANTUM BEAM RECHARGING", Hero Icon String(Hero(Echo))));
-		Set Ability 2 Enabled(Event Player, False);
-		Set Ultimate Ability Enabled(Event Player, True);
-		Allow Button(Event Player, Button(Primary Fire));
-		Allow Button(Event Player, Button(Secondary Fire));
+		disabled Wait(0.150, Ignore Condition);
+		Set Ability Cooldown(Event Player, Button(Secondary Fire), 0);
+		Set Projectile Speed(Event Player, 175);
+		Event Player.Flight = True;
+		Event Player.FullAutoFire = True;
+		Wait(10, Ignore Condition);
+		Event Player.FullAutoFire = False;
+		Small Message(Event Player, Custom String(" {0} Flying Off", Hero Icon String(Hero(Echo))));
+		Wait(0.100, Ignore Condition);
+		Small Message(Event Player, Custom String(" {0} OVERDRIVE RECHARGING", Hero Icon String(Hero(Echo))));
+		Set Ability Cooldown(Event Player, Button(Secondary Fire), 2);
+		Set Projectile Speed(Event Player, 100);
+		Event Player.Flight = False;
+	}
+}
+
+rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire changes); updated by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Echo;
+	}
+
+	conditions
+	{
+		Event Player.FullAutoFire == True;
+		(Is Button Held(Event Player, Button(Secondary Fire)) || Is Firing Secondary(Event Player)) == True;
+		Is Alive(Event Player) == True;
+		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
+			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
+	}
+
+	actions
+	{
+		Wait(0.800, Ignore Condition);
+		Press Button(Event Player, Button(Secondary Fire));
+		Loop If Condition Is True;
 	}
 }
 
@@ -3602,7 +3613,7 @@ rule("JUNKRAT Chaos Roulette - Kill Pile 6")
 	}
 }
 
-rule("JUNKRAT Elimination Money Script [Broken in OW2; fixed, tweaked by Arkhanglesk#11200]")
+rule("JUNKRAT Elimination Money Script [Broken in OW2; updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4748,7 +4759,7 @@ rule("REINHARDT Sonic charge off")
 	}
 }
 
-rule("ROADHOG Asthmatic Trample [Broken after Hog rework (Nov 2023); fixed by Arkhanglesk#11200]")
+rule("ROADHOG Asthmatic Trample [Broken after 11/4/2023 Hog update; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4760,6 +4771,7 @@ rule("ROADHOG Asthmatic Trample [Broken after Hog rework (Nov 2023); fixed by Ar
 	conditions
 	{
 		Is Alive(Event Player) == True;
+		Ability Cooldown(Event Player, Button(Secondary Fire)) == 0;
 		Is Button Held(Event Player, Button(Secondary Fire)) == True;
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
 			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
@@ -4767,10 +4779,12 @@ rule("ROADHOG Asthmatic Trample [Broken after Hog rework (Nov 2023); fixed by Ar
 
 	actions
 	{
-		disabled Wait(0.350, Ignore Condition);
+		Wait(0.250, Ignore Condition);
 		Set Move Speed(Event Player, Event Player.MOVEMENT + 75);
+		"Broken after 11/4/2023 Hog update"
 		disabled Start Forcing Throttle(Event Player, 1, 1, 0, 0, 0, 0.500);
 		Wait(1, Ignore Condition);
+		"Broken after 11/4/2023 Hog update"
 		disabled Stop Forcing Throttle(Event Player);
 		Set Move Speed(Event Player, Event Player.MOVEMENT);
 	}
@@ -4787,19 +4801,20 @@ rule("ROADHOG Asthmatic Knockdown")
 
 	conditions
 	{
-		Is True For All(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)), Distance Between(Event Player,
+		disabled Is True For All(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)), Distance Between(Event Player,
 			Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3) == True;
-		disabled (Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == True) == True;
-		disabled Distance Between(Event Player, Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3;
-		disabled Is True For Any(Is Button Held(Event Player, Button(Secondary Fire)), Distance Between(Position Of(Event Player), Position Of(
+		Ability Cooldown(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == 0;
+		(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == True) == True;
+		Distance Between(Event Player, Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3;
+		Is True For Any(Is Button Held(Event Player, Button(Secondary Fire)), Distance Between(Position Of(Event Player), Position Of(
 			Current Array Element)) <= 3) == True;
 	}
 
 	actions
 	{
 		disabled Damage(Event Player, Players On Hero(Hero(Roadhog), Team 1), Max Health(Event Player) * 0.050);
-		Set Status(Event Player, Null, Knocked Down, 1);
-		disabled Wait(1.500, Ignore Condition);
+		Set Status(Event Player, Null, Knocked Down, 1.500);
+		Wait(1.500, Ignore Condition);
 	}
 }
 
@@ -4920,7 +4935,7 @@ rule("ROADHOG Enrage ON")
 
 	actions
 	{
-		Small Message(Event Player, Custom String("{0} THAT'S MY MONEY! (X2 DMG) {1}", Hero Icon String(Hero(Roadhog)), Hero Icon String(
+		Small Message(Event Player, Custom String(" {0} THAT'S MY MONEY! (X2 DMG) {1}", Hero Icon String(Hero(Roadhog)), Hero Icon String(
 			Hero(Junkrat))));
 	}
 }
@@ -6395,12 +6410,11 @@ rule("Echo HUD [Updated by Arkhanglesk#11200]")
 	{
 		Wait(0.500, Ignore Condition);
 		Disallow Button(Event Player, Button(Ultimate));
-		Event Player.Flight = True;
-		Event Player.HUDTextHidden = Array(False, False, False, True);
+		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Echo), Button(Secondary Fire)), Custom String(
-			"HOLD [SECONDARY] FOR AUTO FIRE STICKY BOMBS"), Custom String("ULTIMATE: QUANTUM BEAM"), Ability Icon String(Hero(Echo),
-			Button(Ability 1)), Custom String("[ABILITY 1] +SPEED"), Custom String("SPEED BOOST"));
+			"FREE FLIGHT + AUTO FIRE STICKY BOMBS"), Custom String("ULTIMATE: OVERDRIVE"), Ability Icon String(Hero(Echo), Button(
+			Ability 2)), Custom String("[ABILITY 1] FLIGHT"), Custom String("[ABILITY 2] QUANTUM BEAM"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6995,7 +7009,7 @@ rule("Symmetra HUD")
 	}
 }
 
-rule("Torbjorn HUD [Updated Arkhanglesk#11200]")
+rule("Torbjorn HUD [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7669,9 +7683,9 @@ rule("Flying Toggle [Updated by Arkhanglesk#11200]")
 	{
 		Is Using Ultimate(Event Player) == False;
 		Is Button Held(Event Player, Button(Reload)) == True;
-		(Hero Of(Event Player) == Hero(Sigma) || Hero Of(Event Player) == Hero(Zenyatta)) == True;
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
 			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
+		(Hero Of(Event Player) == Hero(Sigma) || Hero Of(Event Player) == Hero(Zenyatta)) == True;
 	}
 
 	actions
@@ -7689,12 +7703,12 @@ rule("Flying Toggle [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("Flying [Broken in OW2; reworked by Arkhanglesk#11200 using code from XWJQQ]")
+rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ]")
 {
 	event
 	{
 		Ongoing - Each Player;
-		All;
+		Team 1;
 		All;
 	}
 
@@ -7768,15 +7782,15 @@ rule("Flying OFF on death")
 	{
 		Event Player.Flight == True;
 		Is Dead(Event Player) == True;
-		disabled (Is Dead(Event Player) || Is Using Ultimate(Event Player)) == True;
 	}
 
 	actions
 	{
-		If(Hero Of(Event Player) != Hero(Echo));
-			Event Player.Flight = False;
-			Set Gravity(Event Player, 100);
-			Small Message(Event Player, Custom String("{0} Flying Off", Hero Icon String(Hero Of(Event Player))));
+		"When Echo had Flying on by default (disabled, workshop load testing)"
+		disabled If(Hero Of(Event Player) != Hero(Echo));
+		Event Player.Flight = False;
+		Set Gravity(Event Player, 100);
+		Small Message(Event Player, Custom String(" {0} Flying Off", Hero Icon String(Hero Of(Event Player))));
 	}
 }
 
@@ -7793,7 +7807,7 @@ rule("Flying OFF on hero change")
 	{
 		Event Player.Flight == True;
 		Is In Spawn Room(Event Player) == True;
-		(Hero Of(Event Player) == Hero(Sigma) || Hero Of(Event Player) == Hero(Zenyatta)) == (Hero Of(Event Player) == Hero(Echo));
+		(Hero Of(Event Player) == Hero(Sigma) || Hero Of(Event Player) == Hero(Zenyatta)) == False;
 	}
 
 	actions
