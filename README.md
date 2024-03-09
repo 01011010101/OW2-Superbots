@@ -6,7 +6,7 @@ Created by Cel#1115<br>
 Updated for OW2 by Arkhanglesk#11200
 <br>
 <br>
-## Description
+## DESCRIPTION
 Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!<br>
 
 ### Damage increases based on kill
@@ -46,7 +46,8 @@ PURIFIED is automatically equipped at the start.
 - STAY AWHILE AND LISTEN: Puts players 20m in line of sight to sleep for 10 seconds.
 - HACKED!!!: Hacks players within 30m and through walls for 7 seconds.<br>
 
-## Heroes
+## HEROES
+Below is a list of all new abilities for all the heroes you can play.
 
 #### Ana
 - Exploding Biotic Darts: Shots against any surface or target heals nearby teammates in a 7 meter radius for 150 HP.  
