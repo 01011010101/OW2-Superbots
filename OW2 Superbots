@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] March 3, 2024: 38 of 39 heroes updated."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Mar 7, 2024: All heroes updated. Working on balancing."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -247,18 +247,15 @@ settings
 
 			Lifeweaver
 			{
-				Damage Dealt: 180%
-				Healing Dealt: 300%
-				Health: 350%
-				Life Grip and Healing Blossom Range: 25%
-				Life Grip Cooldown Time: 25%
+				Damage Dealt: 135%
+				Healing Dealt: 150%
+				Health: 200%
 				No Ammunition Requirement: On
 				Petal Platform Cooldown Time: 25%
-				Petal Platform Health: 25%
-				Rejuvenating Dash Cooldown Time: 0%
-				Rejuvenating Dash Healing: 200%
+				Rejuvenating Dash Cooldown Time: 50%
+				Rejuvenating Dash Healing: 150%
 				Tree of Life Health: 300%
-				Ultimate Generation - Combat Tree of Life: 10%
+				Ultimate Generation - Combat Tree of Life: 2%
 			}
 
 			Lúcio
@@ -669,6 +666,14 @@ settings
 				Projectile Speed: 300%
 				Ultimate Generation - Combat Kitsune Rush: 500%
 				Ultimate Generation - Passive Kitsune Rush: 300%
+			}
+
+			Lifeweaver
+			{
+				Damage Dealt: 150%
+				Healing Dealt: 150%
+				Rejuvenating Dash Cooldown Time: 15%
+				Ultimate Generation - Combat Tree of Life: 2%
 			}
 
 			Lúcio
@@ -2658,7 +2663,7 @@ rule("SUPERBOTS Torbot Disabled Sentry")
 	}
 }
 
-disabled rule("SUPERBOTS Torbot Ultimate Auto-Fire [Broken in OW2 (workshop rate-of-fire changes); need to fix)")
+disabled rule("SUPERBOTS Torbot Ultimate Auto-Fire [Broken in OW2 (workshop rate-of-fire changes); needs rework)")
 {
 	event
 	{
@@ -4406,6 +4411,136 @@ rule("KIRIKO Ultimate Yokai Blast [Added by Arkhanglesk#11200]")
 	}
 }
 
+rule("LIFEWEAVER Ultimate Switch [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Lifeweaver;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Is Button Held(Event Player, Button(Reload)) == True;
+		Ultimate Charge Percent(Event Player) >= 1;
+	}
+
+	actions
+	{
+		Event Player.R = !Event Player.R;
+		If(Event Player.R == False);
+			Event Player.HUDTextHidden = Array(False, True, False, True);
+			Small Message(Event Player, Custom String(" {0} Hemlock: Poison All Bots Around Tree", Icon String(Poison)));
+		Else If(Event Player.R == True);
+			Event Player.HUDTextHidden = Array(True, False, False, True);
+			Small Message(Event Player, Custom String(" {0} Nightshade: Paralyze & Damage Bots Around Tree", Ability Icon String(Hero(Kiriko),
+				Button(Ability 2))));
+		End;
+		Play Effect(Event Player, Buff Explosion Sound, Color(White), Event Player, 50);
+		Wait(1, Ignore Condition);
+	}
+}
+
+rule("LIFEWEAVER Ultimate Placement [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Lifeweaver;
+	}
+
+	conditions
+	{
+		Is Using Ultimate(Event Player) == True;
+		Is Button Held(Event Player, Button(Primary Fire)) == True;
+	}
+
+	actions
+	{
+		Event Player.U = Ray Cast Hit Position(Eye Position(Event Player), 100 * Facing Direction Of(Event Player) + Eye Position(
+			Event Player), Null, All Players(All Teams), False);
+		Wait(0.500, Ignore Condition);
+		If(Event Player.R == False);
+			Create Effect(All Players(Team 1), Cloud, Color(Green), Event Player.U, 12, Visible To Position and Radius);
+		Else If(Event Player.R == True);
+			Create Effect(All Players(Team 1), Sparkles, Color(Purple), Event Player.U, 12.600, Visible To Position and Radius);
+		End;
+		Event Player.T = Last Created Entity;
+		Set Reload Enabled(Event Player, False);
+		Wait(14.500, Ignore Condition);
+		Destroy Effect(Last Created Entity);
+		Set Reload Enabled(Event Player, True);
+	}
+}
+
+rule("LIFEWEAVER Ultimate Damage [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Lifeweaver;
+	}
+
+	conditions
+	{
+		Ultimate Charge Percent(Event Player) == 0;
+	}
+
+	actions
+	{
+		If(Event Player.R == False);
+			Abort If Condition Is False;
+			Start Damage Over Time(Players Within Radius(Event Player.U, 12.500, Team 2, Off), Event Player, 1, 10);
+			Wait(1, Ignore Condition);
+			Loop;
+		Else If(Event Player.R == True);
+			Abort If Condition Is False;
+			Set Status(Players Within Radius(Event Player.U, 12, Team 2, Off), Null, Rooted, 1.500);
+			Damage(Players Within Radius(Event Player.U, 12, Team 2, Surfaces), Event Player, 100);
+			Wait(1.750, Ignore Condition);
+			Loop;
+		End;
+	}
+}
+
+rule("LIFEWEAVER Teleport [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Lifeweaver;
+	}
+
+	conditions
+	{
+		Players Within Radius(Event Player, 30, Team 1, Surfaces) == True;
+		Is Button Held(Event Player, Button(Ability 2)) == True;
+		Ability Cooldown(Event Player, Button(Ability 2)) == 0;
+	}
+
+	actions
+	{
+		If(Is In Line of Sight(Event Player, Player Closest To Reticle(Event Player, Team 1), Barriers Do Not Block LOS));
+			Teleport(Event Player, Player Closest To Reticle(Event Player, Team 1));
+			Play Effect(All Players(All Teams), Sombra Translocating Sound, Null, Event Player, 80);
+			Play Effect(All Players(All Teams), Sombra Translocating Material Effect, Color(Green), Event Player, 1);
+			Wait(0.250, Ignore Condition);
+			Play Effect(All Players(All Teams), Ring Explosion, Color(Green), Event Player, 5);
+			Apply Impulse(Players Within Radius(Event Player, 2, Team 2, Off), Direction From Angles(Horizontal Angle From Direction(
+				Direction Towards(Event Player, Players Within Radius(Event Player, 5, Team 2, Off))), -15), 15, To World,
+				Cancel Contrary Motion);
+			Damage(Players Within Radius(Event Player, 5, Team 2, Off), Event Player, 50);
+			Set Status(Players Within Radius(Event Player, 5, Team 2, Off), Event Player, Stunned, 2);
+			disabled Destroy All Effects;
+			Set Ability Cooldown(Event Player, Button(Ability 2), 10);
+	}
+}
+
 rule("LUCIO Tinnitus Heal")
 {
 	event
@@ -5247,7 +5382,7 @@ rule("PHARAH Fusion Reactor Bunker Buster")
 	}
 }
 
-disabled rule("PHARAH Booster Dash ON [Broken after Feb-12-2024 update; disabled by Arkhanglesk#11200 - replaced by Jet Dash]")
+disabled rule("PHARAH Booster Dash ON [Broken after 2024-Feb-12 update; disabled by Arkhanglesk#11200 - replaced by Jet Dash]")
 {
 	event
 	{
@@ -5277,7 +5412,7 @@ disabled rule("PHARAH Booster Dash ON [Broken after Feb-12-2024 update; disabled
 	}
 }
 
-disabled rule("PHARAH Booster Dash ON [Broken after Feb-12-2024 update; disabled by Arkhanglesk#11200 - replaced by Jet Dash]")
+disabled rule("PHARAH Booster Dash OFF [Broken after 2024-Feb-12 update; disabled by Arkhanglesk#11200 - replaced by Jet Dash]")
 {
 	event
 	{
@@ -7524,8 +7659,17 @@ rule("Lifeweaver HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.R = False;
+		Disallow Button(Event Player, Button(Ability 2));
+		disabled Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HUDTextHidden = Array(False, True, False, True);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Lifeweaver), Button(Ultimate)), Custom String(
+			"[RELOAD] TO SWITCH [ULTIMATE] DAMAGE"), Custom String("ULTIMATE: HEMLOCK"), Ability Icon String(Hero(Lifeweaver), Button(
+			Ultimate)), Custom String("[RELOAD] TO SWITCH [ULTIMATE] DAMAGE"), Custom String("ULTIMATE: NIGHTSHADE"), Ability Icon String(
+			Hero(Lifeweaver), Button(Ability 2)), Custom String("TELEPORT TO ALLY & DAZE BOTS"), Custom String("[ABILITY 2] EUPHORBIA"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
+		Set Ultimate Charge(Event Player, Ultimate Charge Percent(Event Player) + 1);
 	}
 }
 
@@ -8829,6 +8973,14 @@ rule("PLAYER Third Person During Ultimate OFF [Broken in OW2; updated by Arkhang
 	}
 }
 
+disabled rule("============== WORK IN PROGRESS ==============")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+}
+
 disabled rule("MAUGA Ultimate Right Gun [Added by Arkhanglesk#11200; work in progress]")
 {
 	event
@@ -8870,5 +9022,31 @@ disabled rule("RAMATTRA Ultimate [Added by Arkhanglesk#11200; work in progress]"
 		Ongoing - Each Player;
 		Team 1;
 		Ramattra;
+	}
+}
+
+disabled rule("LIFEWEAVER Dash [Added by Arkhanglesk#11200; work in progress]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Lifeweaver;
+	}
+
+	conditions
+	{
+		Is In Air(Event Player) == True;
+		disabled (Is Jumping(Event Player) && Ability Cooldown(Event Player, Button(Jump)) < 0.100) == True;
+		disabled Ability Cooldown(Event Player, Button(Jump)) == 0;
+		disabled Button(Jump) == True;
+		disabled (Is Jumping(Event Player) && Ability Cooldown(Event Player, Button(Jump)) < 0.250) == True;
+	}
+
+	actions
+	{
+		If(Is Button Held(Event Player, Button(Jump)) && True);
+			Big Message(Event Player, Custom String("JUMPING"));
+		End;
 	}
 }
