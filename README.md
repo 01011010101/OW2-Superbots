@@ -1,4 +1,4 @@
-###### This is an updated version of the OW Superbots page created by the original mode creator, Cel#1115. The original can be found [here](https://docs.google.com/document/d/1WwOGDoImdErTrU-VU9Pxc0oTp9ALMUmJaqAeW_fBrm8).
+###### This is an updated version of the OW Superbots page created by the original mode creator, Cel#1115. The original page can be found [here](https://docs.google.com/document/d/1WwOGDoImdErTrU-VU9Pxc0oTp9ALMUmJaqAeW_fBrm8).
 
 
 # STOP THE SUPER BOTS!
@@ -50,8 +50,8 @@ PURIFIED is automatically equipped at the start.
 Below is a list of all new abilities for all the heroes you can play.
 
 #### Ana
-- Exploding Biotic Darts: Shots against any surface or target heals nearby teammates in a 7 meter radius for 150 HP.  
-- Poison Gas: Carpet a 10 meter area with your sleep dart that poisons all enemies who walk inside it.
+- Exploding Biotic Darts: Shots against any surface or target heals nearby teammates in a 7m radius for 150 HP.  
+- Poison Gas: Carpet a 10m area with your sleep dart that poisons all enemies who walk inside it.
 - Light Armor: +25% Armor.
 - 250% Jump Height.
 
@@ -89,17 +89,18 @@ Below is a list of all new abilities for all the heroes you can play.
 
 #### D.Va 
 - Bunny Hop: Press [RELOAD] to jump around and deal damage in an area with each hop. Heal 25 HP per hop.
+  - Your Bunny Hop meter recharges at a rate of 1.2/second, so around 1.5 minutes per use.
 - Defense Matrix Time: 300%
 - Heavy Armor: 75% Armor.
 
 #### Doomfist 
 - Ultimate: Super Moves: Use your ultimate to power your regular abilities.
-  - Super Slam: Heal yourself while pummeling and burn bots.
+  - Super Slam: Heal yourself while pummeling and burning bots.
   - Super Punch: Massive direct damage.
 - Medium Armor: 50% Armor.
 
 #### Echo
-- Quantum Beam: Powerful laser that increases based on max HP of the target.
+- Quantum Beam: Powerful laser that increases in damage based on max HP of the target.
 - Ultimate: Overdrive: Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
 - Light Armor: 25% Armor.
   ##### Tip:
@@ -151,7 +152,7 @@ Below is a list of all new abilities for all the heroes you can play.
 #### Kiriko
 - Press [RELOAD] to change [PRIMARY] damage.
   - Ofuda: Damage bots with your paper things while healing your allies.
-  - Kami No Katto: Papercut bots and apply a bleed.
+  - Kami No Katto: Your paper ofuda slice bots and applies a bleed.
 - Ultimate: Yōkai Blast: Damage and knockdown all bots in the path of your Kitsune.
 - Light Armor: 25% Armor.
 
@@ -235,7 +236,7 @@ Below is a list of all new abilities for all the heroes you can play.
 - Ultimate: Warthog: Stun any bot damaged by your ultimate.
 - Heavy Armor: 75% Armor.
   ##### Tip:
-  If Junkrat is on your team you will earn him money for his Chaos Roulette with every kill and when you use Hook Combo.
+  If Junkrat is on your team, every time you use Hook Combo or get a kill you'll earn him money he can use in Chaos Roulette.
 
 #### Sigma
 - Kinetic Attraction: Using Kinetic Grasp pulls enemies towards you and knocks them into the ground at the end. (Created by Scourge)
@@ -264,7 +265,7 @@ Below is a list of all new abilities for all the heroes you can play.
 - Light Armor: 25% Armor.
 
 #### Symmetra
-- Photon Bomb: [SECONDARY FIRE] deploys slow-moving air mines when fully charged. When a bot is struck by a fully-charged bomb, it will be knocked down.
+- Photon Bombs: [SECONDARY FIRE] deploys slow-moving air mines when fully charged. Any bot struck by a fully-charged bomb will be knocked down.
 - Impulse Mine: Press [ABILITY 2] to place an impulse mine. The mine deals area damage and stuns enemies for 7 seconds.  ooldown will not start until an enemy has activated it.
 - Medium Armor: 50% Armor.
 
@@ -282,7 +283,7 @@ Below is a list of all new abilities for all the heroes you can play.
 - Medium Armor: 50% Armor.
 
 #### Widowmaker
-- Anti-Materiel Rifle: Scoped charged shots will deal explosive damage based on the amount of charge accumulated, up to 12 meters.
+- Anti-Materiel Rifle: Scoped charged shots will deal explosive damage based on the amount of charge accumulated, up to 12m.
 - Frozen Mine: Freezes enemies that trigger the mine.
 - Ultimate Railgun: Loads 4 insta-kill bullets that go through walls.
 
