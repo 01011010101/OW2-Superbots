@@ -129,10 +129,10 @@ settings
 				Barrier Shield Cooldown Time: 0%
 				Barrier Shield Recharge Rate: 500%
 				Damage Dealt: 150%
-				Health: 350%
+				Health: 250%
 				Repair Pack Cooldown Time: 35%
 				Shield Bash Cooldown Time: 50%
-				Ultimate Generation - Combat Rally: 50%
+				Ultimate Generation - Combat Rally: 20%
 				Whip Shot Knockback Scalar: 200%
 			}
 
@@ -172,7 +172,7 @@ settings
 
 			Echo
 			{
-				Damage Dealt: 250%
+				Damage Dealt: 200%
 				Flight Cooldown Time: 40%
 				Focusing Beam Cooldown Time: 150%
 				Health: 125%
@@ -220,12 +220,12 @@ settings
 			Junker Queen
 			{
 				Carnage Cooldown Time: 15%
-				Commanding Shout Cooldown Time: 25%
+				Commanding Shout Cooldown Time: 50%
 				Damage Dealt: 150%
 				Health: 200%
 				Jagged Blade Cooldown Time: 25%
+				Jagged Blade Knockback Scalar: 150%
 				No Ammunition Requirement: On
-				Projectile Speed: 110%
 				Ultimate Generation - Combat Rampage: 50%
 			}
 
@@ -233,7 +233,7 @@ settings
 			{
 				Concussion Mine Cooldown Time: 50%
 				Damage Dealt: 170%
-				Health: 275%
+				Health: 350%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat RIP-Tire: 25%
 				Ultimate Generation - Passive RIP-Tire: 75%
@@ -253,7 +253,7 @@ settings
 			{
 				Damage Dealt: 175%
 				Healing Dealt: 300%
-				Health: 175%
+				Health: 350%
 				Life Grip and Healing Blossom Range: 25%
 				Life Grip Cooldown Time: 25%
 				No Ammunition Requirement: On
@@ -291,7 +291,7 @@ settings
 			Mei
 			{
 				Cryo-Freeze Cooldown Time: 75%
-				Damage Dealt: 125%
+				Damage Dealt: 165%
 				Freeze Stacking: On
 				Health: 150%
 				No Ammunition Requirement: On
@@ -302,7 +302,7 @@ settings
 
 			Mercy
 			{
-				Damage Dealt: 250%
+				Damage Dealt: 200%
 				Guardian Angel Cooldown Time: 25%
 				Health: 200%
 				Jump Vertical Speed: 250%
@@ -368,6 +368,7 @@ settings
 			{
 				Damage Dealt: 175%
 				Healing Dealt: 200%
+				Health: 300%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Death Blossom: 25%
 				Wraith Form Cooldown Time: 50%
@@ -386,7 +387,7 @@ settings
 			Roadhog
 			{
 				Chain Hook Cooldown Time: 50%
-				Damage Dealt: 115%
+				Damage Dealt: 125%
 				Healing Dealt: 200%
 				Health: 150%
 				No Ammunition Requirement: On
@@ -495,7 +496,7 @@ settings
 			Wrecking Ball
 			{
 				Adaptive Shield Cooldown Time: 80%
-				Damage Dealt: 175%
+				Damage Dealt: 165%
 				Grappling Claw Cooldown Time: 0%
 				Infinite Ultimate Duration: On
 				Minefield Knockback Scalar: 0%
@@ -530,7 +531,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 200%
 				Biotic Grenade Cooldown Time: 150%
-				Damage Dealt: 150%
+				Damage Dealt: 165%
 				Health: 350%
 				Sleep Dart Cooldown Time: 200%
 				Ultimate Generation - Combat Nano Boost: 500%
@@ -604,13 +605,6 @@ settings
 				Ultimate Generation - Passive Deadeye: 150%
 			}
 
-			D.Va
-			{
-				Boosters Cooldown Time: 20%
-				Damage Dealt: 175%
-				Micro Missiles Cooldown Time: 35%
-			}
-
 			Doomfist
 			{
 				Ammunition Clip Size Scalar: 200%
@@ -630,7 +624,7 @@ settings
 			Genji
 			{
 				Damage Dealt: 160%
-				Health: 350%
+				Health: 400%
 				Movement Gravity: 90%
 				Ultimate Generation - Combat Dragonblade: 500%
 				Ultimate Generation - Passive Dragonblade: 300%
@@ -644,9 +638,8 @@ settings
 				Spawn With Ultimate Ready: On
 				Storm Arrows Cooldown Time: 15%
 				Storm Arrows Quantity: 12
-				Ultimate Generation - Combat Dragonstrike: 500%
+				Ultimate Generation - Combat Dragonstrike: 400%
 				Ultimate Generation - Passive Dragonstrike: 500%
-				Ultimate Generation Dragonstrike: 250%
 			}
 
 			Illari
@@ -676,9 +669,9 @@ settings
 				Ammunition Clip Size Scalar: 150%
 				Concussion Mine Cooldown Time: 200%
 				Concussion Mine Knockback Scalar: 50%
-				Damage Dealt: 170%
+				Damage Dealt: 175%
 				Frag Launcher Knockback Scalar: 60%
-				Health: 350%
+				Health: 500%
 				Movement Gravity: 50%
 				Steel Trap Cooldown Time: 200%
 				Ultimate Duration: 500%
@@ -689,19 +682,9 @@ settings
 			Kiriko
 			{
 				Damage Dealt: 160%
-				Health: 350%
+				Health: 400%
 				Ultimate Generation - Combat Kitsune Rush: 500%
 				Ultimate Generation - Passive Kitsune Rush: 300%
-			}
-
-			Lifeweaver
-			{
-				Ammunition Clip Size Scalar: 250%
-				Damage Dealt: 175%
-				Health: 350%
-				Rejuvenating Dash Healing: 500%
-				Ultimate Generation - Combat Tree of Life: 10%
-				Ultimate Generation - Passive Tree of Life: 10%
 			}
 
 			Lúcio
@@ -711,7 +694,7 @@ settings
 				No Ammunition Requirement: On
 				Soundwave Cooldown Time: 150%
 				Soundwave Knockback Scalar: 200%
-				Ultimate Generation - Combat Sound Barrier: 0%
+				Ultimate Generation - Combat Sound Barrier: 1%
 				Ultimate Generation - Passive Sound Barrier: 500%
 				Ultimate Generation Sound Barrier: 200%
 			}
@@ -733,8 +716,8 @@ settings
 			{
 				Ammunition Clip Size Scalar: 175%
 				Cryo-Freeze Cooldown Time: 200%
-				Damage Dealt: 160%
-				Health: 350%
+				Damage Dealt: 165%
+				Health: 500%
 				Ice Wall Cooldown Time: 200%
 				Ultimate Generation - Combat Blizzard: 400%
 				Ultimate Generation - Passive Blizzard: 200%
@@ -771,6 +754,11 @@ settings
 				Ultimate Generation - Passive Terra Surge: 300%
 			}
 
+			Pharah
+			{
+				Ultimate Generation - Combat Barrage: 10%
+			}
+
 			Ramattra
 			{
 				Damage Dealt: 160%
@@ -785,7 +773,7 @@ settings
 			Reaper
 			{
 				Damage Dealt: 175%
-				Health: 300%
+				Health: 400%
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Shadow Step: Off
@@ -814,11 +802,10 @@ settings
 				Healing Dealt: 200%
 				Health: 500%
 				No Ammunition Requirement: On
-				Pig Pen Cooldown Time: 75%
 				Quick Melee: Off
 				Spawn With Ultimate Ready: On
 				Take a Breather Cooldown Time: 150%
-				Take a Breather Recharge Rate: 45%
+				Take a Breather Recharge Rate: 25%
 				Ultimate Generation - Combat Whole Hog: 200%
 				Ultimate Generation Whole Hog: 500%
 				Whole Hog Knockback Scalar: 0%
@@ -848,7 +835,7 @@ settings
 				Ammunition Clip Size Scalar: 150%
 				Biotic Field Cooldown Time: 200%
 				Damage Dealt: 150%
-				Health: 350%
+				Health: 450%
 				Helix Rockets Cooldown Time: 30%
 				Ultimate Generation - Combat Tactical Visor: 500%
 				Ultimate Generation - Passive Tactical Visor: 300%
@@ -858,7 +845,7 @@ settings
 			{
 				Damage Dealt: 200%
 				Hack Cooldown Time: 500%
-				Health: 350%
+				Health: 400%
 				Projectile Speed: 300%
 				Translocator Cooldown Time: 50%
 				Ultimate Ability EMP: Off
@@ -869,7 +856,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 225%
 				Damage Dealt: 165%
-				Health: 200%
+				Health: 350%
 				Projectile Speed: 60%
 				Sentry Turret Cooldown Time: 300%
 				Teleporter: Off
@@ -937,9 +924,6 @@ settings
 				Particle Barrier: Off
 				Projected Barrier Cooldown Time: 49%
 				Quick Melee: Off
-				Ultimate Generation - Combat Graviton Surge: 20%
-				Ultimate Generation - Passive Graviton Surge: 10%
-				Ultimate Generation Graviton Surge: 60%
 			}
 
 			Zenyatta
@@ -1282,18 +1266,13 @@ rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("HOST HUD (Server Load) [Added by Arkhanglesk#11200]")
+disabled rule("HOST HUD (Server Load) [Added by Arkhanglesk#11200]")
 {
 	event
 	{
 		Ongoing - Each Player;
 		Team 1;
 		Slot 0;
-	}
-
-	conditions
-	{
-		disabled Host Player == True;
 	}
 
 	actions
