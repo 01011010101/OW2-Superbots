@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Working on balancing + updating OW2 heroes."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Feb 21, 2024: 35 of 39 heroes updated."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -102,7 +102,7 @@ settings
 
 			Baptiste
 			{
-				Damage Dealt: 190%
+				Damage Dealt: 170%
 				Healing Dealt: 200%
 				Health: 200%
 				Jump Vertical Speed: 125%
@@ -194,38 +194,42 @@ settings
 
 			Hanzo
 			{
-				Damage Dealt: 170%
+				Damage Dealt: 135%
 				Lunge Cooldown Time: 25%
 				Lunge Distance Scalar: 200%
 				Sonic Arrow Cooldown Time: 50%
 				Storm Arrows Cooldown Time: 25%
 				Storm Arrows Quantity: 12
-				Ultimate Generation - Combat Dragonstrike: 10%
-				Ultimate Generation - Passive Dragonstrike: 80%
+				Ultimate Generation - Combat Dragonstrike: 5%
+				Ultimate Generation - Passive Dragonstrike: 50%
 			}
 
 			Illari
 			{
 				Damage Dealt: 160%
-				Healing Dealt: 300%
-				Healing Pylon Cooldown Time: 25%
+				Healing Dealt: 200%
+				Healing Pylon Cooldown Time: 50%
 				Health: 150%
+				Movement Gravity: 90%
 				No Ammunition Requirement: On
-				Outburst Cooldown Time: 25%
+				Outburst Cooldown Time: 50%
 				Solar Energy Maximum: 500%
-				Solar Energy Recharge Rate: 25%
+				Ultimate Generation - Combat Captive Sun: 50%
 			}
 
 			Junker Queen
 			{
-				Carnage Cooldown Time: 15%
-				Commanding Shout Cooldown Time: 50%
-				Damage Dealt: 140%
-				Health: 200%
+				Carnage Cooldown Time: 25%
+				Commanding Shout Cooldown Time: 35%
+				Damage Dealt: 135%
+				Health: 150%
 				Jagged Blade Cooldown Time: 25%
-				Jagged Blade Knockback Scalar: 150%
+				Jagged Blade Knockback Scalar: 125%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Rampage: 50%
+				Spawn With Ultimate Ready: On
+				Ultimate Generation - Combat Rampage: 500%
+				Ultimate Generation - Passive Rampage: 500%
+				Ultimate Generation Rampage: 500%
 			}
 
 			Junkrat
@@ -270,23 +274,21 @@ settings
 				Crossfade: Off
 				Damage Dealt: 200%
 				No Ammunition Requirement: On
-				Soundwave Knockback Scalar: 25%
 				Ultimate Generation - Combat Sound Barrier: 1%
 				Ultimate Generation - Passive Sound Barrier: 400%
 			}
 
 			Mauga
 			{
-				Ammunition Clip Size Scalar: 150%
 				Cardiac Overdrive Cooldown Time: 75%
-				Cardiac Overdrive Healing: 50%
-				Damage Dealt: 140%
-				Health: 200%
+				Damage Dealt: 150%
+				Health: 185%
+				Incendiary Chaingun Ignite Rate: 150%
 				No Ammunition Requirement: On
 				Overrun Cooldown Time: 50%
 				Overrun Knockback: 110%
-				Ultimate Duration: 75%
-				Ultimate Generation - Passive Cage Fight: 50%
+				Ultimate Duration: 200%
+				Ultimate Generation - Combat Cage Fight: 10%
 			}
 
 			Mei
@@ -303,7 +305,7 @@ settings
 
 			Mercy
 			{
-				Damage Dealt: 190%
+				Damage Dealt: 180%
 				Guardian Angel Cooldown Time: 25%
 				Health: 200%
 				Jump Vertical Speed: 250%
@@ -417,9 +419,9 @@ settings
 				Disruptor Shot Cooldown Time: 25%
 				Health: 275%
 				No Ammunition Requirement: On
-				Power Slide Cooldown Time: 25%
+				Power Slide Cooldown Time: 35%
+				Projectile Speed: 150%
 				Railgun Alt Fire Energy Charge Rate: 0%
-				Ultimate Duration: 200%
 				Ultimate Generation - Combat Overclock: 5%
 			}
 
@@ -659,10 +661,12 @@ settings
 
 			Illari
 			{
+				Ammunition Clip Size Scalar: 200%
 				Damage Dealt: 160%
 				Healing Dealt: 400%
 				Healing Pylon Cooldown Time: 50%
 				Health: 500%
+				Movement Gravity: 90%
 				Outburst Cooldown Time: 25%
 				Ultimate Generation - Combat Captive Sun: 400%
 				Ultimate Generation - Passive Captive Sun: 300%
@@ -671,6 +675,7 @@ settings
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
+				Commanding Shout Cooldown Time: 35%
 				Damage Dealt: 160%
 				Health: 500%
 				Jagged Blade Cooldown Time: 75%
@@ -707,7 +712,7 @@ settings
 				Damage Dealt: 200%
 				No Ammunition Requirement: On
 				Soundwave Cooldown Time: 150%
-				Soundwave Knockback Scalar: 200%
+				Soundwave Knockback Scalar: 50%
 				Ultimate Generation - Combat Sound Barrier: 1%
 				Ultimate Generation - Passive Sound Barrier: 500%
 				Ultimate Generation Sound Barrier: 200%
@@ -718,11 +723,13 @@ settings
 				Ammunition Clip Size Scalar: 150%
 				Cardiac Overdrive Cooldown Time: 200%
 				Damage Dealt: 125%
-				Health: 350%
+				Health: 400%
 				Incendiary Chaingun Ignite Duration: 25%
+				Incendiary Chaingun Ignite Rate: 150%
 				Overrun Knockback: 50%
 				Quick Melee: Off
 				Ultimate Duration: 75%
+				Ultimate Generation - Combat Cage Fight: 40%
 				Ultimate Generation - Passive Cage Fight: 500%
 			}
 
@@ -1034,7 +1041,7 @@ rule("CREATED BY CEL#1115")
 
 	actions
 	{
-		Disable Inspector Recording;
+		disabled Disable Inspector Recording;
 		"Relic descriptions."
 		Global.RelicDescriptions = Array(Custom String("+200% HEALING DEALT/RECEIVED \r\n+50% DAMAGE AT FULL HP \r\n+10% HP/SEC"),
 			Custom String("+100% MOVEMENT SPEED \r\n+DAMAGE BASED ON SPEED \r\n-7 SECOND RESPAWN TIMER"), Custom String(
@@ -1269,19 +1276,19 @@ rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
 		Create HUD Text(All Players(All Teams), String("{0} {1}", String("{0} {1}", Custom String("SUPERBOT LEVEL:"),
 			Global.SuperbotLevel), Hero Icon String(Hero(Roadhog))), Null, Null, Right, -2, Color(Purple), Color(White), Color(White),
 			Visible To and String, Default Visibility);
-		"Lucio Ultimate charge percent HUD (\"Lucio's Ult: x%\")."
+		"Lucio Ultimate charge percent HUD (\"Lucio's Ult: x%\") [Disabled by Arkhanglesk#11200]"
 		disabled Create HUD Text(All Players(All Teams), Custom String("LUCIO ULT: {0}%{1}", Ultimate Charge Percent(Players On Hero(Hero(Lúcio),
 			Team 2)), Hero Icon String(Hero(Lúcio))), Null, Null, Right, Null, Color(Red), Color(White), Color(White),
 			Visible To and String, Default Visibility);
-		"Lucio Ultimate charge percent HUD (Dynamic)"
+		"Lucio Ultimate charge percent HUD (Dynamic) [Added by Arkhanglesk#11200]"
 		Create HUD Text(All Players(All Teams), Custom String("LUCIO ULT: {0}{1}{2}", Ultimate Charge Percent(Players On Hero(Hero(Lúcio),
 			Team 2)) < 74 ? Ultimate Charge Percent(Players On Hero(Hero(Lúcio), Team 2)) : String("Danger"), Ultimate Charge Percent(
 			Players On Hero(Hero(Lúcio), Team 2)) < 74 ? Custom String("%") : Custom String(""), Hero Icon String(Hero(Lúcio))), Null,
 			Null, Right, Null, Color(Red), Color(White), Color(White), Visible To and String, Default Visibility);
 		"Flying HUD."
 		Create HUD Text(Filtered Array(All Players(Team 1), Hero Of(Current Array Element) == Hero(Sigma) || Hero Of(Current Array Element)
-			== Hero(Zenyatta)), Custom String("{0}", Icon String(Arrow: Up)), Custom String("PRESS [RELOAD] TO TOGGLE"), Custom String(
-			"FLYING MODE"), Left, 9, Color(White), Color(Yellow), Color(White), Visible To and String, Default Visibility);
+			== Hero(Zenyatta)), Custom String("{0}", Icon String(Arrow: Up)), Custom String("[RELOAD] TO TOGGLE FLYING"), Custom String(
+			"FREE FLIGHT"), Left, 9, Color(White), Color(Yellow), Color(White), Visible To and String, Default Visibility);
 		"Player Relic HUD info."
 		Create HUD Text(All Players(Team 1), Null, Custom String("(HOLD [CROUCH] FOR MORE INFO)"), Null, Left, 11, Color(White), Color(
 			Yellow), Color(White), Visible To and String, Default Visibility);
@@ -1648,6 +1655,448 @@ rule("SUPERBOTS Respawn time - 1 second")
 	actions
 	{
 		Set Respawn Max Time(Event Player, 1);
+	}
+}
+
+rule("SUPERBOTS Names (A-O) [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Is Game In Progress == True;
+		Is In Spawn Room(Event Player) == False;
+	}
+
+	actions
+	{
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Ana), Team 2), Custom String("Ana"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Ashe), Team 2), Custom String("Ashe"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Baptiste), Team 2), Custom String("Baptiste"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Bastion), Team 2), Custom String("Bastion"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Brigitte), Team 2), Custom String("Brigitte"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Cassidy), Team 2), Custom String("Cassidy"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Doomfist), Team 2), Custom String("Doomfist"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Genji), Team 2), Custom String("Genji"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Hanzo), Team 2), Custom String("Hanzo"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Illari), Team 2), Custom String("Illari"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Junker Queen), Team 2), Custom String("Junker Queen"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Junkrat), Team 2), Custom String("Junkrat"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Kiriko), Team 2), Custom String("Kiriko"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Mauga), Team 2), Custom String("Mauga"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Mei), Team 2), Custom String("Mei"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Mercy), Team 2), Custom String("Mercy"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Moira), Team 2), Custom String("Moira"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Orisa), Team 2), Custom String("Orisa"));
+	}
+}
+
+rule("SUPERBOTS Names (R-Z) [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Is Game In Progress == True;
+		Is In Spawn Room(Event Player) == False;
+	}
+
+	actions
+	{
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Ramattra), Team 2), Custom String("Ramattra"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Reaper), Team 2), Custom String("Reaper"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Reinhardt), Team 2), Custom String("Reinhardt"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Roadhog), Team 2), Custom String("Roadhog"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Sigma), Team 2), Custom String("Sigma"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Sojourn), Team 2), Custom String("Sojourn"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Soldier: 76), Team 2), Custom String("Soldier: 76"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Sombra), Team 2), Custom String("Sombra"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Symmetra), Team 2), Custom String("Symmetra"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Tracer), Team 2), Custom String("Tracer"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Widowmaker), Team 2), Custom String("Widowmaker"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Winston), Team 2), Custom String("Winston"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Zenyatta), Team 2), Custom String("Zenyatta"));
+	}
+}
+
+rule("SUPERBOT Enraged Kill Message")
+{
+	event
+	{
+		Player Dealt Final Blow;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Event Player.SuperbotEnrageCounter > 5;
+	}
+
+	actions
+	{
+		Small Message(Victim, Custom String("{0} KILLED YOU WHILE ENRAGED", Hero Icon String(Hero Of(Event Player))));
+	}
+}
+
+disabled rule("SUPERBOTS Final Challenge ON (Control) [WIP - On hold, workshop load issues]")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		disabled Is Game In Progress == True;
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
+		disabled Control Mode Scoring Percentage(Team 1) > 20;
+		disabled Control Mode Scoring Percentage(Team 2) < 20;
+	}
+
+	actions
+	{
+		"Sets a random number to index 0 between 0 and 8."
+		disabled Global.ChallengeRoulette[0] = Random Integer(4, 8);
+		disabled Wait(0.020, Ignore Condition);
+		"If Index 0 is the same as Index 1, then it loops."
+		disabled Loop If(Global.ChallengeRoulette[0] == Global.ChallengeRoulette[1]);
+		"Once it stops being the same number, it will set 1 to whatever 0 is."
+		disabled Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
+		disabled Respawn(All Players(Team 2));
+		disabled Set Status(All Players(Team 2), Null, Rooted, 10);
+		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
+		disabled Wait(1, Ignore Condition);
+		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE: {0}", Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
+		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
+		disabled Wait(2, Ignore Condition);
+		disabled If(Global.ChallengeRoulette[0] == 2);
+		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("WHEN SEPARATED FROM OTHER TEAMMATES"));
+		disabled Else If(Global.ChallengeRoulette[0] == 3);
+		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("WHEN NEAR TEAMMATES"));
+		disabled Else If(Global.ChallengeRoulette[0] == 4);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
+		disabled Wait(1, Ignore Condition);
+		disabled Else If(Global.ChallengeRoulette[0] == 5);
+		disabled Small Message(All Players(All Teams), Custom String("RESPAWN DISABLED FOR PLAYERS"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("RESURRECTION STILL WORKS"));
+		disabled Else If(Global.ChallengeRoulette[0] == 6);
+		disabled Small Message(All Players(All Teams), Custom String("BOTS HAVE 99% ARMOR WHILE MOVING"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("DISABLE THEM TO KILL THEM"));
+		disabled Else If(Global.ChallengeRoulette[0] == 7);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS MOVE AT 500% SPEED"));
+		disabled Wait(1, Ignore Condition);
+		disabled Else If(Global.ChallengeRoulette[0] == 8);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS ARE HEAVY, FAST AND..."));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("...HAVE 25% ARMOR, GOOD LUCK!"));
+		disabled End;
+		disabled Wait(5, Ignore Condition);
+		disabled Set Ultimate Charge(Players On Hero(Hero(Lúcio), Team 2), 50);
+	}
+}
+
+disabled rule("SUPERBOTS Final Challenge OFF (Control) [WIP - On hold, workshop load issues]")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
+		disabled Is Game In Progress == True;
+		disabled Control Mode Scoring Percentage(Team 2) > 20;
+	}
+
+	actions
+	{
+		disabled If(Global.ChallengeRoulette[0] == 5);
+		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE RESET"));
+		disabled Enable Built-In Game Mode Respawning(All Players(Team 1));
+		disabled Respawn(All Dead Players(All Teams));
+		disabled Else If(Global.ChallengeRoulette[0] == 6);
+		disabled Stop Damage Modification(Global.ChallengeDmgMod);
+		disabled Set Gravity(All Players(Team 2), 100);
+		disabled Else If(Global.ChallengeRoulette[0] == 7);
+		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
+		disabled Else If(Global.ChallengeRoulette[0] == 8);
+		disabled Stop Damage Modification(Global.ChallengeDmgMod);
+		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
+		disabled Set Gravity(All Players(Team 2), 100);
+		disabled End;
+		disabled Global.ChallengeRoulette[0] = 0;
+	}
+}
+
+rule("SUPERBOTS Final Challenge ON")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		Is Game In Progress == True;
+		Match Time < 61;
+		"If NOT Control map (disabled, workshop load)"
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False;
+	}
+
+	actions
+	{
+		"Sets a random number to index 0 between 0 and 8."
+		Global.ChallengeRoulette[0] = Random Integer(4, 8);
+		Wait(0.020, Ignore Condition);
+		"If Index 0 is the same as Index 1, then it loops."
+		Loop If(Global.ChallengeRoulette[0] == Global.ChallengeRoulette[1]);
+		"Once it stops being the same number, it will set 1 to whatever 0 is."
+		Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
+		Respawn(All Players(Team 2));
+		Set Status(All Players(Team 2), Null, Rooted, 10);
+		Small Message(All Players(All Teams), Custom String("  !!!ATTENTION!!!"));
+		Wait(1, Ignore Condition);
+		Big Message(All Players(All Teams), Custom String("OVERTIME CHALLENGE: {0}",
+			Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
+		Small Message(All Players(All Teams), Custom String("  !!!ATTENTION!!!"));
+		Wait(2, Ignore Condition);
+		If(Global.ChallengeRoulette[0] == 2);
+			Small Message(All Players(All Teams), Custom String(" PLAYERS TAKE DAMAGE OVER TIME"));
+			Wait(1, Ignore Condition);
+			Small Message(All Players(All Teams), Custom String(" WHEN SEPARATED FROM OTHER TEAMMATES"));
+		Else If(Global.ChallengeRoulette[0] == 3);
+			Small Message(All Players(All Teams), Custom String(" PLAYERS TAKE DAMAGE OVER TIME"));
+			Wait(1, Ignore Condition);
+			Small Message(All Players(All Teams), Custom String(" WHEN NEAR TEAMMATES"));
+		Else If(Global.ChallengeRoulette[0] == 4);
+			Small Message(All Players(All Teams), Custom String(" SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
+			Wait(1, Ignore Condition);
+		Else If(Global.ChallengeRoulette[0] == 5);
+			Small Message(All Players(All Teams), Custom String(" RESPAWN DISABLED FOR PLAYERS"));
+			Wait(1, Ignore Condition);
+			Small Message(All Players(All Teams), Custom String(" RESURRECTION STILL WORKS"));
+		Else If(Global.ChallengeRoulette[0] == 6);
+			Small Message(All Players(All Teams), Custom String(" BOTS HAVE 99% ARMOR WHILE MOVING"));
+			Wait(1, Ignore Condition);
+			Small Message(All Players(All Teams), Custom String(" DISABLE THEM TO KILL THEM"));
+		Else If(Global.ChallengeRoulette[0] == 7);
+			Small Message(All Players(All Teams), Custom String(" SUPERBOTS MOVE AT 500% SPEED"));
+			Wait(1, Ignore Condition);
+		Else If(Global.ChallengeRoulette[0] == 8);
+			Small Message(All Players(All Teams), Custom String(" SUPERBOTS ARE HEAVY, FAST AND..."));
+			Wait(1, Ignore Condition);
+			Small Message(All Players(All Teams), Custom String(" ...HAVE 25% ARMOR, GOOD LUCK!"));
+		End;
+		Wait(5, Ignore Condition);
+		Set Ultimate Charge(Players On Hero(Hero(Lúcio), Team 2), 50);
+	}
+}
+
+rule("SUPERBOTS Final Challenge OFF")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		Is Game In Progress == True;
+		Match Time > 60;
+		"If NOT Control map (disabled, workshop load)"
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False;
+	}
+
+	actions
+	{
+		If(Global.ChallengeRoulette[0] == 5);
+			Big Message(All Players(All Teams), Custom String("OVERTIME CHALLENGE RESET"));
+			Enable Built-In Game Mode Respawning(All Players(Team 1));
+			Respawn(All Dead Players(All Teams));
+		Else If(Global.ChallengeRoulette[0] == 6);
+			Stop Damage Modification(Global.ChallengeDmgMod);
+			Set Gravity(All Players(Team 2), 100);
+		Else If(Global.ChallengeRoulette[0] == 7);
+			Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
+		Else If(Global.ChallengeRoulette[0] == 8);
+			Stop Damage Modification(Global.ChallengeDmgMod);
+			Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
+			Set Gravity(All Players(Team 2), 100);
+		End;
+		Global.ChallengeRoulette[0] = 0;
+	}
+}
+
+disabled rule("SUPERBOTS Final Challenge ([0] == 2) Separation Anxiety")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		disabled Match Time < 30;
+		disabled Global.ChallengeRoulette[0] == 2;
+		disabled Is True For Any(All Living Players(Team 1), Distance Between(Event Player, Current Array Element) > 5) == True;
+	}
+
+	actions
+	{
+		disabled Damage(Event Player, Null, Max Health(Event Player) * 0.150);
+		disabled Wait(1, Ignore Condition);
+		disabled Loop If Condition Is True;
+	}
+}
+
+disabled rule("SUPERBOTS Final Challenge ([0] == 3) Social Distancing")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		disabled Match Time < 30;
+		disabled Global.ChallengeRoulette[0] == 3;
+		disabled Is True For Any(All Living Players(Team 1), Distance Between(Event Player, Current Array Element) < 5) == True;
+	}
+
+	actions
+	{
+		disabled Damage(Event Player, Null, Max Health(Event Player) * 0.150);
+		disabled Wait(1, Ignore Condition);
+		disabled Loop If Condition Is True;
+	}
+}
+
+rule("SUPERBOTS Final Challenge ([0] == 4) Relentless")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Match Time < 30;
+		Global.ChallengeRoulette[0] == 4;
+		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
+			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == True;
+	}
+
+	actions
+	{
+		Wait(1, Ignore Condition);
+		Start Rule(ClearAllStatus, Restart Rule);
+	}
+}
+
+rule("SUPERBOTS Final Challenge ([0] == 5) Sudden Death")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		Match Time < 30;
+		Global.ChallengeRoulette[0] == 5;
+	}
+
+	actions
+	{
+		Respawn(All Dead Players(Team 1));
+		Disable Built-In Game Mode Respawning(All Players(Team 1));
+	}
+}
+
+rule("SUPERBOTS Final Challenge ([0] == 6) Juggernaut")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		Match Time < 30;
+		Global.ChallengeRoulette[0] == 6;
+	}
+
+	actions
+	{
+		Start Damage Modification(Filtered Array(All Players(Team 2), Is Moving(Current Array Element) == True), All Players(Team 1), 1,
+			Receivers Damagers and Damage Percent);
+		Global.ChallengeDmgMod = Last Damage Modification ID;
+		Set Gravity(All Players(Team 2), 500);
+	}
+}
+
+rule("SUPERBOTS Final Challenge ([0] == 7) Swarm")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		Match Time < 30;
+		Global.ChallengeRoulette[0] == 7;
+	}
+
+	actions
+	{
+		Set Move Speed(All Players(Team 2), 500);
+	}
+}
+
+rule("SUPERBOTS Final Challenge ([0] == 8) Apotheosis")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		Match Time < 30;
+		Global.ChallengeRoulette[0] == 8;
+	}
+
+	actions
+	{
+		Start Damage Modification(All Players(Team 2), All Players(Team 1), 75, Receivers Damagers and Damage Percent);
+		Global.ChallengeDmgMod = Last Damage Modification ID;
+		Set Gravity(All Players(Team 2), 500);
+		Set Move Speed(All Players(Team 2), 300);
 	}
 }
 
@@ -2032,7 +2481,7 @@ rule("============== SUPERBOT PASSIVE ABILITIES ==============")
 	}
 }
 
-rule("SUPERBOTS Setup (Health, Movement, Effects and Icons)")
+rule("SUPERBOTS Setup (Health, Movement, Effects and Icons) [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -2061,6 +2510,7 @@ rule("SUPERBOTS Setup (Health, Movement, Effects and Icons)")
 		Create Effect(Filtered Array(All Players(All Teams), Event Player.SuperbotEnrageCounter >= 5), Bad Aura, Color(Red), Event Player,
 			0.500 + Event Player.SuperbotEnrageCounter * 0.050, Visible To Position and Radius);
 		If(Hero Of(Event Player) == Hero(Lúcio));
+			"Removed Lucio's \"Danger\" icon to reflect GLOBAL HUD updates"
 			disabled Create Icon(Filtered Array(All Players(All Teams), Ultimate Charge Percent(Event Player) > 80), Event Player, Warning,
 				Visible To and Position, Color(Lime Green), True);
 			Event Player.MOVEMENT = 300;
@@ -2247,7 +2697,7 @@ rule("SUPERBOTS Torbot Disabled Sentry")
 	}
 }
 
-rule("SUPERBOTS Torbot Ultimate Auto-Fire")
+disabled rule("SUPERBOTS Torbot Ultimate Auto-Fire [Broken in OW2 (workshop rate-of-fire changes); need to fix)")
 {
 	event
 	{
@@ -2567,7 +3017,7 @@ rule("ASHE Explosive Small Rounds")
 	}
 }
 
-disabled rule("BAPTISTE Ultimate (Broken in OW2, need to fix)")
+disabled rule("BAPTISTE Ultimate [Broken in OW2, need to fix]")
 {
 	event
 	{
@@ -2595,7 +3045,7 @@ disabled rule("BAPTISTE Ultimate (Broken in OW2, need to fix)")
 	}
 }
 
-disabled rule("BAPTISTE Ultimate Full-Auto (Broken in OW2, need to fix)")
+disabled rule("BAPTISTE Ultimate Full-Auto [Broken in OW2, need to fix]")
 {
 	event
 	{
@@ -2670,7 +3120,7 @@ rule("BAPTISTE Grenade Shots")
 	}
 }
 
-disabled rule("BASTION Proton Cannon ON (Broken in OW2, need to fix)")
+disabled rule("BASTION Proton Cannon ON [Broken in OW2, need to fix]")
 {
 	event
 	{
@@ -2692,7 +3142,7 @@ disabled rule("BASTION Proton Cannon ON (Broken in OW2, need to fix)")
 	}
 }
 
-disabled rule("BASTION Proton Cannon OFF (Broken in OW2, need to fix)")
+disabled rule("BASTION Proton Cannon OFF [Broken in OW2, need to fix]")
 {
 	event
 	{
@@ -2714,7 +3164,7 @@ disabled rule("BASTION Proton Cannon OFF (Broken in OW2, need to fix)")
 	}
 }
 
-disabled rule("BASTION Proton Cannon Damage (Broken in OW2, need to fix)")
+disabled rule("BASTION Proton Cannon Damage [Broken in OW2, need to fix]")
 {
 	event
 	{
@@ -3062,13 +3512,11 @@ rule("ECHO Laser [Updated by Arkhanglesk#11200]")
 		Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 10 * Global.SuperbotLevel + 7);
 		Wait(0.050, Ignore Condition);
 		Loop If Condition Is True;
-		disabled Small Message(Event Player, Custom String(" {0} ACTIVATING QUANTUM BEAM", Hero Icon String(Hero(Echo))));
-		disabled Wait(5.500, Ignore Condition);
 		Small Message(Event Player, Custom String(" {0} QUANTUM BEAM RECHARGING", Hero Icon String(Hero(Echo))));
 	}
 }
 
-rule("ECHO Ultimate Activate [Updated by Arkhanglesk#11200]")
+rule("ECHO Ultimate Overdrive [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3101,8 +3549,10 @@ rule("ECHO Ultimate Activate [Updated by Arkhanglesk#11200]")
 		Event Player.Flight = True;
 		Wait(0.150, Ignore Condition);
 		Set Move Speed(Event Player, Event Player.MOVEMENT + 200);
+		"Enable Sticky Bomb auto fire [Added/Disabled by Arkhanglesk#11200; not very fun, needs rework]"
 		disabled Event Player.FullAutoFire = True;
 		Wait(10, Ignore Condition);
+		"Disable Sticky Bomb auto fire [Added/Disabled by Arkhanglesk#11200; not very fun, needs rework]"
 		disabled Event Player.FullAutoFire = False;
 		Small Message(Event Player, Custom String(" {0} Flying Off", Hero Icon String(Hero(Echo))));
 		Wait(0.100, Ignore Condition);
@@ -3116,7 +3566,7 @@ rule("ECHO Ultimate Activate [Updated by Arkhanglesk#11200]")
 	}
 }
 
-disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire changes); updated by Arkhanglesk#11200. Works, but not very fun.]")
+disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire changes); fixed by Arkhanglesk#11200. Works, but not very fun.]")
 {
 	event
 	{
@@ -3127,7 +3577,6 @@ disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire ch
 
 	conditions
 	{
-		disabled Is Firing Secondary(Event Player) == True;
 		disabled Event Player.FullAutoFire == True;
 		(Is Button Held(Event Player, Button(Secondary Fire)) || Is Firing Secondary(Event Player)) == True;
 		Is Alive(Event Player) == True;
@@ -3138,6 +3587,7 @@ disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire ch
 	actions
 	{
 		Abort If Condition Is False;
+		"Works best/most fun when Sticky Bombs CD=0% and Wait(0.800), but high server cost."
 		Wait(2, Ignore Condition);
 		Press Button(Event Player, Button(Secondary Fire));
 		Loop;
@@ -3262,10 +3712,10 @@ rule("HANZO Elemental Arrow Swap")
 		Event Player.R = !Event Player.R;
 		If(Event Player.R == False);
 			Event Player.HUDTextHidden = Array(False, True, False, True);
-			Small Message(Event Player, Custom String(" {0}Fire Arrows Equipped", Icon String(Fire)));
+			Small Message(Event Player, Custom String(" {0} Fire Arrows Equipped", Icon String(Fire)));
 		Else If(Event Player.R == True);
 			Event Player.HUDTextHidden = Array(True, False, False, True);
-			Small Message(Event Player, Custom String("{0}Frost Arrows Equipped", Ability Icon String(Hero(Mei), Button(Ultimate))));
+			Small Message(Event Player, Custom String(" {0} Frost Arrows Equipped", Ability Icon String(Hero(Mei), Button(Ultimate))));
 		End;
 		Play Effect(Event Player, Buff Explosion Sound, Color(White), Event Player, 50);
 		Wait(1, Ignore Condition);
@@ -3309,6 +3759,194 @@ rule("HANZO Elemental Dragon Arrows")
 			End;
 		End;
 		Wait(0.100, Ignore Condition);
+	}
+}
+
+rule("ILLARI Solar Flare [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Illari;
+	}
+
+	conditions
+	{
+		Event Ability == Button(Ability 1);
+	}
+
+	actions
+	{
+		Set Status(Victim, Null, Burning, 3);
+		disabled Start Damage Over Time(Victim, Event Player, 3, Max Health(Victim) * 0.100);
+		Start Damage Over Time(Victim, Event Player, 3, 5);
+		Start Heal Over Time(Event Player, Null, 4, Max Health(Event Player) * 0.100);
+	}
+}
+
+rule("ILLARI Heat Blast [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Illari;
+	}
+
+	conditions
+	{
+		Event Was Critical Hit == True;
+	}
+
+	actions
+	{
+		Set Status(Victim, Event Player, Burning, 2);
+		Start Damage Over Time(Victim, Event Player, 2, 5);
+		Wait(1, Ignore Condition);
+	}
+}
+
+rule("ILLARI Ultimate BFG 9000 [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Illari;
+	}
+
+	conditions
+	{
+		disabled Event Ability == Button(Ultimate);
+		Is Alive(Event Player) == True;
+		Is Using Ultimate(Event Player) == True;
+		Is Button Held(Event Player, Button(Primary Fire)) == True;
+		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
+			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
+	}
+
+	actions
+	{
+		Damage(Victim, Event Player, 65);
+		Set Status(Victim, Null, Burning, 5);
+		Start Damage Over Time(Victim, Event Player, 5, 1);
+		Wait(5, Ignore Condition);
+		Stop All Damage Over Time(Victim);
+		Set Ultimate Ability Enabled(Event Player, True);
+	}
+}
+
+disabled rule("ILLARI Ultimate Scorched Earth [Added by Arkhanglesk#11200; work in progress]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Illari;
+	}
+
+	conditions
+	{
+		disabled Event Ability == Button(Ultimate);
+		Is Alive(Event Player) == True;
+		Is Using Ultimate(Event Player) == True;
+		Is Button Held(Event Player, Button(Primary Fire)) == True;
+		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
+			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
+	}
+
+	actions
+	{
+		Event Player.U = Ray Cast Hit Position(Eye Position(Event Player), 50 * Facing Direction Of(Event Player) + Eye Position(
+			Event Player), All Players(Team 2), Event Player, False);
+		disabled Wait(0.050, Ignore Condition);
+		disabled Play Effect(All Players(All Teams), Good Pickup Effect, Color(Red), Event Player.U, 10);
+		disabled Play Effect(All Players(All Teams), Buff Explosion Sound, Color(Red), Event Player, 100);
+		disabled Wait(3, Ignore Condition);
+	}
+}
+
+rule("JUNKER QUEEN Shout Swap [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Junker Queen;
+	}
+
+	conditions
+	{
+		Is Button Held(Event Player, Button(Reload)) == True;
+		Is Alive(Event Player) == True;
+	}
+
+	actions
+	{
+		Event Player.R = !Event Player.R;
+		If(Event Player.R == False);
+			Event Player.HUDTextHidden = Array(False, True, False, True);
+			Small Message(Event Player, Custom String(" {0} Shout: Knockdown", Ability Icon String(Hero(Lúcio), Button(Secondary Fire))));
+		Else If(Event Player.R == True);
+			Event Player.HUDTextHidden = Array(True, False, False, True);
+			Small Message(Event Player, Custom String(" {0} Shout: Stun", Ability Icon String(Hero(Junker Queen), Button(Ability 1))));
+		End;
+		Play Effect(Event Player, Buff Explosion Sound, Color(White), Event Player, 50);
+		Wait(1, Ignore Condition);
+	}
+}
+
+rule("JUNKER QUEEN Shout Effects [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Ability Cooldown(Players On Hero(Hero(Junker Queen), Team 1), Button(Ability 1)) == 0;
+		(Is Button Held(Players On Hero(Hero(Junker Queen), Team 1), Button(Ability 1)) == True) == True;
+		Distance Between(Event Player, Position Of(Players On Hero(Hero(Junker Queen), Team 1))) <= 8;
+	}
+
+	actions
+	{
+		Disallow Button(Players On Hero(Hero(Junker Queen), Team 1), Button(Ability 1));
+		If(Players On Hero(Hero(Junker Queen), Team 1).R == False);
+			Apply Impulse(Players Within Radius(Players On Hero(Hero(Junker Queen), Team 2), 8, Team 2, Off), Direction From Angles(
+				Horizontal Angle From Direction(Direction Towards(Event Player, Players Within Radius(Event Player, 8, Team 2, Off))), -15),
+				15, To Player, Cancel Contrary Motion);
+			Set Status(Players Within Radius(Event Player, 8, Team 2, Off), Event Player, Knocked Down, 2);
+		Else If(Players On Hero(Hero(Junker Queen), Team 1).R == True);
+			Set Status(Players Within Radius(Players On Hero(Hero(Junker Queen), Team 1), 8, Team 2, Off), Event Player, Stunned, 3);
+		End;
+		Wait(10, Ignore Condition);
+		Allow Button(Players On Hero(Hero(Junker Queen), Team 1), Button(Ability 1));
+	}
+}
+
+rule("JUNKER QUEEN Ultimate Charge [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		(Is Using Ultimate(Players On Hero(Hero(Junker Queen), Team 1)) == True) == True;
+		Distance Between(Event Player, Position Of(Players On Hero(Hero(Junker Queen), Team 1))) <= 3;
+	}
+
+	actions
+	{
+		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 120);
 	}
 }
 
@@ -3700,7 +4338,7 @@ rule("LUCIO Ultimate Epic Bass Drop")
 	}
 }
 
-rule("MAUGA Super Charge [Added by Arkhanglesk#11200]")
+rule("MAUGA Charge [Added by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3712,20 +4350,17 @@ rule("MAUGA Super Charge [Added by Arkhanglesk#11200]")
 	conditions
 	{
 		Ability Cooldown(Players On Hero(Hero(Mauga), Team 1), Button(Ability 1)) == 0;
-		(Is Button Held(Players On Hero(Hero(Mauga), Team 1), Button(Ability 1)) == True) == True;
+		(Is Using Ability 1(Players On Hero(Hero(Mauga), Team 1)) == True) == True;
 		Distance Between(Event Player, Position Of(Players On Hero(Hero(Mauga), Team 1))) <= 3;
 	}
 
 	actions
 	{
-		disabled Set Move Speed(Event Player, Players On Hero(Hero(Mauga), Team 1).MOVEMENT + 200);
 		Apply Impulse(Players Within Radius(Event Player, 2, Team 2, Off), Direction From Angles(Horizontal Angle From Direction(
 			Direction Towards(Event Player, Players Within Radius(Event Player, 2, Team 2, Off))), -15), 15, To World,
 			Cancel Contrary Motion);
-		disabled Damage(Players Within Radius(Event Player, 2, Team 2, Off), Event Player, 50);
+		Damage(Players Within Radius(Event Player, 2, Team 2, Off), Players On Hero(Hero(Mauga), Team 1), 50);
 		Set Status(Players Within Radius(Event Player, 2, Team 2, Off), Event Player, Knocked Down, 2);
-		disabled Wait(2, Ignore Condition);
-		disabled Set Move Speed(Players On Hero(Hero(Mauga), Team 1), Event Player.MOVEMENT);
 	}
 }
 
@@ -3745,6 +4380,7 @@ rule("MCCREE Phasing Roll")
 
 	actions
 	{
+		"Changed Roll CD to 3 secs. When Roll CD=0%, spamming this has caused workshop overload/server crashes."
 		Set Status(Event Player, Null, Phased Out, 1);
 		Heal(Event Player, Null, Max Health(Event Player) * 0.050);
 		Wait(0.250, Ignore Condition);
@@ -4095,20 +4731,21 @@ rule("MOIRA Ultimate Coalescence Bomb Activation [Broken in OW2; fixed and updat
 	{
 		Skip If(Is In Spawn Room(Event Player), 1);
 		Small Message(Event Player, Custom String("{0} I must remain within line of sight of the source.", Hero Icon String(Hero(Moira))));
-		Set Invisible(Event Player, Enemies);
+		Set Status(Event Player, Null, Phased Out, 10);
 		Event Player.T = 0;
 		Event Player.U = Ray Cast Hit Position(Eye Position(Event Player), 30 * Facing Direction Of(Event Player) + Eye Position(
 			Event Player), All Players(Team 2), Event Player, False) - 3 * Facing Direction Of(Event Player);
 		Wait(0.100, Ignore Condition);
 		Start Facing(Event Player, Vector Towards(Event Player, Event Player.U + Vector(0, -1.400, 0)), 1000, To World,
 			Direction and Turn Rate);
+		"Reworked to save server resources. See Moira HUD for more details."
 		Chase Player Variable At Rate(Event Player, T, 100, 10, Destination and Rate);
 		Event Player.R = 1;
 		Event Player.Flight = True;
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb Deactivation")
+rule("MOIRA Ultimate Coalescence Bomb Deactivation [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4147,7 +4784,7 @@ rule("MOIRA Ultimate Coalescence Bomb Deactivation")
 		Stop Facing(Event Player);
 		Stop Camera(Event Player);
 		Allow Button(Event Player, Button(Ultimate));
-		Set Invisible(Event Player, None);
+		Set Status(Event Player, Null, Phased Out, 0.500);
 	}
 }
 
@@ -4179,7 +4816,7 @@ rule("MOIRA Ultimate Coalescence Bomb Healing and Damage LOOP")
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb Explosion at 100")
+rule("MOIRA Ultimate Coalescence Bomb Explosion at 100 [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4199,11 +4836,11 @@ rule("MOIRA Ultimate Coalescence Bomb Explosion at 100")
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} My will made real.", Hero Icon String(Hero(Moira))));
 		Wait(1, Ignore Condition);
-		Set Invisible(Event Player, None);
+		Set Status(Event Player, Null, Phased Out, 0.500);
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF on Death")
+rule("MOIRA Ultimate Coalescence Bomb OFF on Death [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4222,11 +4859,11 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Death")
 	{
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} Lost... focus...", Hero Icon String(Hero(Moira))));
-		Set Invisible(Event Player, None);
+		Set Status(Event Player, Null, Phased Out, 0.500);
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF on Line of Sight")
+rule("MOIRA Ultimate Coalescence Bomb OFF on Line of Sight [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4245,11 +4882,11 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Line of Sight")
 	{
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} I lost sight of the source...", Hero Icon String(Hero(Moira))));
-		Set Invisible(Event Player, None);
+		Set Status(Event Player, Null, Phased Out, 0.500);
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF on Distance")
+rule("MOIRA Ultimate Coalescence Bomb OFF on Distance [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4268,11 +4905,11 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Distance")
 	{
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} I got too far from the source...", Hero Icon String(Hero(Moira))));
-		Set Invisible(Event Player, None);
+		Set Status(Event Player, Null, Phased Out, 0.500);
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF on Interruption")
+rule("MOIRA Ultimate Coalescence Bomb OFF on Interruption [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4293,7 +4930,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Interruption")
 		Abort If Condition Is False;
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} Lost concentration...", Hero Icon String(Hero(Moira))));
-		Set Invisible(Event Player, None);
+		Set Status(Event Player, Null, Phased Out, 0.500);
 	}
 }
 
@@ -4319,7 +4956,7 @@ disabled rule("MOIRA Ultimate Coalescence Bomb OFF on Button Press [Disabled by 
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF in Spawn Room")
+rule("MOIRA Ultimate Coalescence Bomb OFF in Spawn Room [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4338,6 +4975,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF in Spawn Room")
 	{
 		Small Message(Event Player, Custom String("{0} I can't use Coalescence Bomb here.", Hero Icon String(Hero(Moira))));
 		Set Status(Event Player, Null, Hacked, 1);
+		Set Status(Event Player, Null, Phased Out, 0.500);
 		Event Player.R = 2;
 	}
 }
@@ -4672,27 +5310,6 @@ rule("REAPER Shadow Dash")
 	}
 }
 
-rule("REINHARDT Scorching Wave")
-{
-	event
-	{
-		Player Dealt Damage;
-		Team 1;
-		Reinhardt;
-	}
-
-	conditions
-	{
-		Event Ability == Button(Ability 2);
-	}
-
-	actions
-	{
-		Set Status(Victim, Null, Burning, 3);
-		Start Damage Over Time(Victim, Event Player, 3, Max Health(Victim) * 0.050);
-	}
-}
-
 rule("REINHARDT Shield Heal")
 {
 	event
@@ -4733,6 +5350,27 @@ rule("REINHARDT Heal Message")
 	{
 		Small Message(Event Player, Custom String("{0} {1} Healed", Ability Icon String(Hero(Reinhardt), Button(Secondary Fire)),
 			Round To Integer(Event Healing, To Nearest)));
+	}
+}
+
+rule("REINHARDT Scorching Wave")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Reinhardt;
+	}
+
+	conditions
+	{
+		Event Ability == Button(Ability 2);
+	}
+
+	actions
+	{
+		Set Status(Victim, Null, Burning, 3);
+		Start Damage Over Time(Victim, Event Player, 3, Max Health(Victim) * 0.050);
 	}
 }
 
@@ -4779,7 +5417,7 @@ rule("REINHARDT Sonic charge off")
 	}
 }
 
-rule("ROADHOG Asthmatic Trample [Broken after 11/4/2023 Hog update; fixed by Arkhanglesk#11200]")
+rule("ROADHOG Asthmatic Trample [Broken after Nov-4-2023 Hog update; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4799,7 +5437,6 @@ rule("ROADHOG Asthmatic Trample [Broken after 11/4/2023 Hog update; fixed by Ark
 
 	actions
 	{
-		Wait(0.250, Ignore Condition);
 		Set Move Speed(Event Player, Event Player.MOVEMENT + 100);
 		"Broken after 11/4/2023 Hog update"
 		disabled Start Forcing Throttle(Event Player, 1, 1, 0, 0, 0, 0.500);
@@ -5096,7 +5733,7 @@ rule("SOJOURN Rocket Slide [Added by Arkhanglesk#11200]")
 	conditions
 	{
 		Ability Cooldown(Players On Hero(Hero(Sojourn), Team 1), Button(Ability 1)) == 0;
-		(Is Button Held(Players On Hero(Hero(Sojourn), Team 1), Button(Ability 1)) == True) == True;
+		(Is Using Ability 1(Players On Hero(Hero(Sojourn), Team 1)) == True) == True;
 		Distance Between(Event Player, Position Of(Players On Hero(Hero(Sojourn), Team 1))) <= 2;
 	}
 
@@ -5107,6 +5744,36 @@ rule("SOJOURN Rocket Slide [Added by Arkhanglesk#11200]")
 			Cancel Contrary Motion);
 		Set Status(Players Within Radius(Event Player, 2, Team 2, Off), Event Player, Knocked Down, 2);
 		Wait(2, Ignore Condition);
+	}
+}
+
+rule("SOJOURN Super Rail Gun [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Sojourn;
+	}
+
+	conditions
+	{
+		Is Using Ultimate(Event Player) == True;
+		Is Firing Secondary(Event Player) == True;
+	}
+
+	actions
+	{
+		If(Is In View Angle(Event Player, Player Closest To Reticle(Event Player, Team 2) + Vector(0, -0.500, 0), 3) == True);
+			disabled If(Is In View Angle(Event Player, Player Closest To Reticle(Event Player, Team 2) + Vector(0, -0.500, 0), 3)
+				== True && Event Player.R > 0);
+			Play Effect(All Players(All Teams), Good Explosion, Color(Blue), Player Closest To Reticle(Event Player, Team 2), 15);
+			Play Effect(All Players(All Teams), Ring Explosion, Color(Blue), Player Closest To Reticle(Event Player, Team 2), 15);
+			Play Effect(All Players(All Teams), Ring Explosion Sound, Color(Blue), Event Player, 200);
+			Kill(Player Closest To Reticle(Event Player, Team 2), Event Player);
+			Kill(Ray Cast Hit Player(Eye Position(Event Player), 100 * Facing Direction Of(Event Player) + Eye Position(Event Player),
+				All Players(Team 2), Event Player, False), Event Player);
+		End;
 	}
 }
 
@@ -5214,7 +5881,7 @@ rule("SOMBRA Ultimate Rooting Hack")
 	}
 }
 
-rule("SOMBRA Stun hack")
+rule("SOMBRA Stun Hack")
 {
 	event
 	{
@@ -6477,8 +7144,8 @@ rule("Genji HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Custom String("死"), Custom String("DEAL DAMAGE TO MARK BOTS"), Custom String("MARK OF DEATH"),
-			Ability Icon String(Hero(Genji), Button(Ability 1)), Custom String("USE [ABILITY 1] TO DETONATE MARKS"), Custom String(
-			"DETONATE MARKS"), Ability Icon String(Hero(Genji), Button(Ultimate)), Custom String("DOUBLE MARKS ARE APPLIED"),
+			Ability Icon String(Hero(Genji), Button(Ability 1)), Custom String("[ABILITY 1] DETONATES MARKS"), Custom String(
+			"BAKUGŌ SA SERU"), Ability Icon String(Hero(Genji), Button(Ultimate)), Custom String("DOUBLE MARKS ARE APPLIED"),
 			Custom String("ULTIMATE: DRAGON'S CURSE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -6499,10 +7166,10 @@ rule("Hanzo HUD")
 		Event Player.R = False;
 		Event Player.HUDTextHidden = Array(False, True, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Icon String(Fire), Custom String("PRESS [SECONDARY] TO SWAP"), Custom String("FIRE ARROWS"),
-			Ability Icon String(Hero(Mei), Button(Ultimate)), Custom String("PRESS [SECONDARY] TO SWAP"), Custom String("FROST ARROWS"),
-			Ability Icon String(Hero(Hanzo), Button(Ability 1)), Custom String("[ABILITY 1] EXPLODES TARGET"), Custom String(
-			"DRAGON'S BREATH"));
+		Event Player.PlayerHUD = Array(Icon String(Fire), Custom String("[SECONDARY] SWAP TO FROST ARROWS"), Custom String("FIRE ARROWS"),
+			Ability Icon String(Hero(Mei), Button(Ultimate)), Custom String("[SECONDARY] SWAP TO FIRE ARROWS"), Custom String(
+			"FROST ARROWS"), Ability Icon String(Hero(Hanzo), Button(Ability 1)), Custom String("[ABILITY 1] EXPLODES TARGET"),
+			Custom String("DRAGON'S BREATH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6519,7 +7186,20 @@ rule("Illari HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		"Hide Scorched Earth effect beneath the ground."
+		disabled Event Player.U = Vector(0, -500, 0);
+		"Scorched Earth effect 1 of 2"
+		disabled Create Effect(All Players(All Teams), Ring, Color(Red), Event Player.U, 2, Visible To Position and Radius);
+		disabled Event Player.Q = Last Created Entity;
+		"Scorched Earth effect 2 of 2"
+		disabled Create Effect(All Players(All Teams), Sphere, Color(Aqua), Event Player.U, Event Player.T / 50, Visible To Position and Radius);
+		disabled Event Player.P = Last Created Entity;
+		Event Player.HUDTextHidden = Array(False, False, False, True);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ultimate)), Custom String("HEADSHOTS SET BOTS ABLAZE"),
+			Custom String("HEAT BLAST"), Ability Icon String(Hero(Lifeweaver), Button(Jump)), Custom String(
+			"[ABILITY 1] BURNING KNOCKBACK & HEAL"), Custom String("SOLAR FLARE"), Ability Icon String(Hero(Illari), Button(Ultimate)),
+			Custom String("MASSIVE INCENDIARY DAMAGE"), Custom String("ULTIMATE: BFG 9000"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6536,7 +7216,13 @@ rule("Junker Queen HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.R = False;
+		Event Player.HUDTextHidden = Array(False, True, False, True);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Lúcio), Button(Secondary Fire)), Custom String("[RELOAD] TO SWAP SHOUT"),
+			Custom String("SONIC TREMORS"), Ability Icon String(Hero(Junker Queen), Button(Ability 1)), Custom String(
+			"[RELOAD] TO SWAP SHOUT"), Custom String("BANSHEE SCREAM"), Ability Icon String(Hero(Hanzo), Button(Ability 1)), Custom String(
+			"EVISCERATE ALL BOTS IN YOUR PATH"), Custom String("ULTIMATE: BUSHWHACK"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6580,7 +7266,7 @@ rule("Junkrat HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, False);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Icon String(Happy), Custom String("PRESS [INTERACT] TO TROLL FOR $1000"), Custom String(
-			"CHAOS ROULETTE"), Icon String(Skull), Custom String("PLAYER DEATHS EMPOWER TOTAL MAYHEM"), Custom String("MAXIMUM MAYHEM"),
+			"CHAOS ROULETTE"), Icon String(Skull), Custom String("YOUR DEATHS EMPOWER TOTAL MAYHEM"), Custom String("MAXIMUM MAYHEM"),
 			Ability Icon String(Hero(Junkrat), Button(Ultimate)), Custom String("PHASED-OUT AND 150% SPEED"), Custom String(
 			"SUPER RIP-TIRE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
@@ -6667,8 +7353,8 @@ rule("Mauga HUD [Added by Arkhanglesk#11200]")
 		Event Player.HUDTextHidden = Array(False, True, True, True);
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String(
-			"[ABILITY 1] HOLD TO CLEAR A PATH", Ability Icon String(Hero(Mauga), Button(Ability 1))), Custom String("BUMRUSH"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String("[ABILITY 1] UNSTOPPABLE CHARGE",
+			Ability Icon String(Hero(Mauga), Button(Ability 1))), Custom String("BUMRUSH"));
 	}
 }
 
@@ -6691,7 +7377,7 @@ rule("McCree HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ability 1)), Custom String("HEALS AND AVOIDS DAMAGE"),
-			Custom String("PHASING ROLL"), Icon String(Arrow: Up), Custom String("MASSIVE DAMAGE AGAINST AIRBORNE TARGETS"), Custom String(
+			Custom String("PHASING ROLL"), Icon String(Arrow: Up), Custom String("MASSIVE DAMAGE VS AIRBORNE TARGETS"), Custom String(
 			"HAT TRICK"), Ability Icon String(Hero(Cassidy), Button(Ultimate)), Custom String("ACTIVATE THEN WAIT FOR THE MESSAGE"),
 			Custom String("ULTIMATE: SHOWDOWN"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
@@ -6800,9 +7486,9 @@ rule("Orisa HUD [Updated for OW2 rework by Arkhanglesk#11200]")
 		Chase Player Variable At Rate(Event Player, T, 100, 3, None);
 		Event Player.HUDTextHidden = Array(False, False, True, False);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String(
-			"PRESS [MELEE] TO KNOCKBACK"), Custom String("ROCKET PUNCH"), Ability Icon String(Hero(Bastion), Button(Secondary Fire)),
-			Custom String("PRESS [ABILITY 1] TO HEAL 25% HP"), Custom String("FORTIFYING REPAIRS"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String("[MELEE] TO KNOCKBACK"),
+			Custom String("ROCKET PUNCH"), Ability Icon String(Hero(Soldier: 76), Button(Ability 2)), Custom String(
+			"[ABILITY 1] HEAL 25% HP"), Custom String("FORTIFYING REPAIRS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6976,12 +7662,12 @@ rule("Sojourn HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(False, True, True, True);
+		Event Player.HUDTextHidden = Array(False, False, True, True);
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Sojourn), Button(Ability 1)), Custom String(
-			"[ABILITY 1] Hold Slide to Trip Bots", Ability Icon String(Hero(Sojourn), Button(Ability 1))), Custom String(
-			"ROCKET BOOST SLIDE"));
+			"[ABILITY 1] SLIDE TO SWEEP BOTS"), Custom String("ROCKET BOOST SLIDE"), Ability Icon String(Hero(Sojourn), Button(
+			Secondary Fire)), Custom String("HIGH-IMPACT ROUNDS PENETRATE WALLS"), Custom String("ULTIMATE: SUPER RAILGUN"));
 	}
 }
 
@@ -7020,7 +7706,7 @@ rule("Sombra HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Sombra), Button(Secondary Fire)), Custom String(
-			"X2 DMG TO HACKED OR FLANKED BOTS"), Custom String("1337 HACKER"), Ability Icon String(Hero(Sombra), Button(Ability 1)),
+			"X2 DMG TO HACKED OR FLANKED BOTS"), Custom String("1337 HACKER"), Ability Icon String(Hero(Echo), Button(Ultimate)),
 			Custom String("AVOID DMG AND HEAL 10% HP/SEC"), Custom String("PHASED STEALTH"), Ability Icon String(Hero(Sombra), Button(
 			Ultimate)), Custom String("ROOT ALL BOTS AND GAIN INVISIBILITY"), Custom String("ULTIMATE: SUPER EMP"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
@@ -7217,10 +7903,10 @@ rule("Zenyatta HUD")
 		Set Projectile Speed(Event Player, 500);
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
-			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
-			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Primary Fire)), Custom String("[PRIMARY] AOE HEAL"),
+			Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] AOE DAMAGE"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(Ultimate)),
+			Custom String("MASSIVE AOE DMG & HEAL"), Custom String("ULTIMATE: YING-YANG"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7922,373 +8608,10 @@ rule("PLAYER Third Person During Ultimate OFF [Broken in OW2; updated by Arkhang
 	}
 }
 
-rule("SUPERBOT Enraged Kill Message")
-{
-	event
-	{
-		Player Dealt Final Blow;
-		Team 2;
-		All;
-	}
-
-	conditions
-	{
-		Event Player.SuperbotEnrageCounter > 5;
-	}
-
-	actions
-	{
-		Small Message(Victim, Custom String("{0} KILLED YOU WHILE ENRAGED", Hero Icon String(Hero Of(Event Player))));
-	}
-}
-
-disabled rule("SUPERBOTS Final Challenge ON (Control) [WIP - On hold, workshop load issues]")
+disabled rule("MAUGA Ultimate [Added by Arkhanglesk#11200; work in progress]")
 {
 	event
 	{
 		Ongoing - Global;
-	}
-
-	conditions
-	{
-		disabled Is Game In Progress == True;
-		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
-		disabled Control Mode Scoring Percentage(Team 1) > 20;
-		disabled Control Mode Scoring Percentage(Team 2) < 20;
-	}
-
-	actions
-	{
-		"Sets a random number to index 0 between 0 and 8."
-		disabled Global.ChallengeRoulette[0] = Random Integer(4, 8);
-		disabled Wait(0.020, Ignore Condition);
-		"If Index 0 is the same as Index 1, then it loops."
-		disabled Loop If(Global.ChallengeRoulette[0] == Global.ChallengeRoulette[1]);
-		"Once it stops being the same number, it will set 1 to whatever 0 is."
-		disabled Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
-		disabled Respawn(All Players(Team 2));
-		disabled Set Status(All Players(Team 2), Null, Rooted, 10);
-		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
-		disabled Wait(1, Ignore Condition);
-		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE: {0}", Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
-		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
-		disabled Wait(2, Ignore Condition);
-		disabled If(Global.ChallengeRoulette[0] == 2);
-		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("WHEN SEPARATED FROM OTHER TEAMMATES"));
-		disabled Else If(Global.ChallengeRoulette[0] == 3);
-		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("WHEN NEAR TEAMMATES"));
-		disabled Else If(Global.ChallengeRoulette[0] == 4);
-		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
-		disabled Wait(1, Ignore Condition);
-		disabled Else If(Global.ChallengeRoulette[0] == 5);
-		disabled Small Message(All Players(All Teams), Custom String("RESPAWN DISABLED FOR PLAYERS"));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("RESURRECTION STILL WORKS"));
-		disabled Else If(Global.ChallengeRoulette[0] == 6);
-		disabled Small Message(All Players(All Teams), Custom String("BOTS HAVE 99% ARMOR WHILE MOVING"));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("DISABLE THEM TO KILL THEM"));
-		disabled Else If(Global.ChallengeRoulette[0] == 7);
-		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS MOVE AT 500% SPEED"));
-		disabled Wait(1, Ignore Condition);
-		disabled Else If(Global.ChallengeRoulette[0] == 8);
-		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS ARE HEAVY, FAST AND..."));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("...HAVE 25% ARMOR, GOOD LUCK!"));
-		disabled End;
-		disabled Wait(5, Ignore Condition);
-		disabled Set Ultimate Charge(Players On Hero(Hero(Lúcio), Team 2), 50);
-	}
-}
-
-disabled rule("SUPERBOTS Final Challenge OFF (Control) [WIP - On hold, workshop load issues]")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
-		disabled Is Game In Progress == True;
-		disabled Control Mode Scoring Percentage(Team 2) > 20;
-	}
-
-	actions
-	{
-		disabled If(Global.ChallengeRoulette[0] == 5);
-		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE RESET"));
-		disabled Enable Built-In Game Mode Respawning(All Players(Team 1));
-		disabled Respawn(All Dead Players(All Teams));
-		disabled Else If(Global.ChallengeRoulette[0] == 6);
-		disabled Stop Damage Modification(Global.ChallengeDmgMod);
-		disabled Set Gravity(All Players(Team 2), 100);
-		disabled Else If(Global.ChallengeRoulette[0] == 7);
-		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
-		disabled Else If(Global.ChallengeRoulette[0] == 8);
-		disabled Stop Damage Modification(Global.ChallengeDmgMod);
-		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
-		disabled Set Gravity(All Players(Team 2), 100);
-		disabled End;
-		disabled Global.ChallengeRoulette[0] = 0;
-	}
-}
-
-rule("SUPERBOTS Final Challenge ON")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		Is Game In Progress == True;
-		Match Time < 61;
-		"If NOT Control map (disabled, workshop load)"
-		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False;
-	}
-
-	actions
-	{
-		"Sets a random number to index 0 between 0 and 8."
-		Global.ChallengeRoulette[0] = Random Integer(4, 8);
-		Wait(0.020, Ignore Condition);
-		"If Index 0 is the same as Index 1, then it loops."
-		Loop If(Global.ChallengeRoulette[0] == Global.ChallengeRoulette[1]);
-		"Once it stops being the same number, it will set 1 to whatever 0 is."
-		Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
-		Respawn(All Players(Team 2));
-		Set Status(All Players(Team 2), Null, Rooted, 10);
-		Small Message(All Players(All Teams), Custom String("  !!!ATTENTION!!!"));
-		Wait(1, Ignore Condition);
-		Big Message(All Players(All Teams), Custom String("OVERTIME CHALLENGE: {0}",
-			Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
-		Small Message(All Players(All Teams), Custom String("  !!!ATTENTION!!!"));
-		Wait(2, Ignore Condition);
-		If(Global.ChallengeRoulette[0] == 2);
-			Small Message(All Players(All Teams), Custom String(" PLAYERS TAKE DAMAGE OVER TIME"));
-			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String(" WHEN SEPARATED FROM OTHER TEAMMATES"));
-		Else If(Global.ChallengeRoulette[0] == 3);
-			Small Message(All Players(All Teams), Custom String(" PLAYERS TAKE DAMAGE OVER TIME"));
-			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String(" WHEN NEAR TEAMMATES"));
-		Else If(Global.ChallengeRoulette[0] == 4);
-			Small Message(All Players(All Teams), Custom String(" SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
-			Wait(1, Ignore Condition);
-		Else If(Global.ChallengeRoulette[0] == 5);
-			Small Message(All Players(All Teams), Custom String(" RESPAWN DISABLED FOR PLAYERS"));
-			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String(" RESURRECTION STILL WORKS"));
-		Else If(Global.ChallengeRoulette[0] == 6);
-			Small Message(All Players(All Teams), Custom String(" BOTS HAVE 99% ARMOR WHILE MOVING"));
-			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String(" DISABLE THEM TO KILL THEM"));
-		Else If(Global.ChallengeRoulette[0] == 7);
-			Small Message(All Players(All Teams), Custom String(" SUPERBOTS MOVE AT 500% SPEED"));
-			Wait(1, Ignore Condition);
-		Else If(Global.ChallengeRoulette[0] == 8);
-			Small Message(All Players(All Teams), Custom String(" SUPERBOTS ARE HEAVY, FAST AND..."));
-			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String(" ...HAVE 25% ARMOR, GOOD LUCK!"));
-		End;
-		Wait(5, Ignore Condition);
-		Set Ultimate Charge(Players On Hero(Hero(Lúcio), Team 2), 50);
-	}
-}
-
-rule("SUPERBOTS Final Challenge OFF")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		Is Game In Progress == True;
-		Match Time > 60;
-		"If NOT Control map (disabled, workshop load)"
-		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False;
-	}
-
-	actions
-	{
-		If(Global.ChallengeRoulette[0] == 5);
-			Big Message(All Players(All Teams), Custom String("OVERTIME CHALLENGE RESET"));
-			Enable Built-In Game Mode Respawning(All Players(Team 1));
-			Respawn(All Dead Players(All Teams));
-		Else If(Global.ChallengeRoulette[0] == 6);
-			Stop Damage Modification(Global.ChallengeDmgMod);
-			Set Gravity(All Players(Team 2), 100);
-		Else If(Global.ChallengeRoulette[0] == 7);
-			Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
-		Else If(Global.ChallengeRoulette[0] == 8);
-			Stop Damage Modification(Global.ChallengeDmgMod);
-			Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
-			Set Gravity(All Players(Team 2), 100);
-		End;
-		Global.ChallengeRoulette[0] = 0;
-	}
-}
-
-disabled rule("SUPERBOTS Final Challenge ([0] == 2) Separation Anxiety")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		All;
-	}
-
-	conditions
-	{
-		disabled Match Time < 30;
-		disabled Global.ChallengeRoulette[0] == 2;
-		disabled Is True For Any(All Living Players(Team 1), Distance Between(Event Player, Current Array Element) > 5) == True;
-	}
-
-	actions
-	{
-		disabled Damage(Event Player, Null, Max Health(Event Player) * 0.150);
-		disabled Wait(1, Ignore Condition);
-		disabled Loop If Condition Is True;
-	}
-}
-
-disabled rule("SUPERBOTS Final Challenge ([0] == 3) Social Distancing")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		All;
-	}
-
-	conditions
-	{
-		disabled Match Time < 30;
-		disabled Global.ChallengeRoulette[0] == 3;
-		disabled Is True For Any(All Living Players(Team 1), Distance Between(Event Player, Current Array Element) < 5) == True;
-	}
-
-	actions
-	{
-		disabled Damage(Event Player, Null, Max Health(Event Player) * 0.150);
-		disabled Wait(1, Ignore Condition);
-		disabled Loop If Condition Is True;
-	}
-}
-
-rule("SUPERBOTS Final Challenge ([0] == 4) Relentless")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 2;
-		All;
-	}
-
-	conditions
-	{
-		Match Time < 30;
-		Global.ChallengeRoulette[0] == 4;
-		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
-			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == True;
-	}
-
-	actions
-	{
-		Wait(1, Ignore Condition);
-		Start Rule(ClearAllStatus, Restart Rule);
-	}
-}
-
-rule("SUPERBOTS Final Challenge ([0] == 5) Sudden Death")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		Match Time < 30;
-		Global.ChallengeRoulette[0] == 5;
-	}
-
-	actions
-	{
-		Respawn(All Dead Players(Team 1));
-		Disable Built-In Game Mode Respawning(All Players(Team 1));
-	}
-}
-
-rule("SUPERBOTS Final Challenge ([0] == 6) Juggernaut")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		Match Time < 30;
-		Global.ChallengeRoulette[0] == 6;
-	}
-
-	actions
-	{
-		Start Damage Modification(Filtered Array(All Players(Team 2), Is Moving(Current Array Element) == True), All Players(Team 1), 1,
-			Receivers Damagers and Damage Percent);
-		Global.ChallengeDmgMod = Last Damage Modification ID;
-		Set Gravity(All Players(Team 2), 500);
-	}
-}
-
-rule("SUPERBOTS Final Challenge ([0] == 7) Swarm")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		Match Time < 30;
-		Global.ChallengeRoulette[0] == 7;
-	}
-
-	actions
-	{
-		Set Move Speed(All Players(Team 2), 500);
-	}
-}
-
-rule("SUPERBOTS Final Challenge ([0] == 8) Apotheosis")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		Match Time < 30;
-		Global.ChallengeRoulette[0] == 8;
-	}
-
-	actions
-	{
-		Start Damage Modification(All Players(Team 2), All Players(Team 1), 75, Receivers Damagers and Damage Percent);
-		Global.ChallengeDmgMod = Last Damage Modification ID;
-		Set Gravity(All Players(Team 2), 500);
-		Set Move Speed(All Players(Team 2), 300);
 	}
 }
