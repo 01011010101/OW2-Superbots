@@ -159,8 +159,8 @@ settings
 
 			Doomfist
 			{
-				Damage Dealt: 150%
-				Health: 175%
+				Damage Dealt: 120%
+				Health: 165%
 				Infinite Ultimate Duration: On
 				Meteor Strike Knockback Scalar: 150%
 				No Ammunition Requirement: On
@@ -1055,7 +1055,7 @@ rule("CREATED BY CEL#1115")
 
 	actions
 	{
-		disabled Disable Inspector Recording;
+		Disable Inspector Recording;
 		"Relic descriptions."
 		Global.RelicDescriptions = Array(Custom String("+200% HEALING DEALT/RECEIVED \r\n+50% DAMAGE AT FULL HP \r\n+10% HP/SEC"),
 			Custom String("+100% MOVEMENT SPEED \r\n+DAMAGE BASED ON SPEED \r\n-7 SECOND RESPAWN TIMER"), Custom String(
@@ -7703,7 +7703,7 @@ rule("Flying Toggle [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ]")
+rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ] - High server cost")
 {
 	event
 	{
@@ -7721,7 +7721,8 @@ rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ]
 	actions
 	{
 		Set Gravity(Event Player, 0);
-		disabled Set Move Speed(Event Player, 0);
+		Event Player.MOVEMENT -= 125;
+		Set Move Speed(Event Player, Event Player.MOVEMENT);
 		While(Event Player.Flight && Is Alive(Event Player));
 			"If the player is giving any movement input"
 			If(X Component Of(Throttle Of(Event Player)) * -1 * Normalize(Cross Product(Facing Direction Of(Event Player), Up))
@@ -7765,7 +7766,8 @@ rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ]
 			Wait(0.016, Ignore Condition);
 		End;
 		Set Gravity(Event Player, 100);
-		disabled Set Move Speed(Event Player, 100);
+		Event Player.MOVEMENT += 125;
+		Set Move Speed(Event Player, Event Player.MOVEMENT);
 	}
 }
 
