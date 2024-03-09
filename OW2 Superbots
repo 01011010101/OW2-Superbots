@@ -116,7 +116,7 @@ settings
 			{
 				A-36 Tactical Grenade Cooldown Time: 10%
 				A-36 Tactical Grenade Knockback Scalar: 150%
-				Damage Dealt: 180%
+				Damage Dealt: 155%
 				Health: 150%
 				No Ammunition Requirement: On
 				Reconfigure Cooldown Time: 0%
@@ -231,7 +231,7 @@ settings
 			Junkrat
 			{
 				Concussion Mine Cooldown Time: 50%
-				Damage Dealt: 160%
+				Damage Dealt: 150%
 				Health: 350%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat RIP-Tire: 25%
@@ -242,11 +242,13 @@ settings
 			{
 				Damage Dealt: 150%
 				Healing Dealt: 300%
+				Health: 125%
 				No Ammunition Requirement: On
 				Projectile Speed: 500%
 				Protection Suzu Cooldown Time: 25%
-				Swift Step Cooldown Time: 25%
+				Swift Step Cooldown Time: 50%
 				Swift Step Distance Scalar: 300%
+				Ultimate Generation - Combat Kitsune Rush: 50%
 			}
 
 			Lifeweaver
@@ -278,8 +280,8 @@ settings
 			Mauga
 			{
 				Cardiac Overdrive Cooldown Time: 75%
-				Damage Dealt: 150%
-				Health: 185%
+				Damage Dealt: 145%
+				Health: 180%
 				Incendiary Chaingun Ignite Rate: 150%
 				No Ammunition Requirement: On
 				Overrun Cooldown Time: 50%
@@ -291,7 +293,6 @@ settings
 			Mei
 			{
 				Cryo-Freeze Cooldown Time: 75%
-				Damage Dealt: 105%
 				Freeze Stacking: On
 				Health: 150%
 				No Ammunition Requirement: On
@@ -331,7 +332,7 @@ settings
 
 			Orisa
 			{
-				Damage Dealt: 145%
+				Damage Dealt: 140%
 				Energy Javelin Cooldown Time: 70%
 				Fortify Cooldown Time: 90%
 				Health: 150%
@@ -366,9 +367,9 @@ settings
 
 			Reaper
 			{
-				Damage Dealt: 160%
+				Damage Dealt: 155%
 				Healing Dealt: 200%
-				Health: 275%
+				Health: 250%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Death Blossom: 5%
 				Wraith Form Cooldown Time: 50%
@@ -412,7 +413,7 @@ settings
 
 			Sojourn
 			{
-				Damage Dealt: 165%
+				Damage Dealt: 155%
 				Disruptor Shot Cooldown Time: 25%
 				Health: 275%
 				No Ammunition Requirement: On
@@ -436,7 +437,7 @@ settings
 
 			Sombra
 			{
-				Damage Dealt: 165%
+				Damage Dealt: 150%
 				Health: 150%
 				No Ammunition Requirement: On
 				Translocator Cooldown Time: 50%
@@ -841,6 +842,7 @@ settings
 				Damage Dealt: 160%
 				Health: 500%
 				Power Slide Cooldown Time: 35%
+				Projectile Speed: 150%
 				Ultimate Generation - Combat Overclock: 5%
 				Ultimate Generation - Passive Overclock: 500%
 			}
@@ -961,7 +963,6 @@ settings
 	{
 		Buff Status Effects
 		Buff and Debuff Sounds
-		Spawn More Dummy Bots
 	}
 }
 
@@ -1062,7 +1063,7 @@ rule("CREATED BY CEL#1115")
 	}
 }
 
-rule("BOT CHECK 1")
+rule("BOT CHECK")
 {
 	event
 	{
@@ -1082,31 +1083,6 @@ rule("BOT CHECK 1")
 			Wait(10, Abort When False);
 			Declare Match Draw;
 		End;
-	}
-}
-
-rule("BOT CHECK 2")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		All;
-	}
-
-	conditions
-	{
-		Number Of Players(Team 1) < 2;
-		Is In Setup == True;
-	}
-
-	actions
-	{
-		Wait(5, Ignore Condition);
-		If(Custom String("{0}", Host Player) != Global.Ark);
-			Big Message(All Players(All Teams), Custom String("ERROR: REQUIRES ONLY ONE LUCIO BOT"));
-			disabled Big Message(All Players(Team Of(Event Player)), Custom String("{0} {1}", String("Critical"), String("Failure")));
-			Declare Match Draw;
 	}
 }
 
@@ -1314,6 +1290,31 @@ disabled rule("DEBUG HUD (Server Load) [Added by Arkhanglesk#11200] - High serve
 			"Server Load Peak (Max/2s)"
 			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (MAX/2s)", Server Load Peak), Null, Right, 3, Color(
 				White), Color(White), Color(White), Visible To and String, Default Visibility);
+	}
+}
+
+rule("HOST HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		Number Of Players(Team 1) < 2;
+		Is In Setup == True;
+	}
+
+	actions
+	{
+		Wait(5, Ignore Condition);
+		If(Custom String("{0}", Host Player) != Global.Ark);
+			Big Message(All Players(All Teams), Custom String("ERROR: REQUIRES ONLY ONE LUCIO BOT"));
+			disabled Big Message(All Players(Team Of(Event Player)), Custom String("{0} {1}", String("Critical"), String("Failure")));
+			Declare Match Draw;
 	}
 }
 
@@ -1720,6 +1721,7 @@ rule("SUPERBOTS Names (R-Z) [Added by Arkhanglesk#11200]")
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Soldier: 76), Team 2), Custom String("Soldier: 76"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Sombra), Team 2), Custom String("Sombra"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Symmetra), Team 2), Custom String("Symmetra"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Torbjörn), Team 2), Custom String("Torbjörn"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Tracer), Team 2), Custom String("Tracer"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Widowmaker), Team 2), Custom String("Widowmaker"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Winston), Team 2), Custom String("Winston"));
@@ -3826,11 +3828,11 @@ rule("ILLARI Ultimate BFG 9000 [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Damage(Victim, Event Player, 65);
-		Set Status(Victim, Null, Burning, 5);
+		Damage(Victim, Event Player, 85);
+		Set Status(Victim, Event Player, Burning, 5);
 		Start Damage Over Time(Victim, Event Player, 5, 1);
-		Wait(5, Ignore Condition);
-		Stop All Damage Over Time(Victim);
+		disabled Wait(5, Ignore Condition);
+		disabled Stop All Damage Over Time(Victim);
 		Set Ultimate Ability Enabled(Event Player, True);
 	}
 }
@@ -4578,7 +4580,7 @@ rule("MEI Brain Freeze")
 	actions
 	{
 		Set Status(Victim, Event Player, Frozen, 4);
-		Damage(Victim, Event Player, Max Health(Event Player) * 0.250);
+		Damage(Victim, Event Player, Max Health(Event Player) * 0.200);
 		Wait(0.700, Ignore Condition);
 	}
 }
