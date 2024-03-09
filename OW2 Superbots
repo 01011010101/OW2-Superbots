@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Feb 22, 2024: 36 of 39 heroes updated."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Feb 27, 2024: 38 of 39 heroes updated."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -10,6 +10,7 @@ settings
 	{
 		Allow Players Who Are In Queue: Yes
 		Map Rotation: After A Game
+		Max Spectators: 4
 		Max Team 1 Players: 4
 		Max Team 2 Players: 6
 		Return To Lobby: Never
@@ -92,7 +93,7 @@ settings
 				Coach Gun Cooldown Time: 50%
 				Coach Gun Knockback Scalar Enemy: 200%
 				Coach Gun Knockback Scalar Self: 200%
-				Damage Dealt: 170%
+				Damage Dealt: 165%
 				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
 				Health: 150%
@@ -114,21 +115,20 @@ settings
 
 			Bastion
 			{
-				A-36 Tactical Grenade Cooldown Time: 10%
-				A-36 Tactical Grenade Knockback Scalar: 150%
-				Damage Dealt: 155%
+				A-36 Tactical Grenade Cooldown Time: 40%
+				A-36 Tactical Grenade Knockback Scalar: 115%
+				Damage Dealt: 75%
 				Health: 150%
 				No Ammunition Requirement: On
 				Reconfigure Cooldown Time: 0%
-				Ultimate Duration: 500%
-				Ultimate Generation - Combat Configuration: Artillery: 3%
+				Ultimate Generation - Combat Configuration: Artillery: 5%
 			}
 
 			Brigitte
 			{
 				Barrier Shield Cooldown Time: 0%
 				Barrier Shield Recharge Rate: 500%
-				Damage Dealt: 145%
+				Damage Dealt: 140%
 				Health: 250%
 				Repair Pack Cooldown Time: 35%
 				Shield Bash Cooldown Time: 50%
@@ -172,7 +172,7 @@ settings
 
 			Echo
 			{
-				Damage Dealt: 180%
+				Damage Dealt: 175%
 				Flight Cooldown Time: 30%
 				Focusing Beam Cooldown Time: 160%
 				Health: 135%
@@ -194,7 +194,7 @@ settings
 
 			Hanzo
 			{
-				Damage Dealt: 135%
+				Damage Dealt: 130%
 				Lunge Cooldown Time: 25%
 				Lunge Distance Scalar: 200%
 				Sonic Arrow Cooldown Time: 50%
@@ -213,7 +213,6 @@ settings
 				Movement Gravity: 90%
 				No Ammunition Requirement: On
 				Outburst Cooldown Time: 50%
-				Solar Energy Maximum: 500%
 				Ultimate Generation - Combat Captive Sun: 50%
 			}
 
@@ -284,7 +283,7 @@ settings
 				Health: 180%
 				Incendiary Chaingun Ignite Rate: 150%
 				No Ammunition Requirement: On
-				Overrun Cooldown Time: 50%
+				Overrun Cooldown Time: 65%
 				Overrun Knockback: 110%
 				Ultimate Duration: 200%
 				Ultimate Generation - Combat Cage Fight: 10%
@@ -334,12 +333,10 @@ settings
 			{
 				Damage Dealt: 140%
 				Energy Javelin Cooldown Time: 70%
-				Fortify Cooldown Time: 90%
 				Health: 150%
-				Javelin Spin Cooldown Time: 50%
+				Javelin Spin Cooldown Time: 80%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Terra Surge: 50%
-				Ultimate Generation - Passive Terra Surge: 50%
 			}
 
 			Pharah
@@ -356,9 +353,8 @@ settings
 			{
 				Damage Dealt: 110%
 				Health: 150%
-				Nemesis Form Cooldown Time: 25%
+				Nemesis Form Cooldown Time: 50%
 				No Ammunition Requirement: On
-				Projectile Gravity: 110%
 				Ravenous Vortex Cooldown Time: 25%
 				Ultimate Duration: 200%
 				Ultimate Generation - Combat Annihilation: 50%
@@ -382,7 +378,7 @@ settings
 				Charge Knockback Scalar: 120%
 				Health: 160%
 				Rocket Hammer Knockback Scalar: 50%
-				Ultimate Generation - Combat Earthshatter: 10%
+				Ultimate Generation - Combat Earthshatter: 5%
 			}
 
 			Roadhog
@@ -394,7 +390,7 @@ settings
 				No Ammunition Requirement: On
 				Take a Breather Cooldown Time: 200%
 				Take a Breather Maximum Time: 50%
-				Ultimate Generation - Combat Whole Hog: 50%
+				Ultimate Generation - Combat Whole Hog: 300%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -437,7 +433,7 @@ settings
 
 			Sombra
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 140%
 				Health: 150%
 				No Ammunition Requirement: On
 				Translocator Cooldown Time: 50%
@@ -657,19 +653,6 @@ settings
 				Ultimate Generation - Passive Dragonstrike: 500%
 			}
 
-			Illari
-			{
-				Ammunition Clip Size Scalar: 200%
-				Damage Dealt: 160%
-				Healing Dealt: 400%
-				Healing Pylon Cooldown Time: 50%
-				Health: 500%
-				Movement Gravity: 90%
-				Outburst Cooldown Time: 25%
-				Ultimate Generation - Combat Captive Sun: 400%
-				Ultimate Generation - Passive Captive Sun: 300%
-			}
-
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
@@ -766,12 +749,15 @@ settings
 			{
 				Ammunition Clip Size Scalar: 200%
 				Damage Dealt: 160%
-				Energy Javelin Cooldown Time: 70%
-				Fortify Cooldown Time: 90%
 				Health: 475%
-				Javelin Spin Cooldown Time: 50%
-				Ultimate Generation - Combat Terra Surge: 400%
-				Ultimate Generation - Passive Terra Surge: 300%
+				Javelin Spin Cooldown Time: 80%
+				Ultimate Generation - Combat Terra Surge: 300%
+				Ultimate Generation - Passive Terra Surge: 500%
+			}
+
+			Pharah
+			{
+				Hover Jets Unlimited Fuel: On
 			}
 
 			Ramattra
@@ -806,22 +792,21 @@ settings
 				Health: 500%
 				Movement Gravity: 110%
 				Rocket Hammer Knockback Scalar: 50%
+				Ultimate Generation - Combat Earthshatter: 25%
 				Ultimate Generation - Passive Earthshatter: 500%
 			}
 
 			Roadhog
 			{
-				Chain Hook Cooldown Time: 150%
 				Damage Dealt: 200%
 				Healing Dealt: 200%
-				Health: 500%
+				Health: 475%
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Spawn With Ultimate Ready: On
 				Take a Breather Cooldown Time: 150%
-				Take a Breather Recharge Rate: 25%
-				Ultimate Generation - Combat Whole Hog: 200%
-				Ultimate Generation Whole Hog: 500%
+				Ultimate Generation - Combat Whole Hog: 300%
+				Ultimate Generation - Passive Whole Hog: 500%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -839,11 +824,11 @@ settings
 
 			Sojourn
 			{
+				Ammunition Clip Size Scalar: 200%
 				Damage Dealt: 160%
 				Health: 500%
-				Power Slide Cooldown Time: 35%
-				Projectile Speed: 150%
-				Ultimate Generation - Combat Overclock: 5%
+				Power Slide Cooldown Time: 50%
+				Ultimate Duration: 200%
 				Ultimate Generation - Passive Overclock: 500%
 			}
 
@@ -1040,7 +1025,7 @@ rule("CREATED BY CEL#1115")
 
 	actions
 	{
-		Disable Inspector Recording;
+		disabled Disable Inspector Recording;
 		"Relic descriptions."
 		Global.RelicDescriptions = Array(Custom String("+200% HEALING DEALT/RECEIVED \r\n+50% DAMAGE AT FULL HP \r\n+10% HP/SEC"),
 			Custom String("+100% MOVEMENT SPEED \r\n+DAMAGE BASED ON SPEED \r\n-7 SECOND RESPAWN TIMER"), Custom String(
@@ -1054,11 +1039,10 @@ rule("CREATED BY CEL#1115")
 		Global.ChallengeRoulette = Array(Null, Null, Custom String("SEPARATION ANXIETY"), Custom String("SOCIAL DISTANCING"),
 			Custom String("RELENTLESS"), Custom String("SUDDEN DEATH"), Custom String("JUGGERNAUT"), Custom String("SWARM!"),
 			Custom String("APOTHEOSIS"));
-		"Control Maps (Disabled, workshop overload issues)"
+		"Control Maps (work in progress)"
 		disabled Global.ControlMaps = Array(Null, Null, Custom String("Antarctic Peninsula"), Custom String("Busan"), Custom String("Ilios"),
 			Custom String("Lijiang Tower"), Custom String("Lijiang Tower (Lunar New Year)"), Custom String("Nepal"), Custom String(
 			"Oasis"));
-		"Cel, update this (if you want to use it)."
 		Global.Ark = Custom String("Arkhangelsk");
 	}
 }
@@ -1136,6 +1120,8 @@ rule("SETUP PHASE")
 		"If not Control map (Disabled due to workshop load errors)"
 		disabled If(Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False);
 		Set Match Time(30);
+		"For testing"
+		disabled Set Match Time(5);
 		"If Control map"
 		disabled Else;
 		disabled Set Match Time(25);
@@ -1269,30 +1255,6 @@ rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
 	}
 }
 
-disabled rule("DEBUG HUD (Server Load) [Added by Arkhanglesk#11200] - High server cost")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Slot 0;
-	}
-
-	actions
-	{
-		If(Event Player == Host Player);
-			"Server Load (As this number approaches or exceeds 100, it becomes increasingly likely that the instance will be shut down because it is consuming too many resources)"
-			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load", Server Load), Null, Right, 1, Color(White), Color(
-				White), Color(White), Visible To and String, Default Visibility);
-			"Average Server Load"
-			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (AVG)", Server Load Average), Null, Right, 2, Color(
-				White), Color(White), Color(White), Visible To and String, Default Visibility);
-			"Server Load Peak (Max/2s)"
-			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (MAX/2s)", Server Load Peak), Null, Right, 3, Color(
-				White), Color(White), Color(White), Visible To and String, Default Visibility);
-	}
-}
-
 rule("HOST HUD")
 {
 	event
@@ -1315,6 +1277,31 @@ rule("HOST HUD")
 			Big Message(All Players(All Teams), Custom String("ERROR: REQUIRES ONLY ONE LUCIO BOT"));
 			disabled Big Message(All Players(Team Of(Event Player)), Custom String("{0} {1}", String("Critical"), String("Failure")));
 			Declare Match Draw;
+	}
+}
+
+disabled rule("DEBUG HUD [Added by Arkhanglesk#11200] - High server cost")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Slot 0;
+	}
+
+	actions
+	{
+		"As Server Load approaches or exceeds 100, it becomes increasingly likely that the instance will be shut down because it is consuming too many resources"
+		If(Event Player == Host Player);
+			"Server Load"
+			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load", Server Load), Null, Right, 1, Color(White), Color(
+				White), Color(White), Visible To and String, Default Visibility);
+			"Average Server Load"
+			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (AVG)", Server Load Average), Null, Right, 2, Color(
+				White), Color(White), Color(White), Visible To and String, Default Visibility);
+			"Server Load Peak (Max/2s)"
+			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (MAX/2s)", Server Load Peak), Null, Right, 3, Color(
+				White), Color(White), Color(White), Visible To and String, Default Visibility);
 	}
 }
 
@@ -1683,7 +1670,6 @@ rule("SUPERBOTS Names (A-O) [Added by Arkhanglesk#11200]")
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Doomfist), Team 2), Custom String("Doomfist"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Genji), Team 2), Custom String("Genji"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Hanzo), Team 2), Custom String("Hanzo"));
-		Start Forcing Dummy Bot Name(Players On Hero(Hero(Illari), Team 2), Custom String("Illari"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Junker Queen), Team 2), Custom String("Junker Queen"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Junkrat), Team 2), Custom String("Junkrat"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Kiriko), Team 2), Custom String("Kiriko"));
@@ -1715,7 +1701,7 @@ rule("SUPERBOTS Names (R-Z) [Added by Arkhanglesk#11200]")
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Ramattra), Team 2), Custom String("Ramattra"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Reaper), Team 2), Custom String("Reaper"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Reinhardt), Team 2), Custom String("Reinhardt"));
-		Start Forcing Dummy Bot Name(Players On Hero(Hero(Roadhog), Team 2), Custom String("Roadhog"));
+		disabled Start Forcing Dummy Bot Name(Players On Hero(Hero(Roadhog), Team 2), Custom String("Roadhog"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Sigma), Team 2), Custom String("Sigma"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Sojourn), Team 2), Custom String("Sojourn"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Soldier: 76), Team 2), Custom String("Soldier: 76"));
@@ -1749,7 +1735,7 @@ rule("SUPERBOT Enraged Kill Message")
 	}
 }
 
-disabled rule("SUPERBOTS Final Challenge ON (Control) [WIP - On hold, workshop load issues]")
+disabled rule("SUPERBOTS Final Challenge ON (Control) [Added by Arkhanglesk#11200; work in progress]")
 {
 	event
 	{
@@ -1812,7 +1798,7 @@ disabled rule("SUPERBOTS Final Challenge ON (Control) [WIP - On hold, workshop l
 	}
 }
 
-disabled rule("SUPERBOTS Final Challenge OFF (Control) [WIP - On hold, workshop load issues]")
+disabled rule("SUPERBOTS Final Challenge OFF (Control) [Added by Arkhanglesk#11200; work in progress]")
 {
 	event
 	{
@@ -1872,11 +1858,11 @@ rule("SUPERBOTS Final Challenge ON")
 		Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
 		Respawn(All Players(Team 2));
 		Set Status(All Players(Team 2), Null, Rooted, 10);
-		Small Message(All Players(All Teams), Custom String("  !!!ATTENTION!!!"));
+		Small Message(All Players(All Teams), Custom String(" !!!ATTENTION!!!"));
 		Wait(1, Ignore Condition);
 		Big Message(All Players(All Teams), Custom String("OVERTIME CHALLENGE: {0}",
 			Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
-		Small Message(All Players(All Teams), Custom String("  !!!ATTENTION!!!"));
+		Small Message(All Players(All Teams), Custom String(" !!!ATTENTION!!!"));
 		Wait(2, Ignore Condition);
 		If(Global.ChallengeRoulette[0] == 2);
 			Small Message(All Players(All Teams), Custom String(" PLAYERS TAKE DAMAGE OVER TIME"));
@@ -2530,7 +2516,7 @@ rule("SUPERBOTS Setup (Health, Movement, Effects and Icons) [Updated by Arkhangl
 	}
 }
 
-rule("SUPERBOTS Zarya Radiation Activation ON DEATH")
+rule("SUPERBOTS ZARYA Radiation Activation ON DEATH")
 {
 	event
 	{
@@ -2563,7 +2549,7 @@ rule("SUPERBOTS Zarya Radiation Activation ON DEATH")
 	}
 }
 
-rule("SUPERBOTS Zarya Radiation Damage")
+rule("SUPERBOTS ZARYA Radiation Damage")
 {
 	event
 	{
@@ -2589,7 +2575,7 @@ rule("SUPERBOTS Zarya Radiation Damage")
 	}
 }
 
-rule("SUPERBOTS Lucio Healing ON")
+rule("SUPERBOTS LUCIO Healing ON")
 {
 	event
 	{
@@ -2611,7 +2597,7 @@ rule("SUPERBOTS Lucio Healing ON")
 	}
 }
 
-rule("SUPERBOTS Lucio Healing OFF")
+rule("SUPERBOTS LUCIO Healing OFF")
 {
 	event
 	{
@@ -2633,7 +2619,7 @@ rule("SUPERBOTS Lucio Healing OFF")
 	}
 }
 
-rule("SUPERBOTS Reaper Ultimate 0.5 Sec Stun")
+rule("SUPERBOTS REAPER Ultimate 0.5 Sec Stun")
 {
 	event
 	{
@@ -3017,7 +3003,7 @@ rule("ASHE Explosive Small Rounds")
 	}
 }
 
-disabled rule("BAPTISTE Ultimate [Broken in OW2, need to fix]")
+disabled rule("BAPTISTE Ultimate [Broken in OW2 (rate-of-fire changes); disabled by Arkhanglesk#11200, needs rework]")
 {
 	event
 	{
@@ -3045,7 +3031,7 @@ disabled rule("BAPTISTE Ultimate [Broken in OW2, need to fix]")
 	}
 }
 
-disabled rule("BAPTISTE Ultimate Full-Auto [Broken in OW2, need to fix]")
+disabled rule("BAPTISTE Ultimate Full-Auto [Broken in OW2 (rate-of-fire changes); disabled by Arkhanglesk#11200, needs rework]")
 {
 	event
 	{
@@ -3120,7 +3106,7 @@ rule("BAPTISTE Grenade Shots")
 	}
 }
 
-disabled rule("BASTION Proton Cannon ON [Broken in OW2, need to fix]")
+rule("BASTION Auto Repair (Previously \"Laser\") [Broken in OW2, rework by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3131,67 +3117,135 @@ disabled rule("BASTION Proton Cannon ON [Broken in OW2, need to fix]")
 
 	conditions
 	{
-		Is Using Ultimate(Event Player) == True;
-		Event Player.HeroOfPlayer == Hero(Bastion);
+		Is Using Ability 1(Event Player) == True;
 	}
 
 	actions
 	{
-		Disallow Button(Event Player, Button(Primary Fire));
-		Small Message(Event Player, Custom String("{0}PROTON CANNON ENGAGED", Hero Icon String(Hero(Bastion))));
+		disabled Event Player.R = !Event Player.R;
+		disabled If(Event Player.R == False);
+		disabled Event Player.HUDTextHidden = Array(False, True, False, True);
+		disabled Small Message(Event Player, Custom String(" {0} Loaded: 50 Cal Rounds", Ability Icon String(Hero(Bastion), Button(Primary Fire))));
+		disabled Else If(Event Player.R == True);
+		disabled Event Player.HUDTextHidden = Array(True, False, False, True);
+		disabled Small Message(Event Player, Custom String(" {0} Loaded: Incendiary Rounds", Ability Icon String(Hero(Torbjörn), Button(
+			Ultimate))));
+		disabled End;
+		disabled Play Effect(Event Player, Buff Explosion Sound, Color(White), Event Player, 50);
+		disabled Wait(1, Ignore Condition);
+		Start Heal Over Time(Event Player, Null, 6, Max Health(Event Player) * 0.050);
 	}
 }
 
-disabled rule("BASTION Proton Cannon OFF [Broken in OW2, need to fix]")
+disabled rule("BASTION Ammo Effects [Added by Arkhanglesk#11200; work in progress]")
 {
 	event
 	{
-		Ongoing - Each Player;
+		Player Dealt Damage;
 		Team 1;
 		Bastion;
 	}
 
 	conditions
 	{
-		Is Using Ultimate(Event Player) == False;
-		Event Player.HeroOfPlayer == Hero(Bastion);
-	}
-
-	actions
-	{
-		Allow Button(Event Player, Button(Primary Fire));
-		Small Message(Event Player, Custom String("{0}RECHARGING...", Hero Icon String(Hero(Bastion))));
-	}
-}
-
-disabled rule("BASTION Proton Cannon Damage [Broken in OW2, need to fix]")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Bastion;
-	}
-
-	conditions
-	{
-		Is Using Ultimate(Event Player) == True;
+		Is Using Ability 1(Event Player) == True;
 		Is Button Held(Event Player, Button(Primary Fire)) == True;
-		Event Player.HeroOfPlayer == Hero(Bastion);
-		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
-			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
 	}
 
 	actions
 	{
-		Event Player.U = Ray Cast Hit Position(Eye Position(Event Player), 100 * Facing Direction Of(Event Player) + Eye Position(
-			Event Player), All Players(Team 2), Event Player, True);
-		Play Effect(All Players(All Teams), Bad Explosion, Color(Sky Blue), Event Player.U, 1);
-		Play Effect(All Players(All Teams), Ring Explosion Sound, Color(Sky Blue), Event Player.U, 50);
-		Damage(Players Within Radius(Event Player.U, 5, Team 2, Surfaces), Event Player, 5 * Global.SuperbotLevel + 5);
-		Wait(0.050, Ignore Condition);
-		Loop If Condition Is True;
-		Event Player.U = Event Player;
+		If(Event Player.R == True);
+			If(Has Status(Victim, Burning) == False);
+				Start Damage Over Time(Victim, Event Player, 2, 1);
+				Set Status(Victim, Event Player, Burning, 2);
+				Create Icon(Event Player, Victim, Fire, Visible To and Position, Color(Red), False);
+				Wait(2, Ignore Condition);
+				Destroy All Icons;
+			End;
+		Else If(Event Player.R == False);
+			Start Damage Modification(All Players(Team 2), Event Player, 100, Receivers Damagers and Damage Percent);
+		End;
+	}
+}
+
+rule("BASTION Flashbang [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Bastion;
+	}
+
+	conditions
+	{
+		Ability Cooldown(Event Player, Button(Secondary Fire)) > 0;
+	}
+
+	actions
+	{
+		Set Status(Victim, Event Player, Stunned, 1.500);
+	}
+}
+
+rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework by Arkhanglesk#11200; work in progress.]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Bastion;
+	}
+
+	conditions
+	{
+		Ultimate Charge Percent(Event Player) == 100;
+		Is Button Held(Event Player, Button(Ultimate)) == True;
+		Is Using Ability 1(Event Player) == False;
+	}
+
+	actions
+	{
+		Event Player.FullAutoFire = True;
+		Set Ultimate Charge(Event Player, 0);
+		Press Button(Event Player, Button(Ability 1));
+		If(Players Within Radius(Event Player, 10, Team 2, Surfaces) >= 5);
+			Small Message(Event Player, Custom String(" {0} MULTIPLE BOTS DETECTED", Ability Icon String(Hero(Cassidy), Button(Ultimate))));
+			Wait(1, Ignore Condition);
+			Small Message(Event Player, Custom String(" {0} ADVISE AGGRESSIVE SUSTAINED COUNTERFIRE", Ability Icon String(Hero(Baptiste),
+				Button(Ultimate))));
+			Wait(1, Ignore Condition);
+		Else;
+			Small Message(Event Player, Custom String(" {0} HIGH-VELOCITY ROUNDS LOADED", Ability Icon String(Hero(Sojourn), Button(
+				Secondary Fire))));
+			Wait(2, Ignore Condition);
+		End;
+		Wait(4, Ignore Condition);
+		Event Player.FullAutoFire = False;
+	}
+}
+
+rule("BASTION Ultimate High-Velocity Rounds [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Bastion;
+	}
+
+	conditions
+	{
+		Event Player.FullAutoFire == True;
+		Is Firing Primary(Event Player) == True;
+	}
+
+	actions
+	{
+		Abort If Condition Is False;
+		Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, Event Player.DAMAGE);
+		Wait(0.150, Ignore Condition);
+		Loop;
 	}
 }
 
@@ -3566,7 +3620,7 @@ rule("ECHO Ultimate Overdrive [Updated by Arkhanglesk#11200]")
 	}
 }
 
-disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire changes); fixed by Arkhanglesk#11200. Works, but not very fun.]")
+disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (rate-of-fire changes); fixed by Arkhanglesk#11200. Works, but not very fun.]")
 {
 	event
 	{
@@ -3803,7 +3857,7 @@ rule("ILLARI Heat Blast [Added by Arkhanglesk#11200]")
 	{
 		Set Status(Victim, Event Player, Burning, 2);
 		Start Damage Over Time(Victim, Event Player, 2, 5);
-		Wait(1, Ignore Condition);
+		disabled Wait(1, Ignore Condition);
 	}
 }
 
@@ -4313,16 +4367,16 @@ rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
 		If(Event Player.R == False);
 			Abort If Condition Is False;
 			Wait(Random Real(0.100, 0.250), Ignore Condition);
-			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 10);
+			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 12);
 			Loop;
 		Else If(Event Player.R == True);
 			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 1);
-			Start Damage Over Time(Player Closest To Reticle(Event Player, Team 2), Event Player, 2, 35);
+			Start Damage Over Time(Player Closest To Reticle(Event Player, Team 2), Event Player, 2, 50);
 		End;
 	}
 }
 
-disabled rule("KIRIKO Secondary [Added by Arkhanglesk#11200, work in progress]")
+disabled rule("KIRIKO Secondary Mark Targets for Genji [Added by Arkhanglesk#11200, work in progress]")
 {
 	event
 	{
@@ -4330,7 +4384,7 @@ disabled rule("KIRIKO Secondary [Added by Arkhanglesk#11200, work in progress]")
 	}
 }
 
-rule("KIRIKO Ultimate [Added by Arkhanglesk#11200]")
+rule("KIRIKO Ultimate Yokai Blast [Added by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4580,7 +4634,7 @@ rule("MEI Brain Freeze")
 	actions
 	{
 		Set Status(Victim, Event Player, Frozen, 4);
-		Damage(Victim, Event Player, Max Health(Event Player) * 0.200);
+		Damage(Victim, Event Player, Max Health(Event Player) * 0.150);
 		Wait(0.700, Ignore Condition);
 	}
 }
@@ -5211,7 +5265,7 @@ rule("PHARAH Fusion Reactor Bunker Buster")
 	}
 }
 
-rule("PHARAH Booster Dash ON")
+disabled rule("PHARAH Booster Dash ON [Broken after Feb-12-2024 update; disabled by Arkhanglesk#11200 - replaced by Jet Dash]")
 {
 	event
 	{
@@ -5241,7 +5295,7 @@ rule("PHARAH Booster Dash ON")
 	}
 }
 
-rule("PHARAH Booster Dash OFF")
+disabled rule("PHARAH Booster Dash ON [Broken after Feb-12-2024 update; disabled by Arkhanglesk#11200 - replaced by Jet Dash]")
 {
 	event
 	{
@@ -5264,6 +5318,45 @@ rule("PHARAH Booster Dash OFF")
 		Allow Button(Event Player, Button(Primary Fire));
 		Allow Button(Event Player, Button(Ability 2));
 		Wait(0.250, Ignore Condition);
+	}
+}
+
+rule("RAMATTRA Nemesis Void Punch [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Ramattra;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Event Ability == Button(Melee);
+		Is Using Ability 1(Event Player) == True;
+	}
+
+	actions
+	{
+		Set Status(Victim, Null, Knocked Down, 1);
+		Apply Impulse(Victim, Facing Direction Of(Event Player), Event Player.T + 50, To World, Cancel Contrary Motion);
+		Play Effect(All Players(All Teams), Bad Explosion, Color(Green), Victim, 1);
+		Play Effect(All Players(All Teams), Explosion Sound, Color(White), Event Player, 200);
+		If(Event Player.T == 100);
+			Wait(0.100, Ignore Condition);
+			Play Effect(All Players(All Teams), Bad Explosion, Color(Green), Victim, 3);
+			Play Effect(All Players(All Teams), Explosion Sound, Color(White), Event Player, 200);
+			Wait(0.100, Ignore Condition);
+			Play Effect(All Players(All Teams), Bad Explosion, Color(Green), Victim, 7);
+			Play Effect(All Players(All Teams), Explosion Sound, Color(White), Event Player, 200);
+			Wait(0.100, Ignore Condition);
+			Play Effect(All Players(All Teams), Bad Explosion, Color(Green), Victim, 20);
+			Play Effect(All Players(All Teams), Explosion Sound, Color(White), Event Player, 200);
+			Wait(0.100, Ignore Condition);
+			Damage(Victim, Event Player, Event Damage * 10);
+			Event Player.T = 0;
+		End;
 	}
 }
 
@@ -5828,6 +5921,37 @@ rule("SIGMA Stone Knockdown")
 	}
 }
 
+rule("SOJOURN Jump Jets Burn [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Sojourn;
+	}
+
+	conditions
+	{
+		Event Player.Q == 0;
+		Is Alive(Event Player) == True;
+		Ability Cooldown(Event Player, Button(Ability 1)) > 0;
+		Is Button Held(Event Player, Button(Jump)) == True;
+		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
+			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
+	}
+
+	actions
+	{
+		Play Effect(All Players(All Teams), Explosion Sound, Color(White), Event Player, 200);
+		Play Effect(All Players(All Teams), Ring Explosion, Color(Orange), Position Of(Event Player), 3);
+		Play Effect(All Players(All Teams), Bad Explosion, Color(Orange), Position Of(Event Player), 3);
+		Start Damage Over Time(Players Within Radius(Event Player, 6, Team 2, Off), Event Player, 30, 3);
+		Event Player.Q = 1;
+		Wait(3, Ignore Condition);
+		Event Player.Q = 0;
+	}
+}
+
 rule("SOJOURN Rocket Slide [Added by Arkhanglesk#11200]")
 {
 	event
@@ -5854,7 +5978,7 @@ rule("SOJOURN Rocket Slide [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("SOJOURN Super Rail Gun [Added by Arkhanglesk#11200]")
+rule("SOJOURN Super Railgun [Added by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -5978,11 +6102,11 @@ rule("SOMBRA Ultimate Rooting Hack")
 		Players Within Radius(Event Player, 15, Team 2, Surfaces).RootVariable = 1.500;
 		Chase Player Variable At Rate(Players Within Radius(Event Player, 15, Team 2, Off), RootVariable, 0, 0.150, Destination and Rate);
 		Set Invisible(Event Player, Enemies);
-		Small Message(Event Player, Custom String("{0} You are Invisible", Icon String(Eye)));
+		Small Message(Event Player, Custom String(" {0} You are Invisible", Icon String(Eye)));
 		Wait(11, Ignore Condition);
 		Stop Chasing Player Variable(All Players(Team 2), RootVariable);
 		Set Invisible(Event Player, None);
-		Small Message(Event Player, Custom String("{0} You are Visible", Icon String(Eye)));
+		Small Message(Event Player, Custom String(" {0} You are Visible", Icon String(Eye)));
 	}
 }
 
@@ -7125,15 +7249,21 @@ rule("Bastion HUD [Updated Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.U = Event Player;
-		Create Beam Effect(All Players(All Teams), Bad Beam, Event Player, Event Player.U, Color(Sky Blue),
-			Visible To Position and Radius);
-		Event Player.P = Last Created Entity;
-		disabled Event Player.HUDTextHidden = Array(False, True, True, True);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Disallow Button(Event Player, Button(Ultimate));
+		disabled Event Player.R = False;
+		disabled Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Ultimate)), Custom String(
-			"FIRES LASER THAT DEALS AREA DMG"), Custom String("ULTIMATE: PROTON CANNON"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] KNOCKBACK & STUNS"), Custom String("FLASHBANG"), Ability Icon String(Hero(Baptiste), Button(Ability 1)),
+			Custom String("[ABILITY 1] TANK MODE HEALS 35% HP"), Custom String("AUTO-REPAIRS"), Ability Icon String(Hero(Baptiste), Button(
+			Ultimate)), Custom String("ROUNDS PENETRATE WALLS"), Custom String("ULTIMATE: AP ROUNDS"));
+		disabled Event Player.HUDTextHidden = Array(False, True, False, True);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Primary Fire)), Custom String(
+			"[RELOAD] TO SWITCH MINIGUN AMMO"), Custom String(".50 BMG ROUNDS (+DMG)"), Ability Icon String(Hero(Torbjörn), Button(
+			Ultimate)), Custom String("[RELOAD] TO SWITCH MINIGUN AMMO"), Custom String("INCENDIARY ROUNDS (+BURN)"), Ability Icon String(
+			Hero(Bastion), Button(Secondary Fire)), Custom String("[SECONDARY] KNOCKBACK & STUN BOTS"), Custom String("FLASHBANG"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7234,7 +7364,7 @@ rule("Echo HUD [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("Genji HUD")
+rule("Genji HUD [Updated Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7325,9 +7455,9 @@ rule("Junker Queen HUD [Added by Arkhanglesk#11200]")
 		Event Player.HUDTextHidden = Array(False, True, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Lúcio), Button(Secondary Fire)), Custom String("[RELOAD] TO SWAP SHOUT"),
-			Custom String("SONIC TREMORS"), Ability Icon String(Hero(Junker Queen), Button(Ability 1)), Custom String(
-			"[RELOAD] TO SWAP SHOUT"), Custom String("BANSHEE SCREAM"), Ability Icon String(Hero(Hanzo), Button(Ability 1)), Custom String(
-			"EVISCERATE ALL BOTS IN YOUR PATH"), Custom String("ULTIMATE: BUSHWHACK"));
+			Custom String("SONIC TREMORS: KNOCKDOWN"), Ability Icon String(Hero(Junker Queen), Button(Ability 1)), Custom String(
+			"[RELOAD] TO SWAP SHOUT"), Custom String("BANSHEE SCREAM: STUN"), Ability Icon String(Hero(Hanzo), Button(Ability 1)),
+			Custom String("EVISCERATE ALL BOTS IN YOUR PATH"), Custom String("ULTIMATE: BUSHWHACK"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7394,9 +7524,9 @@ rule("Kiriko HUD [Added by Arkhanglesk#11200]")
 		Event Player.HUDTextHidden = Array(False, True, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Kiriko), Button(Primary Fire)), Custom String(
-			"[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("OFUDA"), Ability Icon String(Hero(Junker Queen), Button(Ability 2)),
-			Custom String("[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("KAMI NO KATTO"), Ability Icon String(Hero(Hanzo), Button(
-			Ability 1)), Custom String("DAMAGE AND KNOCKBACK BOTS"), Custom String("ULTIMATE: YŌKAI BLAST"));
+			"[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("OFUDA: DIRECT DAMAGE"), Ability Icon String(Hero(Junker Queen), Button(
+			Ability 2)), Custom String("[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("KAMI NO KATTO: BLEED"), Ability Icon String(
+			Hero(Hanzo), Button(Ability 1)), Custom String("DAMAGE AND KNOCKBACK BOTS"), Custom String("ULTIMATE: YŌKAI BLAST"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7594,7 +7724,7 @@ rule("Orisa HUD [Updated for OW2 rework by Arkhanglesk#11200]")
 	{
 		Wait(0.500, Ignore Condition);
 		Event Player.T = 0;
-		Chase Player Variable At Rate(Event Player, T, 100, 3, None);
+		Chase Player Variable At Rate(Event Player, T, 100, 4, None);
 		Event Player.HUDTextHidden = Array(False, False, True, False);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String("[MELEE] TO KNOCKBACK"),
@@ -7627,14 +7757,14 @@ rule("Pharah HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, False);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Icon String(Radioactive), Custom String("INCREASES DAMAGE THE HIGHER IT IS"), Custom String(
-			"FUSION REACTOR [100-999]"), Ability Icon String(Hero(Doomfist), Button(Ability 2)), Custom String(
-			"[Ability 2] CREATES A DELAYED BLAST"), Custom String("BUNKER BUSTER: -100% POWER"), Ability Icon String(Hero(Reinhardt),
-			Button(Ability 1)), Custom String("[SECONDARY] HOLD TO BOOST"), Custom String("BOOSTER DASH"));
+			"FUSION REACTOR [100-999]"), Ability Icon String(Hero(Moira), Button(Ultimate)), Custom String(
+			"[SECONDARY] CREATES A DELAYED BLAST"), Custom String("BUNKER BUSTER: -100% POWER"), Ability Icon String(Hero(Pharah), Button(
+			Ability 1)), Custom String("[ABILITY 1] HOLD TO BOOST"), Custom String("BOOSTER DASH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
 
-rule("Ramattra HUD")
+rule("Ramattra HUD [Added by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7646,12 +7776,10 @@ rule("Ramattra HUD")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, False);
+		Event Player.HUDTextHidden = Array(False, True, True, True);
 		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
-			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
-			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Ramattra), Button(Ability 1)), Custom String(
+			"[ABILITY 1] PUMMEL BOTS WITH [MELEE]"), Custom String("VOID PUNCH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7773,12 +7901,13 @@ rule("Sojourn HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(False, False, True, True);
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
+		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Sojourn), Button(Ability 1)), Custom String(
-			"[ABILITY 1] SLIDE TO SWEEP BOTS"), Custom String("ROCKET BOOST SLIDE"), Ability Icon String(Hero(Sojourn), Button(
-			Secondary Fire)), Custom String("HIGH-IMPACT ROUNDS PENETRATE WALLS"), Custom String("ULTIMATE: SUPER RAILGUN"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Pharah), Button(Ability 1)), Custom String("JUMP AFTER SLIDE BURNS BOTS"),
+			Custom String("JUMP JETS"), Ability Icon String(Hero(Sojourn), Button(Ability 1)), Custom String(
+			"[ABILITY 1] SLIDE SWEEPS BOTS"), Custom String("ROCKET BOOST SLIDE"), Ability Icon String(Hero(Sojourn), Button(
+			Secondary Fire)), Custom String("[SECONDARY] ROUNDS PENETRATE WALLS"), Custom String("ULTIMATE: SUPER RAILGUN"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
 
@@ -7971,8 +8100,8 @@ rule("Wrecking Ball HUD")
 		Disallow Button(Event Player, Button(Ultimate));
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Secondary Fire)), Custom String(
-			"[ABILITY 2] HEAL 35% HP"), Custom String("AUTO-REPAIRS"), Ability Icon String(Hero(Moira), Button(Ultimate)), Custom String(
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Baptiste), Button(Ability 1)), Custom String("[ABILITY 2] HEAL 35% HP"),
+			Custom String("AUTO-REPAIRS"), Ability Icon String(Hero(Moira), Button(Ultimate)), Custom String(
 			"MASSIVE DAMAGE FROM THE SKY"), Custom String("ULTIMATE: ORBITAL DROP"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -8719,10 +8848,46 @@ rule("PLAYER Third Person During Ultimate OFF [Broken in OW2; updated by Arkhang
 	}
 }
 
-disabled rule("MAUGA Ultimate [Added by Arkhanglesk#11200; work in progress]")
+disabled rule("MAUGA Ultimate Right Gun [Added by Arkhanglesk#11200; work in progress]")
 {
 	event
 	{
-		Ongoing - Global;
+		Ongoing - Each Player;
+		Team 1;
+		Mauga;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Is Using Ultimate(Event Player) == True;
+		Is Firing Primary(Event Player) == True;
+	}
+}
+
+disabled rule("MAUGA Ultimate Left Gun [Added by Arkhanglesk#11200; work in progress]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Mauga;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Is Using Ultimate(Event Player) == True;
+		Is Firing Secondary(Event Player) == True;
+	}
+}
+
+disabled rule("RAMATTRA Ultimate [Added by Arkhanglesk#11200; work in progress]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Ramattra;
 	}
 }
