@@ -1,4 +1,4 @@
-##### This is an updated version of the OW Superbots page created by the original mode creator, Cel#1115. The original can be found [here](https://docs.google.com/document/d/1WwOGDoImdErTrU-VU9Pxc0oTp9ALMUmJaqAeW_fBrm8).
+###### This is an updated version of the OW Superbots page created by the original mode creator, Cel#1115. The original can be found [here](https://docs.google.com/document/d/1WwOGDoImdErTrU-VU9Pxc0oTp9ALMUmJaqAeW_fBrm8).
 
 
 # STOP THE SUPER BOTS!
@@ -6,7 +6,7 @@ Created by Cel#1115<br>
 Updated for OW2 by Arkhanglesk#11200
 
 
-## Description:
+## Description
 Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!
 
 ### Damage increases based on kill
@@ -25,7 +25,7 @@ You can get a max +9% damage per kill:
 - Level 7: 700% Damage
 - etc...
 
-### Relic Passives:
+### Relic Passives
 Press [INTERACT] to switch RELICS in spawn.<br>
 PURIFIED is automatically equipped at the start.
 
@@ -35,7 +35,7 @@ PURIFIED is automatically equipped at the start.
 - AEGIS: +100% Healing Received, +10% Armor, Invincibility shield at low HP.
 - HERO: +25% Damage, +25% Movement Speed and +25% Max HP per elimination.
 
-### Enemy Lucio Ultimates:
+### Super Bot Lucio Ultimates
 - BLAST OFF!: Sends all players flying high into the air.
 - ROOTED!: Roots players 20m in line of sight for 5 seconds.
 - CHILL OUT!: Freezes players 20m in line of sight for 4 seconds.
@@ -46,9 +46,9 @@ PURIFIED is automatically equipped at the start.
 - STAY AWHILE AND LISTEN: Puts players 20m in line of sight to sleep for 10 seconds.
 - HACKED!!!: Hacks players within 30m and through walls for 7 seconds.
 
-## Heroes:
+## Heroes
 
-#### Ana 
+#### Ana
 - Exploding Biotic Darts: Shots against any surface or target heals nearby teammates in a 7 meter radius for 150 HP.  
 - Poison Gas: Carpet a 10 meter area with your sleep dart that poisons all enemies who walk inside it.
 - Light Armor: +25% Armor.
@@ -84,7 +84,7 @@ PURIFIED is automatically equipped at the start.
 - Hat Trick: x2 Damage to enemies in the air.
 - Showdown: Once ultimate has been initiated, bots will randomly be launched into the air after 2-5 seconds, shoot after the message “Draw!” is displayed.<br>
   ##### Tip:
-  - His Hat Trick synergizes well with Wrecking Ball's ground pound.
+  His Hat Trick synergizes well with Wrecking Ball's ground pound.
 
 #### D.Va 
 - Bunny Hop: Press [INTERACT] to jump around and deal damage in an area with each hop. Heal 25 HP per hop.
@@ -102,7 +102,7 @@ PURIFIED is automatically equipped at the start.
 - Ultimate: Overdrive: Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
 - Light Armor: 25% Armor.
   ##### Tip:
-  - Echo excels at staying out of the fray and delivering massive damage from afar, but can also be a devastating dive-bomber when using the Vortex relic with her flying + Quantum Beam.
+  Echo excels at staying out of the fray and delivering massive damage from afar, but can also be a devastating dive-bomber when using the Vortex relic with her flying + Quantum Beam.
 
 #### Genji
 - Dragon Strike: Heal for 50 HP and explode Mark of Death.
@@ -110,7 +110,7 @@ PURIFIED is automatically equipped at the start.
 - 200% Ultimate Duration.
 - Medium Armor: 50% Armor.<br>
   ##### Tip:
-  -  Stack marks for extra damage and healing.
+  Stack marks for extra damage and healing.
 
 #### Hanzo
 - Press [SECONDARY] Fire to switch arrows.
@@ -138,14 +138,14 @@ PURIFIED is automatically equipped at the start.
 - Chaos Roulette: Earn money to test your luck! $1000 will buy you one random effect. Press [INTERACT] to spend when you have $1000 or more.
 - Earn money: Every kill earns you $50-$100.
 - Roulette Outcomes:
-  - Death - Kill all superbots standing on the objective.
-  - Burning - Burn all superbots for 10 seconds.
-  - Knockdown - Knockdown all superbots for 7 seconds.
-  - Sky High - Send all superbots into the sky and make them float.
+  - Death - Kill all bots standing on the objective.
+  - Burning - Burn all bots for 10 seconds.
+  - Knockdown - Knockdown all bots for 7 seconds.
+  - Sky High - Send all bots into the sky and make them float.
   - Protection - Turn all players invincible for 10 seconds.
-  - Kill Pile - Teleport Junkrat and superbots to objective and root them for 6 seconds so they can work out their differences.
+  - Kill Pile - Teleport Junkrat and bots to objective and root them for 6 seconds so they can work out their differences.
   ##### Tip:
-  - Junkrat and his running buddy Roadhog work well together. Roadhog earns money for Junkrat's Chaos Roulette with every kill and Hook Combo.
+  Junkrat and his running buddy Roadhog work well together. Roadhog earns money for Junkrat's Chaos Roulette with every kill and Hook Combo.
 
 #### Kiriko
 - Press [RELOAD] to change [PRIMARY] damage.
@@ -185,7 +185,7 @@ PURIFIED is automatically equipped at the start.
 - Ultimate Angelic Wrath: Double damage while using ultimate and enemies constantly take damage while inside of her aura.
 - Charm: Melee attacks will charm one enemy, stunning for 10 seconds.  
 - Charmed Kills: +20% Damage.
-- Light Armor: 50% Armor.
+- Medium Armor: 50% Armor.
 - 250% Jump Speed.
 - 75% Gravity speed.
 
@@ -220,7 +220,7 @@ PURIFIED is automatically equipped at the start.
 - Shadow Dash: Crouch to dash forward.  Can be used in the air to go even further.  Crouch then press jump to travel long distances.
 - Rampage: Press [INTERACT] to toggle a buff that doubles your damage, but you lose 15% Max HP a second.
 - Phased Out while using ultimate.
-- Medium Armor: 25% Armor.
+- Light Armor: 25% Armor.
 
 #### Reinhardt
 - Flaming Strike: Lights enemies on fire for damage over time.
