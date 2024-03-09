@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Feb 28, 2024: 38 of 39 heroes updated."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] March 1, 2024: 38 of 39 heroes updated."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -37,11 +37,6 @@ settings
 		Escort
 		{
 			Payload Speed Modifier: 300%
-
-			disabled maps
-			{
-				Rialto
-			}
 		}
 
 		Hybrid
@@ -82,7 +77,7 @@ settings
 			Ana
 			{
 				Biotic Grenade Cooldown Time: 25%
-				Damage Dealt: 145%
+				Damage Dealt: 135%
 				Health: 200%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
@@ -93,7 +88,7 @@ settings
 				Coach Gun Cooldown Time: 50%
 				Coach Gun Knockback Scalar Enemy: 200%
 				Coach Gun Knockback Scalar Self: 200%
-				Damage Dealt: 165%
+				Damage Dealt: 150%
 				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
 				Health: 150%
@@ -103,7 +98,7 @@ settings
 
 			Baptiste
 			{
-				Damage Dealt: 170%
+				Damage Dealt: 160%
 				Healing Dealt: 200%
 				Health: 200%
 				Jump Vertical Speed: 125%
@@ -121,14 +116,14 @@ settings
 				Health: 140%
 				No Ammunition Requirement: On
 				Reconfigure Cooldown Time: 0%
-				Ultimate Generation - Combat Configuration: Artillery: 2%
+				Ultimate Generation - Combat Configuration: Artillery: 5%
 			}
 
 			Brigitte
 			{
 				Barrier Shield Cooldown Time: 0%
 				Barrier Shield Recharge Rate: 500%
-				Damage Dealt: 140%
+				Damage Dealt: 135%
 				Health: 250%
 				Repair Pack Cooldown Time: 35%
 				Shield Bash Cooldown Time: 50%
@@ -140,7 +135,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 300%
 				Combat Roll Cooldown Time: 40%
-				Damage Dealt: 180%
+				Damage Dealt: 150%
 				Health: 150%
 				Ultimate Generation - Combat Deadeye: 1%
 			}
@@ -148,7 +143,7 @@ settings
 			D.Va
 			{
 				Boosters Cooldown Time: 20%
-				Damage Dealt: 150%
+				Damage Dealt: 140%
 				Defense Matrix Maximum Time: 300%
 				Defense Matrix Recharge Rate: 200%
 				Health: 125%
@@ -172,7 +167,7 @@ settings
 
 			Echo
 			{
-				Damage Dealt: 170%
+				Damage Dealt: 150%
 				Flight Cooldown Time: 30%
 				Focusing Beam Cooldown Time: 160%
 				Health: 135%
@@ -183,7 +178,7 @@ settings
 
 			Genji
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 145%
 				Deflect Cooldown Time: 25%
 				Health: 200%
 				No Ammunition Requirement: On
@@ -206,7 +201,7 @@ settings
 
 			Illari
 			{
-				Damage Dealt: 160%
+				Damage Dealt: 150%
 				Healing Dealt: 200%
 				Healing Pylon Cooldown Time: 50%
 				Health: 150%
@@ -252,7 +247,7 @@ settings
 
 			Lifeweaver
 			{
-				Damage Dealt: 200%
+				Damage Dealt: 180%
 				Healing Dealt: 300%
 				Health: 350%
 				Life Grip and Healing Blossom Range: 25%
@@ -270,7 +265,7 @@ settings
 			{
 				Amp It Up Cooldown Time: 30%
 				Crossfade: Off
-				Damage Dealt: 200%
+				Damage Dealt: 180%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Sound Barrier: 1%
 				Ultimate Generation - Passive Sound Barrier: 400%
@@ -279,7 +274,7 @@ settings
 			Mauga
 			{
 				Cardiac Overdrive Cooldown Time: 75%
-				Damage Dealt: 140%
+				Damage Dealt: 138%
 				Health: 180%
 				Incendiary Chaingun Ignite Rate: 150%
 				No Ammunition Requirement: On
@@ -292,6 +287,7 @@ settings
 			Mei
 			{
 				Cryo-Freeze Cooldown Time: 75%
+				Damage Dealt: 95%
 				Freeze Stacking: On
 				Health: 150%
 				No Ammunition Requirement: On
@@ -302,7 +298,7 @@ settings
 
 			Mercy
 			{
-				Damage Dealt: 180%
+				Damage Dealt: 175%
 				Guardian Angel Cooldown Time: 25%
 				Health: 200%
 				Jump Vertical Speed: 250%
@@ -321,7 +317,7 @@ settings
 				Biotic Orb Cooldown Time: 40%
 				Biotic Orb Max Damage Scalar: 500%
 				Biotic Orb Max Healing Scalar: 500%
-				Damage Dealt: 150%
+				Damage Dealt: 140%
 				Fade Cooldown Time: 0%
 				Healing Dealt: 200%
 				Health: 250%
@@ -364,7 +360,7 @@ settings
 
 			Reaper
 			{
-				Damage Dealt: 155%
+				Damage Dealt: 150%
 				Healing Dealt: 200%
 				Health: 250%
 				No Ammunition Requirement: On
@@ -377,7 +373,7 @@ settings
 				Barrier Field Cooldown Time: 0%
 				Charge Cooldown Time: 75%
 				Charge Knockback Scalar: 120%
-				Health: 150%
+				Health: 145%
 				Rocket Hammer Knockback Scalar: 50%
 				Ultimate Generation - Combat Earthshatter: 5%
 			}
@@ -391,7 +387,7 @@ settings
 				No Ammunition Requirement: On
 				Take a Breather Cooldown Time: 200%
 				Take a Breather Maximum Time: 50%
-				Ultimate Generation - Combat Whole Hog: 300%
+				Ultimate Generation - Combat Whole Hog: 50%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -410,7 +406,7 @@ settings
 
 			Sojourn
 			{
-				Damage Dealt: 155%
+				Damage Dealt: 150%
 				Disruptor Shot Cooldown Time: 25%
 				Health: 275%
 				No Ammunition Requirement: On
@@ -422,19 +418,18 @@ settings
 
 			Soldier: 76
 			{
-				Damage Dealt: 180%
+				Damage Dealt: 160%
 				Health: 250%
 				Helix Rockets Cooldown Time: 30%
-				Helix Rockets Knockback Scalar: 400%
+				Helix Rockets Knockback Scalar: 200%
 				No Ammunition Requirement: On
-				Ultimate Duration: 200%
-				Ultimate Generation - Combat Tactical Visor: 0%
-				Ultimate Generation - Passive Tactical Visor: 450%
+				Ultimate Duration: 150%
+				Ultimate Generation - Combat Tactical Visor: 5%
 			}
 
 			Sombra
 			{
-				Damage Dealt: 140%
+				Damage Dealt: 125%
 				Health: 150%
 				No Ammunition Requirement: On
 				Translocator Cooldown Time: 50%
@@ -444,7 +439,7 @@ settings
 
 			Symmetra
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 165%
 				Health: 350%
 				No Ammunition Requirement: On
 				Projectile Speed: 50%
@@ -465,7 +460,7 @@ settings
 			Tracer
 			{
 				Blink Cooldown Time: 25%
-				Damage Dealt: 180%
+				Damage Dealt: 175%
 				Health: 150%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Pulse Bomb: 0%
@@ -474,7 +469,7 @@ settings
 
 			Widowmaker
 			{
-				Damage Dealt: 180%
+				Damage Dealt: 165%
 				Grappling Hook Cooldown Time: 0%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Infra-Sight: 1%
@@ -494,7 +489,7 @@ settings
 			Wrecking Ball
 			{
 				Adaptive Shield Cooldown Time: 80%
-				Damage Dealt: 165%
+				Damage Dealt: 160%
 				Grappling Claw Cooldown Time: 0%
 				Grappling Claw Knockback Scalar: 120%
 				Infinite Ultimate Duration: On
@@ -507,7 +502,7 @@ settings
 			Zarya
 			{
 				Damage Dealt: 150%
-				Health: 150%
+				Health: 145%
 				No Ammunition Requirement: On
 				Particle Barrier Cooldown Time: 50%
 				Projected Barrier Cooldown Time: 75%
@@ -516,7 +511,7 @@ settings
 
 			Zenyatta
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 140%
 				Health: 150%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Transcendence: 0%
@@ -559,7 +554,6 @@ settings
 				Damage Dealt: 155%
 				Health: 500%
 				Immortality Field Cooldown Time: 300%
-				Movement Gravity: 90%
 				Projectile Gravity: 60%
 				Regenerative Burst Cooldown Time: 150%
 				Ultimate Duration: 200%
@@ -604,11 +598,6 @@ settings
 				Ultimate Generation - Passive Deadeye: 150%
 			}
 
-			D.Va
-			{
-				Damage Dealt: 150%
-			}
-
 			Doomfist
 			{
 				Ammunition Clip Size Scalar: 200%
@@ -625,21 +614,13 @@ settings
 				Ultimate Generation - Passive Meteor Strike: 300%
 			}
 
-			Echo
-			{
-				Damage Dealt: 190%
-				Flight Cooldown Time: 30%
-				Focusing Beam Cooldown Time: 160%
-				Ultimate Generation - Combat Duplicate: 20%
-			}
-
 			Genji
 			{
 				Damage Dealt: 160%
 				Health: 500%
 				Movement Gravity: 90%
-				Ultimate Generation - Combat Dragonblade: 500%
-				Ultimate Generation - Passive Dragonblade: 300%
+				Ultimate Generation - Combat Dragonblade: 300%
+				Ultimate Generation - Passive Dragonblade: 500%
 			}
 
 			Hanzo
@@ -757,11 +738,6 @@ settings
 				Ultimate Generation - Passive Terra Surge: 500%
 			}
 
-			Pharah
-			{
-				Hover Jets Unlimited Fuel: On
-			}
-
 			Ramattra
 			{
 				Damage Dealt: 160%
@@ -840,6 +816,7 @@ settings
 				Damage Dealt: 150%
 				Health: 500%
 				Helix Rockets Cooldown Time: 30%
+				Ultimate Duration: 150%
 				Ultimate Generation - Combat Tactical Visor: 300%
 				Ultimate Generation - Passive Tactical Visor: 500%
 			}
@@ -917,11 +894,6 @@ settings
 				Ultimate Duration: 500%
 				Ultimate Generation - Combat Primal Rage: 500%
 				Ultimate Generation - Passive Primal Rage: 500%
-			}
-
-			Wrecking Ball
-			{
-				Grappling Claw Knockback Scalar: 130%
 			}
 
 			Zarya
@@ -3435,7 +3407,7 @@ rule("D.VA Mech Bunny Hop Deactivation Subroutine [Broken in OW2; fixed by Arkha
 	actions
 	{
 		Start Rule(EnableButtons, Do Nothing);
-		Chase Player Variable At Rate(Event Player, T, 100, 1, None);
+		Chase Player Variable At Rate(Event Player, T, 100, 1.200, None);
 		Stop Camera(Event Player);
 	}
 }
@@ -7320,7 +7292,7 @@ rule("D.Va HUD [Updated Arkhanglesk#11200]")
 	{
 		Wait(0.500, Ignore Condition);
 		Event Player.U = False;
-		Chase Player Variable At Rate(Event Player, T, 100, 1, None);
+		Chase Player Variable At Rate(Event Player, T, 100, 1.200, None);
 		Event Player.HUDTextHidden = Array(False, True, True, False);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(D.Va), Button(Ultimate)), Custom String("[RELOAD] WHEN {0} METER IS FULL",
