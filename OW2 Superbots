@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Working on resurrecting this gem in OW2."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Working on balancing + updating OW2 heroes."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -81,7 +81,7 @@ settings
 			Ana
 			{
 				Biotic Grenade Cooldown Time: 25%
-				Damage Dealt: 165%
+				Damage Dealt: 150%
 				Health: 200%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
@@ -92,7 +92,7 @@ settings
 				Coach Gun Cooldown Time: 50%
 				Coach Gun Knockback Scalar Enemy: 200%
 				Coach Gun Knockback Scalar Self: 200%
-				Damage Dealt: 200%
+				Damage Dealt: 170%
 				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
 				Health: 150%
@@ -102,7 +102,7 @@ settings
 
 			Baptiste
 			{
-				Damage Dealt: 250%
+				Damage Dealt: 190%
 				Healing Dealt: 200%
 				Health: 200%
 				Jump Vertical Speed: 125%
@@ -116,7 +116,7 @@ settings
 			{
 				A-36 Tactical Grenade Cooldown Time: 10%
 				A-36 Tactical Grenade Knockback Scalar: 150%
-				Damage Dealt: 250%
+				Damage Dealt: 180%
 				Health: 150%
 				No Ammunition Requirement: On
 				Reconfigure Cooldown Time: 0%
@@ -128,7 +128,7 @@ settings
 			{
 				Barrier Shield Cooldown Time: 0%
 				Barrier Shield Recharge Rate: 500%
-				Damage Dealt: 150%
+				Damage Dealt: 145%
 				Health: 250%
 				Repair Pack Cooldown Time: 35%
 				Shield Bash Cooldown Time: 50%
@@ -140,7 +140,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 300%
 				Combat Roll Cooldown Time: 40%
-				Damage Dealt: 200%
+				Damage Dealt: 180%
 				Health: 150%
 				Ultimate Generation - Combat Deadeye: 1%
 			}
@@ -153,7 +153,7 @@ settings
 				Defense Matrix Recharge Rate: 200%
 				Health: 125%
 				Micro Missiles Cooldown Time: 35%
-				Ultimate Generation - Combat Self-Destruct: 50%
+				Ultimate Generation - Combat Self-Destruct: 5%
 			}
 
 			Doomfist
@@ -167,22 +167,23 @@ settings
 				Quick Melee: Off
 				Rocket Punch Cooldown Time: 25%
 				Seismic Slam Cooldown Time: 15%
+				Ultimate Duration: 110%
 			}
 
 			Echo
 			{
-				Damage Dealt: 190%
-				Flight Cooldown Time: 40%
+				Damage Dealt: 180%
+				Flight Cooldown Time: 30%
 				Focusing Beam Cooldown Time: 160%
 				Health: 135%
 				No Ammunition Requirement: On
 				Sticky Bombs Cooldown Time: 15%
-				Ultimate Generation - Combat Duplicate: 20%
+				Ultimate Generation - Combat Duplicate: 2%
 			}
 
 			Genji
 			{
-				Damage Dealt: 200%
+				Damage Dealt: 175%
 				Deflect Cooldown Time: 25%
 				Health: 200%
 				No Ammunition Requirement: On
@@ -193,7 +194,7 @@ settings
 
 			Hanzo
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 170%
 				Lunge Cooldown Time: 25%
 				Lunge Distance Scalar: 200%
 				Sonic Arrow Cooldown Time: 50%
@@ -219,7 +220,7 @@ settings
 			{
 				Carnage Cooldown Time: 15%
 				Commanding Shout Cooldown Time: 50%
-				Damage Dealt: 150%
+				Damage Dealt: 140%
 				Health: 200%
 				Jagged Blade Cooldown Time: 25%
 				Jagged Blade Knockback Scalar: 150%
@@ -230,7 +231,7 @@ settings
 			Junkrat
 			{
 				Concussion Mine Cooldown Time: 50%
-				Damage Dealt: 175%
+				Damage Dealt: 160%
 				Health: 350%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat RIP-Tire: 25%
@@ -239,7 +240,7 @@ settings
 
 			Kiriko
 			{
-				Damage Dealt: 125%
+				Damage Dealt: 150%
 				Healing Dealt: 300%
 				No Ammunition Requirement: On
 				Protection Suzu Cooldown Time: 25%
@@ -267,7 +268,7 @@ settings
 			{
 				Amp It Up Cooldown Time: 30%
 				Crossfade: Off
-				Damage Dealt: 400%
+				Damage Dealt: 200%
 				No Ammunition Requirement: On
 				Soundwave Knockback Scalar: 25%
 				Ultimate Generation - Combat Sound Barrier: 1%
@@ -276,13 +277,14 @@ settings
 
 			Mauga
 			{
+				Ammunition Clip Size Scalar: 150%
 				Cardiac Overdrive Cooldown Time: 75%
 				Cardiac Overdrive Healing: 50%
-				Damage Dealt: 165%
-				Health: 300%
+				Damage Dealt: 140%
+				Health: 200%
 				No Ammunition Requirement: On
 				Overrun Cooldown Time: 50%
-				Overrun Knockback: 125%
+				Overrun Knockback: 110%
 				Ultimate Duration: 75%
 				Ultimate Generation - Passive Cage Fight: 50%
 			}
@@ -290,6 +292,7 @@ settings
 			Mei
 			{
 				Cryo-Freeze Cooldown Time: 75%
+				Damage Dealt: 105%
 				Freeze Stacking: On
 				Health: 150%
 				No Ammunition Requirement: On
@@ -300,7 +303,7 @@ settings
 
 			Mercy
 			{
-				Damage Dealt: 200%
+				Damage Dealt: 190%
 				Guardian Angel Cooldown Time: 25%
 				Health: 200%
 				Jump Vertical Speed: 250%
@@ -329,7 +332,7 @@ settings
 
 			Orisa
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 145%
 				Energy Javelin Cooldown Time: 70%
 				Fortify Cooldown Time: 90%
 				Health: 150%
@@ -351,6 +354,7 @@ settings
 
 			Ramattra
 			{
+				Damage Dealt: 110%
 				Health: 150%
 				Nemesis Form Cooldown Time: 25%
 				No Ammunition Requirement: On
@@ -363,11 +367,11 @@ settings
 
 			Reaper
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 160%
 				Healing Dealt: 200%
-				Health: 300%
+				Health: 275%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Death Blossom: 25%
+				Ultimate Generation - Combat Death Blossom: 5%
 				Wraith Form Cooldown Time: 50%
 			}
 
@@ -375,9 +379,8 @@ settings
 			{
 				Barrier Field Cooldown Time: 0%
 				Charge Cooldown Time: 75%
-				Charge Knockback Scalar: 130%
-				Fire Strike Cooldown Time: 50%
-				Health: 200%
+				Charge Knockback Scalar: 120%
+				Health: 160%
 				Rocket Hammer Knockback Scalar: 50%
 				Ultimate Generation - Combat Earthshatter: 10%
 			}
@@ -389,7 +392,7 @@ settings
 				Healing Dealt: 200%
 				Health: 150%
 				No Ammunition Requirement: On
-				Take a Breather Cooldown Time: 175%
+				Take a Breather Cooldown Time: 200%
 				Take a Breather Maximum Time: 50%
 				Ultimate Generation - Combat Whole Hog: 50%
 				Whole Hog Knockback Scalar: 0%
@@ -412,17 +415,17 @@ settings
 			{
 				Damage Dealt: 165%
 				Disruptor Shot Cooldown Time: 25%
-				Health: 300%
+				Health: 275%
 				No Ammunition Requirement: On
 				Power Slide Cooldown Time: 25%
 				Railgun Alt Fire Energy Charge Rate: 0%
-				Ultimate Generation - Combat Overclock: 55%
-				Ultimate Generation - Passive Overclock: 35%
+				Ultimate Duration: 200%
+				Ultimate Generation - Combat Overclock: 5%
 			}
 
 			Soldier: 76
 			{
-				Damage Dealt: 200%
+				Damage Dealt: 180%
 				Health: 250%
 				Helix Rockets Cooldown Time: 30%
 				Helix Rockets Knockback Scalar: 400%
@@ -434,7 +437,7 @@ settings
 
 			Sombra
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 165%
 				Health: 150%
 				No Ammunition Requirement: On
 				Translocator Cooldown Time: 50%
@@ -453,9 +456,9 @@ settings
 
 			Torbjörn
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 145%
 				Deploy Turret Cooldown Time: 0%
-				Health: 250%
+				Health: 225%
 				No Ammunition Requirement: On
 				Overload Duration Scalar: 200%
 				Ultimate Generation - Combat Molten Core: 3%
@@ -465,7 +468,7 @@ settings
 			Tracer
 			{
 				Blink Cooldown Time: 25%
-				Damage Dealt: 250%
+				Damage Dealt: 180%
 				Health: 150%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Pulse Bomb: 0%
@@ -474,7 +477,7 @@ settings
 
 			Widowmaker
 			{
-				Damage Dealt: 200%
+				Damage Dealt: 180%
 				Grappling Hook Cooldown Time: 0%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Infra-Sight: 1%
@@ -496,7 +499,7 @@ settings
 				Adaptive Shield Cooldown Time: 80%
 				Damage Dealt: 165%
 				Grappling Claw Cooldown Time: 0%
-				Grappling Claw Knockback Scalar: 130%
+				Grappling Claw Knockback Scalar: 120%
 				Infinite Ultimate Duration: On
 				Minefield Knockback Scalar: 0%
 				No Ammunition Requirement: On
@@ -628,6 +631,7 @@ settings
 			Echo
 			{
 				Damage Dealt: 190%
+				Flight Cooldown Time: 30%
 				Focusing Beam Cooldown Time: 160%
 				Ultimate Generation - Combat Duplicate: 20%
 			}
@@ -711,15 +715,15 @@ settings
 
 			Mauga
 			{
-				Ammunition Clip Size Scalar: 200%
+				Ammunition Clip Size Scalar: 150%
 				Cardiac Overdrive Cooldown Time: 200%
 				Damage Dealt: 125%
 				Health: 350%
+				Incendiary Chaingun Ignite Duration: 25%
 				Overrun Knockback: 50%
 				Quick Melee: Off
 				Ultimate Duration: 75%
-				Ultimate Generation - Combat Cage Fight: 500%
-				Ultimate Generation - Passive Cage Fight: 400%
+				Ultimate Generation - Passive Cage Fight: 500%
 			}
 
 			Mei
@@ -782,6 +786,7 @@ settings
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Shadow Step: Off
+				Ultimate Generation - Combat Death Blossom: 5%
 				Ultimate Generation - Passive Death Blossom: 500%
 				Wraith Form Cooldown Time: 200%
 			}
@@ -830,6 +835,8 @@ settings
 			{
 				Damage Dealt: 160%
 				Health: 500%
+				Power Slide Cooldown Time: 35%
+				Ultimate Generation - Combat Overclock: 5%
 				Ultimate Generation - Passive Overclock: 500%
 			}
 
@@ -918,6 +925,11 @@ settings
 				Ultimate Generation - Passive Primal Rage: 500%
 			}
 
+			Wrecking Ball
+			{
+				Grappling Claw Knockback Scalar: 130%
+			}
+
 			Zarya
 			{
 				Damage Dealt: 165%
@@ -944,6 +956,7 @@ settings
 	{
 		Buff Status Effects
 		Buff and Debuff Sounds
+		Spawn More Dummy Bots
 	}
 }
 
@@ -1275,7 +1288,7 @@ rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
 	}
 }
 
-disabled rule("HOST HUD (Server Load) [Added by Arkhanglesk#11200]")
+disabled rule("DEBUG HUD (Server Load) [Added by Arkhanglesk#11200] - High server cost")
 {
 	event
 	{
@@ -3046,7 +3059,7 @@ rule("ECHO Laser [Updated by Arkhanglesk#11200]")
 			Event Player), All Players(Team 2), Event Player, True);
 		Play Effect(All Players(All Teams), Bad Explosion, Color(Sky Blue), Event Player.U, 0.250);
 		Play Effect(All Players(All Teams), Ring Explosion, Color(Sky Blue), Event Player.U, 2);
-		Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 7 * Global.SuperbotLevel + 7);
+		Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 10 * Global.SuperbotLevel + 7);
 		Wait(0.050, Ignore Condition);
 		Loop If Condition Is True;
 		disabled Small Message(Event Player, Custom String(" {0} ACTIVATING QUANTUM BEAM", Hero Icon String(Hero(Echo))));
@@ -3080,17 +3093,17 @@ rule("ECHO Ultimate Activate [Updated by Arkhanglesk#11200]")
 		Event Player.ID_Array[0] = Last Created Entity;
 		Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 100, Visible To);
 		Event Player.ID_Array[1] = Last Created Entity;
-		disabled Communicate(Event Player, Voice Line Up);
+		Communicate(Event Player, Voice Line Up);
 		Wait(0.150, Ignore Condition);
 		Set Projectile Speed(Event Player, 500);
 		Set Ultimate Charge(Event Player, 0);
 		Set Ability Cooldown(Event Player, Button(Secondary Fire), 0);
 		Event Player.Flight = True;
 		Wait(0.150, Ignore Condition);
-		Set Move Speed(Event Player, Event Player.MOVEMENT + 300);
-		Event Player.FullAutoFire = True;
+		Set Move Speed(Event Player, Event Player.MOVEMENT + 200);
+		disabled Event Player.FullAutoFire = True;
 		Wait(10, Ignore Condition);
-		Event Player.FullAutoFire = False;
+		disabled Event Player.FullAutoFire = False;
 		Small Message(Event Player, Custom String(" {0} Flying Off", Hero Icon String(Hero(Echo))));
 		Wait(0.100, Ignore Condition);
 		Small Message(Event Player, Custom String(" {0} OVERDRIVE RECHARGING", Hero Icon String(Hero(Echo))));
@@ -3103,7 +3116,7 @@ rule("ECHO Ultimate Activate [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire changes); updated by Arkhanglesk#11200]")
+disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire changes); updated by Arkhanglesk#11200. Works, but not very fun.]")
 {
 	event
 	{
@@ -3114,7 +3127,8 @@ rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire changes); u
 
 	conditions
 	{
-		Event Player.FullAutoFire == True;
+		disabled Is Firing Secondary(Event Player) == True;
+		disabled Event Player.FullAutoFire == True;
 		(Is Button Held(Event Player, Button(Secondary Fire)) || Is Firing Secondary(Event Player)) == True;
 		Is Alive(Event Player) == True;
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
@@ -3123,9 +3137,10 @@ rule("ECHO Auto Fire Secondary [Broken in OW2 (workshop rate-of-fire changes); u
 
 	actions
 	{
-		Wait(0.800, Ignore Condition);
+		Abort If Condition Is False;
+		Wait(2, Ignore Condition);
 		Press Button(Event Player, Button(Secondary Fire));
-		Loop If Condition Is True;
+		Loop;
 	}
 }
 
@@ -3682,6 +3697,35 @@ rule("LUCIO Ultimate Epic Bass Drop")
 		Resurrect(All Dead Players(Team 1));
 		Play Effect(All Players(All Teams), Good Pickup Effect, Color(Green), All Dead Players(Team 1), 1);
 		Play Effect(All Players(All Teams), Buff Explosion Sound, Color(Green), Event Player, 200);
+	}
+}
+
+rule("MAUGA Super Charge [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Ability Cooldown(Players On Hero(Hero(Mauga), Team 1), Button(Ability 1)) == 0;
+		(Is Button Held(Players On Hero(Hero(Mauga), Team 1), Button(Ability 1)) == True) == True;
+		Distance Between(Event Player, Position Of(Players On Hero(Hero(Mauga), Team 1))) <= 3;
+	}
+
+	actions
+	{
+		disabled Set Move Speed(Event Player, Players On Hero(Hero(Mauga), Team 1).MOVEMENT + 200);
+		Apply Impulse(Players Within Radius(Event Player, 2, Team 2, Off), Direction From Angles(Horizontal Angle From Direction(
+			Direction Towards(Event Player, Players Within Radius(Event Player, 2, Team 2, Off))), -15), 15, To World,
+			Cancel Contrary Motion);
+		disabled Damage(Players Within Radius(Event Player, 2, Team 2, Off), Event Player, 50);
+		Set Status(Players Within Radius(Event Player, 2, Team 2, Off), Event Player, Knocked Down, 2);
+		disabled Wait(2, Ignore Condition);
+		disabled Set Move Speed(Players On Hero(Hero(Mauga), Team 1), Event Player.MOVEMENT);
 	}
 }
 
@@ -4777,18 +4821,15 @@ rule("ROADHOG Asthmatic Knockdown")
 
 	conditions
 	{
-		disabled Is True For All(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)), Distance Between(Event Player,
-			Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3) == True;
 		Ability Cooldown(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == 0;
 		(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == True) == True;
 		Distance Between(Event Player, Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3;
-		Is True For Any(Is Button Held(Event Player, Button(Secondary Fire)), Distance Between(Position Of(Event Player), Position Of(
+		disabled Is True For Any(Is Button Held(Event Player, Button(Secondary Fire)), Distance Between(Position Of(Event Player), Position Of(
 			Current Array Element)) <= 3) == True;
 	}
 
 	actions
 	{
-		disabled Damage(Event Player, Players On Hero(Hero(Roadhog), Team 1), Max Health(Event Player) * 0.050);
 		Set Status(Event Player, Null, Knocked Down, 1.500);
 		Wait(1.500, Ignore Condition);
 	}
@@ -5043,6 +5084,32 @@ rule("SIGMA Stone Knockdown")
 	}
 }
 
+rule("SOJOURN Rocket Slide [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Ability Cooldown(Players On Hero(Hero(Sojourn), Team 1), Button(Ability 1)) == 0;
+		(Is Button Held(Players On Hero(Hero(Sojourn), Team 1), Button(Ability 1)) == True) == True;
+		Distance Between(Event Player, Position Of(Players On Hero(Hero(Sojourn), Team 1))) <= 2;
+	}
+
+	actions
+	{
+		Apply Impulse(Players Within Radius(Event Player, 2, Team 2, Off), Direction From Angles(Horizontal Angle From Direction(
+			Direction Towards(Event Player, Players Within Radius(Event Player, 2, Team 2, Off))), -15), 15, To World,
+			Cancel Contrary Motion);
+		Set Status(Players Within Radius(Event Player, 2, Team 2, Off), Event Player, Knocked Down, 2);
+		Wait(2, Ignore Condition);
+	}
+}
+
 rule("SOLDIER: 76 Ultimate Airstrike Activation")
 {
 	event
@@ -5191,7 +5258,7 @@ rule("SOMBRA Assassinate x2 Damage from behind or while hacked")
 	}
 }
 
-rule("SOMBRA Phasing invisibility on")
+rule("SOMBRA Phasing invisibility ON")
 {
 	event
 	{
@@ -5213,7 +5280,7 @@ rule("SOMBRA Phasing invisibility on")
 	}
 }
 
-rule("SOMBRA Phasing invisibility off")
+rule("SOMBRA Phasing invisibility OFF")
 {
 	event
 	{
@@ -5457,7 +5524,7 @@ rule("TRACER Blink Stasis")
 	}
 }
 
-rule("TRACER Total recall")
+rule("TRACER Total Recall")
 {
 	event
 	{
@@ -5477,7 +5544,7 @@ rule("TRACER Total recall")
 	}
 }
 
-rule("TRACER Ultimate damage")
+rule("TRACER Ultimate Damage")
 {
 	event
 	{
@@ -6390,7 +6457,7 @@ rule("Echo HUD [Updated by Arkhanglesk#11200]")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Echo), Button(Secondary Fire)), Custom String(
 			"ALL ABILITIES (+DMG)(+SPD)"), Custom String("ULTIMATE: OVERDRIVE"), Ability Icon String(Hero(Echo), Button(Ability 2)),
-			Custom String("[ABILITY 1] BOOSTER DASH"), Custom String("[ABILITY 2] QUANTUM BEAM"));
+			Custom String("[ABILITY 2] POWERFUL LASER MELTS BOTS"), Custom String("QUANTUM BEAM"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6596,8 +6663,12 @@ rule("Mauga HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		disabled Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HUDTextHidden = Array(False, True, True, True);
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String(
+			"[ABILITY 1] HOLD TO CLEAR A PATH", Ability Icon String(Hero(Mauga), Button(Ability 1))), Custom String("BUMRUSH"));
 	}
 }
 
@@ -6864,8 +6935,8 @@ rule("Roadhog HUD")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Roadhog), Button(Ability 1)), Custom String(
 			"[ABILITY 1] SHOOT/MELEE AFTER HOOK"), Custom String("HOOK COMBO"), Ability Icon String(Hero(Roadhog), Button(Ability 2)),
-			Custom String("[SECONDARY] TRAMPLE BOTS"), Custom String("ASTHMATIC TRAMPLE"), Ability Icon String(Hero(Roadhog), Button(
-			Ultimate)), Custom String("STUNS DAMAGED BOTS"), Custom String("ULTIMATE: WARTHOG"));
+			Custom String("[SECONDARY] HOLD TO TRAMPLE BOTS"), Custom String("ASTHMATIC TRAMPLE"), Ability Icon String(Hero(Roadhog),
+			Button(Ultimate)), Custom String("STUNS DAMAGED BOTS"), Custom String("ULTIMATE: WARTHOG"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6905,8 +6976,12 @@ rule("Sojourn HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HUDTextHidden = Array(False, True, True, True);
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Sojourn), Button(Ability 1)), Custom String(
+			"[ABILITY 1] Hold Slide to Trip Bots", Ability Icon String(Hero(Sojourn), Button(Ability 1))), Custom String(
+			"ROCKET BOOST SLIDE"));
 	}
 }
 
