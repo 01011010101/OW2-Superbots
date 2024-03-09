@@ -89,14 +89,15 @@ settings
 
 			Ashe
 			{
-				Coach Gun Cooldown Time: 25%
+				Coach Gun Cooldown Time: 50%
 				Coach Gun Knockback Scalar Enemy: 200%
-				Damage Dealt: 170%
+				Coach Gun Knockback Scalar Self: 200%
+				Damage Dealt: 200%
 				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
 				Health: 150%
-				Projectile Speed: 90%
 				Ultimate Duration: 250%
+				Ultimate Generation - Combat B.O.B.: 10%
 			}
 
 			Baptiste
@@ -104,7 +105,6 @@ settings
 				Damage Dealt: 250%
 				Healing Dealt: 200%
 				Health: 200%
-				Immortality Field Cooldown Time: 75%
 				Jump Vertical Speed: 125%
 				No Ammunition Requirement: On
 				Regenerative Burst Cooldown Time: 50%
@@ -131,7 +131,7 @@ settings
 				Damage Dealt: 150%
 				Health: 350%
 				Repair Pack Cooldown Time: 35%
-				Shield Bash Cooldown Time: 75%
+				Shield Bash Cooldown Time: 50%
 				Ultimate Generation - Combat Rally: 50%
 				Whip Shot Knockback Scalar: 200%
 			}
@@ -140,9 +140,8 @@ settings
 			{
 				Ammunition Clip Size Scalar: 300%
 				Combat Roll Cooldown Time: 40%
-				Damage Dealt: 165%
+				Damage Dealt: 200%
 				Health: 150%
-				Magnetic Grenade Cooldown Time: 90%
 				Ultimate Generation - Combat Deadeye: 1%
 			}
 
@@ -187,7 +186,7 @@ settings
 			{
 				Damage Dealt: 200%
 				Deflect Cooldown Time: 25%
-				Health: 150%
+				Health: 200%
 				No Ammunition Requirement: On
 				Swift Strike Cooldown Time: 25%
 				Ultimate Duration: 200%
@@ -252,9 +251,9 @@ settings
 
 			Lifeweaver
 			{
-				Damage Dealt: 155%
+				Damage Dealt: 175%
 				Healing Dealt: 300%
-				Health: 150%
+				Health: 175%
 				Life Grip and Healing Blossom Range: 25%
 				Life Grip Cooldown Time: 25%
 				No Ammunition Requirement: On
@@ -272,10 +271,9 @@ settings
 				Crossfade: Off
 				Damage Dealt: 400%
 				No Ammunition Requirement: On
-				Soundwave Cooldown Time: 150%
 				Soundwave Knockback Scalar: 25%
-				Ultimate Generation - Combat Sound Barrier: 1%
-				Ultimate Generation - Passive Sound Barrier: 500%
+				Ultimate Generation - Combat Sound Barrier: 15%
+				Ultimate Generation - Passive Sound Barrier: 400%
 			}
 
 			Mauga
@@ -296,7 +294,6 @@ settings
 				Damage Dealt: 125%
 				Freeze Stacking: On
 				Health: 150%
-				Ice Wall Cooldown Time: 75%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Blizzard: 5%
 				Weapon Freeze Duration Scalar: 200%
@@ -324,12 +321,11 @@ settings
 				Biotic Orb Cooldown Time: 40%
 				Biotic Orb Max Damage Scalar: 500%
 				Biotic Orb Max Healing Scalar: 500%
-				Damage Dealt: 160%
+				Damage Dealt: 150%
 				Fade Cooldown Time: 0%
 				Healing Dealt: 200%
-				Health: 350%
+				Health: 250%
 				Infinite Ultimate Duration: On
-				Projectile Speed: 150%
 				Ultimate Generation - Combat Coalescence: 2%
 				Ultimate Generation Coalescence: 125%
 			}
@@ -372,20 +368,16 @@ settings
 			{
 				Damage Dealt: 175%
 				Healing Dealt: 200%
-				Movement Speed: 150%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Death Blossom: 25%
-				Ultimate Generation - Passive Death Blossom: 75%
 				Wraith Form Cooldown Time: 50%
 			}
 
 			Reinhardt
 			{
 				Barrier Field Cooldown Time: 0%
-				Barrier Field Recharge Rate: 15%
 				Charge Cooldown Time: 75%
-				Charge Knockback Scalar: 50%
-				Fire Strike Cooldown Time: 35%
+				Fire Strike Cooldown Time: 50%
 				Health: 200%
 				Rocket Hammer Knockback Scalar: 50%
 				Ultimate Generation - Combat Earthshatter: 10%
@@ -411,6 +403,7 @@ settings
 				Damage Dealt: 130%
 				Experimental Barrier Cooldown Time: 25%
 				Health: 150%
+				Jump Vertical Speed: 250%
 				Kinetic Grasp Cooldown Time: 200%
 				Ultimate Generation - Combat Gravitic Flux: 0%
 				Ultimate Generation - Passive Gravitic Flux: 375%
@@ -430,8 +423,8 @@ settings
 
 			Soldier: 76
 			{
-				Damage Dealt: 150%
-				Health: 125%
+				Damage Dealt: 200%
+				Health: 250%
 				Helix Rockets Cooldown Time: 30%
 				Helix Rockets Knockback Scalar: 400%
 				No Ammunition Requirement: On
@@ -442,7 +435,7 @@ settings
 
 			Sombra
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 175%
 				Health: 150%
 				No Ammunition Requirement: On
 				Translocator Cooldown Time: 50%
@@ -550,6 +543,7 @@ settings
 				Coach Gun Knockback Scalar Enemy: 50%
 				Coach Gun Knockback Scalar Self: 125%
 				Damage Dealt: 160%
+				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
 				Health: 350%
 				No Ammunition Requirement: On
@@ -577,7 +571,7 @@ settings
 			{
 				A-36 Tactical Grenade: Off
 				Damage Dealt: 160%
-				Health: 350%
+				Health: 400%
 				Movement Gravity: 110%
 				Movement Speed: 95%
 				No Ammunition Requirement: On
@@ -633,13 +627,6 @@ settings
 				Ultimate Generation - Passive Meteor Strike: 300%
 			}
 
-			Echo
-			{
-				Flight Cooldown Time: 10%
-				Focusing Beam Cooldown Time: 150%
-				Sticky Bombs Cooldown Time: 15%
-			}
-
 			Genji
 			{
 				Damage Dealt: 160%
@@ -691,7 +678,7 @@ settings
 				Concussion Mine Knockback Scalar: 50%
 				Damage Dealt: 170%
 				Frag Launcher Knockback Scalar: 60%
-				Health: 275%
+				Health: 350%
 				Movement Gravity: 50%
 				Steel Trap Cooldown Time: 200%
 				Ultimate Duration: 500%
@@ -710,28 +697,23 @@ settings
 			Lifeweaver
 			{
 				Ammunition Clip Size Scalar: 250%
-				Damage Dealt: 170%
-				Health: 300%
-				Life Grip Cooldown Time: 25%
-				Petal Platform Cooldown Time: 50%
-				Rejuvenating Dash Cooldown Time: 50%
+				Damage Dealt: 175%
+				Health: 350%
 				Rejuvenating Dash Healing: 500%
-				Tree of Life Health: 300%
 				Ultimate Generation - Combat Tree of Life: 10%
 				Ultimate Generation - Passive Tree of Life: 10%
 			}
 
 			Lúcio
 			{
-				Amp It Up Cooldown Time: 30%
 				Crossfade: Off
-				Damage Dealt: 400%
+				Damage Dealt: 200%
 				No Ammunition Requirement: On
 				Soundwave Cooldown Time: 150%
 				Soundwave Knockback Scalar: 200%
-				Ultimate Generation - Combat Sound Barrier: 1%
+				Ultimate Generation - Combat Sound Barrier: 0%
 				Ultimate Generation - Passive Sound Barrier: 500%
-				Ultimate Generation Sound Barrier: 205%
+				Ultimate Generation Sound Barrier: 200%
 			}
 
 			Mauga
@@ -764,18 +746,14 @@ settings
 				Damage Dealt: 350%
 				Guardian Angel Cooldown Time: 0%
 				Health: 400%
-				Movement Gravity: 75%
 				No Ammunition Requirement: On
-				Projectile Speed: 125%
 				Resurrect: Off
 			}
 
 			Moira
 			{
-				Biotic Energy Maximum: 150%
 				Damage Dealt: 160%
 				Health: 350%
-				Projectile Speed: 150%
 				Ultimate Duration: 300%
 				Ultimate Generation - Combat Coalescence: 500%
 				Ultimate Generation - Passive Coalescence: 500%
@@ -807,8 +785,7 @@ settings
 			Reaper
 			{
 				Damage Dealt: 175%
-				Health: 250%
-				Movement Speed: 125%
+				Health: 300%
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Shadow Step: Off
@@ -821,14 +798,10 @@ settings
 			{
 				Barrier Field Cooldown Time: 200%
 				Barrier Field Recharge Rate: 15%
-				Charge Cooldown Time: 75%
 				Charge Knockback Scalar: 35%
 				Damage Dealt: 165%
-				Fire Strike Cooldown Time: 50%
 				Health: 500%
-				Jump Vertical Speed: 90%
 				Movement Gravity: 110%
-				Movement Speed: 85%
 				Rocket Hammer Knockback Scalar: 50%
 				Ultimate Generation - Combat Earthshatter: 500%
 				Ultimate Generation - Passive Earthshatter: 250%
@@ -846,8 +819,8 @@ settings
 				Spawn With Ultimate Ready: On
 				Take a Breather Cooldown Time: 150%
 				Take a Breather Recharge Rate: 45%
-				Ultimate Generation - Combat Whole Hog: 500%
-				Ultimate Generation - Passive Whole Hog: 300%
+				Ultimate Generation - Combat Whole Hog: 200%
+				Ultimate Generation Whole Hog: 500%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -875,7 +848,7 @@ settings
 				Ammunition Clip Size Scalar: 150%
 				Biotic Field Cooldown Time: 200%
 				Damage Dealt: 150%
-				Health: 275%
+				Health: 350%
 				Helix Rockets Cooldown Time: 30%
 				Ultimate Generation - Combat Tactical Visor: 500%
 				Ultimate Generation - Passive Tactical Visor: 300%
@@ -972,7 +945,7 @@ settings
 			Zenyatta
 			{
 				Damage Dealt: 170%
-				Health: 300%
+				Health: 400%
 				No Ammunition Requirement: On
 				Secondary Fire: Off
 				Ultimate Generation - Combat Transcendence: 500%
