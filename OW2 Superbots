@@ -81,7 +81,7 @@ settings
 			Ana
 			{
 				Biotic Grenade Cooldown Time: 25%
-				Damage Dealt: 125%
+				Damage Dealt: 165%
 				Health: 200%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
@@ -158,7 +158,6 @@ settings
 
 			Doomfist
 			{
-				Damage Dealt: 120%
 				Health: 165%
 				Infinite Ultimate Duration: On
 				Meteor Strike Knockback Scalar: 150%
@@ -172,14 +171,13 @@ settings
 
 			Echo
 			{
-				Damage Dealt: 200%
+				Damage Dealt: 190%
 				Flight Cooldown Time: 40%
-				Focusing Beam Cooldown Time: 150%
-				Health: 125%
+				Focusing Beam Cooldown Time: 160%
+				Health: 135%
 				No Ammunition Requirement: On
 				Sticky Bombs Cooldown Time: 15%
-				Ultimate Generation - Combat Duplicate: 50%
-				Ultimate Generation - Passive Duplicate: 200%
+				Ultimate Generation - Combat Duplicate: 20%
 			}
 
 			Genji
@@ -232,7 +230,7 @@ settings
 			Junkrat
 			{
 				Concussion Mine Cooldown Time: 50%
-				Damage Dealt: 170%
+				Damage Dealt: 175%
 				Health: 350%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat RIP-Tire: 25%
@@ -251,7 +249,7 @@ settings
 
 			Lifeweaver
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 200%
 				Healing Dealt: 300%
 				Health: 350%
 				Life Grip and Healing Blossom Range: 25%
@@ -272,7 +270,7 @@ settings
 				Damage Dealt: 400%
 				No Ammunition Requirement: On
 				Soundwave Knockback Scalar: 25%
-				Ultimate Generation - Combat Sound Barrier: 15%
+				Ultimate Generation - Combat Sound Barrier: 1%
 				Ultimate Generation - Passive Sound Barrier: 400%
 			}
 
@@ -281,6 +279,7 @@ settings
 				Cardiac Overdrive Cooldown Time: 75%
 				Cardiac Overdrive Healing: 50%
 				Damage Dealt: 165%
+				Health: 300%
 				No Ammunition Requirement: On
 				Overrun Cooldown Time: 50%
 				Overrun Knockback: 125%
@@ -291,11 +290,10 @@ settings
 			Mei
 			{
 				Cryo-Freeze Cooldown Time: 75%
-				Damage Dealt: 165%
 				Freeze Stacking: On
 				Health: 150%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Blizzard: 5%
+				Ultimate Generation - Combat Blizzard: 1%
 				Weapon Freeze Duration Scalar: 200%
 				Weapon Freeze Rate Scalar: 200%
 			}
@@ -325,16 +323,15 @@ settings
 				Fade Cooldown Time: 0%
 				Healing Dealt: 200%
 				Health: 250%
-				Infinite Ultimate Duration: On
+				Ultimate Duration: 122%
 				Ultimate Generation - Combat Coalescence: 2%
-				Ultimate Generation Coalescence: 125%
 			}
 
 			Orisa
 			{
 				Damage Dealt: 150%
 				Energy Javelin Cooldown Time: 70%
-				Fortify Cooldown Time: 50%
+				Fortify Cooldown Time: 90%
 				Health: 150%
 				Javelin Spin Cooldown Time: 50%
 				No Ammunition Requirement: On
@@ -378,6 +375,7 @@ settings
 			{
 				Barrier Field Cooldown Time: 0%
 				Charge Cooldown Time: 75%
+				Charge Knockback Scalar: 130%
 				Fire Strike Cooldown Time: 50%
 				Health: 200%
 				Rocket Hammer Knockback Scalar: 50%
@@ -447,7 +445,7 @@ settings
 			Symmetra
 			{
 				Damage Dealt: 175%
-				Health: 200%
+				Health: 350%
 				No Ammunition Requirement: On
 				Projectile Speed: 50%
 				Sentry Turret Cooldown Time: 75%
@@ -498,6 +496,7 @@ settings
 				Adaptive Shield Cooldown Time: 80%
 				Damage Dealt: 165%
 				Grappling Claw Cooldown Time: 0%
+				Grappling Claw Knockback Scalar: 130%
 				Infinite Ultimate Duration: On
 				Minefield Knockback Scalar: 0%
 				No Ammunition Requirement: On
@@ -532,7 +531,7 @@ settings
 				Ammunition Clip Size Scalar: 200%
 				Biotic Grenade Cooldown Time: 150%
 				Damage Dealt: 165%
-				Health: 350%
+				Health: 500%
 				Sleep Dart Cooldown Time: 200%
 				Ultimate Generation - Combat Nano Boost: 500%
 				Ultimate Generation - Passive Nano Boost: 300%
@@ -546,7 +545,7 @@ settings
 				Damage Dealt: 160%
 				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
-				Health: 350%
+				Health: 500%
 				No Ammunition Requirement: On
 				Projectile Speed: 90%
 				Ultimate Duration: 150%
@@ -558,7 +557,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 200%
 				Damage Dealt: 155%
-				Health: 350%
+				Health: 500%
 				Immortality Field Cooldown Time: 300%
 				Movement Gravity: 90%
 				Projectile Gravity: 60%
@@ -572,7 +571,7 @@ settings
 			{
 				A-36 Tactical Grenade: Off
 				Damage Dealt: 160%
-				Health: 400%
+				Health: 500%
 				Movement Gravity: 110%
 				Movement Speed: 95%
 				No Ammunition Requirement: On
@@ -587,7 +586,7 @@ settings
 				Barrier Shield Cooldown Time: 150%
 				Barrier Shield Recharge Rate: 50%
 				Damage Dealt: 160%
-				Health: 350%
+				Health: 500%
 				Shield Bash Cooldown Time: 150%
 				Shield Bash Knockback Scalar: 50%
 				Ultimate Generation - Combat Rally: 500%
@@ -599,10 +598,15 @@ settings
 				Ammunition Clip Size Scalar: 150%
 				Combat Roll Cooldown Time: 150%
 				Damage Dealt: 150%
-				Health: 350%
+				Health: 500%
 				Magnetic Grenade Cooldown Time: 200%
 				Ultimate Generation - Combat Deadeye: 300%
 				Ultimate Generation - Passive Deadeye: 150%
+			}
+
+			D.Va
+			{
+				Damage Dealt: 150%
 			}
 
 			Doomfist
@@ -621,10 +625,17 @@ settings
 				Ultimate Generation - Passive Meteor Strike: 300%
 			}
 
+			Echo
+			{
+				Damage Dealt: 190%
+				Focusing Beam Cooldown Time: 160%
+				Ultimate Generation - Combat Duplicate: 20%
+			}
+
 			Genji
 			{
 				Damage Dealt: 160%
-				Health: 400%
+				Health: 500%
 				Movement Gravity: 90%
 				Ultimate Generation - Combat Dragonblade: 500%
 				Ultimate Generation - Passive Dragonblade: 300%
@@ -633,7 +644,7 @@ settings
 			Hanzo
 			{
 				Damage Dealt: 150%
-				Health: 400%
+				Health: 500%
 				Movement Gravity: 95%
 				Spawn With Ultimate Ready: On
 				Storm Arrows Cooldown Time: 15%
@@ -647,7 +658,7 @@ settings
 				Damage Dealt: 160%
 				Healing Dealt: 400%
 				Healing Pylon Cooldown Time: 50%
-				Health: 350%
+				Health: 500%
 				Outburst Cooldown Time: 25%
 				Ultimate Generation - Combat Captive Sun: 400%
 				Ultimate Generation - Passive Captive Sun: 300%
@@ -675,14 +686,13 @@ settings
 				Movement Gravity: 50%
 				Steel Trap Cooldown Time: 200%
 				Ultimate Duration: 500%
-				Ultimate Generation - Combat RIP-Tire: 500%
-				Ultimate Generation - Passive RIP-Tire: 400%
+				Ultimate Generation - Passive RIP-Tire: 500%
 			}
 
 			Kiriko
 			{
 				Damage Dealt: 160%
-				Health: 400%
+				Health: 500%
 				Ultimate Generation - Combat Kitsune Rush: 500%
 				Ultimate Generation - Passive Kitsune Rush: 300%
 			}
@@ -704,7 +714,7 @@ settings
 				Ammunition Clip Size Scalar: 200%
 				Cardiac Overdrive Cooldown Time: 200%
 				Damage Dealt: 125%
-				Health: 250%
+				Health: 350%
 				Overrun Knockback: 50%
 				Quick Melee: Off
 				Ultimate Duration: 75%
@@ -726,9 +736,9 @@ settings
 
 			Mercy
 			{
-				Damage Dealt: 350%
+				Damage Dealt: 300%
 				Guardian Angel Cooldown Time: 0%
-				Health: 400%
+				Health: 500%
 				No Ammunition Requirement: On
 				Resurrect: Off
 			}
@@ -736,7 +746,7 @@ settings
 			Moira
 			{
 				Damage Dealt: 160%
-				Health: 350%
+				Health: 500%
 				Ultimate Duration: 300%
 				Ultimate Generation - Combat Coalescence: 500%
 				Ultimate Generation - Passive Coalescence: 500%
@@ -748,15 +758,10 @@ settings
 				Damage Dealt: 160%
 				Energy Javelin Cooldown Time: 70%
 				Fortify Cooldown Time: 90%
-				Health: 500%
+				Health: 475%
 				Javelin Spin Cooldown Time: 50%
 				Ultimate Generation - Combat Terra Surge: 400%
 				Ultimate Generation - Passive Terra Surge: 300%
-			}
-
-			Pharah
-			{
-				Ultimate Generation - Combat Barrage: 10%
 			}
 
 			Ramattra
@@ -773,11 +778,10 @@ settings
 			Reaper
 			{
 				Damage Dealt: 175%
-				Health: 400%
+				Health: 500%
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Shadow Step: Off
-				Ultimate Generation - Combat Death Blossom: 500%
 				Ultimate Generation - Passive Death Blossom: 500%
 				Wraith Form Cooldown Time: 200%
 			}
@@ -791,8 +795,7 @@ settings
 				Health: 500%
 				Movement Gravity: 110%
 				Rocket Hammer Knockback Scalar: 50%
-				Ultimate Generation - Combat Earthshatter: 500%
-				Ultimate Generation - Passive Earthshatter: 250%
+				Ultimate Generation - Passive Earthshatter: 500%
 			}
 
 			Roadhog
@@ -826,7 +829,7 @@ settings
 			Sojourn
 			{
 				Damage Dealt: 160%
-				Health: 350%
+				Health: 500%
 				Ultimate Generation - Passive Overclock: 500%
 			}
 
@@ -835,17 +838,16 @@ settings
 				Ammunition Clip Size Scalar: 150%
 				Biotic Field Cooldown Time: 200%
 				Damage Dealt: 150%
-				Health: 450%
+				Health: 500%
 				Helix Rockets Cooldown Time: 30%
-				Ultimate Generation - Combat Tactical Visor: 500%
-				Ultimate Generation - Passive Tactical Visor: 300%
+				Ultimate Generation - Passive Tactical Visor: 500%
 			}
 
 			Sombra
 			{
 				Damage Dealt: 200%
 				Hack Cooldown Time: 500%
-				Health: 400%
+				Health: 500%
 				Projectile Speed: 300%
 				Translocator Cooldown Time: 50%
 				Ultimate Ability EMP: Off
@@ -856,7 +858,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 225%
 				Damage Dealt: 165%
-				Health: 350%
+				Health: 500%
 				Projectile Speed: 60%
 				Sentry Turret Cooldown Time: 300%
 				Teleporter: Off
@@ -868,7 +870,7 @@ settings
 				Ammunition Clip Size Scalar: 100%
 				Damage Dealt: 175%
 				Deploy Turret Cooldown Time: 500%
-				Health: 350%
+				Health: 450%
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Ultimate Duration: 500%
@@ -880,7 +882,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 200%
 				Damage Dealt: 250%
-				Health: 150%
+				Health: 250%
 				Movement Gravity: 90%
 				Movement Speed: 110%
 				Ultimate Generation - Combat Pulse Bomb: 400%
@@ -904,7 +906,7 @@ settings
 				Ammunition Clip Size Scalar: 250%
 				Barrier Projector Cooldown Time: 150%
 				Damage Dealt: 200%
-				Health: 500%
+				Health: 475%
 				Infinite Ultimate Duration: On
 				Jump Pack Acceleration Scalar: 75%
 				Jump Pack Cooldown Time: 50%
@@ -919,7 +921,7 @@ settings
 			Zarya
 			{
 				Damage Dealt: 165%
-				Health: 500%
+				Health: 475%
 				No Ammunition Requirement: On
 				Particle Barrier: Off
 				Projected Barrier Cooldown Time: 49%
@@ -936,6 +938,12 @@ settings
 				Ultimate Generation - Passive Transcendence: 300%
 			}
 		}
+	}
+
+	extensions
+	{
+		Buff Status Effects
+		Buff and Debuff Sounds
 	}
 }
 
@@ -976,6 +984,7 @@ variables
 		23: RootVariable
 		24: RelicSelected
 		25: RelicEquipped
+		26: ID_Array
 		28: GenjiMarkofDeath
 		29: GenjiMarkofDeathStacks
 		30: EnableFlying
@@ -3066,14 +3075,19 @@ rule("ECHO Ultimate Activate [Updated by Arkhanglesk#11200]")
 
 	actions
 	{
+		Small Message(Event Player, Custom String(" {0} SYSTEMS IN OVERDRIVE", Hero Icon String(Hero(Echo))));
+		Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 1, Visible To);
+		Event Player.ID_Array[0] = Last Created Entity;
+		Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 100, Visible To);
+		Event Player.ID_Array[1] = Last Created Entity;
+		disabled Communicate(Event Player, Voice Line Up);
 		Wait(0.150, Ignore Condition);
-		Small Message(Event Player, Custom String(" {0} OVERDRIVE: FREE FLIGHT + STICKY BOMB AUTO FIRE", Hero Icon String(Hero(Echo))));
-		Communicate(Event Player, Voice Line Up);
+		Set Projectile Speed(Event Player, 500);
 		Set Ultimate Charge(Event Player, 0);
-		disabled Wait(0.150, Ignore Condition);
 		Set Ability Cooldown(Event Player, Button(Secondary Fire), 0);
-		Set Projectile Speed(Event Player, 175);
 		Event Player.Flight = True;
+		Wait(0.150, Ignore Condition);
+		Set Move Speed(Event Player, Event Player.MOVEMENT + 300);
 		Event Player.FullAutoFire = True;
 		Wait(10, Ignore Condition);
 		Event Player.FullAutoFire = False;
@@ -3083,6 +3097,9 @@ rule("ECHO Ultimate Activate [Updated by Arkhanglesk#11200]")
 		Set Ability Cooldown(Event Player, Button(Secondary Fire), 2);
 		Set Projectile Speed(Event Player, 100);
 		Event Player.Flight = False;
+		Set Move Speed(Event Player, Event Player.MOVEMENT);
+		Destroy Effect(Event Player.ID_Array[0]);
+		Destroy Effect(Event Player.ID_Array[1]);
 	}
 }
 
@@ -4034,13 +4051,14 @@ rule("MOIRA Ultimate Coalescence Bomb Activation [Broken in OW2; fixed and updat
 	{
 		Skip If(Is In Spawn Room(Event Player), 1);
 		Small Message(Event Player, Custom String("{0} I must remain within line of sight of the source.", Hero Icon String(Hero(Moira))));
+		Set Invisible(Event Player, Enemies);
 		Event Player.T = 0;
 		Event Player.U = Ray Cast Hit Position(Eye Position(Event Player), 30 * Facing Direction Of(Event Player) + Eye Position(
 			Event Player), All Players(Team 2), Event Player, False) - 3 * Facing Direction Of(Event Player);
 		Wait(0.100, Ignore Condition);
 		Start Facing(Event Player, Vector Towards(Event Player, Event Player.U + Vector(0, -1.400, 0)), 1000, To World,
 			Direction and Turn Rate);
-		Chase Player Variable At Rate(Event Player, T, 100, 7.500, Destination and Rate);
+		Chase Player Variable At Rate(Event Player, T, 100, 10, Destination and Rate);
 		Event Player.R = 1;
 		Event Player.Flight = True;
 	}
@@ -4085,6 +4103,7 @@ rule("MOIRA Ultimate Coalescence Bomb Deactivation")
 		Stop Facing(Event Player);
 		Stop Camera(Event Player);
 		Allow Button(Event Player, Button(Ultimate));
+		Set Invisible(Event Player, None);
 	}
 }
 
@@ -4136,6 +4155,7 @@ rule("MOIRA Ultimate Coalescence Bomb Explosion at 100")
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} My will made real.", Hero Icon String(Hero(Moira))));
 		Wait(1, Ignore Condition);
+		Set Invisible(Event Player, None);
 	}
 }
 
@@ -4158,6 +4178,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Death")
 	{
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} Lost... focus...", Hero Icon String(Hero(Moira))));
+		Set Invisible(Event Player, None);
 	}
 }
 
@@ -4180,6 +4201,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Line of Sight")
 	{
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} I lost sight of the source...", Hero Icon String(Hero(Moira))));
+		Set Invisible(Event Player, None);
 	}
 }
 
@@ -4202,6 +4224,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Distance")
 	{
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} I got too far from the source...", Hero Icon String(Hero(Moira))));
+		Set Invisible(Event Player, None);
 	}
 }
 
@@ -4226,10 +4249,11 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Interruption")
 		Abort If Condition Is False;
 		Event Player.R = 2;
 		Small Message(Event Player, Custom String("{0} Lost concentration...", Hero Icon String(Hero(Moira))));
+		Set Invisible(Event Player, None);
 	}
 }
 
-disabled rule("MOIRA Ultimate Coalescence Bomb OFF on Button Press")
+disabled rule("MOIRA Ultimate Coalescence Bomb OFF on Button Press [Disabled by Arkhanglesk#11200; people kept reporting this as a bug]")
 {
 	event
 	{
@@ -4732,7 +4756,7 @@ rule("ROADHOG Asthmatic Trample [Broken after 11/4/2023 Hog update; fixed by Ark
 	actions
 	{
 		Wait(0.250, Ignore Condition);
-		Set Move Speed(Event Player, Event Player.MOVEMENT + 75);
+		Set Move Speed(Event Player, Event Player.MOVEMENT + 100);
 		"Broken after 11/4/2023 Hog update"
 		disabled Start Forcing Throttle(Event Player, 1, 1, 0, 0, 0, 0.500);
 		Wait(1, Ignore Condition);
@@ -6365,8 +6389,8 @@ rule("Echo HUD [Updated by Arkhanglesk#11200]")
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Echo), Button(Secondary Fire)), Custom String(
-			"FREE FLIGHT + AUTO FIRE STICKY BOMBS"), Custom String("ULTIMATE: OVERDRIVE"), Ability Icon String(Hero(Echo), Button(
-			Ability 2)), Custom String("[ABILITY 1] FLIGHT"), Custom String("[ABILITY 2] QUANTUM BEAM"));
+			"ALL ABILITIES (+DMG)(+SPD)"), Custom String("ULTIMATE: OVERDRIVE"), Ability Icon String(Hero(Echo), Button(Ability 2)),
+			Custom String("[ABILITY 1] BOOSTER DASH"), Custom String("[ABILITY 2] QUANTUM BEAM"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6655,7 +6679,7 @@ rule("Mercy HUD")
 	}
 }
 
-rule("Moira HUD")
+rule("Moira HUD [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6672,7 +6696,8 @@ rule("Moira HUD")
 		Event Player.Q = Last Created Entity;
 		Create Effect(All Players(All Teams), Sphere, Color(Purple), Event Player.U, Event Player.T / 4, Visible To Position and Radius);
 		Event Player.P = Last Created Entity;
-		Create In-World Text(Filtered Array(All Players(All Teams), Is Using Ultimate(Event Player) == True), Custom String("{0}%",
+		"Disabled to save server resources. Replaced by disabling inf ult duration & using in-game ult timer"
+		disabled Create In-World Text(Filtered Array(All Players(All Teams), Is Using Ultimate(Event Player) == True), Custom String("",
 			Round To Integer(Event Player.T, Down)), Event Player.U + Vector(0, 1, 0), 2, Do Not Clip, Visible To Position and String,
 			Color(White), Default Visibility);
 		Event Player.I = Last Text ID;
