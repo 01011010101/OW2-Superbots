@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Feb 27, 2024: 38 of 39 heroes updated."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Feb 28, 2024: 38 of 39 heroes updated."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -82,7 +82,7 @@ settings
 			Ana
 			{
 				Biotic Grenade Cooldown Time: 25%
-				Damage Dealt: 150%
+				Damage Dealt: 145%
 				Health: 200%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
@@ -117,11 +117,11 @@ settings
 			{
 				A-36 Tactical Grenade Cooldown Time: 40%
 				A-36 Tactical Grenade Knockback Scalar: 115%
-				Damage Dealt: 75%
-				Health: 150%
+				Damage Dealt: 78%
+				Health: 140%
 				No Ammunition Requirement: On
 				Reconfigure Cooldown Time: 0%
-				Ultimate Generation - Combat Configuration: Artillery: 5%
+				Ultimate Generation - Combat Configuration: Artillery: 2%
 			}
 
 			Brigitte
@@ -172,7 +172,7 @@ settings
 
 			Echo
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 170%
 				Flight Cooldown Time: 30%
 				Focusing Beam Cooldown Time: 160%
 				Health: 135%
@@ -194,7 +194,7 @@ settings
 
 			Hanzo
 			{
-				Damage Dealt: 130%
+				Damage Dealt: 110%
 				Lunge Cooldown Time: 25%
 				Lunge Distance Scalar: 200%
 				Sonic Arrow Cooldown Time: 50%
@@ -230,7 +230,7 @@ settings
 			Junkrat
 			{
 				Concussion Mine Cooldown Time: 50%
-				Damage Dealt: 150%
+				Damage Dealt: 145%
 				Health: 350%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat RIP-Tire: 25%
@@ -279,7 +279,7 @@ settings
 			Mauga
 			{
 				Cardiac Overdrive Cooldown Time: 75%
-				Damage Dealt: 145%
+				Damage Dealt: 140%
 				Health: 180%
 				Incendiary Chaingun Ignite Rate: 150%
 				No Ammunition Requirement: On
@@ -327,6 +327,7 @@ settings
 				Health: 250%
 				Ultimate Duration: 122%
 				Ultimate Generation - Combat Coalescence: 2%
+				Ultimate Generation - Passive Coalescence: 90%
 			}
 
 			Orisa
@@ -376,7 +377,7 @@ settings
 				Barrier Field Cooldown Time: 0%
 				Charge Cooldown Time: 75%
 				Charge Knockback Scalar: 120%
-				Health: 160%
+				Health: 150%
 				Rocket Hammer Knockback Scalar: 50%
 				Ultimate Generation - Combat Earthshatter: 5%
 			}
@@ -708,6 +709,7 @@ settings
 				Health: 400%
 				Incendiary Chaingun Ignite Duration: 25%
 				Incendiary Chaingun Ignite Rate: 150%
+				Overrun Cooldown Time: 65%
 				Overrun Knockback: 50%
 				Quick Melee: Off
 				Ultimate Duration: 75%
@@ -778,7 +780,6 @@ settings
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Shadow Step: Off
-				Ultimate Generation - Combat Death Blossom: 5%
 				Ultimate Generation - Passive Death Blossom: 500%
 				Wraith Form Cooldown Time: 200%
 			}
@@ -839,6 +840,7 @@ settings
 				Damage Dealt: 150%
 				Health: 500%
 				Helix Rockets Cooldown Time: 30%
+				Ultimate Generation - Combat Tactical Visor: 300%
 				Ultimate Generation - Passive Tactical Visor: 500%
 			}
 
@@ -1025,7 +1027,7 @@ rule("CREATED BY CEL#1115")
 
 	actions
 	{
-		disabled Disable Inspector Recording;
+		Disable Inspector Recording;
 		"Relic descriptions."
 		Global.RelicDescriptions = Array(Custom String("+200% HEALING DEALT/RECEIVED \r\n+50% DAMAGE AT FULL HP \r\n+10% HP/SEC"),
 			Custom String("+100% MOVEMENT SPEED \r\n+DAMAGE BASED ON SPEED \r\n-7 SECOND RESPAWN TIMER"), Custom String(
@@ -3179,16 +3181,17 @@ rule("BASTION Flashbang [Added by Arkhanglesk#11200]")
 
 	conditions
 	{
-		Ability Cooldown(Event Player, Button(Secondary Fire)) > 0;
+		disabled Ability Cooldown(Event Player, Button(Secondary Fire)) > 0;
+		Event Ability == Button(Secondary Fire);
 	}
 
 	actions
 	{
-		Set Status(Victim, Event Player, Stunned, 1.500);
+		Set Status(Victim, Event Player, Stunned, 1);
 	}
 }
 
-rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework by Arkhanglesk#11200; work in progress.]")
+rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3207,8 +3210,13 @@ rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework 
 	actions
 	{
 		Event Player.FullAutoFire = True;
+		Communicate(Event Player, Voice Line Up);
+		Wait(0.150, Ignore Condition);
 		Set Ultimate Charge(Event Player, 0);
 		Press Button(Event Player, Button(Ability 1));
+		Wait(0.150, Ignore Condition);
+		Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 100, Visible To);
+		Event Player.ID_Array[0] = Last Created Entity;
 		If(Players Within Radius(Event Player, 10, Team 2, Surfaces) >= 5);
 			Small Message(Event Player, Custom String(" {0} MULTIPLE BOTS DETECTED", Ability Icon String(Hero(Cassidy), Button(Ultimate))));
 			Wait(1, Ignore Condition);
@@ -3221,6 +3229,7 @@ rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework 
 			Wait(2, Ignore Condition);
 		End;
 		Wait(4, Ignore Condition);
+		Destroy Effect(Event Player.ID_Array[0]);
 		Event Player.FullAutoFire = False;
 	}
 }
@@ -3426,7 +3435,7 @@ rule("D.VA Mech Bunny Hop Deactivation Subroutine [Broken in OW2; fixed by Arkha
 	actions
 	{
 		Start Rule(EnableButtons, Do Nothing);
-		Chase Player Variable At Rate(Event Player, T, 100, 2.250, None);
+		Chase Player Variable At Rate(Event Player, T, 100, 1, None);
 		Stop Camera(Event Player);
 	}
 }
@@ -3591,10 +3600,10 @@ rule("ECHO Ultimate Overdrive [Updated by Arkhanglesk#11200]")
 	actions
 	{
 		Small Message(Event Player, Custom String(" {0} SYSTEMS IN OVERDRIVE", Hero Icon String(Hero(Echo))));
-		Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 1, Visible To);
-		Event Player.ID_Array[0] = Last Created Entity;
 		Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 100, Visible To);
-		Event Player.ID_Array[1] = Last Created Entity;
+		Event Player.ID_Array[0] = Last Created Entity;
+		disabled Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 100, Visible To);
+		disabled Event Player.ID_Array[1] = Last Created Entity;
 		Communicate(Event Player, Voice Line Up);
 		Wait(0.150, Ignore Condition);
 		Set Projectile Speed(Event Player, 500);
@@ -3603,10 +3612,10 @@ rule("ECHO Ultimate Overdrive [Updated by Arkhanglesk#11200]")
 		Event Player.Flight = True;
 		Wait(0.150, Ignore Condition);
 		Set Move Speed(Event Player, Event Player.MOVEMENT + 200);
-		"Enable Sticky Bomb auto fire [Added/Disabled by Arkhanglesk#11200; not very fun, needs rework]"
+		"Enable Sticky Bomb auto fire during ult [Added/Disabled by Arkhanglesk#11200; not very fun, needs rework]"
 		disabled Event Player.FullAutoFire = True;
 		Wait(10, Ignore Condition);
-		"Disable Sticky Bomb auto fire [Added/Disabled by Arkhanglesk#11200; not very fun, needs rework]"
+		"Disable Sticky Bomb auto fire [Added/Disabled by Arkhanglesk#11200]"
 		disabled Event Player.FullAutoFire = False;
 		Small Message(Event Player, Custom String(" {0} Flying Off", Hero Icon String(Hero(Echo))));
 		Wait(0.100, Ignore Condition);
@@ -3616,7 +3625,7 @@ rule("ECHO Ultimate Overdrive [Updated by Arkhanglesk#11200]")
 		Event Player.Flight = False;
 		Set Move Speed(Event Player, Event Player.MOVEMENT);
 		Destroy Effect(Event Player.ID_Array[0]);
-		Destroy Effect(Event Player.ID_Array[1]);
+		disabled Destroy Effect(Event Player.ID_Array[1]);
 	}
 }
 
@@ -5942,10 +5951,10 @@ rule("SOJOURN Jump Jets Burn [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Play Effect(All Players(All Teams), Explosion Sound, Color(White), Event Player, 200);
 		Play Effect(All Players(All Teams), Ring Explosion, Color(Orange), Position Of(Event Player), 3);
 		Play Effect(All Players(All Teams), Bad Explosion, Color(Orange), Position Of(Event Player), 3);
-		Start Damage Over Time(Players Within Radius(Event Player, 6, Team 2, Off), Event Player, 30, 3);
+		Set Status(Players Within Radius(Event Player, 5, Team 2, Surfaces), Null, Burning, 3);
+		Start Damage Over Time(Players Within Radius(Event Player, 5, Team 2, Off), Event Player, 30, 3);
 		Event Player.Q = 1;
 		Wait(3, Ignore Condition);
 		Event Player.Q = 0;
@@ -7257,9 +7266,9 @@ rule("Bastion HUD [Updated Arkhanglesk#11200]")
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Secondary Fire)), Custom String(
 			"[SECONDARY] KNOCKBACK & STUNS"), Custom String("FLASHBANG"), Ability Icon String(Hero(Baptiste), Button(Ability 1)),
 			Custom String("[ABILITY 1] TANK MODE HEALS 35% HP"), Custom String("AUTO-REPAIRS"), Ability Icon String(Hero(Baptiste), Button(
-			Ultimate)), Custom String("ROUNDS PENETRATE WALLS"), Custom String("ULTIMATE: AP ROUNDS"));
+			Ultimate)), Custom String("ROUNDS PENETRATE WALLS/SHIELDS"), Custom String("ULTIMATE: AP ROUNDS"));
+		"Work in progress - needs rework/optimizing. Very high server cost."
 		disabled Event Player.HUDTextHidden = Array(False, True, False, True);
-		"Set Hero HUD text."
 		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Primary Fire)), Custom String(
 			"[RELOAD] TO SWITCH MINIGUN AMMO"), Custom String(".50 BMG ROUNDS (+DMG)"), Ability Icon String(Hero(Torbjörn), Button(
 			Ultimate)), Custom String("[RELOAD] TO SWITCH MINIGUN AMMO"), Custom String("INCENDIARY ROUNDS (+BURN)"), Ability Icon String(
@@ -7312,11 +7321,10 @@ rule("D.Va HUD [Updated Arkhanglesk#11200]")
 		Wait(0.500, Ignore Condition);
 		Event Player.U = False;
 		Chase Player Variable At Rate(Event Player, T, 100, 1, None);
-		"Original"
 		Event Player.HUDTextHidden = Array(False, True, True, False);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(D.Va), Button(Ultimate)), Custom String(
-			"PRESS [RELOAD] WHEN {0} METER IS FULL", Ability Icon String(Hero(D.Va), Button(Ultimate))), Custom String("BUNNY HOP"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(D.Va), Button(Ultimate)), Custom String("[RELOAD] WHEN {0} METER IS FULL",
+			Ability Icon String(Hero(D.Va), Button(Ultimate))), Custom String("BUNNY HOP"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
