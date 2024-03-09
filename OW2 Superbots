@@ -2,7 +2,8 @@ settings
 {
 	main
 	{
-		Description: "https://tinyurl.com/stopthesuperbots v(PTR) - (Original code: WEVVY; modified code: 8M3SC). Level up as your damage increases.  Bot deaths, eliminations and final hits increase your damage.  Bots scale in difficulty as they die.  Team composition is everything here, stay alive, try to shoot everything you can and watch out for the \"Danger\" meter!  Almost every character has been tweaked in one way or another, play them to find out what's new!"
+		Description: "Level up by killing bots and getting killing blows.  Damage increases as you level up, but bots scale in difficulty as they die!  Team composition is everything here; stay alive, try to shoot everything you can and watch out for Lucio's ult!  Almost every character has been tweaked in one way or another, play them to find out what's new!\r\n\r\nCreated by Cel#1115. For a full list of hero abilities go to https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Working on getting this mode bug-free in OW2."
+		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
 	lobby
@@ -10,7 +11,7 @@ settings
 		Allow Players Who Are In Queue: Yes
 		Map Rotation: After A Game
 		Max Spectators: 4
-		Max Team 1 Players: 6
+		Max Team 1 Players: 4
 		Max Team 2 Players: 6
 		Return To Lobby: Never
 		Swap Teams After Match: No
@@ -20,6 +21,8 @@ settings
 	{
 		Assault
 		{
+			Capture Speed Modifier: 200%
+
 			enabled maps
 			{
 			}
@@ -28,19 +31,11 @@ settings
 		disabled Control
 		{
 			Capture Speed Modifier: 300%
-			Limit Valid Control Points: Third
-			Score To Win: 1
 		}
 
 		Escort
 		{
 			Payload Speed Modifier: 300%
-
-			disabled maps
-			{
-				Circuit royal
-				Shambali Monastery
-			}
 		}
 
 		Hybrid
@@ -48,21 +43,27 @@ settings
 			Capture Speed Modifier: 500%
 			Payload Speed Modifier: 300%
 
-			enabled maps
+			disabled maps
 			{
-				Blizzard World 0
-				Eichenwalde 0
-				Hollywood 0
-				King's Row 0
-				Numbani 0
+				Blizzard World Winter
+				Eichenwalde Halloween
+				Hollywood Halloween
+				King's Row Winter
 			}
+		}
+
+		Push
+		{
+			TS-1 Push Speed Modifier: 125%
+			TS-1 Walk Speed Modifier: 150%
 		}
 
 		General
 		{
 			Game Mode Start: Immediately
 			Kill Cam: Off
-			Spawn Health Packs: Enabled
+			Spawn Health Packs: Disabled
+			Tank Role Passive Health Bonus: Disabled
 		}
 	}
 
@@ -75,41 +76,52 @@ settings
 			Ana
 			{
 				Biotic Grenade Cooldown Time: 25%
-				Damage Dealt: 125%
-				Health: 200%
+				Damage Dealt: 150%
+				Health: 350%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
 				Sleep Dart Cooldown Time: 29%
+				Ultimate Generation - Passive Nano Boost: 75%
 			}
 
 			Ashe
 			{
 				Coach Gun Cooldown Time: 25%
 				Coach Gun Knockback Scalar Enemy: 200%
-				Coach Gun Knockback Scalar Self: 200%
-				Damage Dealt: 250%
+				Damage Dealt: 150%
 				Dynamite Cooldown Time: 12%
 				Dynamite Fuse Time Scalar: 1%
-				Ultimate Generation - Combat B.O.B.: 10%
+				Health: 350%
+				Projectile Speed: 90%
+				Ultimate Duration: 150%
+				Ultimate Generation - Passive B.O.B.: 50%
 			}
 
 			Baptiste
 			{
-				Damage Dealt: 250%
+				Damage Dealt: 150%
 				Healing Dealt: 200%
-				Health: 200%
+				Health: 350%
+				Immortality Field Cooldown Time: 25%
 				Jump Vertical Speed: 125%
 				No Ammunition Requirement: On
-				Regenerative Burst Cooldown Time: 50%
-				Ultimate Generation - Combat Amplification Matrix: 10%
+				Regenerative Burst Cooldown Time: 25%
+				Ultimate Duration: 300%
+				Ultimate Generation - Combat Amplification Matrix: 150%
 			}
 
 			Bastion
 			{
-				Damage Dealt: 250%
+				A-36 Tactical Grenade Cooldown Time: 10%
+				A-36 Tactical Grenade Knockback Scalar: 100%
+				Damage Dealt: 150%
+				Health: 350%
 				No Ammunition Requirement: On
-				Ultimate Duration: 150%
-				Ultimate Generation - Combat Configuration: Artillery: 3%
+				Reconfigure Cooldown Time: 0%
+				Ultimate Duration: 500%
+				Ultimate Generation - Combat Configuration: Artillery: 75%
+				Ultimate Generation - Passive Configuration: Artillery: 25%
+				Ultimate Generation Configuration: Artillery: 75%
 			}
 
 			Brigitte
@@ -117,21 +129,25 @@ settings
 				Barrier Shield Cooldown Time: 0%
 				Barrier Shield Recharge Rate: 500%
 				Damage Dealt: 150%
-				Health: 400%
+				Health: 350%
 				Repair Pack Cooldown Time: 35%
-				Shield Bash Cooldown Time: 35%
-				Ultimate Generation - Combat Rally: 50%
-				Ultimate Generation - Passive Rally: 90%
-				Ultimate Generation Rally: 90%
+				Shield Bash Cooldown Time: 150%
+				Shield Bash Knockback Scalar: 50%
+				Ultimate Generation - Combat Rally: 150%
+				Ultimate Generation - Passive Rally: 50%
+				Ultimate Generation Rally: 115%
 				Whip Shot Knockback Scalar: 200%
 			}
 
 			Cassidy
 			{
-				Combat Roll Cooldown Time: 0%
-				Damage Dealt: 250%
-				Magnetic Grenade Cooldown Time: 78%
-				Ultimate Generation - Combat Deadeye: 1%
+				Ammunition Clip Size Scalar: 300%
+				Combat Roll Cooldown Time: 10%
+				Damage Dealt: 150%
+				Health: 350%
+				Magnetic Grenade Cooldown Time: 50%
+				Ultimate Generation - Combat Deadeye: 115%
+				Ultimate Generation - Passive Deadeye: 90%
 			}
 
 			D.Va
@@ -141,59 +157,132 @@ settings
 				Defense Matrix Maximum Time: 300%
 				Defense Matrix Recharge Rate: 200%
 				Micro Missiles Cooldown Time: 15%
-				Ultimate Generation - Combat Self-Destruct: 22%
-				Ultimate Generation - Passive Self-Destruct: 150%
+				Ultimate Generation - Combat Self-Destruct: 60%
+				Ultimate Generation - Passive Self-Destruct: 25%
+				Ultimate Generation Self-Destruct: 55%
 			}
 
 			Doomfist
 			{
-				Damage Dealt: 148%
-				Health: 200%
+				Damage Dealt: 150%
+				Health: 300%
+				Infinite Ultimate Duration: On
 				No Ammunition Requirement: On
-				Power Block Cooldown Time: 9%
+				Power Block Charge Rate: 10%
+				Power Block Cooldown Time: 0%
 				Quick Melee: Off
-				Rocket Punch Cooldown Time: 9%
+				Rocket Punch Cooldown Time: 0%
 				Seismic Slam Cooldown Time: 11%
+				Ultimate Duration: 200%
+				Ultimate Generation - Passive Meteor Strike: 60%
 			}
 
 			Echo
 			{
 				Damage Dealt: 250%
 				Flight Cooldown Time: 0%
+				Focusing Beam: Off
+				Movement Gravity: 50%
 				No Ammunition Requirement: On
-				Sticky Bombs Cooldown Time: 17%
-				Ultimate Generation - Combat Duplicate: 10%
+				Sticky Bombs Cooldown Time: 0%
+				Ultimate Generation - Combat Duplicate: 5%
+				Ultimate Generation - Passive Duplicate: 500%
+				Ultimate Generation Duplicate: 200%
 			}
 
 			Genji
 			{
-				Damage Dealt: 200%
+				Damage Dealt: 150%
 				Deflect Cooldown Time: 25%
-				Health: 200%
+				Health: 350%
 				No Ammunition Requirement: On
 				Swift Strike Cooldown Time: 25%
 				Ultimate Duration: 200%
-				Ultimate Generation - Combat Dragonblade: 10%
+				Ultimate Generation - Passive Dragonblade: 10%
 			}
 
 			Hanzo
 			{
+				Damage Dealt: 150%
 				Lunge Cooldown Time: 25%
 				Lunge Distance Scalar: 200%
-				Sonic Arrow Cooldown Time: 19%
+				Sonic Arrow Cooldown Time: 200%
 				Storm Arrows Cooldown Time: 12%
 				Storm Arrows Quantity: 12
-				Ultimate Generation - Combat Dragonstrike: 25%
-				Ultimate Generation - Passive Dragonstrike: 25%
-				Ultimate Generation Dragonstrike: 25%
+				Ultimate Generation - Combat Dragonstrike: 60%
+				Ultimate Generation - Passive Dragonstrike: 30%
+				Ultimate Generation Dragonstrike: 60%
+			}
+
+			Illari
+			{
+				Damage Dealt: 150%
+				Healing Dealt: 400%
+				Healing Pylon Cooldown Time: 25%
+				Health: 350%
+				No Ammunition Requirement: On
+				Outburst Cooldown Time: 25%
+				Solar Energy Maximum: 500%
+				Solar Energy Recharge Rate: 25%
+				Ultimate Generation - Combat Captive Sun: 75%
+				Ultimate Generation - Passive Captive Sun: 30%
+				Ultimate Generation Captive Sun: 75%
+			}
+
+			Junker Queen
+			{
+				Carnage Cooldown Time: 25%
+				Commanding Shout Cooldown Time: 25%
+				Damage Dealt: 150%
+				Health: 300%
+				Jagged Blade Cooldown Time: 75%
+				Jagged Blade Delay Before Automatic Recall: 40%
+				Jagged Blade Knockback Scalar: 75%
+				No Ammunition Requirement: On
+				Projectile Speed: 110%
+				Ultimate Generation - Combat Rampage: 75%
+				Ultimate Generation - Passive Rampage: 50%
 			}
 
 			Junkrat
 			{
 				Concussion Mine Cooldown Time: 50%
-				Damage Dealt: 250%
+				Damage Dealt: 150%
+				Health: 275%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat RIP-Tire: 25%
+				Ultimate Generation - Combat RIP-Tire: 90%
+				Ultimate Generation - Passive RIP-Tire: 50%
+			}
+
+			Kiriko
+			{
+				Damage Dealt: 150%
+				Healing Dealt: 300%
+				Health: 350%
+				No Ammunition Requirement: On
+				Protection Suzu Cooldown Time: 25%
+				Swift Step Cooldown Time: 25%
+				Swift Step Distance Scalar: 300%
+				Ultimate Generation - Combat Kitsune Rush: 115%
+				Ultimate Generation - Passive Kitsune Rush: 50%
+			}
+
+			Lifeweaver
+			{
+				Damage Dealt: 150%
+				Healing Dealt: 300%
+				Health: 300%
+				Life Grip and Healing Blossom Range: 25%
+				Life Grip Cooldown Time: 25%
+				No Ammunition Requirement: On
+				Petal Platform Cooldown Time: 25%
+				Petal Platform Health: 25%
+				Rejuvenating Dash Cooldown Time: 0%
+				Rejuvenating Dash Healing: 200%
+				Tree of Life Health: 300%
+				Ultimate Generation - Combat Tree of Life: 90%
+				Ultimate Generation - Passive Tree of Life: 50%
+				Ultimate Generation Tree of Life: 90%
 			}
 
 			Lúcio
@@ -202,31 +291,35 @@ settings
 				Crossfade: Off
 				Damage Dealt: 400%
 				No Ammunition Requirement: On
-				Soundwave Cooldown Time: 25%
+				Soundwave Cooldown Time: 150%
 				Soundwave Knockback Scalar: 25%
-				Ultimate Generation - Combat Sound Barrier: 15%
+				Ultimate Generation - Combat Sound Barrier: 1%
 				Ultimate Generation - Passive Sound Barrier: 400%
-				Ultimate Generation Sound Barrier: 250%
+				Ultimate Generation Sound Barrier: 205%
 			}
 
 			Mei
 			{
 				Cryo-Freeze Cooldown Time: 43%
-				Damage Dealt: 250%
+				Damage Dealt: 150%
 				Freeze Stacking: On
+				Health: 350%
 				Ice Wall Cooldown Time: 42%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Blizzard: 5%
+				Ultimate Generation - Combat Blizzard: 80%
+				Ultimate Generation - Passive Blizzard: 75%
+				Ultimate Generation Blizzard: 90%
 				Weapon Freeze Duration Scalar: 200%
 				Weapon Freeze Rate Scalar: 200%
 			}
 
 			Mercy
 			{
-				Damage Dealt: 250%
+				Damage Dealt: 150%
 				Guardian Angel Cooldown Time: 25%
 				Health: 200%
 				Jump Vertical Speed: 250%
+				Movement Gravity: 75%
 				No Ammunition Requirement: On
 				Resurrect Cooldown Time: 25%
 				Ultimate Generation - Combat Valkyrie: 0%
@@ -241,62 +334,92 @@ settings
 				Biotic Orb Cooldown Time: 40%
 				Biotic Orb Max Damage Scalar: 500%
 				Biotic Orb Max Healing Scalar: 500%
+				Damage Dealt: 150%
 				Fade Cooldown Time: 0%
 				Healing Dealt: 200%
+				Health: 350%
 				Infinite Ultimate Duration: On
-				Ultimate Generation - Combat Coalescence: 2%
-				Ultimate Generation Coalescence: 125%
+				Projectile Speed: 150%
+				Ultimate Generation - Combat Coalescence: 80%
+				Ultimate Generation - Passive Coalescence: 60%
+				Ultimate Generation Coalescence: 50%
 			}
 
 			Orisa
 			{
+				Ammunition Clip Size Scalar: 200%
 				Damage Dealt: 150%
 				Energy Javelin Cooldown Time: 45%
 				Fortify Cooldown Time: 35%
 				Javelin Spin Cooldown Time: 43%
 				No Ammunition Requirement: On
+				Ultimate Generation - Combat Terra Surge: 115%
+				Ultimate Generation - Passive Terra Surge: 60%
 			}
 
 			Pharah
 			{
 				Concussive Blast Cooldown Time: 66%
 				Concussive Blast Knockback Scalar: 25%
-				Damage Dealt: 133%
+				Damage Dealt: 150%
 				Hover Jets Unlimited Fuel: On
 				Jump Jet Cooldown Time: 0%
 				No Ammunition Requirement: On
 				Rocket Launcher Knockback Scalar: 0%
-				Ultimate Generation - Combat Barrage: 25%
+				Ultimate Generation - Combat Barrage: 50%
+				Ultimate Generation - Passive Barrage: 25%
+				Ultimate Generation Barrage: 50%
+			}
+
+			Ramattra
+			{
+				Damage Dealt: 150%
+				Health: 200%
+				Nemesis Form Cooldown Time: 25%
+				No Ammunition Requirement: On
+				Projectile Gravity: 110%
+				Ravenous Vortex Cooldown Time: 25%
+				Ultimate Duration: 200%
+				Ultimate Generation - Combat Annihilation: 90%
+				Ultimate Generation - Passive Annihilation: 50%
+				Ultimate Generation Annihilation: 90%
+				Void Barrier Omnic Form Cooldown Time: 25%
 			}
 
 			Reaper
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 150%
 				Healing Dealt: 200%
+				Movement Speed: 150%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Death Blossom: 25%
+				Ultimate Generation - Passive Death Blossom: 70%
 				Wraith Form Cooldown Time: 50%
 			}
 
 			Reinhardt
 			{
 				Barrier Field Cooldown Time: 0%
-				Barrier Field Recharge Rate: 500%
-				Charge Cooldown Time: 40%
+				Barrier Field Recharge Rate: 25%
+				Charge Cooldown Time: 75%
 				Charge Knockback Scalar: 50%
 				Damage Dealt: 150%
 				Fire Strike Cooldown Time: 32%
-				Rocket Hammer Knockback Scalar: 0%
+				Health: 300%
+				Movement Speed: 90%
+				Rocket Hammer Knockback Scalar: 50%
+				Ultimate Generation - Combat Earthshatter: 75%
+				Ultimate Generation - Passive Earthshatter: 50%
+				Ultimate Generation Earthshatter: 90%
 			}
 
 			Roadhog
 			{
-				Chain Hook Cooldown Time: 50%
+				Chain Hook Cooldown Time: 150%
 				Damage Dealt: 150%
 				Healing Dealt: 200%
 				No Ammunition Requirement: On
 				Pig Pen Cooldown Time: 75%
-				Ultimate Generation - Combat Whole Hog: 25%
+				Ultimate Generation - Passive Whole Hog: 60%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -305,30 +428,46 @@ settings
 				Accretion Cooldown Time: 25%
 				Accretion Knockback Scalar: 300%
 				Experimental Barrier Cooldown Time: 0%
-				Experimental Barrier Recharge Rate: 500%
+				Health: 300%
 				Jump Vertical Speed: 250%
 				Kinetic Grasp Cooldown Time: 500%
-				Ultimate Generation - Combat Gravitic Flux: 0%
-				Ultimate Generation - Passive Gravitic Flux: 375%
+				Ultimate Generation - Passive Gravitic Flux: 50%
+			}
+
+			Sojourn
+			{
+				Damage Dealt: 150%
+				Disruptor Shot Cooldown Time: 25%
+				Health: 350%
+				No Ammunition Requirement: On
+				Power Slide Cooldown Time: 25%
+				Railgun Alt Fire Energy Charge Rate: 0%
+				Ultimate Generation - Combat Overclock: 55%
+				Ultimate Generation - Passive Overclock: 35%
 			}
 
 			Soldier: 76
 			{
-				Damage Dealt: 250%
-				Helix Rockets Cooldown Time: 16%
+				Damage Dealt: 150%
+				Helix Rockets Cooldown Time: 30%
 				Helix Rockets Knockback Scalar: 400%
 				No Ammunition Requirement: On
 				Ultimate Duration: 200%
-				Ultimate Generation - Combat Tactical Visor: 6%
-				Ultimate Generation - Passive Tactical Visor: 450%
+				Ultimate Generation - Combat Tactical Visor: 90%
+				Ultimate Generation - Passive Tactical Visor: 75%
+				Ultimate Generation Tactical Visor: 90%
 			}
 
 			Sombra
 			{
-				Damage Dealt: 200%
-				Health: 150%
+				Damage Dealt: 150%
+				Hack Cooldown Time: 25%
+				Health: 350%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat EMP: 1%
+				Translocator Cooldown Time: 0%
+				Ultimate Generation - Combat EMP: 45%
+				Ultimate Generation - Passive EMP: 20%
+				Ultimate Generation EMP: 45%
 				Virus Cooldown Time: 0%
 			}
 
@@ -338,18 +477,21 @@ settings
 				Health: 200%
 				No Ammunition Requirement: On
 				Projectile Speed: 50%
-				Sentry Turret Cooldown Time: 50%
-				Ultimate Generation Photon Barrier: 150%
+				Sentry Turret Cooldown Time: 300%
+				Ultimate Generation - Combat Photon Barrier: 115%
+				Ultimate Generation - Passive Photon Barrier: 50%
 			}
 
 			Torbjörn
 			{
 				Damage Dealt: 150%
 				Deploy Turret Cooldown Time: 0%
-				Health: 250%
+				Health: 350%
 				No Ammunition Requirement: On
 				Overload Duration Scalar: 200%
-				Ultimate Generation - Combat Molten Core: 3%
+				Ultimate Generation - Combat Molten Core: 50%
+				Ultimate Generation - Passive Molten Core: 5%
+				Ultimate Generation Molten Core: 25%
 			}
 
 			Tracer
@@ -358,28 +500,34 @@ settings
 				Damage Dealt: 250%
 				Health: 150%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Pulse Bomb: 0%
-				Ultimate Generation - Passive Pulse Bomb: 250%
+				Recall Cooldown Time: 50%
+				Ultimate Generation - Combat Pulse Bomb: 35%
+				Ultimate Generation - Passive Pulse Bomb: 20%
+				Ultimate Generation Pulse Bomb: 25%
 			}
 
 			Widowmaker
 			{
 				Damage Dealt: 200%
+				Damage Received: 200%
 				Grappling Hook Cooldown Time: 0%
+				Health: 300%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Infra-Sight: 1%
-				Ultimate Generation - Passive Infra-Sight: 175%
+				Ultimate Generation - Combat Infra-Sight: 60%
+				Ultimate Generation - Passive Infra-Sight: 30%
+				Ultimate Generation Infra-Sight: 60%
 			}
 
 			Winston
 			{
+				Barrier Projector Cooldown Time: 150%
 				Damage Dealt: 150%
 				Jump Pack Acceleration Scalar: 45%
 				Jump Pack Cooldown Time: 0%
 				Jump Vertical Speed: 200%
 				No Ammunition Requirement: On
 				Ultimate Duration: 50%
-				Ultimate Generation - Combat Primal Rage: 25%
+				Ultimate Generation - Passive Primal Rage: 50%
 			}
 
 			Wrecking Ball
@@ -400,16 +548,19 @@ settings
 				No Ammunition Requirement: On
 				Particle Barrier Cooldown Time: 40%
 				Projected Barrier Cooldown Time: 49%
-				Ultimate Generation - Combat Graviton Surge: 10%
+				Ultimate Generation - Combat Graviton Surge: 60%
+				Ultimate Generation - Passive Graviton Surge: 30%
+				Ultimate Generation Graviton Surge: 60%
 			}
 
 			Zenyatta
 			{
-				Damage Dealt: 177%
+				Damage Dealt: 150%
 				Health: 150%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Transcendence: 0%
-				Ultimate Generation - Passive Transcendence: 300%
+				Ultimate Generation - Combat Transcendence: 60%
+				Ultimate Generation - Passive Transcendence: 40%
+				Ultimate Generation Transcendence: 50%
 			}
 		}
 
@@ -417,116 +568,315 @@ settings
 		{
 			Ana
 			{
-				Damage Dealt: 200%
-				Health: 500%
-				Sleep Dart Cooldown Time: 29%
+				Ammunition Clip Size Scalar: 200%
+				Biotic Grenade Cooldown Time: 150%
+				Damage Dealt: 150%
+				Health: 350%
+				Sleep Dart Cooldown Time: 200%
+				Ultimate Generation - Passive Nano Boost: 75%
+				Ultimate Generation Nano Boost: 50%
 			}
 
 			Ashe
 			{
-				Coach Gun Cooldown Time: 25%
-				Damage Dealt: 250%
-				Dynamite Cooldown Time: 12%
+				Ammunition Clip Size Scalar: 250%
+				Coach Gun Cooldown Time: 50%
+				Coach Gun Knockback Scalar Enemy: 50%
+				Coach Gun Knockback Scalar Self: 125%
+				Damage Dealt: 150%
+				Dynamite Fuse Time Scalar: 1%
+				Health: 350%
+				No Ammunition Requirement: On
+				Projectile Speed: 90%
+				Ultimate Duration: 150%
+				Ultimate Generation - Combat B.O.B.: 250%
+				Ultimate Generation - Passive B.O.B.: 250%
+				Ultimate Generation B.O.B.: 250%
+			}
+
+			Baptiste
+			{
+				Ammunition Clip Size Scalar: 200%
+				Damage Dealt: 150%
+				Health: 350%
+				Immortality Field Cooldown Time: 300%
+				Movement Gravity: 90%
+				Projectile Gravity: 60%
+				Regenerative Burst Cooldown Time: 150%
+				Ultimate Duration: 200%
+				Ultimate Generation - Combat Amplification Matrix: 150%
+				Ultimate Generation Amplification Matrix: 150%
 			}
 
 			Bastion
 			{
 				A-36 Tactical Grenade: Off
-				Health: 500%
+				Damage Dealt: 150%
+				Health: 350%
+				Movement Gravity: 110%
+				Movement Speed: 95%
 				No Ammunition Requirement: On
-				Quick Melee: Off
+				Reconfigure Cooldown Time: 0%
+				Ultimate Duration: 500%
+				Ultimate Generation - Combat Configuration: Artillery: 300%
+				Ultimate Generation - Passive Configuration: Artillery: 500%
+				Ultimate Generation Configuration: Artillery: 200%
+			}
+
+			Brigitte
+			{
+				Barrier Shield Cooldown Time: 150%
+				Barrier Shield Recharge Rate: 50%
+				Damage Dealt: 150%
+				Health: 350%
+				Shield Bash Cooldown Time: 150%
+				Shield Bash Knockback Scalar: 50%
+				Ultimate Generation - Combat Rally: 300%
+				Ultimate Generation - Passive Rally: 300%
+				Ultimate Generation Rally: 300%
 			}
 
 			Cassidy
 			{
 				Ammunition Clip Size Scalar: 150%
+				Combat Roll Cooldown Time: 150%
 				Damage Dealt: 150%
-				Health: 500%
-				Ultimate Generation - Combat Deadeye: 200%
-				Ultimate Generation Deadeye: 200%
+				Health: 350%
+				Magnetic Grenade Cooldown Time: 200%
+				Ultimate Generation - Combat Deadeye: 150%
 			}
 
 			D.Va
 			{
-				Boosters Cooldown Time: 18%
-				Damage Dealt: 223%
-				Micro Missiles Cooldown Time: 15%
-				Ultimate Generation - Combat Self-Destruct: 22%
+				Damage Dealt: 250%
+				Defense Matrix Recharge Rate: 200%
+				Health: 300%
+				Movement Speed: 95%
+				Ultimate Generation - Combat Self-Destruct: 50%
+				Ultimate Generation - Passive Self-Destruct: 50%
+				Ultimate Generation Self-Destruct: 50%
 			}
 
 			Doomfist
 			{
-				Damage Dealt: 148%
-				Power Block Cooldown Time: 9%
-				Rocket Punch Cooldown Time: 9%
-				Seismic Slam Cooldown Time: 11%
+				Ammunition Clip Size Scalar: 200%
+				Ammunition Regeneration Time Scalar: 200%
+				Damage Dealt: 150%
+				Health: 500%
+				Meteor Strike Knockback Scalar: 60%
+				No Ammunition Requirement: On
+				Power Block Cooldown Time: 200%
+				Rocket Punch Knockback Scalar: 50%
+				Ultimate Duration: 150%
+				Ultimate Generation - Combat Meteor Strike: 300%
+				Ultimate Generation - Passive Meteor Strike: 500%
+				Ultimate Generation Meteor Strike: 250%
 			}
 
 			Echo
 			{
+				Damage Dealt: 300%
+				Flight Cooldown Time: 25%
+				Focusing Beam Cooldown Time: 50%
+				Movement Gravity: 25%
 				No Ammunition Requirement: On
+				Ultimate Generation - Combat Duplicate: 50%
+				Ultimate Generation - Passive Duplicate: 50%
+				Ultimate Generation Duplicate: 50%
+			}
+
+			Genji
+			{
+				Damage Dealt: 150%
+				Health: 350%
+				Movement Gravity: 90%
+				Ultimate Generation - Combat Dragonblade: 300%
+				Ultimate Generation Dragonblade: 300%
 			}
 
 			Hanzo
 			{
-				Sonic Arrow Cooldown Time: 19%
-				Storm Arrows Cooldown Time: 12%
+				Damage Dealt: 150%
+				Health: 400%
+				Movement Gravity: 95%
+				Spawn With Ultimate Ready: On
+				Storm Arrows Quantity: 12
+			}
+
+			Illari
+			{
+				Damage Dealt: 150%
+				Healing Dealt: 400%
+				Healing Pylon Cooldown Time: 50%
+				Health: 350%
+				Outburst Cooldown Time: 25%
+				Ultimate Generation - Combat Captive Sun: 200%
+				Ultimate Generation - Passive Captive Sun: 500%
+				Ultimate Generation Captive Sun: 200%
+			}
+
+			Junker Queen
+			{
+				Carnage Cooldown Time: 50%
+				Damage Dealt: 150%
+				Health: 500%
+				Jagged Blade Cooldown Time: 200%
+				Jagged Blade Delay Before Automatic Recall: 400%
+				Jagged Blade Knockback Scalar: 200%
+				Ultimate Generation - Combat Rampage: 200%
+				Ultimate Generation - Passive Rampage: 200%
+				Ultimate Generation Rampage: 200%
+			}
+
+			Junkrat
+			{
+				Ammunition Clip Size Scalar: 150%
+				Concussion Mine Cooldown Time: 200%
+				Concussion Mine Knockback Scalar: 50%
+				Damage Dealt: 150%
+				Frag Launcher Knockback Scalar: 60%
+				Health: 275%
+				Movement Gravity: 50%
+				Steel Trap Cooldown Time: 200%
+				Ultimate Duration: 500%
+				Ultimate Generation - Combat RIP-Tire: 300%
+				Ultimate Generation - Passive RIP-Tire: 500%
+			}
+
+			Kiriko
+			{
+				Damage Dealt: 150%
+				Health: 350%
+				Ultimate Generation - Combat Kitsune Rush: 200%
+				Ultimate Generation - Passive Kitsune Rush: 300%
+				Ultimate Generation Kitsune Rush: 200%
+			}
+
+			Lifeweaver
+			{
+				Damage Dealt: 150%
+				Health: 300%
+				Life Grip and Healing Blossom Range: 200%
+				Life Grip Cooldown Time: 25%
+				Petal Platform Cooldown Time: 50%
+				Rejuvenating Dash Cooldown Time: 50%
+				Rejuvenating Dash Healing: 500%
+				Tree of Life Health: 300%
+				Ultimate Generation - Combat Tree of Life: 250%
+				Ultimate Generation - Passive Tree of Life: 500%
+				Ultimate Generation Tree of Life: 250%
 			}
 
 			Lúcio
 			{
+				Amp It Up Cooldown Time: 30%
 				Crossfade: Off
-				Damage Dealt: 200%
+				Damage Dealt: 400%
 				No Ammunition Requirement: On
 				Soundwave Cooldown Time: 150%
 				Soundwave Knockback Scalar: 200%
 				Ultimate Generation - Combat Sound Barrier: 1%
 				Ultimate Generation - Passive Sound Barrier: 500%
-				Ultimate Generation Sound Barrier: 200%
+				Ultimate Generation Sound Barrier: 205%
 			}
 
 			Mei
 			{
-				Cryo-Freeze Cooldown Time: 43%
+				Ammunition Clip Size Scalar: 175%
+				Cryo-Freeze Cooldown Time: 200%
 				Damage Dealt: 150%
-				Health: 500%
-				Ice Wall Cooldown Time: 42%
+				Health: 350%
+				Ice Wall Cooldown Time: 200%
+				Ultimate Generation - Passive Blizzard: 300%
+				Weapon Freeze Rate Scalar: 75%
 			}
 
 			Mercy
 			{
-				Damage Dealt: 250%
-				Ultimate Generation Valkyrie: 50%
+				Damage Dealt: 200%
+				Guardian Angel Cooldown Time: 0%
+				Health: 400%
+				Movement Gravity: 75%
+				No Ammunition Requirement: On
+				Resurrect: Off
+			}
+
+			Moira
+			{
+				Biotic Energy Maximum: 150%
+				Damage Dealt: 150%
+				Health: 350%
+				Projectile Speed: 150%
+				Ultimate Duration: 300%
+				Ultimate Generation - Passive Coalescence: 500%
 			}
 
 			Orisa
 			{
-				Energy Javelin Cooldown Time: 45%
-				Javelin Spin Cooldown Time: 43%
+				Ammunition Clip Size Scalar: 200%
+				Damage Dealt: 150%
+				Health: 500%
+				Javelin Spin Cooldown Time: 50%
+				Ultimate Generation - Combat Terra Surge: 300%
+				Ultimate Generation - Passive Terra Surge: 500%
+				Ultimate Generation Terra Surge: 300%
 			}
 
 			Pharah
 			{
-				Concussive Blast Cooldown Time: 66%
-				Damage Dealt: 133%
+				Concussive Blast Cooldown Time: 50%
+				Concussive Blast Knockback Scalar: 25%
+				Damage Dealt: 150%
+				Health: 400%
+				Hover Jets Maximum Time: 500%
+				Hover Jets Recharge Rate: 0%
+				Hover Jets Unlimited Fuel: On
+				Jump Jet Cooldown Time: 0%
+				Ultimate Generation - Combat Barrage: 150%
+				Ultimate Generation - Passive Barrage: 50%
+			}
+
+			Ramattra
+			{
+				Damage Dealt: 150%
+				Health: 500%
+				Projectile Gravity: 110%
+				Ravenous Vortex Cooldown Time: 50%
+				Ultimate Generation - Combat Annihilation: 200%
+				Ultimate Generation - Passive Annihilation: 300%
+				Ultimate Generation Annihilation: 200%
+				Void Barrier Omnic Form Cooldown Time: 25%
 			}
 
 			Reaper
 			{
-				Health: 200%
-				Movement Speed: 150%
+				Damage Dealt: 150%
+				Health: 250%
+				Movement Speed: 125%
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Shadow Step: Off
 				Ultimate Generation - Combat Death Blossom: 300%
-				Ultimate Generation - Passive Death Blossom: 200%
+				Ultimate Generation - Passive Death Blossom: 500%
 				Ultimate Generation Death Blossom: 500%
 				Wraith Form Cooldown Time: 200%
 			}
 
 			Reinhardt
 			{
-				Charge Cooldown Time: 40%
+				Barrier Field Cooldown Time: 200%
+				Charge Cooldown Time: 75%
+				Charge Knockback Scalar: 35%
+				Damage Dealt: 150%
+				Fire Strike Cooldown Time: 50%
+				Health: 500%
+				Jump Vertical Speed: 90%
+				Movement Gravity: 110%
+				Movement Speed: 85%
+				Rocket Hammer Knockback Scalar: 50%
+				Ultimate Generation - Combat Earthshatter: 250%
+				Ultimate Generation - Passive Earthshatter: 500%
+				Ultimate Generation Earthshatter: 250%
 			}
 
 			Roadhog
@@ -544,69 +894,138 @@ settings
 				Whole Hog Knockback Scalar: 0%
 			}
 
+			Sigma
+			{
+				Accretion Knockback Scalar: 65%
+				Damage Dealt: 250%
+				Experimental Barrier Cooldown Time: 125%
+				Experimental Barrier Recharge Rate: 50%
+				Health: 400%
+				Movement Gravity: 50%
+				Projectile Gravity: 50%
+				Ultimate Generation - Passive Gravitic Flux: 500%
+			}
+
+			Sojourn
+			{
+				Damage Dealt: 150%
+				Health: 350%
+				Ultimate Generation - Passive Overclock: 500%
+			}
+
 			Soldier: 76
 			{
+				Ammunition Clip Size Scalar: 150%
 				Biotic Field Cooldown Time: 200%
-				Damage Dealt: 150%
-				Health: 500%
+				Health: 275%
 				Helix Rockets Cooldown Time: 30%
 				Ultimate Generation - Combat Tactical Visor: 300%
+				Ultimate Generation Tactical Visor: 150%
 			}
 
 			Sombra
 			{
-				Damage Dealt: 150%
-				Health: 500%
+				Damage Dealt: 200%
+				Hack Cooldown Time: 500%
+				Health: 350%
+				Projectile Speed: 300%
+				Translocator Cooldown Time: 50%
+				Ultimate Ability EMP: Off
+				Virus Cooldown Time: 50%
+			}
+
+			Symmetra
+			{
+				Ammunition Clip Size Scalar: 225%
+				Damage Dealt: 200%
+				Health: 200%
+				Projectile Speed: 60%
+				Sentry Turret Cooldown Time: 300%
+				Teleporter: Off
+				Ultimate Generation - Passive Photon Barrier: 500%
 			}
 
 			Torbjörn
 			{
-				Health: 500%
+				Ammunition Clip Size Scalar: 100%
+				Damage Dealt: 150%
+				Deploy Turret Cooldown Time: 500%
+				Health: 350%
 				No Ammunition Requirement: On
-				Overload Cooldown Time: 50%
 				Quick Melee: Off
 				Ultimate Duration: 500%
-				Ultimate Generation - Combat Molten Core: 500%
+				Ultimate Generation - Combat Molten Core: 250%
 				Ultimate Generation - Passive Molten Core: 500%
-				Ultimate Generation Molten Core: 500%
+				Ultimate Generation Molten Core: 250%
+			}
+
+			Tracer
+			{
+				Ammunition Clip Size Scalar: 200%
+				Damage Dealt: 250%
+				Health: 150%
+				Movement Gravity: 90%
+				Movement Speed: 110%
+				Ultimate Generation - Combat Pulse Bomb: 300%
+				Ultimate Generation - Passive Pulse Bomb: 500%
+				Ultimate Generation Pulse Bomb: 300%
+			}
+
+			Widowmaker
+			{
+				Grappling Hook Cooldown Time: 25%
+				Health: 300%
+				Movement Speed: 110%
+				No Ammunition Requirement: On
+				No Automatic Fire: On
+				Ultimate Ability Infra-Sight: Off
+				Venom Mine Cooldown Time: 25%
+			}
+
+			Winston
+			{
+				Ammunition Clip Size Scalar: 250%
+				Barrier Projector Cooldown Time: 150%
+				Damage Dealt: 200%
+				Health: 500%
+				Infinite Ultimate Duration: On
+				Jump Pack Acceleration Scalar: 75%
+				Jump Pack Cooldown Time: 50%
+				Jump Pack Knockback Scalar: 50%
+				Primal Rage Melee Knockback Scalar: 50%
+				Ultimate Duration: 500%
+				Ultimate Generation - Combat Primal Rage: 400%
+				Ultimate Generation - Passive Primal Rage: 400%
+				Ultimate Generation Primal Rage: 400%
 			}
 
 			Wrecking Ball
 			{
 				Adaptive Shield Cooldown Time: 80%
 				Damage Dealt: 175%
+				Ultimate Generation - Combat Minefield: 15%
 			}
 
 			Zarya
 			{
+				Damage Dealt: 150%
 				Health: 500%
 				No Ammunition Requirement: On
 				Particle Barrier: Off
 				Projected Barrier Cooldown Time: 49%
 				Quick Melee: Off
+				Ultimate Generation - Combat Graviton Surge: 10%
+				Ultimate Generation Graviton Surge: 150%
 			}
 
 			Zenyatta
 			{
-				Damage Dealt: 177%
-				Health: 500%
+				Damage Dealt: 150%
+				Health: 300%
 				No Ammunition Requirement: On
-			}
-
-			enabled heroes
-			{
-				Ana
-				Bastion
-				Cassidy
-				Lúcio
-				Mei
-				Reaper
-				Roadhog
-				Soldier: 76
-				Sombra
-				Torbjörn
-				Zarya
-				Zenyatta
+				Ultimate Generation - Combat Transcendence: 300%
+				Ultimate Generation - Passive Transcendence: 500%
+				Ultimate Generation Transcendence: 300%
 			}
 		}
 
@@ -614,13 +1033,7 @@ settings
 		{
 			disabled heroes
 			{
-				Illari
-				Junker Queen
-				Kiriko
-				Lifeweaver
 				Mauga
-				Ramattra
-				Sojourn
 			}
 		}
 	}
@@ -643,6 +1056,8 @@ variables
 		14: LucioRoulette
 		15: LucioSmokeEffect
 		24: SlowTimeCheck
+		26: Ark
+		27: ControlMaps
 
 	player:
 		0: LEVEL
@@ -672,6 +1087,9 @@ variables
 		36: FullAutoFire
 		38: RandomEmote
 		39: PlayerHUD
+		125: Flight
+		126: FlightKnockInterrupt
+		127: FlightSpeedMetersPerSecond
 }
 
 subroutines
@@ -706,8 +1124,14 @@ rule("CREATED BY CEL#1115")
 			Icon String(Bolt));
 		"Overtime Roulette"
 		Global.ChallengeRoulette = Array(Null, Null, Custom String("SEPARATION ANXIETY"), Custom String("SOCIAL DISTANCING"),
-			Custom String("RELENTLESS"), Custom String("SUDDEN DEATH"), Custom String("JUGGERNAUT"), Custom String("SWARM"), Custom String(
-			"APOTHEOSIS"));
+			Custom String("RELENTLESS"), Custom String("SUDDEN DEATH"), Custom String("JUGGERNAUT"), Custom String("SWARM!"),
+			Custom String("APOTHEOSIS"));
+		"Control Maps (Disabled, workshop load)"
+		disabled Global.ControlMaps = Array(Null, Null, Custom String("Antarctic Peninsula"), Custom String("Busan"), Custom String("Ilios"),
+			Custom String("Lijiang Tower"), Custom String("Lijiang Tower (Lunar New Year)"), Custom String("Nepal"), Custom String(
+			"Oasis"));
+		"Cel, add a var for you if you want to use this"
+		Global.Ark = Custom String("Arkhangelsk");
 	}
 }
 
@@ -734,6 +1158,30 @@ rule("BOT CHECK")
 	}
 }
 
+rule("BOT CHECK")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		Number Of Players(Team 1) < 2;
+		Is In Setup == True;
+	}
+
+	actions
+	{
+		Wait(5, Ignore Condition);
+		If(Custom String("{0}", Host Player) != Global.Ark);
+			Big Message(All Players(Team Of(Event Player)), Custom String("{0} {1}", String("Critical"), String("Failure")));
+			Declare Match Draw;
+	}
+}
+
 rule("ASSEMBLING HEROES PHASE")
 {
 	event
@@ -748,7 +1196,7 @@ rule("ASSEMBLING HEROES PHASE")
 
 	actions
 	{
-		Set Match Time(20);
+		Set Match Time(0);
 	}
 }
 
@@ -766,7 +1214,6 @@ rule("SETUP PHASE")
 
 	actions
 	{
-		Set Match Time(50);
 		Global.SlowTimeCheck = False;
 		"Player damage taken based on player count."
 		Start Damage Modification(All Players(Team 1), All Players(Team 2), 40 + Number Of Players(Team 1) * 10,
@@ -782,6 +1229,12 @@ rule("SETUP PHASE")
 		"Superbots damage based on level."
 		Start Damage Modification(All Players(Team 1), All Players(Team 2), 100 + Global.SuperbotLevel * 20,
 			Receivers Damagers and Damage Percent);
+		"If not Control map (Disabled due to workshop load errors)"
+		disabled If(Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False);
+		Set Match Time(30);
+		"If Control map"
+		disabled Else;
+		disabled Set Match Time(25);
 	}
 }
 
@@ -801,10 +1254,14 @@ rule("GAME IN PROGRESS PHASE")
 	{
 		Set Objective Description(All Players(All Teams), Custom String("{0} STOP THE SUPERBOTS!", Icon String(Skull)),
 			Visible To and String);
+		"If not Control map (Disabled due to workshop load errors)"
+		disabled If(Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False);
 		"Set match time to 8 minutes."
 		Set Match Time(480);
-		"Debug timer."
-		disabled Set Match Time(80);
+		"If Control map (Disabled due to workshop load errors)"
+		disabled Else;
+		"Control Point Active in __ (secs)"
+		disabled Set Match Time(15);
 	}
 }
 
@@ -853,40 +1310,72 @@ rule("GLOBAL HUDS")
 	{
 		"PRESS [F] TO SWITCH RELICS"
 		Create HUD Text(Filtered Array(All Players(Team 1), Is In Spawn Room(Current Array Element)), Null, Null, Custom String(
-			" \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n          WELCOME TO SUPERBOTS:\r\n \r\n[PRESS INTERACT (F) TO SWITCH RELICS]\r\n"),
-			Top, 50, Color(White), Color(White), Color(Yellow), Visible To and String, Default Visibility);
+			" \n \n \n \n \n \n \n \n \n          WELCOME TO SUPERBOTS:\n \nPRESS [INTERACT] TO SWITCH RELICS\n"), Top, 5, Color(White),
+			Color(White), Color(Yellow), Visible To and String, Default Visibility);
 		"Website link and version info."
-		Create HUD Text(All Players(All Teams), Null, Custom String("tinyurl.com/stopthesuperbots - PTR"), Null, Top, -2, Color(White),
-			Color(Lime Green), Color(White), Visible To and String, Default Visibility);
+		Create HUD Text(All Players(All Teams), Null, Custom String("tinyurl.com/ow2superbots"), Null, Top, -2, Color(White), Color(
+			Lime Green), Color(White), Visible To and String, Default Visibility);
 		"Superbot death count."
-		Create HUD Text(All Players(All Teams), Null, Null, Custom String("Superbots Eliminated: {0}", Global.SuperbotDeathCount), Left, 0,
+		disabled Create HUD Text(All Players(All Teams), Null, Null, Custom String("Superbots Eliminated: {0}", Global.SuperbotDeathCount), Left, 0,
 			Color(White), Color(White), Color(White), Visible To and String, Default Visibility);
 		"Player death count."
-		Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0} :Players Eliminated", Global.PlayerDeathCount), Right, -4,
+		disabled Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0} :Players Eliminated", Global.PlayerDeathCount), Right, -4,
 			Color(White), Color(White), Color(White), Visible To and String, Default Visibility);
 		"Challenge Roulette HUD."
 		disabled Create HUD Text(All Players(All Teams), Null, Null,
 			Global.ChallengeRoulette[0] >= 2 ? Global.ChallengeRoulette[Global.ChallengeRoulette[0]] : Custom String("CHALLENGE DISABLED"),
 			Right, -3, Color(White), Color(White), Color(White), Visible To and String, Default Visibility);
-		"Challenge Roulette HUD."
+		"Challenge Roulette HUD (off when Disabled)."
 		Create HUD Text(All Players(All Teams),
-			Global.ChallengeRoulette[0] >= 2 ? Global.ChallengeRoulette[Global.ChallengeRoulette[0]] : Custom String("CHALLENGE DISABLED"),
-			Null, Null, Right, -3, Color(White), Color(White), Color(White), Visible To and String, Default Visibility);
+			Global.ChallengeRoulette[0] >= 2 ? Global.ChallengeRoulette[Global.ChallengeRoulette[0]] : Custom String(""), Null, Null,
+			Right, -3, Color(White), Color(White), Color(White), Visible To and String, Default Visibility);
 		"Superbot level."
-		Create HUD Text(All Players(All Teams), String("{0} {1}", String("{0} {1}", String("Threat Level"), Global.SuperbotLevel),
-			Hero Icon String(Hero(Roadhog))), Null, Null, Right, -2, Color(Purple), Color(White), Color(White), Visible To and String,
-			Default Visibility);
-		"Lucio Ultimate charge percent HUD."
-		Create HUD Text(All Players(All Teams), String("{0} {1}", String("Danger"), String("{0} {1}", Ultimate Charge Percent(
+		Create HUD Text(All Players(All Teams), String("{0} {1}", String("{0} {1}", Custom String("SUPERBOT LEVEL:"),
+			Global.SuperbotLevel), Hero Icon String(Hero(Roadhog))), Null, Null, Right, -2, Color(Purple), Color(White), Color(White),
+			Visible To and String, Default Visibility);
+		"Lucio Ultimate charge percent HUD (\"Danger\")."
+		disabled Create HUD Text(All Players(All Teams), String("{0} {1}", String("Danger"), String("{0} {1}", Ultimate Charge Percent(
 			Players In Slot(Slot Of(Players On Hero(Hero(Lúcio), Team 2)), Team 2)), Hero Icon String(Hero(Lúcio)))), Null, Null, Right,
 			-1, Color(Red), Color(White), Color(White), Visible To and String, Default Visibility);
+		"Lucio Ultimate charge percent HUD (\"Lucio's Ult: x%\")."
+		Create HUD Text(All Players(All Teams), Custom String("LUCIO ULT: {0}%{1}", Ultimate Charge Percent(Players On Hero(Hero(Lúcio),
+			Team 2)), Hero Icon String(Hero(Lúcio))), Null, Null, Right, Null, Color(Red), Color(White), Color(White),
+			Visible To and String, Default Visibility);
 		"Flying HUD."
 		Create HUD Text(Filtered Array(All Players(Team 1), Hero Of(Current Array Element) == Hero(Sigma) || Hero Of(Current Array Element)
-			== Hero(Zenyatta)), Custom String("{0}", Icon String(Arrow: Up)), Custom String("PRESS [CTRL+F] TO TOGGLE"), Custom String(
+			== Hero(Zenyatta)), Custom String("{0}", Icon String(Arrow: Up)), Custom String("PRESS [RELOAD] TO TOGGLE"), Custom String(
 			"FLYING MODE"), Left, 9, Color(White), Color(Yellow), Color(White), Visible To and String, Default Visibility);
 		"Player Relic HUD info."
 		Create HUD Text(All Players(Team 1), Null, Custom String("(HOLD [CROUCH] FOR MORE INFO)"), Null, Left, 11, Color(White), Color(
 			Yellow), Color(White), Visible To and String, Default Visibility);
+	}
+}
+
+rule("HOST HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		(Event Player == Host Player) == True;
+	}
+
+	actions
+	{
+		"Server Load Display (Host player only)"
+		Create HUD Text(All Players(All Teams), Null, Custom String("Server Load: {0}", Server Load), Null, Right, 1, Color(White), Color(
+			White), Color(White), Visible To and String, Default Visibility);
+		"Average Server Load Display (Host player only)"
+		Create HUD Text(All Players(All Teams), Null, Custom String("Server Load (AVG): {0}", Server Load Average), Null, Right, 2, Color(
+			White), Color(White), Color(White), Visible To and String, Default Visibility);
+		"Server Load Peak Display (Host player only)"
+		Create HUD Text(All Players(All Teams), Null, Custom String("Server Load (MAX/2s): {0}", Server Load Peak), Null, Right, 3, Color(
+			White), Color(White), Color(White), Visible To and String, Default Visibility);
 	}
 }
 
@@ -970,12 +1459,13 @@ rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%)")
 	actions
 	{
 		Global.Armor0 = Array(Hero(Ashe), Hero(Hanzo), Hero(Junkrat), Hero(Cassidy), Hero(Moira), Hero(Pharah), Hero(Sigma), Hero(
-			Soldier: 76), Hero(Widowmaker));
-		Global.Armor25 = Array(Hero(Ana), Hero(Baptiste), Hero(Brigitte), Hero(Echo), Hero(Lúcio), Hero(Mercy), Hero(Zenyatta));
+			Soldier: 76), Hero(Widowmaker), Hero(Sojourn));
+		Global.Armor25 = Array(Hero(Ana), Hero(Baptiste), Hero(Brigitte), Hero(Echo), Hero(Lúcio), Hero(Mercy), Hero(Zenyatta), Hero(
+			Kiriko), Hero(Illari));
 		Global.Armor50 = Array(Hero(Doomfist), Hero(Genji), Hero(Mei), Hero(Reaper), Hero(Sombra), Hero(Symmetra), Hero(Torbjörn), Hero(
-			Tracer));
+			Tracer), Hero(Ramattra));
 		Global.Armor75 = Array(Hero(Bastion), Hero(D.Va), Hero(Orisa), Hero(Reinhardt), Hero(Roadhog), Hero(Winston), Hero(Wrecking Ball),
-			Hero(Zarya));
+			Hero(Zarya), Hero(Junker Queen));
 	}
 }
 
@@ -1228,7 +1718,7 @@ rule("SUPERBOTS Respawn time - 1 second")
 	}
 }
 
-rule("===============================LUCIO RANDOM EVENTS")
+rule("============== LUCIO RANDOM EVENTS ==============")
 {
 	event
 	{
@@ -1358,7 +1848,7 @@ rule("SUPERBOTS Lucio Ultimate 0 (BLAST OFF!)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} BLAST OFF!", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} BLAST OFF!", Hero Icon String(Hero(Lúcio))));
 		Wait(0.500, Ignore Condition);
 		Apply Impulse(Players Within Radius(Event Player, 20, Team 1, Surfaces), Up, 35, To World, Cancel Contrary Motion);
 		Wait(12, Ignore Condition);
@@ -1383,7 +1873,7 @@ rule("SUPERBOTS Lucio Ultimate 1 (ROOTED!)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} ROOTED!", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} ROOTED!", Hero Icon String(Hero(Lúcio))));
 		Wait(0.500, Ignore Condition);
 		Set Status(Filtered Array(Players Within Radius(Event Player, 20, Team 1, Surfaces), Is Alive(Current Array Element) == True),
 			Null, Rooted, 7);
@@ -1415,7 +1905,7 @@ rule("SUPERBOTS Lucio Ultimate 2 (CHILL OUT!)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} CHILL OUT!", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} CHILL OUT!", Hero Icon String(Hero(Lúcio))));
 		Wait(0.500, Ignore Condition);
 		Set Status(Players Within Radius(Event Player, 20, Team 1, Surfaces), Null, Frozen, 4);
 		Wait(12, Ignore Condition);
@@ -1440,7 +1930,7 @@ rule("SUPERBOTS Lucio Ultimate 3 (KNOCKDOWN!)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} KNOCKDOWN!", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} KNOCKDOWN!", Hero Icon String(Hero(Lúcio))));
 		Wait(0.500, Ignore Condition);
 		Set Status(Players Within Radius(Event Player, 20, Team 1, Surfaces), Null, Knocked Down, 3);
 		Wait(12, Ignore Condition);
@@ -1465,7 +1955,7 @@ rule("SUPERBOTS Lucio Ultimate 4 (GET OVER HERE!)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} GET OVER HERE!", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} GET OVER HERE!", Hero Icon String(Hero(Lúcio))));
 		Wait(0.750, Ignore Condition);
 		Teleport(Players Within Radius(Event Player, 20, Team 1, Surfaces), Position Of(Event Player));
 		Play Effect(All Players(All Teams), Good Pickup Effect, Color(Green), Players Within Radius(Event Player, 20, All Teams, Off), 1);
@@ -1491,7 +1981,7 @@ rule("SUPERBOTS Lucio Ultimate 5 (INVISIBILITY!)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} INVISIBILITY!", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} INVISIBILITY!", Hero Icon String(Hero(Lúcio))));
 		Wait(0.750, Ignore Condition);
 		Create Effect(All Players(All Teams), Cloud, Color(White), Position Of(Event Player) + Vector(0, 1, 0), 10, Visible To);
 		Global.LucioSmokeEffect = Last Created Entity;
@@ -1520,7 +2010,7 @@ rule("SUPERBOTS Lucio Ultimate 6 (WORLD ON FIRE)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} WORLD ON FIRE", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} WORLD ON FIRE", Hero Icon String(Hero(Lúcio))));
 		Wait(0.750, Ignore Condition);
 		Set Status(Players Within Radius(Event Player, 20, Team 1, Surfaces), Event Player, Burning, 12);
 		Start Damage Over Time(Players Within Radius(Event Player, 20, Team 2, Surfaces), Event Player, 12, Max Health(Event Player)
@@ -1547,7 +2037,7 @@ rule("SUPERBOTS Lucio Ultimate 7 (STAY AWHILE AND LISTEN)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} STAY AWHILE AND LISTEN", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} STAY AWHILE AND LISTEN", Hero Icon String(Hero(Lúcio))));
 		Wait(0.500, Ignore Condition);
 		Set Status(Players Within Radius(Event Player, 20, Team 1, Surfaces), Null, Asleep, 10);
 		Wait(12, Ignore Condition);
@@ -1572,7 +2062,7 @@ rule("SUPERBOTS Lucio Ultimate 8 (HACKED!!!)")
 
 	actions
 	{
-		Big Message(All Players(All Teams), Custom String("{0} HACKED!!!", Hero Icon String(Hero(Lúcio))));
+		Big Message(All Players(All Teams), Custom String(" {0} HACKED!!!", Hero Icon String(Hero(Lúcio))));
 		Wait(0.500, Ignore Condition);
 		Create Effect(All Players(All Teams), Sphere, Color(Green), Event Player, Event Player.AegisRelicEffect,
 			Visible To Position and Radius);
@@ -1588,7 +2078,7 @@ rule("SUPERBOTS Lucio Ultimate 8 (HACKED!!!)")
 	}
 }
 
-rule("===============================SUPER BOTS PASSIVE ABILITIES")
+rule("============== SUPERBOT PASSIVE ABILITIES ==============")
 {
 	event
 	{
@@ -2047,6 +2537,26 @@ rule("ANA Poison Cloud Damage")
 	}
 }
 
+rule("ANA Primary Poison")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Ana;
+	}
+
+	conditions
+	{
+		Event Ability == Button(Primary Fire);
+	}
+
+	actions
+	{
+		Start Damage Over Time(Victim, Event Player, 10, Max Health(Event Player) * 0.010);
+	}
+}
+
 rule("ASHE Float Scope")
 {
 	event
@@ -2375,7 +2885,7 @@ rule("D.VA Heal to Full when entering Mech")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Activation")
+rule("D.VA Mech Bunny Hop Activation (Fixed)")
 {
 	event
 	{
@@ -2386,12 +2896,12 @@ rule("D.VA Mech Bunny Hop Activation")
 
 	conditions
 	{
-		Is Button Held(Event Player, Button(Interact)) == True;
+		Is Button Held(Event Player, Button(Reload)) == True;
 		Is In Spawn Room(Event Player) == False;
-		Max Health(Event Player) >= 599.900 * (Event Player.HEALTH / 100);
-		Event Player.T >= 99.100;
+		Max Health(Event Player) > 499;
+		disabled Max Health(Event Player) >= 599.900 * (Event Player.HEALTH / 100);
+		Event Player.T == 100;
 		Is Alive(Event Player) == True;
-		Event Player.U == False;
 		Is In Air(Event Player) == False;
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
 			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
@@ -2399,18 +2909,21 @@ rule("D.VA Mech Bunny Hop Activation")
 
 	actions
 	{
-		Small Message(Event Player, Custom String("{0}Bunny Hop Activated!", Hero Icon String(Hero(D.Va))));
+		Small Message(Event Player, Custom String(" {0}Bunny Hop Activated!", Hero Icon String(Hero(D.Va))));
+		Call Subroutine(DisableButtons);
 		Start Camera(Event Player, Facing Direction Of(Event Player) * 0.200 + Ray Cast Hit Position(Eye Position(Event Player),
 			Eye Position(Event Player) + World Vector Of(Vector(0, 0.500, -1), Event Player, Rotation) + Facing Direction Of(Event Player)
 			* Vector(2, 2, 2) * -1.500, All Players(All Teams), Event Player, False), Eye Position(Event Player) + World Vector Of(Vector(
 			0, 0.500, -1), Event Player, Rotation) + Facing Direction Of(Event Player) * 500, 80);
 		Stop Chasing Player Variable(Event Player, T);
 		Event Player.T = 0;
-		Call Subroutine(DisableButtons);
 		Event Player.U = True;
 		Wait(7, Ignore Condition);
-		Abort If(Event Player.U == False);
+		Event Player.U = False;
 		Call Subroutine(DvaBunnyHopDeactivate);
+		disabled If(Event Player.U == False);
+		disabled End;
+		disabled Big Message(All Players(All Teams), Custom String("THIS IS WHEN IT WOULD BE ENDING 8==D"));
 	}
 }
 
@@ -2426,7 +2939,7 @@ rule("D.VA Mech Bunny Hop Jump")
 	conditions
 	{
 		Event Player.U == True;
-		Max Health(Event Player) >= 599.900 * (Event Player.HEALTH / 100);
+		disabled Max Health(Event Player) >= 599.900 * (Event Player.HEALTH / 100);
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
 			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
 		Is On Ground(Event Player) == True;
@@ -2456,7 +2969,7 @@ rule("D.VA Mech Bunny Hop Dive")
 	conditions
 	{
 		Event Player.U == True;
-		Max Health(Event Player) >= 599.900 * (Event Player.HEALTH / 100);
+		disabled Max Health(Event Player) >= 599.900 * (Event Player.HEALTH / 100);
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
 			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
 		Is In Air(Event Player) == True;
@@ -2469,7 +2982,7 @@ rule("D.VA Mech Bunny Hop Dive")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Deactivation Subroutine")
+rule("D.VA Mech Bunny Hop Deactivation Subroutine (Fixed)")
 {
 	event
 	{
@@ -2479,9 +2992,8 @@ rule("D.VA Mech Bunny Hop Deactivation Subroutine")
 
 	actions
 	{
-		Event Player.U = False;
 		Start Rule(EnableButtons, Do Nothing);
-		Chase Player Variable At Rate(Event Player, T, 100, 4, None);
+		Chase Player Variable At Rate(Event Player, T, 100, 2, None);
 		Stop Camera(Event Player);
 	}
 }
@@ -2507,7 +3019,7 @@ rule("DOOMFIST Ultimate Super")
 		Set Ultimate Ability Enabled(Event Player, False);
 		Event Player.R = 1;
 		Event Player.RandomEmote = Random Real(1, 4);
-		Small Message(Event Player, Custom String("{0}Doomfist: Powered up!", Hero Icon String(Hero(Doomfist))));
+		Small Message(Event Player, Custom String(" {0}Doomfist: Powered up!", Hero Icon String(Hero(Doomfist))));
 		Play Effect(All Players(All Teams), Good Pickup Effect, Color(White), Event Player, 200);
 		If(Event Player.RandomEmote == 1);
 			Communicate(Event Player, Voice Line Up);
@@ -2538,7 +3050,7 @@ rule("DOOMFIST Reset Ult on Death")
 	}
 }
 
-rule("DOOMFIST Super 1 - Super Uppercut")
+rule("DOOMFIST Super 1 - Super Slam (was Uppercut in OW1)")
 {
 	event
 	{
@@ -2557,7 +3069,7 @@ rule("DOOMFIST Super 1 - Super Uppercut")
 	{
 		Event Player.R = 0;
 		Start Heal Over Time(Event Player, Null, 3, Max Health(Event Player) * 0.085);
-		Small Message(Event Player, Custom String("{0} Super Uppercut!", Hero Icon String(Hero(Doomfist))));
+		Small Message(Event Player, Custom String(" {0} Super Slam!", Hero Icon String(Hero(Doomfist))));
 		Play Effect(All Players(All Teams), Bad Explosion, Color(Orange), Victim, 0.500);
 		Play Effect(All Players(All Teams), Ring Explosion, Color(Orange), Victim, 2);
 		Play Effect(All Players(All Teams), Explosion Sound, Color(Orange), Victim, 50);
@@ -2571,39 +3083,7 @@ rule("DOOMFIST Super 1 - Super Uppercut")
 	}
 }
 
-rule("DOOMFIST Super 2 - Super Slam")
-{
-	event
-	{
-		Player Dealt Damage;
-		Team 1;
-		Doomfist;
-	}
-
-	conditions
-	{
-		Event Player.R == 1;
-		Event Ability == Button(Ability 2);
-	}
-
-	actions
-	{
-		Event Player.R = 0;
-		Start Heal Over Time(Event Player, Null, 3, Max Health(Event Player) * 0.085);
-		Small Message(Event Player, Custom String("{0} Super Slam!", Hero Icon String(Hero(Doomfist))));
-		Apply Impulse(Players Within Radius(Event Player, 15, Team 2, Off), Up, 10, To World, Cancel Contrary Motion);
-		Set Status(Players Within Radius(Event Player, 15, Team 2, Off), Event Player, Knocked Down, 5);
-		Wait(0.250, Ignore Condition);
-		Damage(Players Within Radius(Event Player, 15, Team 2, Off), Event Player, (Global.SuperbotLevel + 1) * 100);
-		Play Effect(All Players(All Teams), Bad Explosion, Color(Sky Blue), Event Player, 10);
-		Play Effect(All Players(All Teams), Ring Explosion, Color(Sky Blue), Event Player, 15);
-		Play Effect(All Players(All Teams), Explosion Sound, Color(Sky Blue), Event Player, 200);
-		Wait(0.750, Ignore Condition);
-		Set Ultimate Ability Enabled(Event Player, True);
-	}
-}
-
-rule("DOOMFIST Super 3 - Super Punch")
+rule("DOOMFIST Super 2 - Super Punch")
 {
 	event
 	{
@@ -2622,7 +3102,7 @@ rule("DOOMFIST Super 3 - Super Punch")
 	{
 		Event Player.R = 0;
 		Start Heal Over Time(Event Player, Null, 3, Max Health(Event Player) * 0.085);
-		Small Message(Event Player, Custom String("{0} Super Punch!", Hero Icon String(Hero(Doomfist))));
+		Small Message(Event Player, Custom String(" {0} Super Punch!", Hero Icon String(Hero(Doomfist))));
 		Play Effect(All Players(All Teams), Ring Explosion Sound, Color(Orange), Victim, 50);
 		Damage(Victim, Event Player, Event Damage * 100);
 		Wait(1, Ignore Condition);
@@ -2630,7 +3110,7 @@ rule("DOOMFIST Super 3 - Super Punch")
 	}
 }
 
-rule("ECHO Full Automatic Secondary Gun")
+rule("ECHO Flying")
 {
 	event
 	{
@@ -2641,21 +3121,67 @@ rule("ECHO Full Automatic Secondary Gun")
 
 	conditions
 	{
-		Event Player.FullAutoFire == True;
-		Is Button Held(Event Player, Button(Primary Fire)) == False;
-		Is Button Held(Event Player, Button(Secondary Fire)) == True;
-		disabled Max Health(Event Player) >= 199.900 * (Event Player.HEALTH / 100);
+		Is Alive(Event Player) == True;
 	}
 
 	actions
 	{
-		Wait(0.300, Ignore Condition);
-		Set Projectile Speed(Event Player, 100);
+		Event Player.Flight = True;
+		disabled Set Move Speed(Event Player, 100);
+	}
+}
+
+rule("ECHO Laser")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Echo;
+	}
+
+	conditions
+	{
+		Is Using Ability 2(Event Player) == Button(Ability 2);
+	}
+
+	actions
+	{
+		Event Player.U = Ray Cast Hit Position(Eye Position(Event Player), 100 * Facing Direction Of(Event Player) + Eye Position(
+			Event Player), All Players(Team 2), Event Player, True);
+		Play Effect(All Players(All Teams), Bad Explosion, Color(Sky Blue), Event Player.U, 0.250);
+		Play Effect(All Players(All Teams), Ring Explosion, Color(Sky Blue), Event Player.U, 2);
+		Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 7 * Global.SuperbotLevel + 7);
+		Wait(0.050, Ignore Condition);
 		Loop If Condition Is True;
 	}
 }
 
-rule("ECHO Ultimate")
+rule("ECHO Full Automatic Secondary Gun (fixed, reworked)")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Echo;
+	}
+
+	conditions
+	{
+		Is Button Held(Event Player, Button(Primary Fire)) == False;
+		Is Button Held(Event Player, Button(Secondary Fire)) == True;
+		Is Using Ultimate(Event Player) == False;
+	}
+
+	actions
+	{
+		While(Is Button Held(Event Player, Button(Secondary Fire)));
+			Wait(0.450, Ignore Condition);
+			Press Button(Event Player, Button(Secondary Fire));
+	}
+}
+
+rule("ECHO Ultimate (Fixed, reworked)")
 {
 	event
 	{
@@ -2675,16 +3201,21 @@ rule("ECHO Ultimate")
 
 	actions
 	{
+		Disallow Button(Event Player, Button(Secondary Fire));
+		Wait(0.250, Ignore Condition);
+		Small Message(Event Player, Custom String(" {0} ACTIVATING QUANTUM BEAM", Hero Icon String(Hero(Echo))));
+		Communicate(Event Player, Voice Line Up);
+		Play Effect(All Players(All Teams), Buff Explosion Sound, Color(White), Event Player, 200);
+		Wait(0.300, Ignore Condition);
 		Set Ultimate Charge(Event Player, 0);
 		Set Ultimate Ability Enabled(Event Player, False);
-		Event Player.FullAutoFire = True;
-		Small Message(Event Player, Custom String("{0} RAPID FIRE STICKY BOMB ACTIVATED", Hero Icon String(Hero(Echo))));
-		Play Effect(All Players(All Teams), Buff Explosion Sound, Color(White), Event Player, 200);
-		Communicate(Event Player, Voice Line Up);
-		Wait(12, Ignore Condition);
-		Event Player.FullAutoFire = False;
+		Set Ability 2 Enabled(Event Player, True);
+		Press Button(Event Player, Button(Ability 2));
+		Wait(2.500, Ignore Condition);
+		Small Message(Event Player, Custom String(" {0} QUANTUM BEAM RECHARGING", Hero Icon String(Hero(Echo))));
+		Set Ability 2 Enabled(Event Player, False);
 		Set Ultimate Ability Enabled(Event Player, True);
-		Small Message(Event Player, Custom String("{0} RAPID FIRE RECHARGING", Hero Icon String(Hero(Echo))));
+		Allow Button(Event Player, Button(Secondary Fire));
 	}
 }
 
@@ -3620,7 +4151,7 @@ rule("MOIRA Ultimate Coalescence Bomb Activation")
 			Direction and Turn Rate);
 		Chase Player Variable At Rate(Event Player, T, 100, 5, Destination and Rate);
 		Event Player.R = 1;
-		Event Player.EnableFlying = True;
+		disabled Event Player.Flight = True;
 	}
 }
 
@@ -3641,8 +4172,8 @@ rule("MOIRA Ultimate Coalescence Bomb Deactivation")
 
 	actions
 	{
-		Event Player.EnableFlying = False;
-		Set Gravity(Event Player, 100);
+		Event Player.Flight = False;
+		disabled Set Gravity(Event Player, 100);
 		Stop Chasing Player Variable(Event Player, T);
 		If(Is Alive(Event Player) == True);
 			Set Status(Event Player, Null, Hacked, 0.200);
@@ -3849,6 +4380,27 @@ rule("MOIRA Ultimate Coalescence Bomb OFF in Spawn Room")
 		Small Message(Event Player, Custom String("{0}Moira: I can't use Coalescence Bomb here.", Hero Icon String(Hero(Moira))));
 		Set Status(Event Player, Null, Hacked, 1);
 		Event Player.R = 2;
+	}
+}
+
+rule("MOIRA Flying During Ult")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Moira;
+	}
+
+	conditions
+	{
+		Is Using Ultimate(Event Player) == True;
+	}
+
+	actions
+	{
+		Event Player.Flight = True;
+		Loop If Condition Is True;
 	}
 }
 
@@ -4565,6 +5117,26 @@ rule("SIGMA Kinetic Repulsion Punch")
 	}
 }
 
+rule("SIGMA Stone Knockdown")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Sigma;
+	}
+
+	conditions
+	{
+		Event Ability == Button(Ability 2);
+	}
+
+	actions
+	{
+		Set Status(Victim, Event Player, Knocked Down, 3);
+	}
+}
+
 rule("SOLDIER: 76 Ultimate Airstrike Activation")
 {
 	event
@@ -5042,7 +5614,7 @@ rule("TRACER Ultimate (Destabilizing Time) Activation")
 	actions
 	{
 		Global.SlowTimeCheck = True;
-		Big Message(All Players(All Teams), Custom String("{0}ULTIMATE: CHRONOKINESIS", Hero Icon String(Hero(Tracer))));
+		Big Message(All Players(All Teams), Custom String(" {0}ULTIMATE: CHRONOKINESIS", Hero Icon String(Hero(Tracer))));
 		Event Player.R = True;
 		Set Ability 1 Enabled(All Players(Team 2), False);
 		Set Ability 2 Enabled(Event Player, False);
@@ -5515,6 +6087,26 @@ rule("ZARYA Barrier Tackle")
 	}
 }
 
+rule("ZARYA Secondary Launch")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Zarya;
+	}
+
+	conditions
+	{
+		Event Ability == Button(Secondary Fire);
+	}
+
+	actions
+	{
+		Apply Impulse(Victim, Up, 7, To World, Cancel Contrary Motion);
+	}
+}
+
 rule("ZENYATTA Charge Counter ON")
 {
 	event
@@ -5649,7 +6241,7 @@ rule("ZENYATTA Orbs of Tranquility")
 	}
 }
 
-rule("===============================RESET HUD SCRIPT")
+rule("============== RESET HUD SCRIPT ==============")
 {
 	event
 	{
@@ -5792,9 +6384,10 @@ rule("Bastion HUD")
 		Create Beam Effect(All Players(All Teams), Bad Beam, Event Player, Event Player.U, Color(Sky Blue),
 			Visible To Position and Radius);
 		Event Player.P = Last Created Entity;
-		Event Player.HUDTextHidden = Array(False, True, True, True);
+		disabled Event Player.HUDTextHidden = Array(False, True, True, True);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Ultimate)), Custom String(
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Ultimate)), Custom String(
 			"FIRES LASER THAT DEALS AREA DMG"), Custom String("ULTIMATE: PROTON CANNON"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -5825,7 +6418,7 @@ rule("Brigitte HUD")
 	}
 }
 
-rule("D.va HUD")
+rule("D.Va HUD")
 {
 	event
 	{
@@ -5843,10 +6436,11 @@ rule("D.va HUD")
 	{
 		Wait(0.500, Ignore Condition);
 		Event Player.U = False;
-		Chase Player Variable At Rate(Event Player, T, 100, 4, None);
+		Chase Player Variable At Rate(Event Player, T, 100, 2, None);
+		"Original"
 		Event Player.HUDTextHidden = Array(False, True, True, False);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(D.Va), Button(Ultimate)), Custom String("PRESS [INTERACT] TO USE"),
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(D.Va), Button(Ultimate)), Custom String("PRESS [RELOAD] TO USE"),
 			Custom String("BUNNY HOP"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -5889,7 +6483,7 @@ rule("Echo HUD")
 		Event Player.HUDTextHidden = Array(False, True, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Echo), Button(Secondary Fire)), Custom String(
-			"HOLD [SECONDARY] FOR RAPID-FIRE STICKY GRENADES"), Custom String("ULTIMATE: OVERCLOCKED"));
+			"HOLD [SECONDARY] FOR RAPID-FIRE STICKY GRENADES"), Custom String("ULTIMATE: QUANTUM BEAM"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6524,7 +7118,139 @@ rule("Zenyatta HUD")
 	}
 }
 
-rule("===============================RELIC HUD and Effects")
+rule("Junker Queen HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Junker Queen;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, False);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
+			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
+			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Illari HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Illari;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, False);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
+			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
+			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Kiriko HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Kiriko;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, False);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
+			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
+			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Ramattra HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Ramattra;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, False);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
+			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
+			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Lifeweaver HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Lifeweaver;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, False);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
+			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
+			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Sojourn HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Sojourn;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, False);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
+			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
+			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("============== RELIC HUD and Effects ==============")
 {
 	event
 	{
@@ -6587,15 +7313,15 @@ rule("RELIC Button")
 			Call Subroutine(ResetRelicStatus);
 		End;
 		If(Event Player.RelicSelected == 0);
-			Small Message(Event Player, Custom String("{0} EXIT SPAWN TO EQUIP PURIFIED", Icon String(Plus)));
+			Small Message(Event Player, Custom String(" {0} EXIT SPAWN TO EQUIP PURIFIED", Icon String(Plus)));
 		Else If(Event Player.RelicSelected == 1);
-			Small Message(Event Player, Custom String("{0} EXIT SPAWN TO EQUIP VORTEX", Icon String(Spiral)));
+			Small Message(Event Player, Custom String(" {0} EXIT SPAWN TO EQUIP VORTEX", Icon String(Spiral)));
 		Else If(Event Player.RelicSelected == 2);
-			Small Message(Event Player, Custom String("{0} EXIT SPAWN TO EQUIP CORRUPTED", Icon String(Skull)));
+			Small Message(Event Player, Custom String(" {0} EXIT SPAWN TO EQUIP CORRUPTED", Icon String(Skull)));
 		Else If(Event Player.RelicSelected == 3);
-			Small Message(Event Player, Custom String("{0} EXIT SPAWN TO EQUIP AEGIS", Icon String(Moon)));
+			Small Message(Event Player, Custom String(" {0} EXIT SPAWN TO EQUIP AEGIS", Icon String(Moon)));
 		Else If(Event Player.RelicSelected == 4);
-			Small Message(Event Player, Custom String("{0} EXIT SPAWN TO EQUIP HERO", Icon String(Bolt)));
+			Small Message(Event Player, Custom String(" {0} EXIT SPAWN TO EQUIP HERO", Icon String(Bolt)));
 		End;
 		Wait(0.250, Ignore Condition);
 	}
@@ -6627,7 +7353,7 @@ rule("PURIFIED Relic")
 		Start Damage Modification(Normalized Health(Event Player) == 1 ? All Players(Team 2) : Null, Event Player, 150,
 			Receivers Damagers and Damage Percent);
 		Event Player.RelicVariable2 = Last Damage Modification ID;
-		Small Message(Event Player, Custom String("{0} PURIFIED EQUIPPED", Icon String(Plus)));
+		Small Message(Event Player, Custom String(" {0} PURIFIED EQUIPPED", Icon String(Plus)));
 		Event Player.RelicEquipped = 0;
 	}
 }
@@ -6653,11 +7379,11 @@ rule("VORTEX Relic")
 		Wait(0.250, Abort When False);
 		Event Player.MOVEMENT += 100;
 		Set Move Speed(Event Player, Event Player.MOVEMENT);
-		Set Respawn Max Time(Event Player, 3);
+		Set Respawn Max Time(Event Player, 6);
 		Start Damage Modification(All Players(Team 2), Event Player, Speed Of(Event Player) * 5 + 100,
 			Receivers Damagers and Damage Percent);
 		Event Player.RelicVariable2 = Last Damage Modification ID;
-		Small Message(Event Player, Custom String("{0} VORTEX EQUIPPED", Icon String(Spiral)));
+		Small Message(Event Player, Custom String(" {0} VORTEX EQUIPPED", Icon String(Spiral)));
 		Event Player.RelicEquipped = 1;
 	}
 }
@@ -6684,12 +7410,12 @@ rule("CORRUPTED Relic")
 		Event Player.ARMOR += 25;
 		Start Damage Modification(All Players(Team 2), Event Player, 200, Receivers Damagers and Damage Percent);
 		Event Player.RelicVariable2 = Last Damage Modification ID;
-		Small Message(Event Player, Custom String("{0} CORRUPTED EQUIPPED", Icon String(Skull)));
+		Small Message(Event Player, Custom String(" {0} CORRUPTED EQUIPPED", Icon String(Skull)));
 		Event Player.RelicEquipped = 2;
 	}
 }
 
-rule(".......................CORRUPTED Ultimate Generation")
+rule("CORRUPTED Ultimate Generation")
 {
 	event
 	{
@@ -6740,11 +7466,11 @@ rule("AEGIS Relic")
 		Start Damage Modification(All Players(Team 2), Event Player, Count Of(Filtered Array(Players Within Radius(Event Player, 10,
 			Team 2, Off), Is Alive(Current Array Element))) * 25 + 100, Receivers Damagers and Damage Percent);
 		Event Player.RelicVariable2 = Last Damage Modification ID;
-		Small Message(Event Player, Custom String("{0} AEGIS EQUIPPED", Icon String(Moon)));
+		Small Message(Event Player, Custom String(" {0} AEGIS EQUIPPED", Icon String(Moon)));
 	}
 }
 
-rule(".......................AEGIS Shield Activation")
+rule("AEGIS Shield Activation")
 {
 	event
 	{
@@ -6778,7 +7504,7 @@ rule(".......................AEGIS Shield Activation")
 	}
 }
 
-rule(".......................AEGIS Unkillable")
+rule("AEGIS Unkillable")
 {
 	event
 	{
@@ -6826,12 +7552,12 @@ rule("HERO Relic")
 		Start Damage Modification(Normalized Health(Event Player) == 1 ? All Players(Team 2) : Null, Event Player, 125,
 			Receivers Damagers and Damage Percent);
 		Event Player.RelicVariable2 = Last Damage Modification ID;
-		Small Message(Event Player, Custom String("{0} HERO EQUIPPED", Icon String(Bolt)));
+		Small Message(Event Player, Custom String(" {0} HERO EQUIPPED", Icon String(Bolt)));
 		Event Player.RelicEquipped = 4;
 	}
 }
 
-rule(".......................HERO Heal on Kill")
+rule("HERO Heal on Kill")
 {
 	event
 	{
@@ -6851,7 +7577,7 @@ rule(".......................HERO Heal on Kill")
 	}
 }
 
-rule(".......................HERO Cooldown Reduction")
+rule("HERO Cooldown Reduction")
 {
 	event
 	{
@@ -6913,6 +7639,7 @@ rule("Subroutine - (EnableButtons)")
 		Allow Button(Event Player, Button(Melee));
 		Allow Button(Event Player, Button(Jump));
 		Allow Button(Event Player, Button(Crouch));
+		Allow Button(Event Player, Button(Ultimate));
 	}
 }
 
@@ -6937,6 +7664,7 @@ rule("Subroutine - (DisableButtons)")
 		Disallow Button(Event Player, Button(Melee));
 		Disallow Button(Event Player, Button(Jump));
 		Disallow Button(Event Player, Button(Crouch));
+		Disallow Button(Event Player, Button(Ultimate));
 	}
 }
 
@@ -7019,125 +7747,19 @@ rule("Subroutine - (ReaperCreepingDeathOff)")
 	}
 }
 
-rule("Flying Descend")
-{
-	event
-	{
-		Ongoing - Each Player;
-		All;
-		All;
-	}
-
-	conditions
-	{
-		Event Player.EnableFlying == True;
-		Is Alive(Event Player) == True;
-		Is Button Held(Event Player, Button(Crouch)) == True;
-		Is Button Held(Event Player, Button(Jump)) == False;
-		Is Button Held(Event Player, Button(Interact)) == False;
-		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
-			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
-	}
-
-	actions
-	{
-		Apply Impulse(Event Player, Down, 5, To World, Cancel Contrary Motion);
-		Wait(0.250, Ignore Condition);
-		Loop If Condition Is True;
-		Apply Impulse(Event Player, Up, 0.001, To World, Cancel Contrary Motion);
-	}
-}
-
-rule("Flying Climb")
-{
-	event
-	{
-		Ongoing - Each Player;
-		All;
-		All;
-	}
-
-	conditions
-	{
-		Event Player.EnableFlying == True;
-		Is Alive(Event Player) == True;
-		Is Button Held(Event Player, Button(Jump)) == True;
-		Is Button Held(Event Player, Button(Crouch)) == False;
-		Is Button Held(Event Player, Button(Interact)) == False;
-		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
-			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
-	}
-
-	actions
-	{
-		Apply Impulse(Event Player, Up, 5, To World, Cancel Contrary Motion);
-		Wait(0.250, Ignore Condition);
-		Loop If Condition Is True;
-		Apply Impulse(Event Player, Down, 0.001, To World, Cancel Contrary Motion);
-	}
-}
-
-rule("Flying Enabled")
-{
-	event
-	{
-		Ongoing - Each Player;
-		All;
-		All;
-	}
-
-	conditions
-	{
-		Event Player.EnableFlying == True;
-		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
-			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
-	}
-
-	actions
-	{
-		Wait(1, Abort When False);
-		Set Gravity(Event Player, Absolute Value(0));
-	}
-}
-
-rule("Flying Disabled")
-{
-	event
-	{
-		Ongoing - Each Player;
-		All;
-		All;
-	}
-
-	conditions
-	{
-		Event Player.EnableFlying == True;
-		Is Alive(Event Player) == True;
-		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
-			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == True;
-	}
-
-	actions
-	{
-		Wait(1, Abort When False);
-		Set Gravity(Event Player, 100);
-	}
-}
-
 rule("Flying Toggle")
 {
 	event
 	{
 		Ongoing - Each Player;
-		All;
+		Team 1;
 		All;
 	}
 
 	conditions
 	{
 		Is Using Ultimate(Event Player) == False;
-		Is Button Held(Event Player, Button(Crouch)) == True;
-		Is Button Held(Event Player, Button(Interact)) == True;
+		Is Button Held(Event Player, Button(Reload)) == True;
 		(Hero Of(Event Player) == Hero(Sigma) || Hero Of(Event Player) == Hero(Zenyatta)) == True;
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
 			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
@@ -7145,15 +7767,137 @@ rule("Flying Toggle")
 
 	actions
 	{
-		If(Event Player.EnableFlying == True);
-			Event Player.EnableFlying = False;
-			Set Gravity(Event Player, 100);
-			Small Message(Event Player, Custom String("{0} Flying Off", Hero Icon String(Hero Of(Event Player))));
-		Else If(Event Player.EnableFlying == False);
-			Event Player.EnableFlying = True;
-			Small Message(Event Player, Custom String("{0} Flying On", Hero Icon String(Hero Of(Event Player))));
+		"Toggle off"
+		If(Event Player.Flight == True);
+			Event Player.Flight = False;
+			Small Message(Event Player, Custom String(" {0} Flying Off", Hero Icon String(Hero Of(Event Player))));
+		"Toggle on"
+		Else If(Event Player.Flight == False);
+			Event Player.Flight = True;
+			Small Message(Event Player, Custom String(" {0} Flying On", Hero Icon String(Hero Of(Event Player))));
 		End;
 		Wait(1, Ignore Condition);
+	}
+}
+
+rule("Flying [from XWJQQ]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		All;
+		All;
+	}
+
+	conditions
+	{
+		Event Player.Flight == True;
+		Is Alive(Event Player) == True;
+	}
+
+	actions
+	{
+		Set Gravity(Event Player, 0);
+		Set Move Speed(Event Player, 0);
+		While(Event Player.Flight && Is Alive(Event Player));
+			"If the player is giving any movement input"
+			If(X Component Of(Throttle Of(Event Player)) * -1 * Normalize(Cross Product(Facing Direction Of(Event Player), Up))
+				+ Z Component Of(Throttle Of(Event Player)) * Facing Direction Of(Event Player) + (Is Button Held(Event Player, Button(Jump))
+				? Up : Vector(0, 0, 0)) + (Is Button Held(Event Player, Button(Crouch)) ? Down : Vector(0, 0, 0)) != Vector(0, 0, 0));
+				If(Event Player.FlightKnockInterrupt < 0.400);
+					"Remove a large portion of all momentum that is not in the player's intended direction"
+					Apply Impulse(Event Player, Velocity Of(Event Player) - Dot Product(Velocity Of(Event Player), Normalize(X Component Of(
+						Throttle Of(Event Player)) * -1 * Normalize(Cross Product(Facing Direction Of(Event Player), Up)) + Z Component Of(Throttle Of(
+						Event Player)) * Facing Direction Of(Event Player) + (Is Button Held(Event Player, Button(Jump)) ? Up : Vector(0, 0, 0)) + (
+						Is Button Held(Event Player, Button(Crouch)) ? Down : Vector(0, 0, 0)))) * Normalize(X Component Of(Throttle Of(Event Player))
+						* -1 * Normalize(Cross Product(Facing Direction Of(Event Player), Up)) + Z Component Of(Throttle Of(Event Player))
+						* Facing Direction Of(Event Player) + (Is Button Held(Event Player, Button(Jump)) ? Up : Vector(0, 0, 0)) + (Is Button Held(
+						Event Player, Button(Crouch)) ? Down : Vector(0, 0, 0))), Magnitude Of(Velocity Of(Event Player) - Dot Product(Velocity Of(
+						Event Player), Normalize(X Component Of(Throttle Of(Event Player)) * -1 * Normalize(Cross Product(Facing Direction Of(
+						Event Player), Up)) + Z Component Of(Throttle Of(Event Player)) * Facing Direction Of(Event Player) + (Is Button Held(
+						Event Player, Button(Jump)) ? Up : Vector(0, 0, 0)) + (Is Button Held(Event Player, Button(Crouch)) ? Down : Vector(0, 0, 0))))
+						* Normalize(X Component Of(Throttle Of(Event Player)) * -1 * Normalize(Cross Product(Facing Direction Of(Event Player), Up))
+						+ Z Component Of(Throttle Of(Event Player)) * Facing Direction Of(Event Player) + (Is Button Held(Event Player, Button(Jump))
+						? Up : Vector(0, 0, 0)) + (Is Button Held(Event Player, Button(Crouch)) ? Down : Vector(0, 0, 0)))) * -0.400, To World,
+						Incorporate Contrary Motion);
+				End;
+				"Move the player in their intended direction, applying stronger impulses relative to the difference between the current and desired velocity"
+				Apply Impulse(Event Player, X Component Of(Throttle Of(Event Player)) * -1 * Normalize(Cross Product(Facing Direction Of(
+					Event Player), Up)) + Z Component Of(Throttle Of(Event Player)) * Facing Direction Of(Event Player) + (Is Button Held(
+					Event Player, Button(Jump)) ? Up : Vector(0, 0, 0)) + (Is Button Held(Event Player, Button(Crouch)) ? Down : Vector(0, 0, 0)),
+					Max(Min((Event Player.FlightSpeedMetersPerSecond == 0 ? 5.500 : Event Player.FlightSpeedMetersPerSecond)
+					* 1.200 - Speed Of In Direction(Event Player, X Component Of(Throttle Of(Event Player)) * -1 * Normalize(Cross Product(
+					Facing Direction Of(Event Player), Up)) + Z Component Of(Throttle Of(Event Player)) * Facing Direction Of(Event Player) + (
+					Is Button Held(Event Player, Button(Jump)) ? Up : Vector(0, 0, 0)) + (Is Button Held(Event Player, Button(Crouch))
+					? Down : Vector(0, 0, 0))), (Event Player.FlightSpeedMetersPerSecond == 0 ? 5.500 : Event Player.FlightSpeedMetersPerSecond)
+					* 2.400) * (Event Player.FlightKnockInterrupt < 0.400 ? 0.180 : 0.080), 0), To World, Incorporate Contrary Motion);
+			"Else: when the player isn't giving any movement input"
+			Else;
+				If(!Event Player.FlightKnockInterrupt);
+					"Come to a halt relatively slowly"
+					Apply Impulse(Event Player, Velocity Of(Event Player), Min(Speed Of(Event Player) * 0.035 + 0.060, Speed Of(Event Player)) * -1,
+						To World, Incorporate Contrary Motion);
+				End;
+			End;
+			Wait(0.016, Ignore Condition);
+		End;
+		Set Gravity(Event Player, 100);
+		Set Move Speed(Event Player, 100);
+	}
+}
+
+rule("Flying OFF on death")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		Event Player.Flight == True;
+		Is Dead(Event Player) == True;
+		disabled (Is Dead(Event Player) || Is Using Ultimate(Event Player)) == True;
+	}
+
+	actions
+	{
+		If(Hero Of(Event Player) != Hero(Echo));
+			Event Player.Flight = False;
+			Set Gravity(Event Player, 100);
+			Small Message(Event Player, Custom String("{0} Flying Off", Hero Icon String(Hero Of(Event Player))));
+	}
+}
+
+rule("Flying OFF on hero change")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		Event Player.Flight == True;
+		Is In Spawn Room(Event Player) == True;
+		(Hero Of(Event Player) == Hero(Sigma) || Hero Of(Event Player) == Hero(Zenyatta)) == (Hero Of(Event Player) == Hero(Echo));
+	}
+
+	actions
+	{
+		Event Player.Flight = False;
+		disabled If(Is Dead(Event Player) == True);
+		disabled Set Gravity(Event Player, 100);
+		disabled Else;
+		disabled Set Gravity(Event Player, 200);
+		disabled Wait(2, Ignore Condition);
+		disabled Set Gravity(Event Player, 100);
+		disabled End;
+		disabled Small Message(Event Player, Custom String("{0} Flying Off", Hero Icon String(Hero Of(Event Player))));
 	}
 }
 
@@ -7209,76 +7953,6 @@ rule("PLAYER Third Person During Ultimate OFF")
 	}
 }
 
-disabled rule("===============================BOTS Stuck in spawn failsafe")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 2;
-		All;
-	}
-
-	conditions
-	{
-		Is Game In Progress == True;
-		Is In Spawn Room(Event Player) == True;
-	}
-
-	actions
-	{
-		Wait(25, Abort When False);
-		If(Objective Index >= 1 && Current Game Mode == Game Mode(Hybrid));
-			Teleport(Event Player, Payload Position + Vector(0, 2, 0));
-		Else If(Current Game Mode == Game Mode(Escort));
-			Teleport(Event Player, Payload Position + Vector(0, 2, 0));
-		Else;
-			Teleport(Event Player, Objective Position(Objective Index));
-		End;
-	}
-}
-
-disabled rule("[DEBUG] Spawn Dummy Bot")
-{
-	event
-	{
-		Ongoing - Each Player;
-		All;
-		All;
-	}
-
-	conditions
-	{
-		Is Button Held(Event Player, Button(Interact)) == True;
-		Is In Spawn Room(Event Player) == False;
-	}
-
-	actions
-	{
-		Create Dummy Bot(Hero(Roadhog), Team 2, -1, 3 * Facing Direction Of(Event Player) + Position Of(Event Player), Event Player);
-	}
-}
-
-disabled rule("[DEBUG] Remove Dummy Bot on death")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 2;
-		All;
-	}
-
-	conditions
-	{
-		Is Dead(Event Player) == True;
-		Is Dummy Bot(Event Player) == True;
-	}
-
-	actions
-	{
-		Destroy Dummy Bot(Team 2, Slot Of(Event Player));
-	}
-}
-
 rule("SUPERBOT Enraged Kill Message")
 {
 	event
@@ -7299,92 +7973,6 @@ rule("SUPERBOT Enraged Kill Message")
 	}
 }
 
-rule("ZARYA Secondary Launch")
-{
-	event
-	{
-		Player Dealt Damage;
-		Team 1;
-		Zarya;
-	}
-
-	conditions
-	{
-		Event Ability == Button(Secondary Fire);
-	}
-
-	actions
-	{
-		Apply Impulse(Victim, Up, 7, To World, Cancel Contrary Motion);
-	}
-}
-
-rule("ANA Primary Poison")
-{
-	event
-	{
-		Player Dealt Damage;
-		Team 1;
-		Ana;
-	}
-
-	conditions
-	{
-		Event Ability == Button(Primary Fire);
-	}
-
-	actions
-	{
-		Start Damage Over Time(Victim, Event Player, 10, Max Health(Event Player) * 0.010);
-	}
-}
-
-rule("SIGMA Stone Knockdown")
-{
-	event
-	{
-		Player Dealt Damage;
-		Team 1;
-		Sigma;
-	}
-
-	conditions
-	{
-		Event Ability == Button(Ability 2);
-	}
-
-	actions
-	{
-		Set Status(Victim, Event Player, Knocked Down, 3);
-	}
-}
-
-rule("ECHO Laser")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Echo;
-	}
-
-	conditions
-	{
-		Is Using Ability 2(Event Player) == Button(Ability 2);
-	}
-
-	actions
-	{
-		Event Player.U = Ray Cast Hit Position(Eye Position(Event Player), 100 * Facing Direction Of(Event Player) + Eye Position(
-			Event Player), All Players(Team 2), Event Player, True);
-		Play Effect(All Players(All Teams), Bad Explosion, Color(Sky Blue), Event Player.U, 0.250);
-		Play Effect(All Players(All Teams), Ring Explosion, Color(Sky Blue), Event Player.U, 2);
-		Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 7 * Global.SuperbotLevel + 7);
-		Wait(0.050, Ignore Condition);
-		Loop If Condition Is True;
-	}
-}
-
 rule("SUPERBOTS Final Challenge ON")
 {
 	event
@@ -7395,7 +7983,9 @@ rule("SUPERBOTS Final Challenge ON")
 	conditions
 	{
 		Is Game In Progress == True;
-		Match Time < 40;
+		Match Time < 61;
+		"If NOT Control map (disabled, workshop load)"
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False;
 	}
 
 	actions
@@ -7409,37 +7999,38 @@ rule("SUPERBOTS Final Challenge ON")
 		Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
 		Respawn(All Players(Team 2));
 		Set Status(All Players(Team 2), Null, Rooted, 10);
-		Small Message(All Players(All Teams), Custom String("!!!ATTENTION!!!"));
+		Small Message(All Players(All Teams), Custom String("  !!!ATTENTION!!!"));
 		Wait(1, Ignore Condition);
-		Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE: {0}", Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
-		Small Message(All Players(All Teams), Custom String("!!!ATTENTION!!!"));
+		Big Message(All Players(All Teams), Custom String("OVERTIME CHALLENGE: {0}",
+			Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
+		Small Message(All Players(All Teams), Custom String("  !!!ATTENTION!!!"));
 		Wait(2, Ignore Condition);
 		If(Global.ChallengeRoulette[0] == 2);
-			Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
+			Small Message(All Players(All Teams), Custom String(" PLAYERS TAKE DAMAGE OVER TIME"));
 			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String("WHEN SEPARATED FROM OTHER TEAMMATES"));
+			Small Message(All Players(All Teams), Custom String(" WHEN SEPARATED FROM OTHER TEAMMATES"));
 		Else If(Global.ChallengeRoulette[0] == 3);
-			Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
+			Small Message(All Players(All Teams), Custom String(" PLAYERS TAKE DAMAGE OVER TIME"));
 			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String("WHEN NEAR TEAMMATES"));
+			Small Message(All Players(All Teams), Custom String(" WHEN NEAR TEAMMATES"));
 		Else If(Global.ChallengeRoulette[0] == 4);
-			Small Message(All Players(All Teams), Custom String("SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
+			Small Message(All Players(All Teams), Custom String(" SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
 			Wait(1, Ignore Condition);
 		Else If(Global.ChallengeRoulette[0] == 5);
-			Small Message(All Players(All Teams), Custom String("RESPAWN DISABLED FOR PLAYERS"));
+			Small Message(All Players(All Teams), Custom String(" RESPAWN DISABLED FOR PLAYERS"));
 			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String("RESURRECTION STILL WORKS"));
+			Small Message(All Players(All Teams), Custom String(" RESURRECTION STILL WORKS"));
 		Else If(Global.ChallengeRoulette[0] == 6);
-			Small Message(All Players(All Teams), Custom String("BOTS HAVE 99% ARMOR WHILE MOVING"));
+			Small Message(All Players(All Teams), Custom String(" BOTS HAVE 99% ARMOR WHILE MOVING"));
 			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String("DISABLE THEM TO KILL THEM"));
+			Small Message(All Players(All Teams), Custom String(" DISABLE THEM TO KILL THEM"));
 		Else If(Global.ChallengeRoulette[0] == 7);
-			Small Message(All Players(All Teams), Custom String("SUPERBOTS MOVE AT 500% SPEED"));
+			Small Message(All Players(All Teams), Custom String(" SUPERBOTS MOVE AT 500% SPEED"));
 			Wait(1, Ignore Condition);
 		Else If(Global.ChallengeRoulette[0] == 8);
-			Small Message(All Players(All Teams), Custom String("SUPERBOTS ARE HEAVY, FAST AND..."));
+			Small Message(All Players(All Teams), Custom String(" SUPERBOTS ARE HEAVY, FAST AND..."));
 			Wait(1, Ignore Condition);
-			Small Message(All Players(All Teams), Custom String("...HAVE 25% ARMOR, GOOD LUCK"));
+			Small Message(All Players(All Teams), Custom String(" ...HAVE 25% ARMOR, GOOD LUCK!"));
 		End;
 		Wait(5, Ignore Condition);
 		Set Ultimate Charge(Players On Hero(Hero(Lúcio), Team 2), 50);
@@ -7456,13 +8047,15 @@ rule("SUPERBOTS Final Challenge OFF")
 	conditions
 	{
 		Is Game In Progress == True;
-		Match Time > 40;
+		Match Time > 60;
+		"If NOT Control map (disabled, workshop load)"
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == False;
 	}
 
 	actions
 	{
 		If(Global.ChallengeRoulette[0] == 5);
-			Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE RESET"));
+			Big Message(All Players(All Teams), Custom String("OVERTIME CHALLENGE RESET"));
 			Enable Built-In Game Mode Respawning(All Players(Team 1));
 			Respawn(All Dead Players(All Teams));
 		Else If(Global.ChallengeRoulette[0] == 6);
@@ -7490,16 +8083,16 @@ disabled rule("SUPERBOTS Final Challenge ([0] == 2) Separation Anxiety")
 
 	conditions
 	{
-		Match Time < 30;
-		Global.ChallengeRoulette[0] == 2;
-		Is True For Any(All Living Players(Team 1), Distance Between(Event Player, Current Array Element) > 5) == True;
+		disabled Match Time < 30;
+		disabled Global.ChallengeRoulette[0] == 2;
+		disabled Is True For Any(All Living Players(Team 1), Distance Between(Event Player, Current Array Element) > 5) == True;
 	}
 
 	actions
 	{
-		Damage(Event Player, Null, Max Health(Event Player) * 0.150);
-		Wait(1, Ignore Condition);
-		Loop If Condition Is True;
+		disabled Damage(Event Player, Null, Max Health(Event Player) * 0.150);
+		disabled Wait(1, Ignore Condition);
+		disabled Loop If Condition Is True;
 	}
 }
 
@@ -7514,16 +8107,16 @@ disabled rule("SUPERBOTS Final Challenge ([0] == 3) Social Distancing")
 
 	conditions
 	{
-		Match Time < 30;
-		Global.ChallengeRoulette[0] == 3;
-		Is True For Any(All Living Players(Team 1), Distance Between(Event Player, Current Array Element) < 5) == True;
+		disabled Match Time < 30;
+		disabled Global.ChallengeRoulette[0] == 3;
+		disabled Is True For Any(All Living Players(Team 1), Distance Between(Event Player, Current Array Element) < 5) == True;
 	}
 
 	actions
 	{
-		Damage(Event Player, Null, Max Health(Event Player) * 0.150);
-		Wait(1, Ignore Condition);
-		Loop If Condition Is True;
+		disabled Damage(Event Player, Null, Max Health(Event Player) * 0.150);
+		disabled Wait(1, Ignore Condition);
+		disabled Loop If Condition Is True;
 	}
 }
 
@@ -7634,77 +8227,99 @@ rule("SUPERBOTS Final Challenge ([0] == 8) Apotheosis")
 	}
 }
 
-rule("LUCIO Full-Auto")
+disabled rule("SUPERBOTS Final Challenge ON (Control) (WIP)")
 {
 	event
 	{
-		Ongoing - Each Player;
-		Team 1;
-		Lúcio;
+		Ongoing - Global;
 	}
 
 	conditions
 	{
-		Event Player.FullAutoFire == True;
-		Is Button Held(Event Player, Button(Primary Fire)) == True;
-		Is Button Held(Event Player, Button(Secondary Fire)) == False;
+		disabled Is Game In Progress == True;
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
+		disabled Control Mode Scoring Percentage(Team 1) > 20;
+		disabled Control Mode Scoring Percentage(Team 2) < 20;
 	}
 
 	actions
 	{
-		Wait(0.140, Ignore Condition);
-		Set Projectile Speed(Event Player, 100);
-		Loop If Condition Is True;
+		"Sets a random number to index 0 between 0 and 8."
+		disabled Global.ChallengeRoulette[0] = Random Integer(4, 8);
+		disabled Wait(0.020, Ignore Condition);
+		"If Index 0 is the same as Index 1, then it loops."
+		disabled Loop If(Global.ChallengeRoulette[0] == Global.ChallengeRoulette[1]);
+		"Once it stops being the same number, it will set 1 to whatever 0 is."
+		disabled Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
+		disabled Respawn(All Players(Team 2));
+		disabled Set Status(All Players(Team 2), Null, Rooted, 10);
+		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
+		disabled Wait(1, Ignore Condition);
+		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE: {0}", Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
+		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
+		disabled Wait(2, Ignore Condition);
+		disabled If(Global.ChallengeRoulette[0] == 2);
+		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("WHEN SEPARATED FROM OTHER TEAMMATES"));
+		disabled Else If(Global.ChallengeRoulette[0] == 3);
+		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("WHEN NEAR TEAMMATES"));
+		disabled Else If(Global.ChallengeRoulette[0] == 4);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
+		disabled Wait(1, Ignore Condition);
+		disabled Else If(Global.ChallengeRoulette[0] == 5);
+		disabled Small Message(All Players(All Teams), Custom String("RESPAWN DISABLED FOR PLAYERS"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("RESURRECTION STILL WORKS"));
+		disabled Else If(Global.ChallengeRoulette[0] == 6);
+		disabled Small Message(All Players(All Teams), Custom String("BOTS HAVE 99% ARMOR WHILE MOVING"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("DISABLE THEM TO KILL THEM"));
+		disabled Else If(Global.ChallengeRoulette[0] == 7);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS MOVE AT 500% SPEED"));
+		disabled Wait(1, Ignore Condition);
+		disabled Else If(Global.ChallengeRoulette[0] == 8);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS ARE HEAVY, FAST AND..."));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("...HAVE 25% ARMOR, GOOD LUCK!"));
+		disabled End;
+		disabled Wait(5, Ignore Condition);
+		disabled Set Ultimate Charge(Players On Hero(Hero(Lúcio), Team 2), 50);
 	}
 }
 
-rule("D.VA Mech Bunny Hop Deactivation")
+disabled rule("SUPERBOTS Final Challenge OFF (Control) (WIP)")
 {
 	event
 	{
-		Ongoing - Each Player;
-		Team 1;
-		D.Va;
+		Ongoing - Global;
 	}
 
 	conditions
 	{
-		Max Health(Event Player) <= 599.900 * (Event Player.HEALTH / 100);
-		Is Alive(Event Player) == True;
-		Event Player.U == True;
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
+		disabled Is Game In Progress == True;
+		disabled Control Mode Scoring Percentage(Team 2) > 20;
 	}
 
 	actions
 	{
-		Call Subroutine(DvaBunnyHopDeactivate);
-	}
-}
-
-rule("Flying Toggle on death")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		All;
-	}
-
-	conditions
-	{
-		Event Player.EnableFlying == True;
-		(Is Dead(Event Player) || Is Using Ultimate(Event Player)) == True;
-	}
-
-	actions
-	{
-		Event Player.EnableFlying = False;
-		If(Is Dead(Event Player) == True);
-			Set Gravity(Event Player, 100);
-		Else;
-			Set Gravity(Event Player, 200);
-			Wait(2, Ignore Condition);
-			Set Gravity(Event Player, 100);
-		End;
-		Small Message(Event Player, Custom String("{0} Flying Off", Hero Icon String(Hero Of(Event Player))));
+		disabled If(Global.ChallengeRoulette[0] == 5);
+		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE RESET"));
+		disabled Enable Built-In Game Mode Respawning(All Players(Team 1));
+		disabled Respawn(All Dead Players(All Teams));
+		disabled Else If(Global.ChallengeRoulette[0] == 6);
+		disabled Stop Damage Modification(Global.ChallengeDmgMod);
+		disabled Set Gravity(All Players(Team 2), 100);
+		disabled Else If(Global.ChallengeRoulette[0] == 7);
+		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
+		disabled Else If(Global.ChallengeRoulette[0] == 8);
+		disabled Stop Damage Modification(Global.ChallengeDmgMod);
+		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
+		disabled Set Gravity(All Players(Team 2), 100);
+		disabled End;
+		disabled Global.ChallengeRoulette[0] = 0;
 	}
 }
