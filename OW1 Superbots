@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "https://tinyurl.com/stopthesuperbots v(PTR) - Level up as your damage increases.  Bot deaths, eliminations and final hits increase your damage.  Bots scale in difficulty as they die.  Team composition is everything here, stay alive, try to shoot everything you can and watch out for the \"Danger\" meter!  Almost every character has been tweaked in one way or another, play them to find out what's new!"
+		Description: "https://tinyurl.com/stopthesuperbots v(PTR) - (Original code: WEVVY; modified code: 8M3SC). Level up as your damage increases.  Bot deaths, eliminations and final hits increase your damage.  Bots scale in difficulty as they die.  Team composition is everything here, stay alive, try to shoot everything you can and watch out for the \"Danger\" meter!  Almost every character has been tweaked in one way or another, play them to find out what's new!"
 	}
 
 	lobby
@@ -50,10 +50,10 @@ settings
 
 			enabled maps
 			{
-				Blizzard World Winter 0
+				Blizzard World 0
 				Eichenwalde 0
 				Hollywood 0
-				King's Row Winter 0
+				King's Row 0
 				Numbani 0
 			}
 		}
@@ -62,7 +62,7 @@ settings
 		{
 			Game Mode Start: Immediately
 			Kill Cam: Off
-			Spawn Health Packs: Disabled
+			Spawn Health Packs: Enabled
 		}
 	}
 
@@ -79,15 +79,16 @@ settings
 				Health: 200%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
-				Sleep Dart Cooldown Time: 200%
+				Sleep Dart Cooldown Time: 29%
 			}
 
 			Ashe
 			{
-				Coach Gun Cooldown Time: 50%
+				Coach Gun Cooldown Time: 25%
 				Coach Gun Knockback Scalar Enemy: 200%
 				Coach Gun Knockback Scalar Self: 200%
 				Damage Dealt: 250%
+				Dynamite Cooldown Time: 12%
 				Dynamite Fuse Time Scalar: 1%
 				Ultimate Generation - Combat B.O.B.: 10%
 			}
@@ -129,28 +130,30 @@ settings
 			{
 				Combat Roll Cooldown Time: 0%
 				Damage Dealt: 250%
+				Magnetic Grenade Cooldown Time: 78%
 				Ultimate Generation - Combat Deadeye: 1%
 			}
 
 			D.Va
 			{
-				Boosters Cooldown Time: 50%
-				Damage Dealt: 150%
+				Boosters Cooldown Time: 18%
+				Damage Dealt: 223%
 				Defense Matrix Maximum Time: 300%
 				Defense Matrix Recharge Rate: 200%
-				Micro Missiles Cooldown Time: 50%
-				Ultimate Generation - Combat Self-Destruct: 50%
+				Micro Missiles Cooldown Time: 15%
+				Ultimate Generation - Combat Self-Destruct: 22%
 				Ultimate Generation - Passive Self-Destruct: 150%
 			}
 
 			Doomfist
 			{
+				Damage Dealt: 148%
 				Health: 200%
 				No Ammunition Requirement: On
-				Power Block Cooldown Time: 16%
+				Power Block Cooldown Time: 9%
 				Quick Melee: Off
-				Rocket Punch Cooldown Time: 25%
-				Seismic Slam Cooldown Time: 16%
+				Rocket Punch Cooldown Time: 9%
+				Seismic Slam Cooldown Time: 11%
 			}
 
 			Echo
@@ -177,16 +180,19 @@ settings
 			{
 				Lunge Cooldown Time: 25%
 				Lunge Distance Scalar: 200%
+				Sonic Arrow Cooldown Time: 19%
+				Storm Arrows Cooldown Time: 12%
 				Storm Arrows Quantity: 12
 				Ultimate Generation - Combat Dragonstrike: 25%
+				Ultimate Generation - Passive Dragonstrike: 25%
+				Ultimate Generation Dragonstrike: 25%
 			}
 
 			Junkrat
 			{
-				Concussion Mine Cooldown Time: 25%
+				Concussion Mine Cooldown Time: 50%
 				Damage Dealt: 250%
 				No Ammunition Requirement: On
-				Steel Trap Cooldown Time: 25%
 				Ultimate Generation - Combat RIP-Tire: 25%
 			}
 
@@ -205,9 +211,10 @@ settings
 
 			Mei
 			{
-				Cryo-Freeze Cooldown Time: 75%
+				Cryo-Freeze Cooldown Time: 43%
 				Damage Dealt: 250%
 				Freeze Stacking: On
+				Ice Wall Cooldown Time: 42%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Blizzard: 5%
 				Weapon Freeze Duration Scalar: 200%
@@ -244,13 +251,17 @@ settings
 			Orisa
 			{
 				Damage Dealt: 150%
+				Energy Javelin Cooldown Time: 45%
 				Fortify Cooldown Time: 35%
+				Javelin Spin Cooldown Time: 43%
 				No Ammunition Requirement: On
 			}
 
 			Pharah
 			{
+				Concussive Blast Cooldown Time: 66%
 				Concussive Blast Knockback Scalar: 25%
+				Damage Dealt: 133%
 				Hover Jets Unlimited Fuel: On
 				Jump Jet Cooldown Time: 0%
 				No Ammunition Requirement: On
@@ -271,7 +282,8 @@ settings
 			{
 				Barrier Field Cooldown Time: 0%
 				Barrier Field Recharge Rate: 500%
-				Charge Cooldown Time: 50%
+				Charge Cooldown Time: 40%
+				Charge Knockback Scalar: 50%
 				Damage Dealt: 150%
 				Fire Strike Cooldown Time: 32%
 				Rocket Hammer Knockback Scalar: 0%
@@ -307,7 +319,7 @@ settings
 				Helix Rockets Knockback Scalar: 400%
 				No Ammunition Requirement: On
 				Ultimate Duration: 200%
-				Ultimate Generation - Combat Tactical Visor: 0%
+				Ultimate Generation - Combat Tactical Visor: 6%
 				Ultimate Generation - Passive Tactical Visor: 450%
 			}
 
@@ -372,7 +384,8 @@ settings
 
 			Wrecking Ball
 			{
-				Damage Dealt: 150%
+				Adaptive Shield Cooldown Time: 80%
+				Damage Dealt: 175%
 				Grappling Claw Cooldown Time: 0%
 				Infinite Ultimate Duration: On
 				Minefield Knockback Scalar: 0%
@@ -385,13 +398,14 @@ settings
 			{
 				Damage Dealt: 150%
 				No Ammunition Requirement: On
-				Particle Barrier Cooldown Time: 50%
+				Particle Barrier Cooldown Time: 40%
+				Projected Barrier Cooldown Time: 49%
 				Ultimate Generation - Combat Graviton Surge: 10%
 			}
 
 			Zenyatta
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 177%
 				Health: 150%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Transcendence: 0%
@@ -405,6 +419,14 @@ settings
 			{
 				Damage Dealt: 200%
 				Health: 500%
+				Sleep Dart Cooldown Time: 29%
+			}
+
+			Ashe
+			{
+				Coach Gun Cooldown Time: 25%
+				Damage Dealt: 250%
+				Dynamite Cooldown Time: 12%
 			}
 
 			Bastion
@@ -417,9 +439,27 @@ settings
 
 			Cassidy
 			{
+				Ammunition Clip Size Scalar: 150%
 				Damage Dealt: 150%
 				Health: 500%
-				Magnetic Grenade Cooldown Time: 500%
+				Ultimate Generation - Combat Deadeye: 200%
+				Ultimate Generation Deadeye: 200%
+			}
+
+			D.Va
+			{
+				Boosters Cooldown Time: 18%
+				Damage Dealt: 223%
+				Micro Missiles Cooldown Time: 15%
+				Ultimate Generation - Combat Self-Destruct: 22%
+			}
+
+			Doomfist
+			{
+				Damage Dealt: 148%
+				Power Block Cooldown Time: 9%
+				Rocket Punch Cooldown Time: 9%
+				Seismic Slam Cooldown Time: 11%
 			}
 
 			Echo
@@ -427,9 +467,10 @@ settings
 				No Ammunition Requirement: On
 			}
 
-			Junkrat
+			Hanzo
 			{
-				Damage Dealt: 250%
+				Sonic Arrow Cooldown Time: 19%
+				Storm Arrows Cooldown Time: 12%
 			}
 
 			Lúcio
@@ -446,14 +487,28 @@ settings
 
 			Mei
 			{
+				Cryo-Freeze Cooldown Time: 43%
 				Damage Dealt: 150%
 				Health: 500%
+				Ice Wall Cooldown Time: 42%
 			}
 
 			Mercy
 			{
 				Damage Dealt: 250%
 				Ultimate Generation Valkyrie: 50%
+			}
+
+			Orisa
+			{
+				Energy Javelin Cooldown Time: 45%
+				Javelin Spin Cooldown Time: 43%
+			}
+
+			Pharah
+			{
+				Concussive Blast Cooldown Time: 66%
+				Damage Dealt: 133%
 			}
 
 			Reaper
@@ -463,10 +518,20 @@ settings
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Shadow Step: Off
+				Ultimate Generation - Combat Death Blossom: 300%
+				Ultimate Generation - Passive Death Blossom: 200%
+				Ultimate Generation Death Blossom: 500%
+				Wraith Form Cooldown Time: 200%
+			}
+
+			Reinhardt
+			{
+				Charge Cooldown Time: 40%
 			}
 
 			Roadhog
 			{
+				Chain Hook Cooldown Time: 150%
 				Damage Dealt: 200%
 				Healing Dealt: 200%
 				Health: 500%
@@ -481,8 +546,11 @@ settings
 
 			Soldier: 76
 			{
+				Biotic Field Cooldown Time: 200%
 				Damage Dealt: 150%
 				Health: 500%
+				Helix Rockets Cooldown Time: 30%
+				Ultimate Generation - Combat Tactical Visor: 300%
 			}
 
 			Sombra
@@ -498,9 +566,15 @@ settings
 				Overload Cooldown Time: 50%
 				Quick Melee: Off
 				Ultimate Duration: 500%
-				Ultimate Generation - Combat Molten Core: 200%
-				Ultimate Generation - Passive Molten Core: 200%
-				Ultimate Generation Molten Core: 200%
+				Ultimate Generation - Combat Molten Core: 500%
+				Ultimate Generation - Passive Molten Core: 500%
+				Ultimate Generation Molten Core: 500%
+			}
+
+			Wrecking Ball
+			{
+				Adaptive Shield Cooldown Time: 80%
+				Damage Dealt: 175%
 			}
 
 			Zarya
@@ -508,12 +582,15 @@ settings
 				Health: 500%
 				No Ammunition Requirement: On
 				Particle Barrier: Off
+				Projected Barrier Cooldown Time: 49%
 				Quick Melee: Off
 			}
 
 			Zenyatta
 			{
+				Damage Dealt: 177%
 				Health: 500%
+				No Ammunition Requirement: On
 			}
 
 			enabled heroes
