@@ -174,8 +174,9 @@ settings
 			Echo
 			{
 				Damage Dealt: 250%
-				Flight Cooldown Time: 0%
+				Flight Cooldown Time: 50%
 				Focusing Beam: Off
+				Health: 125%
 				No Ammunition Requirement: On
 				Sticky Bombs Cooldown Time: 0%
 				Ultimate Generation - Combat Duplicate: 10%
@@ -251,7 +252,7 @@ settings
 
 			Lifeweaver
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 155%
 				Healing Dealt: 300%
 				Health: 150%
 				Life Grip and Healing Blossom Range: 25%
@@ -336,7 +337,7 @@ settings
 			Orisa
 			{
 				Damage Dealt: 150%
-				Energy Javelin Cooldown Time: 60%
+				Energy Javelin Cooldown Time: 70%
 				Fortify Cooldown Time: 50%
 				Health: 150%
 				Javelin Spin Cooldown Time: 50%
@@ -430,6 +431,7 @@ settings
 			Soldier: 76
 			{
 				Damage Dealt: 150%
+				Health: 125%
 				Helix Rockets Cooldown Time: 30%
 				Helix Rockets Knockback Scalar: 400%
 				No Ammunition Requirement: On
@@ -631,6 +633,11 @@ settings
 				Ultimate Generation - Passive Meteor Strike: 300%
 			}
 
+			Echo
+			{
+				Flight Cooldown Time: 10%
+			}
+
 			Genji
 			{
 				Damage Dealt: 160%
@@ -776,8 +783,8 @@ settings
 			{
 				Ammunition Clip Size Scalar: 200%
 				Damage Dealt: 160%
-				Energy Javelin Cooldown Time: 60%
-				Fortify Cooldown Time: 75%
+				Energy Javelin Cooldown Time: 70%
+				Fortify Cooldown Time: 90%
 				Health: 500%
 				Javelin Spin Cooldown Time: 50%
 				Ultimate Generation - Combat Terra Surge: 400%
@@ -4046,7 +4053,7 @@ rule("MOIRA Lethargic Drain")
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb Activation [Broken in OW2; fixed and T chase rate updated by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb Activation [Broken in OW2; fixed and updated T chase rate by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6389,10 +6396,11 @@ rule("Echo HUD [Updated by Arkhanglesk#11200]")
 		Wait(0.500, Ignore Condition);
 		Disallow Button(Event Player, Button(Ultimate));
 		Event Player.Flight = True;
-		Event Player.HUDTextHidden = Array(False, True, True, True);
+		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Echo), Button(Secondary Fire)), Custom String(
-			"HOLD [SECONDARY] FOR AUTO FIRE STICKY BOMBS"), Custom String("ULTIMATE: QUANTUM BEAM"));
+			"HOLD [SECONDARY] FOR AUTO FIRE STICKY BOMBS"), Custom String("ULTIMATE: QUANTUM BEAM"), Ability Icon String(Hero(Echo),
+			Button(Ability 1)), Custom String("[ABILITY 1] +SPEED"), Custom String("SPEED BOOST"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
