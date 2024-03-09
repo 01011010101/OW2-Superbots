@@ -24,7 +24,7 @@ settings
 
 			enabled maps
 			{
-				Horizon Lunar Colony 972777519512068154
+				Hanamura Winter 972777519512063901
 			}
 		}
 
@@ -50,7 +50,7 @@ settings
 
 			disabled maps
 			{
-				Blizzard World
+				Blizzard World Winter
 				Eichenwalde Halloween
 				Hollywood Halloween
 				King's Row
@@ -139,10 +139,10 @@ settings
 			Cassidy
 			{
 				Ammunition Clip Size Scalar: 300%
-				Combat Roll Cooldown Time: 75%
-				Damage Dealt: 150%
+				Combat Roll Cooldown Time: 40%
+				Damage Dealt: 165%
 				Health: 150%
-				Magnetic Grenade Cooldown Time: 50%
+				Magnetic Grenade Cooldown Time: 90%
 				Ultimate Generation - Combat Deadeye: 1%
 			}
 
@@ -152,6 +152,7 @@ settings
 				Damage Dealt: 150%
 				Defense Matrix Maximum Time: 300%
 				Defense Matrix Recharge Rate: 200%
+				Health: 125%
 				Micro Missiles Cooldown Time: 35%
 				Ultimate Generation - Combat Self-Destruct: 50%
 			}
@@ -197,9 +198,11 @@ settings
 				Damage Dealt: 175%
 				Lunge Cooldown Time: 25%
 				Lunge Distance Scalar: 200%
-				Storm Arrows Cooldown Time: 15%
+				Sonic Arrow Cooldown Time: 50%
+				Storm Arrows Cooldown Time: 25%
 				Storm Arrows Quantity: 12
 				Ultimate Generation - Combat Dragonstrike: 10%
+				Ultimate Generation - Passive Dragonstrike: 80%
 			}
 
 			Illari
@@ -279,10 +282,11 @@ settings
 				Cardiac Overdrive Cooldown Time: 75%
 				Cardiac Overdrive Healing: 50%
 				Damage Dealt: 165%
-				Health: 175%
 				No Ammunition Requirement: On
 				Overrun Cooldown Time: 50%
 				Overrun Knockback: 125%
+				Ultimate Duration: 75%
+				Ultimate Generation - Passive Cage Fight: 50%
 			}
 
 			Mei
@@ -406,6 +410,7 @@ settings
 				Damage Dealt: 130%
 				Experimental Barrier Cooldown Time: 25%
 				Health: 150%
+				Kinetic Grasp Cooldown Time: 200%
 				Ultimate Generation - Combat Gravitic Flux: 0%
 				Ultimate Generation - Passive Gravitic Flux: 375%
 			}
@@ -641,6 +646,7 @@ settings
 				Health: 400%
 				Movement Gravity: 95%
 				Spawn With Ultimate Ready: On
+				Storm Arrows Cooldown Time: 15%
 				Storm Arrows Quantity: 12
 				Ultimate Generation - Combat Dragonstrike: 500%
 				Ultimate Generation - Passive Dragonstrike: 500%
@@ -722,12 +728,12 @@ settings
 			Mauga
 			{
 				Ammunition Clip Size Scalar: 200%
-				Cardiac Overdrive Cooldown Time: 75%
-				Cardiac Overdrive Healing: 125%
-				Damage Dealt: 160%
-				Health: 350%
-				Overrun Cooldown Time: 75%
+				Cardiac Overdrive Cooldown Time: 200%
+				Damage Dealt: 125%
+				Health: 250%
+				Overrun Knockback: 50%
 				Quick Melee: Off
+				Ultimate Duration: 75%
 				Ultimate Generation - Combat Cage Fight: 500%
 				Ultimate Generation - Passive Cage Fight: 400%
 			}
@@ -1052,16 +1058,16 @@ rule("CREATED BY CEL#1115")
 		Global.ChallengeRoulette = Array(Null, Null, Custom String("SEPARATION ANXIETY"), Custom String("SOCIAL DISTANCING"),
 			Custom String("RELENTLESS"), Custom String("SUDDEN DEATH"), Custom String("JUGGERNAUT"), Custom String("SWARM!"),
 			Custom String("APOTHEOSIS"));
-		"Control Maps (Disabled, workshop overload)"
+		"Control Maps (Disabled, workshop overload issues)"
 		disabled Global.ControlMaps = Array(Null, Null, Custom String("Antarctic Peninsula"), Custom String("Busan"), Custom String("Ilios"),
 			Custom String("Lijiang Tower"), Custom String("Lijiang Tower (Lunar New Year)"), Custom String("Nepal"), Custom String(
 			"Oasis"));
-		"Cel, add a var for you if you want to use this"
+		"Cel, update this (if you want to use it)."
 		Global.Ark = Custom String("Arkhangelsk");
 	}
 }
 
-rule("BOT CHECK")
+rule("BOT CHECK 1")
 {
 	event
 	{
@@ -1084,7 +1090,7 @@ rule("BOT CHECK")
 	}
 }
 
-rule("BOT CHECK")
+rule("BOT CHECK 2")
 {
 	event
 	{
@@ -1192,6 +1198,29 @@ rule("GAME IN PROGRESS PHASE")
 	}
 }
 
+rule("LOOKING FOR MATCH / AUTO RESTART [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		(Number Of Players(Team Of(Event Player)) == 1) == True;
+		Total Time Elapsed < 45;
+		Is Game In Progress == True;
+	}
+
+	actions
+	{
+		Abort If Condition Is False;
+		Restart Match;
+	}
+}
+
 rule("Clear Status on Respawn or Resurrect")
 {
 	event
@@ -1226,7 +1255,7 @@ rule("Clear Status on Respawn or Resurrect")
 	}
 }
 
-rule("GLOBAL HUDS")
+rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -1269,7 +1298,7 @@ rule("GLOBAL HUDS")
 	}
 }
 
-disabled rule("SERVER STATS (HOST ONLY)")
+rule("HOST HUD (Server Load) [Added by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -1280,20 +1309,21 @@ disabled rule("SERVER STATS (HOST ONLY)")
 
 	conditions
 	{
-		(Event Player == Host Player) == True;
+		disabled Host Player == True;
 	}
 
 	actions
 	{
-		"Server Load Display (Host player only)"
-		Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load", Server Load), Null, Right, 1, Color(White), Color(
-			White), Color(White), Visible To and String, Default Visibility);
-		"Average Server Load Display (Host player only)"
-		Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (AVG)", Server Load Average), Null, Right, 2, Color(
-			White), Color(White), Color(White), Visible To and String, Default Visibility);
-		"Server Load Peak Display (Host player only)"
-		Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (MAX/2s)", Server Load Peak), Null, Right, 3, Color(
-			White), Color(White), Color(White), Visible To and String, Default Visibility);
+		If(Event Player == Host Player);
+			"Server Load Display (Host player only)"
+			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load", Server Load), Null, Right, 1, Color(White), Color(
+				White), Color(White), Visible To and String, Default Visibility);
+			"Average Server Load Display (Host player only)"
+			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (AVG)", Server Load Average), Null, Right, 2, Color(
+				White), Color(White), Color(White), Visible To and String, Default Visibility);
+			"Server Load Peak Display (Host player only)"
+			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (MAX/2s)", Server Load Peak), Null, Right, 3, Color(
+				White), Color(White), Color(White), Visible To and String, Default Visibility);
 	}
 }
 
@@ -1381,9 +1411,9 @@ rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%)")
 		Global.Armor25 = Array(Hero(Ana), Hero(Baptiste), Hero(Brigitte), Hero(Echo), Hero(Lúcio), Hero(Mercy), Hero(Zenyatta), Hero(
 			Kiriko), Hero(Illari));
 		Global.Armor50 = Array(Hero(Doomfist), Hero(Genji), Hero(Mei), Hero(Reaper), Hero(Sombra), Hero(Symmetra), Hero(Torbjörn), Hero(
-			Tracer), Hero(Ramattra));
+			Tracer), Hero(Ramattra), Hero(Mauga));
 		Global.Armor75 = Array(Hero(Bastion), Hero(D.Va), Hero(Orisa), Hero(Reinhardt), Hero(Roadhog), Hero(Winston), Hero(Wrecking Ball),
-			Hero(Zarya), Hero(Junker Queen), Hero(Mauga));
+			Hero(Zarya), Hero(Junker Queen));
 	}
 }
 
@@ -2552,7 +2582,7 @@ rule("ASHE Explosive Small Rounds")
 	}
 }
 
-disabled rule("BAPTISTE Ultimate (Broken in OW2)")
+disabled rule("BAPTISTE Ultimate (Broken in OW2, need to fix)")
 {
 	event
 	{
@@ -2580,7 +2610,7 @@ disabled rule("BAPTISTE Ultimate (Broken in OW2)")
 	}
 }
 
-disabled rule("BAPTISTE Ultimate Full-Auto (Broken in OW2)")
+disabled rule("BAPTISTE Ultimate Full-Auto (Broken in OW2, need to fix)")
 {
 	event
 	{
@@ -2655,7 +2685,7 @@ rule("BAPTISTE Grenade Shots")
 	}
 }
 
-disabled rule("BASTION Proton Cannon ON")
+disabled rule("BASTION Proton Cannon ON (Broken in OW2, need to fix)")
 {
 	event
 	{
@@ -2677,7 +2707,7 @@ disabled rule("BASTION Proton Cannon ON")
 	}
 }
 
-disabled rule("BASTION Proton Cannon OFF")
+disabled rule("BASTION Proton Cannon OFF (Broken in OW2, need to fix)")
 {
 	event
 	{
@@ -2699,7 +2729,7 @@ disabled rule("BASTION Proton Cannon OFF")
 	}
 }
 
-disabled rule("BASTION Proton Cannon Damage")
+disabled rule("BASTION Proton Cannon Damage (Broken in OW2, need to fix)")
 {
 	event
 	{
@@ -2803,7 +2833,7 @@ rule("D.VA Heal to Full when entering Mech")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Activation (Fixed)")
+rule("D.VA Mech Bunny Hop Activation [Broken in OW2; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -2841,7 +2871,7 @@ rule("D.VA Mech Bunny Hop Activation (Fixed)")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Jump")
+rule("D.VA Mech Bunny Hop Jump [Broken in OW2; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -2871,7 +2901,7 @@ rule("D.VA Mech Bunny Hop Jump")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Dive")
+rule("D.VA Mech Bunny Hop Dive [Broken in OW2; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -2896,7 +2926,7 @@ rule("D.VA Mech Bunny Hop Dive")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Deactivation Subroutine (Fixed)")
+rule("D.VA Mech Bunny Hop Deactivation Subroutine [Broken in OW2; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -2964,7 +2994,7 @@ rule("DOOMFIST Reset Ult on Death")
 	}
 }
 
-rule("DOOMFIST Super 1 - Super Slam (was Uppercut in OW1)")
+rule("DOOMFIST Super 1 - Super Slam (previously \"Uppercut\") [Broken in OW2; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3050,7 +3080,7 @@ rule("ECHO Laser")
 	}
 }
 
-rule("ECHO Auto Secondary Fire (fixed, reworked)")
+rule("ECHO Auto Secondary Fire [Broken in OW2; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3072,7 +3102,7 @@ rule("ECHO Auto Secondary Fire (fixed, reworked)")
 	}
 }
 
-rule("ECHO Ultimate (Fixed, reworked)")
+rule("ECHO Ultimate [Broken in OW2; rework by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3387,7 +3417,7 @@ rule("JUNKRAT Chaos Roulette Activation")
 	}
 }
 
-rule("JUNKRAT Chaos Roulette - Death 1")
+rule("JUNKRAT Chaos Roulette - Death 1 [TO DO: Bugged in OW2, only kills bots]")
 {
 	event
 	{
@@ -3565,7 +3595,7 @@ rule("JUNKRAT Chaos Roulette - Kill Pile 6")
 	}
 }
 
-rule("JUNKRAT Elimination Money Script")
+rule("JUNKRAT Elimination Money Script [Broken in OW2; fixed, tweaked by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -3902,7 +3932,7 @@ rule("MERCY Healing OFF")
 	}
 }
 
-rule("MERCY Charm Punch - [Idea by Saya]")
+rule("MERCY Charm Punch [Idea by Saya]")
 {
 	event
 	{
@@ -4016,7 +4046,7 @@ rule("MOIRA Lethargic Drain")
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb Activation")
+rule("MOIRA Ultimate Coalescence Bomb Activation [Broken in OW2; fixed and T chase rate updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4274,7 +4304,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF in Spawn Room")
 	}
 }
 
-rule("ORISA Fortify heal")
+rule("ORISA Fortify heal [Broken with OW2 rework; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4711,7 +4741,7 @@ rule("REINHARDT Sonic charge off")
 	}
 }
 
-rule("ROADHOG Asthmatic Trample")
+rule("ROADHOG Asthmatic Trample [Broken after Hog rework (Nov 2023); fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -4929,7 +4959,7 @@ rule("ROADHOG Ultimate Stun")
 	}
 }
 
-rule("SIGMA Kinetic Attraction - Created by Scourge")
+rule("SIGMA Kinetic Attraction [Created by SCOURGE#11437]")
 {
 	event
 	{
@@ -5547,7 +5577,7 @@ rule("TRACER Ultimate (Destabilizing Time) Off On Death")
 	}
 }
 
-rule("WIDOWMAKER Charge counter - Created by jaytheyggdrasil")
+rule("WIDOWMAKER Charge counter [Created by jaytheyggdrasil]")
 {
 	event
 	{
@@ -5567,7 +5597,7 @@ rule("WIDOWMAKER Charge counter - Created by jaytheyggdrasil")
 	}
 }
 
-rule("WIDOWMAKER Charge counter release - Created by jaytheyggdrasil")
+rule("WIDOWMAKER Charge counter release [Created by jaytheyggdrasil]")
 {
 	event
 	{
@@ -5639,7 +5669,7 @@ rule("WIDOWMAKER Frozen Mine")
 	}
 }
 
-rule("WIDOWMAKER Ultimate Rail Gun")
+rule("WIDOWMAKER Ultimate Rail Gun [Broken in OW2; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6169,7 +6199,7 @@ rule("============== RESET HUD SCRIPT ==============")
 	}
 }
 
-rule("Ana HUD")
+rule("Ana HUD [Updated Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6246,7 +6276,7 @@ rule("Baptiste HUD")
 	}
 }
 
-rule("Bastion HUD")
+rule("Bastion HUD [Updated Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6296,7 +6326,7 @@ rule("Brigitte HUD")
 	}
 }
 
-rule("D.Va HUD")
+rule("D.Va HUD [Updated Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6324,7 +6354,7 @@ rule("D.Va HUD")
 	}
 }
 
-rule("Doomfist HUD")
+rule("Doomfist HUD [Updated Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6345,7 +6375,7 @@ rule("Doomfist HUD")
 	}
 }
 
-rule("Echo HUD")
+rule("Echo HUD [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6412,6 +6442,40 @@ rule("Hanzo HUD")
 	}
 }
 
+rule("Illari HUD [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Illari;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Junker Queen HUD [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Junker Queen;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
 rule("Junkrat HUD")
 {
 	event
@@ -6458,6 +6522,40 @@ rule("Junkrat HUD")
 	}
 }
 
+rule("Kiriko HUD [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Kiriko;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Lifeweaver HUD [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Lifeweaver;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
 rule("Lucio HUD")
 {
 	event
@@ -6484,6 +6582,23 @@ rule("Lucio HUD")
 			Custom String("GOTTA GO FAST"), Ability Icon String(Hero(Lúcio), Button(Secondary Fire)), Custom String(
 			"[PRIMARY/SECONDARY] HEAL/DAMAGE"), Custom String("TINNITUS"), Ability Icon String(Hero(Lúcio), Button(Ultimate)),
 			Custom String("RESURRECT ALL TEAMMATES"), Custom String("ULTIMATE: PARTY ALL NIGHT"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Mauga HUD [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Mauga;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -6599,7 +6714,7 @@ rule("Moira HUD")
 	}
 }
 
-rule("Orisa HUD")
+rule("Orisa HUD [Updated for OW2 rework by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -6779,6 +6894,23 @@ rule("Sigma HUD")
 	}
 }
 
+rule("Sojourn HUD [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Sojourn;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
 rule("Soldier: 76 HUD")
 {
 	event
@@ -6855,7 +6987,7 @@ rule("Symmetra HUD")
 	}
 }
 
-rule("Torbjorn HUD")
+rule("Torbjorn HUD [Updated Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7012,138 +7144,6 @@ rule("Zenyatta HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
-			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
-			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
-	}
-}
-
-rule("Junker Queen HUD")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Junker Queen;
-	}
-
-	actions
-	{
-		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, False);
-		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
-			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
-			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
-	}
-}
-
-rule("Illari HUD")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Illari;
-	}
-
-	actions
-	{
-		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, False);
-		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
-			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
-			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
-	}
-}
-
-rule("Kiriko HUD")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Kiriko;
-	}
-
-	actions
-	{
-		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, False);
-		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
-			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
-			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
-	}
-}
-
-rule("Lifeweaver HUD")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Lifeweaver;
-	}
-
-	actions
-	{
-		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, False);
-		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
-			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
-			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
-	}
-}
-
-rule("Sojourn HUD")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Sojourn;
-	}
-
-	actions
-	{
-		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, False);
-		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
-			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
-			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
-	}
-}
-
-rule("Mauga HUD")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		Mauga;
-	}
-
-	actions
-	{
-		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, False);
-		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
 			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
 			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
 			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
@@ -7519,7 +7519,7 @@ rule("Subroutine - (ClearAllStatus)")
 	}
 }
 
-rule("Subroutine - (EnableButtons)")
+rule("Subroutine - (EnableButtons) [Broken in OW2; fixed by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7544,7 +7544,7 @@ rule("Subroutine - (EnableButtons)")
 	}
 }
 
-rule("Subroutine - (DisableButtons)")
+rule("Subroutine - (DisableButtons) [Broken in OW2; updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7648,7 +7648,7 @@ rule("Subroutine - (ReaperCreepingDeathOff)")
 	}
 }
 
-rule("Flying Toggle")
+rule("Flying Toggle [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7681,7 +7681,7 @@ rule("Flying Toggle")
 	}
 }
 
-rule("Flying [from XWJQQ]")
+rule("Flying [Broken in OW2; reworked by Arkhanglesk#11200 using code from XWJQQ]")
 {
 	event
 	{
@@ -7794,7 +7794,7 @@ rule("Flying OFF on hero change")
 	}
 }
 
-rule("PLAYER Third Person During Ultimate ON")
+rule("PLAYER Third Person During Ultimate ON [Broken in OW2; updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7825,7 +7825,7 @@ rule("PLAYER Third Person During Ultimate ON")
 	}
 }
 
-rule("PLAYER Third Person During Ultimate OFF")
+rule("PLAYER Third Person During Ultimate OFF [Broken in OW2; updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7863,6 +7863,103 @@ rule("SUPERBOT Enraged Kill Message")
 	actions
 	{
 		Small Message(Victim, Custom String("{0} KILLED YOU WHILE ENRAGED", Hero Icon String(Hero Of(Event Player))));
+	}
+}
+
+disabled rule("SUPERBOTS Final Challenge ON (Control) [WIP - On hold, workshop load issues]")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		disabled Is Game In Progress == True;
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
+		disabled Control Mode Scoring Percentage(Team 1) > 20;
+		disabled Control Mode Scoring Percentage(Team 2) < 20;
+	}
+
+	actions
+	{
+		"Sets a random number to index 0 between 0 and 8."
+		disabled Global.ChallengeRoulette[0] = Random Integer(4, 8);
+		disabled Wait(0.020, Ignore Condition);
+		"If Index 0 is the same as Index 1, then it loops."
+		disabled Loop If(Global.ChallengeRoulette[0] == Global.ChallengeRoulette[1]);
+		"Once it stops being the same number, it will set 1 to whatever 0 is."
+		disabled Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
+		disabled Respawn(All Players(Team 2));
+		disabled Set Status(All Players(Team 2), Null, Rooted, 10);
+		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
+		disabled Wait(1, Ignore Condition);
+		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE: {0}", Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
+		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
+		disabled Wait(2, Ignore Condition);
+		disabled If(Global.ChallengeRoulette[0] == 2);
+		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("WHEN SEPARATED FROM OTHER TEAMMATES"));
+		disabled Else If(Global.ChallengeRoulette[0] == 3);
+		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("WHEN NEAR TEAMMATES"));
+		disabled Else If(Global.ChallengeRoulette[0] == 4);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
+		disabled Wait(1, Ignore Condition);
+		disabled Else If(Global.ChallengeRoulette[0] == 5);
+		disabled Small Message(All Players(All Teams), Custom String("RESPAWN DISABLED FOR PLAYERS"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("RESURRECTION STILL WORKS"));
+		disabled Else If(Global.ChallengeRoulette[0] == 6);
+		disabled Small Message(All Players(All Teams), Custom String("BOTS HAVE 99% ARMOR WHILE MOVING"));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("DISABLE THEM TO KILL THEM"));
+		disabled Else If(Global.ChallengeRoulette[0] == 7);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS MOVE AT 500% SPEED"));
+		disabled Wait(1, Ignore Condition);
+		disabled Else If(Global.ChallengeRoulette[0] == 8);
+		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS ARE HEAVY, FAST AND..."));
+		disabled Wait(1, Ignore Condition);
+		disabled Small Message(All Players(All Teams), Custom String("...HAVE 25% ARMOR, GOOD LUCK!"));
+		disabled End;
+		disabled Wait(5, Ignore Condition);
+		disabled Set Ultimate Charge(Players On Hero(Hero(Lúcio), Team 2), 50);
+	}
+}
+
+disabled rule("SUPERBOTS Final Challenge OFF (Control) [WIP - On hold, workshop load issues]")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+
+	conditions
+	{
+		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
+		disabled Is Game In Progress == True;
+		disabled Control Mode Scoring Percentage(Team 2) > 20;
+	}
+
+	actions
+	{
+		disabled If(Global.ChallengeRoulette[0] == 5);
+		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE RESET"));
+		disabled Enable Built-In Game Mode Respawning(All Players(Team 1));
+		disabled Respawn(All Dead Players(All Teams));
+		disabled Else If(Global.ChallengeRoulette[0] == 6);
+		disabled Stop Damage Modification(Global.ChallengeDmgMod);
+		disabled Set Gravity(All Players(Team 2), 100);
+		disabled Else If(Global.ChallengeRoulette[0] == 7);
+		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
+		disabled Else If(Global.ChallengeRoulette[0] == 8);
+		disabled Stop Damage Modification(Global.ChallengeDmgMod);
+		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
+		disabled Set Gravity(All Players(Team 2), 100);
+		disabled End;
+		disabled Global.ChallengeRoulette[0] = 0;
 	}
 }
 
@@ -8117,119 +8214,5 @@ rule("SUPERBOTS Final Challenge ([0] == 8) Apotheosis")
 		Global.ChallengeDmgMod = Last Damage Modification ID;
 		Set Gravity(All Players(Team 2), 500);
 		Set Move Speed(All Players(Team 2), 300);
-	}
-}
-
-disabled rule("SUPERBOTS Final Challenge ON (Control) (WIP)")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		disabled Is Game In Progress == True;
-		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
-		disabled Control Mode Scoring Percentage(Team 1) > 20;
-		disabled Control Mode Scoring Percentage(Team 2) < 20;
-	}
-
-	actions
-	{
-		"Sets a random number to index 0 between 0 and 8."
-		disabled Global.ChallengeRoulette[0] = Random Integer(4, 8);
-		disabled Wait(0.020, Ignore Condition);
-		"If Index 0 is the same as Index 1, then it loops."
-		disabled Loop If(Global.ChallengeRoulette[0] == Global.ChallengeRoulette[1]);
-		"Once it stops being the same number, it will set 1 to whatever 0 is."
-		disabled Global.ChallengeRoulette[1] = Global.ChallengeRoulette[0];
-		disabled Respawn(All Players(Team 2));
-		disabled Set Status(All Players(Team 2), Null, Rooted, 10);
-		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
-		disabled Wait(1, Ignore Condition);
-		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE: {0}", Global.ChallengeRoulette[Global.ChallengeRoulette[0]]));
-		disabled Small Message(All Players(All Teams), Custom String("!!! ATTENTION !!!"));
-		disabled Wait(2, Ignore Condition);
-		disabled If(Global.ChallengeRoulette[0] == 2);
-		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("WHEN SEPARATED FROM OTHER TEAMMATES"));
-		disabled Else If(Global.ChallengeRoulette[0] == 3);
-		disabled Small Message(All Players(All Teams), Custom String("PLAYERS TAKE DAMAGE OVER TIME"));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("WHEN NEAR TEAMMATES"));
-		disabled Else If(Global.ChallengeRoulette[0] == 4);
-		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS CAN ONLY BE DISABLED FOR ONE SECOND"));
-		disabled Wait(1, Ignore Condition);
-		disabled Else If(Global.ChallengeRoulette[0] == 5);
-		disabled Small Message(All Players(All Teams), Custom String("RESPAWN DISABLED FOR PLAYERS"));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("RESURRECTION STILL WORKS"));
-		disabled Else If(Global.ChallengeRoulette[0] == 6);
-		disabled Small Message(All Players(All Teams), Custom String("BOTS HAVE 99% ARMOR WHILE MOVING"));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("DISABLE THEM TO KILL THEM"));
-		disabled Else If(Global.ChallengeRoulette[0] == 7);
-		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS MOVE AT 500% SPEED"));
-		disabled Wait(1, Ignore Condition);
-		disabled Else If(Global.ChallengeRoulette[0] == 8);
-		disabled Small Message(All Players(All Teams), Custom String("SUPERBOTS ARE HEAVY, FAST AND..."));
-		disabled Wait(1, Ignore Condition);
-		disabled Small Message(All Players(All Teams), Custom String("...HAVE 25% ARMOR, GOOD LUCK!"));
-		disabled End;
-		disabled Wait(5, Ignore Condition);
-		disabled Set Ultimate Charge(Players On Hero(Hero(Lúcio), Team 2), 50);
-	}
-}
-
-disabled rule("SUPERBOTS Final Challenge OFF (Control) (WIP)")
-{
-	event
-	{
-		Ongoing - Global;
-	}
-
-	conditions
-	{
-		disabled Array Contains(Global.ControlMaps, Custom String("{0}", Current Map)) == True;
-		disabled Is Game In Progress == True;
-		disabled Control Mode Scoring Percentage(Team 2) > 20;
-	}
-
-	actions
-	{
-		disabled If(Global.ChallengeRoulette[0] == 5);
-		disabled Big Message(All Players(All Teams), Custom String("FINAL CHALLENGE RESET"));
-		disabled Enable Built-In Game Mode Respawning(All Players(Team 1));
-		disabled Respawn(All Dead Players(All Teams));
-		disabled Else If(Global.ChallengeRoulette[0] == 6);
-		disabled Stop Damage Modification(Global.ChallengeDmgMod);
-		disabled Set Gravity(All Players(Team 2), 100);
-		disabled Else If(Global.ChallengeRoulette[0] == 7);
-		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
-		disabled Else If(Global.ChallengeRoulette[0] == 8);
-		disabled Stop Damage Modification(Global.ChallengeDmgMod);
-		disabled Set Move Speed(All Players(Team 2), All Players(Team 2).MOVEMENT);
-		disabled Set Gravity(All Players(Team 2), 100);
-		disabled End;
-		disabled Global.ChallengeRoulette[0] = 0;
-	}
-}
-
-disabled rule("Mauga HUD")
-{
-	event
-	{
-		Ongoing - Each Player;
-		Team 1;
-		All;
-	}
-
-	actions
-	{
-		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, False);
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
