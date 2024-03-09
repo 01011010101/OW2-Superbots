@@ -4,16 +4,16 @@
 # STOP THE SUPER BOTS!
 Created by Cel#1115<br>
 Updated for OW2 by Arkhanglesk#11200
-
-
+<br>
+<br>
 ## Description
-Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!
+Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!<br>
 
 ### Damage increases based on kill
 You can get a max +9% damage per kill:
 - Bot Deaths: 3% damage (3% if you’re alive and a bot died somewhere)
 - Bot Eliminations: 3% damage (6% if you helped kill a bot)
-- Bot Last Hits: 3% damage (9% if you got the last hit on a bot)
+- Bot Last Hits: 3% damage (9% if you got the last hit on a bot)<br>
 
 ### Damage boost as you level up
 - Level 1: 100% Damage
@@ -23,7 +23,7 @@ You can get a max +9% damage per kill:
 - Level 5: 500% Damage
 - Level 6: 600% Damage
 - Level 7: 700% Damage
-- etc...
+- etc...<br>
 
 ### Relic Passives
 Press [INTERACT] to switch RELICS in spawn.<br>
@@ -33,7 +33,7 @@ PURIFIED is automatically equipped at the start.
 - VORTEX: +100% Movement speed, -7 second Respawn.
 - CORRUPTED: +100% Damage, -50% Armor.
 - AEGIS: +100% Healing Received, +10% Armor, Invincibility shield at low HP.
-- HERO: +25% Damage, +25% Movement Speed and +25% Max HP per elimination.
+- HERO: +25% Damage, +25% Movement Speed and +25% Max HP per elimination.<br>
 
 ### Super Bot Lucio Ultimates
 - BLAST OFF!: Sends all players flying high into the air.
@@ -44,7 +44,7 @@ PURIFIED is automatically equipped at the start.
 - INVISIBILITY!: Turns all enemies invisible for 10 seconds.
 - WORLD ON FIRE: Burns all players on the map for 12 seconds.
 - STAY AWHILE AND LISTEN: Puts players 20m in line of sight to sleep for 10 seconds.
-- HACKED!!!: Hacks players within 30m and through walls for 7 seconds.
+- HACKED!!!: Hacks players within 30m and through walls for 7 seconds.<br>
 
 ## Heroes
 
@@ -87,7 +87,7 @@ PURIFIED is automatically equipped at the start.
   His Hat Trick synergizes well with Wrecking Ball's ground pound.
 
 #### D.Va 
-- Bunny Hop: Press [INTERACT] to jump around and deal damage in an area with each hop. Heal 25 HP per hop.
+- Bunny Hop: Press [RELOAD] to jump around and deal damage in an area with each hop. Heal 25 HP per hop.
 - Defense Matrix Time: 300%
 - Heavy Armor: 75% Armor.
 
@@ -113,7 +113,7 @@ PURIFIED is automatically equipped at the start.
   Stack marks for extra damage and healing.
 
 #### Hanzo
-- Press [SECONDARY] Fire to switch arrows.
+- Press [SECONDARY FIRE] to switch arrows.
 - Elemental Arrows:
   - Burning - Deal damage over time.
   - Freezing - Freeze your target for 1.5 seconds.
@@ -128,7 +128,7 @@ PURIFIED is automatically equipped at the start.
 - Ultimate: BFG 9000: Fire a massive plasma round that does 85 damage and then scorches for additional 5 damage over 5 seconds. If bots sustain any damage they will instantly die after 5 seconds.
 
 #### Junker Queen
-- Press [SECONDARY] Fire to swap shouts.
+- Press [RELOAD] to swap shouts.
   - Sonic Tremors: Damage and knockdown all bots within 8m for 3 seconds.
   - Banshee Scream: Damage and stun all bots within 8m for 3 seconds.
 - Ultimate: Bushwhack: Cut through all bots in your path, doing massive damage and applying a bleed.
@@ -161,7 +161,7 @@ PURIFIED is automatically equipped at the start.
 - Euphorbia: Teleport to any ally in your LOS and daze any nearby bots.
 
 #### Lucio 
-- Tinnitus: [SECONDARY] Fire deals a ton of damage while knocking back and heals 150 HP in a 10m radius. This damage is increased by your current movement speed.
+- Tinnitus: [SECONDARY FIRE] deals a ton of damage while knocking back and heals 150 HP in a 10m radius. This damage is increased by your current movement speed.
 - Ultimate: Party All Night: Resurrect all dead players and teleport them next to Lucio, Heal 100 health to everyone every second, deal damage to all enemies (20m) during the rapid bass part of his beat. Lucio becomes Phased Out for the duration. Lasts 10 seconds.
 - Medium Armor: 50% Armor.
 
@@ -233,6 +233,8 @@ PURIFIED is automatically equipped at the start.
 - Asthmatic Trample: Charge forward, damaging and knocking down any bots that you come in contact with.
 - Ultimate: Warthog: Stun any bot damaged by your ultimate.
 - Heavy Armor: 75% Armor.
+  ##### Tip:
+  If Junkrat is on your team you will earn him money for his Chaos Roulette with every kill and when you use Hook Combo.
 
 #### Sigma
 - Kinetic Attraction: Using Kinetic Grasp pulls enemies towards you and knocks them into the ground at the end. (Created by Scourge)
@@ -261,14 +263,15 @@ PURIFIED is automatically equipped at the start.
 - Light Armor: 25% Armor.
 
 #### Symmetra
-- Photon Bomb: [SECONDARY] Fire deploys slow-moving air mines when fully charged. When a bot is struck by a fully-charged bomb, it will be knocked down.
+- Photon Bomb: [SECONDARY FIRE] deploys slow-moving air mines when fully charged. When a bot is struck by a fully-charged bomb, it will be knocked down.
 - Impulse Mine: Press [ABILITY 2] to place an impulse mine. The mine deals area damage and stuns enemies for 7 seconds.  ooldown will not start until an enemy has activated it.
 - Medium Armor: 50% Armor.
 
-#### Torbjorn
+#### Torbjörn
 - Tank Role: +150% HP
+- Dwarven Leap: [CROUNCH]+[JUMP] to leap forward.
 - Dwarven Rage: Overload heals 25% HP over 10 seconds.
-- Dwarven Leap: Secondary Fire (Right Click) to leap forward.
+  - Dwarven Rage Leap: While under Dwarven Rage, your Dwarven Leap will knock down bots where you land.
 - Heavy Armor: 75% Armor.
 
 #### Tracer
