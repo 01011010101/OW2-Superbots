@@ -36,6 +36,11 @@ settings
 		Escort
 		{
 			Payload Speed Modifier: 300%
+
+			disabled maps
+			{
+				Rialto
+			}
 		}
 
 		Hybrid
@@ -45,7 +50,7 @@ settings
 
 			disabled maps
 			{
-				Blizzard World Winter
+				Blizzard World
 				Eichenwalde Halloween
 				Hollywood Halloween
 				King's Row
@@ -149,13 +154,12 @@ settings
 				Defense Matrix Recharge Rate: 200%
 				Micro Missiles Cooldown Time: 35%
 				Ultimate Generation - Combat Self-Destruct: 50%
-				Ultimate Generation - Passive Self-Destruct: 50%
 			}
 
 			Doomfist
 			{
 				Damage Dealt: 150%
-				Health: 200%
+				Health: 175%
 				Infinite Ultimate Duration: On
 				Meteor Strike Knockback Scalar: 150%
 				No Ammunition Requirement: On
@@ -273,9 +277,12 @@ settings
 			Mauga
 			{
 				Cardiac Overdrive Cooldown Time: 75%
-				Health: 250%
+				Cardiac Overdrive Healing: 50%
+				Damage Dealt: 165%
+				Health: 175%
 				No Ammunition Requirement: On
-				Overrun Cooldown Time: 75%
+				Overrun Cooldown Time: 50%
+				Overrun Knockback: 125%
 			}
 
 			Mei
@@ -363,6 +370,7 @@ settings
 				Movement Speed: 150%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Death Blossom: 25%
+				Ultimate Generation - Passive Death Blossom: 75%
 				Wraith Form Cooldown Time: 50%
 			}
 
@@ -385,8 +393,9 @@ settings
 				Health: 125%
 				No Ammunition Requirement: On
 				Pig Pen Cooldown Time: 75%
-				Ultimate Generation - Combat Whole Hog: 25%
-				Ultimate Generation - Passive Whole Hog: 50%
+				Take a Breather Maximum Time: 50%
+				Take a Breather Recharge Rate: 45%
+				Ultimate Generation - Combat Whole Hog: 50%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -611,6 +620,7 @@ settings
 				No Ammunition Requirement: On
 				Power Block Cooldown Time: 200%
 				Rocket Punch Knockback Scalar: 50%
+				Seismic Slam Cooldown Time: 15%
 				Ultimate Duration: 150%
 				Ultimate Generation - Combat Meteor Strike: 500%
 				Ultimate Generation - Passive Meteor Strike: 300%
@@ -712,8 +722,11 @@ settings
 			Mauga
 			{
 				Ammunition Clip Size Scalar: 200%
+				Cardiac Overdrive Cooldown Time: 75%
+				Cardiac Overdrive Healing: 125%
 				Damage Dealt: 160%
 				Health: 350%
+				Overrun Cooldown Time: 75%
 				Quick Melee: Off
 				Ultimate Generation - Combat Cage Fight: 500%
 				Ultimate Generation - Passive Cage Fight: 400%
@@ -947,14 +960,6 @@ settings
 				Secondary Fire: Off
 				Ultimate Generation - Combat Transcendence: 500%
 				Ultimate Generation - Passive Transcendence: 300%
-			}
-		}
-
-		General
-		{
-			disabled heroes
-			{
-				Mauga
 			}
 		}
 	}
@@ -1378,7 +1383,7 @@ rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%)")
 		Global.Armor50 = Array(Hero(Doomfist), Hero(Genji), Hero(Mei), Hero(Reaper), Hero(Sombra), Hero(Symmetra), Hero(Torbjörn), Hero(
 			Tracer), Hero(Ramattra));
 		Global.Armor75 = Array(Hero(Bastion), Hero(D.Va), Hero(Orisa), Hero(Reinhardt), Hero(Roadhog), Hero(Winston), Hero(Wrecking Ball),
-			Hero(Zarya), Hero(Junker Queen));
+			Hero(Zarya), Hero(Junker Queen), Hero(Mauga));
 	}
 }
 
@@ -3576,7 +3581,7 @@ rule("JUNKRAT Elimination Money Script")
 
 	actions
 	{
-		Event Player.U += Round To Integer(Random Real(50, 200), To Nearest);
+		Event Player.U += Round To Integer(Random Real(50, 100), To Nearest);
 		Event Player.JunkElimCounter -= 1;
 		Wait(0.100, Ignore Condition);
 		Loop If Condition Is True;
@@ -4717,15 +4722,19 @@ rule("ROADHOG Asthmatic Trample")
 
 	conditions
 	{
-		Is Using Ability 2(Event Player) == True;
+		Is Alive(Event Player) == True;
+		Is Button Held(Event Player, Button(Secondary Fire)) == True;
+		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
+			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
 	}
 
 	actions
 	{
-		Set Move Speed(Event Player, Event Player.MOVEMENT + 50);
-		Start Forcing Throttle(Event Player, 1, 1, 0, 0, 0, 0.500);
-		Wait(2, Ignore Condition);
-		Stop Forcing Throttle(Event Player);
+		disabled Wait(0.350, Ignore Condition);
+		Set Move Speed(Event Player, Event Player.MOVEMENT + 75);
+		disabled Start Forcing Throttle(Event Player, 1, 1, 0, 0, 0, 0.500);
+		Wait(1, Ignore Condition);
+		disabled Stop Forcing Throttle(Event Player);
 		Set Move Speed(Event Player, Event Player.MOVEMENT);
 	}
 }
@@ -4741,15 +4750,19 @@ rule("ROADHOG Asthmatic Knockdown")
 
 	conditions
 	{
-		Is True For Any(Filtered Array(Players On Hero(Hero(Roadhog), Team 1), Is Using Ability 2(Current Array Element) == True),
-			Distance Between(Position Of(Event Player), Position Of(Current Array Element)) <= 3) == True;
+		Is True For All(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)), Distance Between(Event Player,
+			Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3) == True;
+		disabled (Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == True) == True;
+		disabled Distance Between(Event Player, Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3;
+		disabled Is True For Any(Is Button Held(Event Player, Button(Secondary Fire)), Distance Between(Position Of(Event Player), Position Of(
+			Current Array Element)) <= 3) == True;
 	}
 
 	actions
 	{
-		Damage(Event Player, Players On Hero(Hero(Roadhog), Team 1), Max Health(Event Player) * 0.050);
-		Set Status(Event Player, Null, Knocked Down, 2);
-		Wait(1.500, Ignore Condition);
+		disabled Damage(Event Player, Players On Hero(Hero(Roadhog), Team 1), Max Health(Event Player) * 0.050);
+		Set Status(Event Player, Null, Knocked Down, 1);
+		disabled Wait(1.500, Ignore Condition);
 	}
 }
 
@@ -6301,7 +6314,7 @@ rule("D.Va HUD")
 	{
 		Wait(0.500, Ignore Condition);
 		Event Player.U = False;
-		Chase Player Variable At Rate(Event Player, T, 100, 2.250, None);
+		Chase Player Variable At Rate(Event Player, T, 100, 1, None);
 		"Original"
 		Event Player.HUDTextHidden = Array(False, True, True, False);
 		"Set Hero HUD text."
@@ -6737,7 +6750,7 @@ rule("Roadhog HUD")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Roadhog), Button(Ability 1)), Custom String(
 			"[ABILITY 1] SHOOT/MELEE AFTER HOOK"), Custom String("HOOK COMBO"), Ability Icon String(Hero(Roadhog), Button(Ability 2)),
-			Custom String("[ABILITY 2] TRAMPLE BOTS"), Custom String("ASTHMATIC TRAMPLE"), Ability Icon String(Hero(Roadhog), Button(
+			Custom String("[SECONDARY] TRAMPLE BOTS"), Custom String("ASTHMATIC TRAMPLE"), Ability Icon String(Hero(Roadhog), Button(
 			Ultimate)), Custom String("STUNS DAMAGED BOTS"), Custom String("ULTIMATE: WARTHOG"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -7101,6 +7114,28 @@ rule("Sojourn HUD")
 		Ongoing - Each Player;
 		Team 1;
 		Sojourn;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, False);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] DMG IN AN AREA"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(
+			Primary Fire)), Custom String("[PRIMARY] HEAL IN AN AREA"), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(
+			Zenyatta), Button(Ultimate)), Custom String("DEAL AREA DAMAGE WITH ULTIMATE"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Mauga HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Mauga;
 	}
 
 	actions
