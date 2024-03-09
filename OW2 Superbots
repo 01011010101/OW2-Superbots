@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Feb 21, 2024: 35 of 39 heroes updated."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Feb 22, 2024: 36 of 39 heroes updated."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -219,17 +219,13 @@ settings
 
 			Junker Queen
 			{
-				Carnage Cooldown Time: 25%
+				Carnage Cooldown Time: 35%
 				Commanding Shout Cooldown Time: 35%
 				Damage Dealt: 135%
 				Health: 150%
 				Jagged Blade Cooldown Time: 25%
 				Jagged Blade Knockback Scalar: 125%
 				No Ammunition Requirement: On
-				Spawn With Ultimate Ready: On
-				Ultimate Generation - Combat Rampage: 500%
-				Ultimate Generation - Passive Rampage: 500%
-				Ultimate Generation Rampage: 500%
 			}
 
 			Junkrat
@@ -247,6 +243,7 @@ settings
 				Damage Dealt: 150%
 				Healing Dealt: 300%
 				No Ammunition Requirement: On
+				Projectile Speed: 500%
 				Protection Suzu Cooldown Time: 25%
 				Swift Step Cooldown Time: 25%
 				Swift Step Distance Scalar: 300%
@@ -702,6 +699,7 @@ settings
 			{
 				Damage Dealt: 160%
 				Health: 500%
+				Projectile Speed: 300%
 				Ultimate Generation - Combat Kitsune Rush: 500%
 				Ultimate Generation - Passive Kitsune Rush: 300%
 			}
@@ -1041,7 +1039,7 @@ rule("CREATED BY CEL#1115")
 
 	actions
 	{
-		disabled Disable Inspector Recording;
+		Disable Inspector Recording;
 		"Relic descriptions."
 		Global.RelicDescriptions = Array(Custom String("+200% HEALING DEALT/RECEIVED \r\n+50% DAMAGE AT FULL HP \r\n+10% HP/SEC"),
 			Custom String("+100% MOVEMENT SPEED \r\n+DAMAGE BASED ON SPEED \r\n-7 SECOND RESPAWN TIMER"), Custom String(
@@ -4263,6 +4261,113 @@ rule("JUNKRAT Elimination Money Script [Broken in OW2; updated by Arkhanglesk#11
 	}
 }
 
+rule("KIRIKO Primary Switch [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Kiriko;
+	}
+
+	conditions
+	{
+		Is Button Held(Event Player, Button(Reload)) == True;
+		Is Alive(Event Player) == True;
+	}
+
+	actions
+	{
+		Event Player.R = !Event Player.R;
+		If(Event Player.R == False);
+			Event Player.HUDTextHidden = Array(False, True, False, True);
+			Small Message(Event Player, Custom String(" {0} Attack: Direct Damage", Ability Icon String(Hero(Kiriko), Button(Primary Fire))));
+		Else If(Event Player.R == True);
+			Event Player.HUDTextHidden = Array(True, False, False, True);
+			Small Message(Event Player, Custom String(" {0} Attack: Bleed", Ability Icon String(Hero(Junker Queen), Button(Ability 2))));
+		End;
+		Play Effect(Event Player, Buff Explosion Sound, Color(White), Event Player, 50);
+		Wait(1, Ignore Condition);
+	}
+}
+
+rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Kiriko;
+	}
+
+	conditions
+	{
+		Is Firing Primary(Event Player) == True;
+		Players Within Radius(Event Player, 40, Team 2, Surfaces And All Barriers) == True;
+	}
+
+	actions
+	{
+		If(Event Player.R == False);
+			Abort If Condition Is False;
+			Wait(Random Real(0.100, 0.250), Ignore Condition);
+			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 10);
+			Loop;
+		Else If(Event Player.R == True);
+			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 1);
+			Start Damage Over Time(Player Closest To Reticle(Event Player, Team 2), Event Player, 2, 35);
+		End;
+	}
+}
+
+disabled rule("KIRIKO Secondary [Added by Arkhanglesk#11200, work in progress]")
+{
+	event
+	{
+		Ongoing - Global;
+	}
+}
+
+rule("KIRIKO Ultimate [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Kiriko;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Is Using Ultimate(Event Player) == True;
+		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
+			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
+	}
+
+	actions
+	{
+		Wait(0.100, Ignore Condition);
+		Event Player.DamageMOD = Filtered Array(Players in View Angle(Event Player, Team 2, 65), Is In Line of Sight(Event Player,
+			Current Array Element, Barriers Do Not Block LOS) == True && Distance Between(Event Player, Current Array Element) < 30);
+		If(Distance Between(Event Player, Event Player.DamageMOD) < 30);
+			"Like Sigma's melee"
+			Apply Impulse(Event Player.DamageMOD, Direction From Angles(Horizontal Facing Angle Of(Event Player), -20), 0.400 * Event Player.T,
+				To Player, Cancel Contrary Motion);
+			"Like Sym's mine"
+			disabled Apply Impulse(Players Within Radius(Event Player.U, 7, Team 2, Off), Direction From Angles(Horizontal Angle From Direction(
+				Direction Towards(Event Player.U, Players Within Radius(Event Player.U, 7, Team 2, Off))), -15), 15, To World,
+				Cancel Contrary Motion);
+			"Like Mauga's charge"
+			disabled Apply Impulse(Players Within Radius(Event Player, 2, Team 2, Off), Direction From Angles(Horizontal Angle From Direction(
+				Direction Towards(Event Player, Players Within Radius(Event Player, 2, Team 2, Off))), -15), 15, To World,
+				Cancel Contrary Motion);
+			Damage(Event Player.DamageMOD, Event Player, Max Health(Event Player) / 6);
+			Set Status(Event Player.DamageMOD, Event Player, Knocked Down, 2.500);
+		End;
+	}
+}
+
 rule("LUCIO Tinnitus Heal")
 {
 	event
@@ -5765,8 +5870,6 @@ rule("SOJOURN Super Rail Gun [Added by Arkhanglesk#11200]")
 	actions
 	{
 		If(Is In View Angle(Event Player, Player Closest To Reticle(Event Player, Team 2) + Vector(0, -0.500, 0), 3) == True);
-			disabled If(Is In View Angle(Event Player, Player Closest To Reticle(Event Player, Team 2) + Vector(0, -0.500, 0), 3)
-				== True && Event Player.R > 0);
 			Play Effect(All Players(All Teams), Good Explosion, Color(Blue), Player Closest To Reticle(Event Player, Team 2), 15);
 			Play Effect(All Players(All Teams), Ring Explosion, Color(Blue), Player Closest To Reticle(Event Player, Team 2), 15);
 			Play Effect(All Players(All Teams), Ring Explosion Sound, Color(Blue), Event Player, 200);
@@ -7285,7 +7388,13 @@ rule("Kiriko HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.R = False;
+		Event Player.HUDTextHidden = Array(False, True, False, True);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Kiriko), Button(Primary Fire)), Custom String(
+			"[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("OFUDA"), Ability Icon String(Hero(Junker Queen), Button(Ability 2)),
+			Custom String("[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("KAMI NO KATTO"), Ability Icon String(Hero(Hanzo), Button(
+			Ability 1)), Custom String("DAMAGE AND KNOCKBACK BOTS"), Custom String("ULTIMATE: YŌKAI BLAST"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
