@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] March 1, 2024: 38 of 39 heroes updated."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Almost every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] March 3, 2024: 38 of 39 heroes updated."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -116,7 +116,7 @@ settings
 				Health: 140%
 				No Ammunition Requirement: On
 				Reconfigure Cooldown Time: 0%
-				Ultimate Generation - Combat Configuration: Artillery: 5%
+				Ultimate Generation - Combat Configuration: Artillery: 2%
 			}
 
 			Brigitte
@@ -267,6 +267,7 @@ settings
 				Crossfade: Off
 				Damage Dealt: 180%
 				No Ammunition Requirement: On
+				Soundwave Knockback Scalar: 115%
 				Ultimate Generation - Combat Sound Barrier: 1%
 				Ultimate Generation - Passive Sound Barrier: 400%
 			}
@@ -330,10 +331,10 @@ settings
 			{
 				Damage Dealt: 140%
 				Energy Javelin Cooldown Time: 70%
-				Health: 150%
+				Health: 145%
 				Javelin Spin Cooldown Time: 80%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Terra Surge: 50%
+				Ultimate Generation - Combat Terra Surge: 5%
 			}
 
 			Pharah
@@ -383,11 +384,11 @@ settings
 				Chain Hook Cooldown Time: 50%
 				Damage Dealt: 125%
 				Healing Dealt: 200%
-				Health: 150%
+				Health: 145%
 				No Ammunition Requirement: On
 				Take a Breather Cooldown Time: 200%
 				Take a Breather Maximum Time: 50%
-				Ultimate Generation - Combat Whole Hog: 50%
+				Ultimate Generation - Combat Whole Hog: 5%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -413,7 +414,7 @@ settings
 				Power Slide Cooldown Time: 35%
 				Projectile Speed: 150%
 				Railgun Alt Fire Energy Charge Rate: 0%
-				Ultimate Generation - Combat Overclock: 5%
+				Ultimate Generation - Combat Overclock: 2%
 			}
 
 			Soldier: 76
@@ -421,7 +422,7 @@ settings
 				Damage Dealt: 160%
 				Health: 250%
 				Helix Rockets Cooldown Time: 30%
-				Helix Rockets Knockback Scalar: 200%
+				Helix Rockets Knockback Scalar: 300%
 				No Ammunition Requirement: On
 				Ultimate Duration: 150%
 				Ultimate Generation - Combat Tactical Visor: 5%
@@ -3622,7 +3623,7 @@ disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (rate-of-fire changes); f
 	actions
 	{
 		Abort If Condition Is False;
-		"Works best/most fun when Sticky Bombs CD=0% and Wait(0.800), but high server cost."
+		"Works best (no animation clipping) when Sticky Bombs CD=0% and Wait(0.800), but high server cost."
 		Wait(2, Ignore Condition);
 		Press Button(Event Player, Button(Secondary Fire));
 		Loop;
@@ -6238,7 +6239,7 @@ rule("SYMMETRA Impulse Mine Activation")
 	}
 }
 
-rule("SYMMETRA Secondary Rapid Fire")
+rule("SYMMETRA Secondary (Previously \"Rapid Fire\") [Broken in OW2; rework by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -7621,7 +7622,7 @@ rule("Mei HUD")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ultimate)), Custom String("HEADSHOTS INSTANTLY FREEZE"),
 			Custom String("BRAINFREEZE"), Ability Icon String(Hero(Mei), Button(Ability 1)), Custom String(
-			"[ABILITY 1] FREEZE ON EXPIRATION"), Custom String("CRYO-FREEZE BLAST"), Ability Icon String(Hero(Mei), Button(Ultimate)),
+			"[ABILITY 1] FREEZES WHEN BREAKS"), Custom String("CRYONIC BLAST"), Ability Icon String(Hero(Mei), Button(Ultimate)),
 			Custom String("FROZEN BOTS TAKE DMG OVER TIME"), Custom String("FROSTBURN"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -7961,8 +7962,8 @@ rule("Symmetra HUD")
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Wrecking Ball), Button(Ability 2)), Custom String(
-			"PRESS [ABILITY 2] TO PLACE"), Custom String("PROXIMITY IMPULSE MINE"), Ability Icon String(Hero(Orisa), Button(
-			Secondary Fire)), Custom String("[SECONDARY] HOLD TO AUTO-FIRE"), Custom String("AUTO-CHARGE"));
+			"[ABILITY 2] TO PLACE MINE"), Custom String("PROXIMITY IMPULSE MINE"), Ability Icon String(Hero(Symmetra), Button(
+			Secondary Fire)), Custom String("[SECONDARY] FIRE AIR MINES"), Custom String("PHOTON BOMBS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
