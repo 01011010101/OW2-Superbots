@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Mar 7, 2024: All heroes updated. Working on balancing."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Mar 9, 2024: Balancing, testing Lifeweaver changes."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -77,7 +77,7 @@ settings
 			Ana
 			{
 				Biotic Grenade Cooldown Time: 25%
-				Damage Dealt: 135%
+				Damage Dealt: 132%
 				Health: 200%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
@@ -99,7 +99,6 @@ settings
 			Baptiste
 			{
 				Damage Dealt: 160%
-				Healing Dealt: 200%
 				Health: 200%
 				Jump Vertical Speed: 125%
 				No Ammunition Requirement: On
@@ -195,14 +194,13 @@ settings
 				Sonic Arrow Cooldown Time: 50%
 				Storm Arrows Cooldown Time: 25%
 				Storm Arrows Quantity: 12
-				Ultimate Generation - Combat Dragonstrike: 5%
-				Ultimate Generation - Passive Dragonstrike: 50%
+				Ultimate Generation - Combat Dragonstrike: 3%
+				Ultimate Generation - Passive Dragonstrike: 45%
 			}
 
 			Illari
 			{
 				Damage Dealt: 150%
-				Healing Dealt: 200%
 				Healing Pylon Cooldown Time: 50%
 				Health: 150%
 				Movement Gravity: 90%
@@ -214,9 +212,9 @@ settings
 			Junker Queen
 			{
 				Carnage Cooldown Time: 35%
-				Commanding Shout Cooldown Time: 35%
+				Commanding Shout Cooldown Time: 40%
 				Damage Dealt: 135%
-				Health: 150%
+				Health: 145%
 				Jagged Blade Cooldown Time: 25%
 				Jagged Blade Knockback Scalar: 125%
 				No Ammunition Requirement: On
@@ -242,13 +240,12 @@ settings
 				Protection Suzu Cooldown Time: 25%
 				Swift Step Cooldown Time: 50%
 				Swift Step Distance Scalar: 300%
-				Ultimate Generation - Combat Kitsune Rush: 50%
+				Ultimate Generation - Combat Kitsune Rush: 10%
 			}
 
 			Lifeweaver
 			{
 				Damage Dealt: 135%
-				Healing Dealt: 150%
 				Health: 200%
 				No Ammunition Requirement: On
 				Petal Platform Cooldown Time: 25%
@@ -633,6 +630,11 @@ settings
 				Ultimate Generation - Passive Dragonstrike: 500%
 			}
 
+			Illari
+			{
+				Damage Dealt: 150%
+			}
+
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
@@ -673,6 +675,7 @@ settings
 				Damage Dealt: 150%
 				Healing Dealt: 150%
 				Rejuvenating Dash Cooldown Time: 15%
+				Rejuvenating Dash Healing: 150%
 				Ultimate Generation - Combat Tree of Life: 2%
 			}
 
@@ -822,6 +825,7 @@ settings
 				Damage Dealt: 150%
 				Health: 500%
 				Helix Rockets Cooldown Time: 30%
+				Helix Rockets Knockback Scalar: 300%
 				Ultimate Duration: 150%
 				Ultimate Generation - Combat Tactical Visor: 300%
 				Ultimate Generation - Passive Tactical Visor: 500%
@@ -3550,7 +3554,7 @@ rule("ECHO Laser [Updated by Arkhanglesk#11200]")
 			Event Player), All Players(Team 2), Event Player, True);
 		Play Effect(All Players(All Teams), Bad Explosion, Color(Sky Blue), Event Player.U, 0.250);
 		Play Effect(All Players(All Teams), Ring Explosion, Color(Sky Blue), Event Player.U, 2);
-		Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 10 * Global.SuperbotLevel + 7);
+		Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 11 * Global.SuperbotLevel + 7);
 		Wait(0.050, Ignore Condition);
 		Loop If Condition Is True;
 		Small Message(Event Player, Custom String(" {0} QUANTUM BEAM RECHARGING", Hero Icon String(Hero(Echo))));
@@ -3844,7 +3848,7 @@ rule("ILLARI Heat Blast [Added by Arkhanglesk#11200]")
 	{
 		Set Status(Victim, Event Player, Burning, 2);
 		Start Damage Over Time(Victim, Event Player, 2, 5);
-		disabled Wait(1, Ignore Condition);
+		Wait(1, Ignore Condition);
 	}
 }
 
@@ -3987,7 +3991,7 @@ rule("JUNKER QUEEN Ultimate Charge [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 120);
+		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 130);
 	}
 }
 
@@ -4354,11 +4358,11 @@ rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
 		If(Event Player.R == False);
 			Abort If Condition Is False;
 			Wait(Random Real(0.100, 0.250), Ignore Condition);
-			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 12);
+			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 15);
 			Loop;
 		Else If(Event Player.R == True);
 			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 1);
-			Start Damage Over Time(Player Closest To Reticle(Event Player, Team 2), Event Player, 2, 50);
+			Start Damage Over Time(Player Closest To Reticle(Event Player, Team 2), Event Player, 2, 65);
 		End;
 	}
 }
@@ -4751,8 +4755,8 @@ rule("MEI Brain Freeze")
 	actions
 	{
 		Set Status(Victim, Event Player, Frozen, 4);
-		Damage(Victim, Event Player, Max Health(Event Player) * 0.150);
-		Wait(0.700, Ignore Condition);
+		Damage(Victim, Event Player, Max Health(Event Player) * 0.050);
+		Wait(1, Ignore Condition);
 	}
 }
 
@@ -4773,7 +4777,7 @@ rule("MEI Frostburn")
 
 	actions
 	{
-		Start Damage Over Time(Event Player, Players On Hero(Hero(Mei), Team 1), 5, Max Health(Event Player) * 0.050);
+		Start Damage Over Time(Event Player, Players On Hero(Hero(Mei), Team 1), 5, Max Health(Event Player) * 0.020);
 		Wait(1, Ignore Condition);
 	}
 }
@@ -7642,7 +7646,7 @@ rule("Kiriko HUD [Added by Arkhanglesk#11200]")
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Kiriko), Button(Primary Fire)), Custom String(
 			"[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("OFUDA: DIRECT DAMAGE"), Ability Icon String(Hero(Junker Queen), Button(
 			Ability 2)), Custom String("[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("KAMI NO KATTO: BLEED"), Ability Icon String(
-			Hero(Hanzo), Button(Ability 1)), Custom String("DAMAGE AND KNOCKBACK BOTS"), Custom String("ULTIMATE: YŌKAI BLAST"));
+			Hero(Hanzo), Button(Ability 1)), Custom String("DAMAGE AND KNOCKDOWN BOTS"), Custom String("ULTIMATE: YŌKAI BLAST"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
