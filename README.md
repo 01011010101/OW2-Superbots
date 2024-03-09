@@ -49,37 +49,37 @@ PURIFIED is automatically equipped at the start.
 ## HEROES
 Below is a list of all new abilities for all the heroes you can play.
 
-#### Ana
+#### ANA
 - Exploding Biotic Darts: Shots against any surface or target heals nearby teammates in a 7m radius for 150 HP.  
 - Poison Gas: Carpet a 10m area with your sleep dart that poisons all enemies who walk inside it.
 - Light Armor: +25% Armor.
 - 250% Jump Height.
 
-#### Ashe 
+#### ASHE 
 - Explosive Shots: Shots deal AoE damage in a 7m area, scoped shots deal double damage.
 - Reflex Shot: Scoping in mid-air lowers Ashe’s gravity, allowing her to stay in the air longer.
 - Max Kickback on Shotgun can be used as a jump.
 - No fuse on dynamite.
 
-#### Baptiste
+#### BAPTISTE
 - Hover Boots: Hold Jump in the air to float down.
 - Nano Grenades: Healing grenades also deal damage.
 - Light Armor: +25% Armor.
 - 150% Jump Height.
 
-#### Bastion
+#### BASTION
 - Flashbang: Grenades knockback and daze bots.
 - Auto-Repairs: Tank mode heals you 35% of your total HP over 5 seconds.
 - Ultimate: AP Rounds: Load high-velocity rounds that penetrate walls and shields.
 - Heavy Armor: +75% Armor.
 
-#### Brigitte 
+#### BRIGITTE
 - Tank Role: +200% Health
 - Vampire Killer: Flail shot explodes three times on impact dealing AoE damage and knocking the target back as far as possible.
 - Ultimate Heroic Presence: Stun all enemies within 10m for 7 seconds and increase your damage by 400%.
 - Medium Armor: 50% Armor.
 
-#### Cassidy
+#### CASSIDY
 - Phasing Roll: Avoids damage and heals 50 HP.
 - Launching Flashbang: Enemies are launched into the air.
 - Hat Trick: x2 Damage to enemies in the air.
@@ -87,26 +87,26 @@ Below is a list of all new abilities for all the heroes you can play.
   ##### Tip:
   His Hat Trick synergizes well with Wrecking Ball's ground pound.
 
-#### D.Va 
+#### D.VA
 - Bunny Hop: Press [RELOAD] to jump around and deal damage in an area with each hop. Heal 25 HP per hop.
   - Your Bunny Hop meter recharges at a rate of 1.2/second, so around 1.5 minutes per use.
 - Defense Matrix Time: 300%
 - Heavy Armor: 75% Armor.
 
-#### Doomfist 
+#### DOOMFIST 
 - Ultimate: Super Moves: Use your ultimate to power your regular abilities.
   - Super Slam: Heal yourself while pummeling and burning bots.
   - Super Punch: Massive direct damage.
 - Medium Armor: 50% Armor.
 
-#### Echo
+#### ECHO
 - Quantum Beam: Powerful laser that increases in damage based on max HP of the target.
 - Ultimate: Overdrive: Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
 - Light Armor: 25% Armor.
   ##### Tip:
   Echo excels at staying out of the fray and delivering massive damage from afar, but can also be a devastating dive-bomber when using the Vortex relic with her flying + Quantum Beam.
 
-#### Genji
+#### GENJI
 - Dragon Strike: Heal for 50 HP and explode Mark of Death.
 - Mark of Death: Mark an enemy by dealing damage. Marked enemies will explode for extra damage when damaged by Swift Strike.
 - 200% Ultimate Duration.
@@ -114,7 +114,7 @@ Below is a list of all new abilities for all the heroes you can play.
   ##### Tip:
   Stack marks for extra damage and healing.
 
-#### Hanzo
+#### HANZO
 - Press [SECONDARY FIRE] to switch arrows.
 - Elemental Arrows:
   - Burning - Deal damage over time.
@@ -124,18 +124,18 @@ Below is a list of all new abilities for all the heroes you can play.
 - Ultimate: Applies the current element of your arrows and can be switched mid-flight to apply both elements.
 - Automatic Storm Arrows.
 
-#### Illari
+#### ILLARI
 - Heat Blast: Headshots set bots on fire.
 - Solar Flare: Knocks back and burns bots.
 - Ultimate: BFG 9000: Fire a massive plasma round that does 85 damage and then scorches for additional 5 damage over 5 seconds. If bots sustain any damage they will instantly die after 5 seconds.
 
-#### Junker Queen
+#### JUNKER QUEEN
 - Press [RELOAD] to swap shouts.
   - Sonic Tremors: Damage and knockdown all bots within 8m for 3 seconds.
   - Banshee Scream: Damage and stun all bots within 8m for 3 seconds.
 - Ultimate: Bushwhack: Cut through all bots in your path, doing massive damage and applying a bleed.
 
-#### Junkrat 
+#### JUNKRAT 
 - Total Mayhem: Root bots near your corpse when you die. Your dropped grenades deal more damage the more you have died in the match.
 - Chaos Roulette: Earn money to test your luck! $1000 will buy you one random effect. Press [INTERACT] to spend when you have $1000 or more.
 - Earn money: Every kill earns you $50-$100.
@@ -149,40 +149,41 @@ Below is a list of all new abilities for all the heroes you can play.
   ##### Tip:
   Junkrat and his running buddy Roadhog work well together. Roadhog earns money for Junkrat's Chaos Roulette with every kill and Hook Combo.
 
-#### Kiriko
+#### KIRIKO
 - Press [RELOAD] to change [PRIMARY] damage.
   - Ofuda: Damage bots with your paper things while healing your allies.
   - Kami No Katto: Your paper ofuda slice bots and applies a bleed.
 - Ultimate: Yōkai Blast: Damage and knockdown all bots in the path of your Kitsune.
 - Light Armor: 25% Armor.
 
-#### Lifeweaver
+#### LIFEWEAVER
 - Ultimate: Tree of Corruption: Press [RELOAD] to change [ULTIMATE] damage.
   - Hemlock: Poison all bots within 12.5m of your tree.
   - Nightshade: Every pulse from the tree paralyzes and damages bots.
 - Euphorbia: Teleport to any ally in your LOS and daze any nearby bots.
 
-#### Lucio 
+#### LÚCIO 
 - Tinnitus: [SECONDARY FIRE] deals a ton of damage while knocking back and heals 150 HP in a 10m radius. This damage is increased by your current movement speed.
 - Ultimate: Party All Night: Resurrect all dead players and teleport them next to Lucio, Heal 100 health to everyone every second, deal damage to all enemies (20m) during the rapid bass part of his beat. Lucio becomes Phased Out for the duration. Lasts 10 seconds.
 - Medium Armor: 50% Armor.
 
-#### Mauga
+#### MAUGA
 - Unstoppable Charge: Juggernaut your way through all bots, damaging them for 50 damage and knocking them down.
 - Medium Armor: 50% Armor.
   ##### Tip:
   Mauga's charge is truly unstoppable. It will even override and stop a Reinhardt charging directly at you!
 
-#### Mei
+#### MEI
 - Shatter: Frozen enemies explode on death.
 - Frostburn: Frozen enemies take damage over time.
 - Brainfreeze: Headshots deal extra damage and instantly freeze.
-- Cryonic Blast: Release a freezing explosion upon expiration.
+- Cryonic Blast: Release a freezing explosion when your Ice Block breaks.
 - Medium Armor: 50% Armor.
   ##### Tip:
-  Mei’s Shatter and Frostburn apply to any enemy frozen from any source. For example, if Hanzo freezes an enemy with his arrows, then they will take damage over time and shatter upon death. All extra damage is awarded to Mei.
+  - Shatter and Frostburn apply to any enemy frozen from any source. For example, if Hanzo freezes an enemy with his arrows, then they will take damage over time and shatter upon death. All extra damage is awarded to Mei.
+  - Cryonic Blast gives you the option to use Ice Block as an offensive as well as defensive.
 
-#### Mercy
+#### MERCY
 - Angelic Presence: 15m AoE Passive Healing 7% HP/sec.
 - Ultimate Angelic Wrath: Double damage while using ultimate and enemies constantly take damage while inside of her aura.
 - Charm: Melee attacks will charm one enemy, stunning for 10 seconds.  
@@ -191,21 +192,21 @@ Below is a list of all new abilities for all the heroes you can play.
 - 250% Jump Speed.
 - 75% Gravity speed.
 
-#### Moira
+#### MOIRA
 - Orbs are much slower.
-- Lethargic Drain: [SECONDARY] Fire roots enemies while dealing damage.
+- Lethargic Drain: [SECONDARY FIRE] roots enemies while dealing damage.
 - Ultimate: Dark Coalescence Bomb:
   - Energy Sphere: Funnel energy into a point, creating an area that heals your team and damages the enemy.
-  - Detonation: The larger the sphere gets, the larger the explosion.  Breaking Line of sight, dying, being interrupted or moving too far from the origin point will detonate the bomb.  
+  - Detonation: The larger the sphere gets, the larger the explosion. Breaking Line of sight, dying, being interrupted or moving too far from the origin point will detonate the bomb.  
   - Reaching 100 bomb radius will provide the most damage (If you accidentally detonate too early, the ultimate will be refunded).
   - Flight enabled during ultimate. Jump to go up/Crouch to go down.
 
-#### Orisa
+#### ORISA
 - Fortify: Repair 25% HP over 5 seconds.
-- Rocket Punch: Pushes enemies back based on the amount of charge accumulated.  Instantly kills bots when at 100%, 33 sec cooldown.
+- Rocket Punch: Pushes enemies back based on the amount of charge accumulated. Instantly kills bots when at 100%. Reaches full charge in 15 seconds.
 - Heavy Armor: 75% Armor.
 
-#### Pharah
+#### PHARAH
 - Fusion Reactor: Accumulate Power over time, up to 999%.
 - Every point of power equals a point of damage.
 - Emergency Repairs: Automatically heals Pharah instantly for 100% HP when she is below 30% health. Costs 50 power.
@@ -213,10 +214,10 @@ Below is a list of all new abilities for all the heroes you can play.
 - Infinite jet fuel.
 - Eliminations increase power by 25.
 
-#### Ramattra
+#### RAMATTRA
 - Nemesis Void Punch: Pummel bots and send them flying with [MELEE] while in Nemesis form.
 
-#### Reaper
+#### REAPER
 - Wraith Succor: Heal 15% HP/sec while in Wraith Form.
 - Frozen Shadow Step: Freeze enemies within 10m upon exiting.
 - Shadow Dash: Crouch to dash forward.  Can be used in the air to go even further.  Crouch then press jump to travel long distances.
@@ -224,77 +225,77 @@ Below is a list of all new abilities for all the heroes you can play.
 - Phased Out while using ultimate.
 - Light Armor: 25% Armor.
 
-#### Reinhardt
+#### REINHARDT
 - Flaming Strike: Lights enemies on fire for damage over time.
 - Healing Barrier: Shield up heals for 5% HP/sec.
 - Sonic charge: Charge at 300% speed and inflict 600% damage.  
 - Heavy Armor: 75% Armor.
 
-#### Roadhog
+#### ROADHOG
 - Hook Combo: Shoot or Melee after a hook to deal extra damage.  Shooting a bot knocks them back while Melee earns money for Junkrat.
 - Asthmatic Trample: Charge forward, damaging and knocking down any bots that you come in contact with.
 - Ultimate: Warthog: Stun any bot damaged by your ultimate.
 - Heavy Armor: 75% Armor.
   ##### Tip:
-  If Junkrat is on your team, every time you use Hook Combo or get a kill you'll earn him money he can use in Chaos Roulette.
+  If Junkrat is on your team, you'll earn him money he can use in Chaos Roulette every time you use Hook Combo or get a kill.
 
-#### Sigma
+#### SIGMA
 - Kinetic Attraction: Using Kinetic Grasp pulls enemies towards you and knocks them into the ground at the end. (Created by Scourge)
 - Kinetic Repulsion: The Melee punch pushes enemies back and deals damage, similar to Lucio’s Boop.  This ability always deals full damage, but the knockback is reduced if you use it back to back.  It needs to recharge for 10 seconds for a full knockback charge.
 - Flying: Press [RELOAD] to turn on/off flying. [JUMP] to go up, [CROUCH] to go down.
 - 250% Jump Height.
 - Light Armor: 25% Armor.
 
-#### Sojourn
+#### SOJOURN
 - Jump Jets: Afterburn from your jet pack burns nearby bots when you jump after sliding.
 - Rocket Boost Slide: Sweep and damage bots, doing 25 damage to anyone in your path and knocking them down for 1.5 seconds.
 - Ultimate: Super Railgun: Railgun rounds do massive damage and penetrate walls.
   ##### Tip:
   Sojourn excels at hit-and-run guerilla tactics. Slide in, take out the legs, jump out, apply burn, finish with disrupter. Bots won't even know what hit 'em!
 
-#### Soldier 76
+#### SOLDIER 76
 - Ultimate C-130X Airstrike: Aim pulse cannons from the safety of an aircraft that explode in a 30m area and goes through walls.
   - 12 second duration.  
   - Recharges roughly every 2 minutes.
 
-#### Sombra
+#### SOMBRA
 - Hack: Stuns enemies.
 - Phased Stealth: Avoids all damage and heals 10% HP/sec.
 - 1337 Hacker: Double damage when attacking a hacked enemy or when attacking from behind.
 - Ultimate Super EMP: Root and Hack enemies for 10 seconds. Become invisible while root is active.
 - Light Armor: 25% Armor.
 
-#### Symmetra
+#### SYMMETRA
 - Photon Bombs: [SECONDARY FIRE] deploys slow-moving air mines when fully charged. Any bot struck by a fully-charged bomb will be knocked down.
 - Impulse Mine: Press [ABILITY 2] to place an impulse mine. The mine deals area damage and stuns enemies for 7 seconds.  ooldown will not start until an enemy has activated it.
 - Medium Armor: 50% Armor.
 
-#### Torbjörn
+#### TORBJÖRN
 - Tank Role: +150% HP
 - Dwarven Leap: [CROUNCH]+[JUMP] to leap forward.
 - Dwarven Rage: Overload heals 25% HP over 10 seconds.
   - Dwarven Rage Leap: While under Dwarven Rage, your Dwarven Leap will knock down bots where you land.
 - Heavy Armor: 75% Armor.
 
-#### Tracer
+#### TRACER
 - Blink Stasis: Blinking into an enemy will put them in stasis for 4 seconds.
 - Total Recall: Recall always heals to full health.
 - Ultimate Time Slow: Slow down time to a crawl for 5 seconds and deal lethal damage to any target shot while moving faster than everyone else.
 - Medium Armor: 50% Armor.
 
-#### Widowmaker
+#### WIDOWMAKER
 - Anti-Materiel Rifle: Scoped charged shots will deal explosive damage based on the amount of charge accumulated, up to 12m.
 - Frozen Mine: Freezes enemies that trigger the mine.
 - Ultimate Railgun: Loads 4 insta-kill bullets that go through walls.
 
-#### Winston
+#### WINSTON
 - Rage: Dealing damage increases your Rage resource by 5.
 - Venting Rage: (35 Rage) Your Jump Pack becomes a slam attack that knocks down enemies and deals 100 base damage when you hit the ground.
 - Healing Barrier: Activating the shield will heal you for 25% HP over 5 seconds.
 - Ultimate Harambe’s Revenge: Heal to full, knock down enemies upon activation, and regenerate 20 HP/sec for 10 seconds.
 - Heavy Armor: 75% Armor.
 
-#### Wrecking Ball 
+#### WRECKING BALL
 - Auto-Repairs: Heal 35% HP/s over 7 seconds after activating shield.
 - Grapple has no cooldown.
 - Ultimate Orbital Drop: Teleport above the map then crash down towards the position you ulted from, dealing massive damage to all enemies within a 5m radius and deploying mines upon landing.
@@ -302,12 +303,12 @@ Below is a list of all new abilities for all the heroes you can play.
   - Mines last forever.
 - Heavy Armor: 75% Armor.
 
-#### Zarya 
+#### ZARYA 
 - Particle Barrier Tackle:  Charge forward while knocking down enemies along the path. Heals Zarya for 35% HP over 5 seconds.
 - Particle Barrier Magnetic Crush: Barrier Tackle deals damage based on the number of enemies hit.
 - Heavy Armor: 75% Armor.
 
-#### Zenyatta 
+#### ZENYATTA 
 - Orbs of Tranquility: Heal in a 10m radius of impact for 100 HP.
 - Orbs of Annihilation: Each orb you charge up is stronger than the last one and the explosion radius is also increased.
 - Ultimate Ying-Yang: Deal damage four times a second in a large area on top of the regular healing from his ultimate.
