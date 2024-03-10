@@ -1,14 +1,27 @@
 ### March 8, 2024
+* Team 1
+	- ECHO: Buffed Quantum Laser damage.
+  	- JUNKER QUEEN: Buffed Ultimate damamge from 130 to 150, lowered Ult gen (combat) slightly
+  	- KIRIKO: Fixed typo in HUD for her Ultimate
+  	- MEI: Decreased Frostburn damage from .1 to .05. Reason: A good Mei player can absolutely dominate a match, especially if they get lots of headshots.
 
 ### March 7, 2024
 * Team 1
-  - LIFEWEAVER: Added new abilites: Choice of damage when using Ult, replaced Life Grip with teleport. Reason: Lowering Life Grip's CD resulted in trolling, and increasing the CD made it useless, so I replaced it entirely.
+  - LIFEWEAVER: New abilites:
+  	- Choice of damage when using Ult
+   	- Replaced Life Grip with teleport. Reason: Lowering Life Grip's CD resulted in trolling, and increasing the CD made it useless, so I replaced it entirely.
 
 ### March 3, 2024
+* Team 1
+	- MAUGA: Tweaked Bumrush CD from 4 to 5 seconds.
 
 ### March 1, 2024
+* Team 1
+	- JUNKER QUEEN: Extended range of shout effects by 1m
 
 ### February 28, 2024
+* Team 1
+	- SOJOURN: Modified HUD text for Ultimate, buffed Ult gen (combat)
 
 ### February 26, 2024
 * Team 1
@@ -16,13 +29,16 @@
   
 ### February 23, 2024
 * Team 1
-  - KIRIKO: Added new abilites: 2x Primary fire damage, added damage and knockdown to Ult. Updated HUD.
-  - GENJI: Update HUD
-  - ZENYATTA: Updated HUD
+	- BASTION: Increased Flashbang CD slightly
+	- ILLARI: Buffed Ultimate damage
+	- JUNKER QUEEN: Buffed Ultimate radius from 2 to 3.
+	- KIRIKO: Lowered Ult gen (combat)
+	- RAMATTRA: New ability: Nemesis Void Punch
+	- REAPER: Decreased damage slightly
 
 ### February 22, 2024
 * Team 1
-  - KIRIKO: Added new abilites: 2x Primary fire damage, added damage and knockdown to Ult. Updated HUD.
+  - KIRIKO: New abilites: 2x Primary fire damage, added damage and knockdown to Ult. Updated HUD.
   - GENJI: Update HUD
   - ZENYATTA: Updated HUD
 
@@ -49,6 +65,8 @@
   - Decreased damage dealt across the board. Reason: Too easy. Also, bots dying too quickly = more levels faster for both teams = more frequent abilities = workshop load crashes.
 
 ### February 11, 2024
+* Team 1
+  - REAPER: Decreased damage by 3%. Reason: Reaper needs to be one of the top DPS, but he continues to do 300k+ damage than everyone else.
 
 ### February 6, 2024
 * Team 1
@@ -62,6 +80,10 @@
     - Added new ability: Rocket Boost Slide
 
 ### February 3, 2024
+* Team 1
+	- JUNKER QUEEN: Increased Ultimate knockback impulse slightly
+* Super Bots
+	- KIRIKO: Buffed HP to 500%
 
 ### January 27, 2024
 * Team 1
@@ -72,19 +94,23 @@
   - REINHARDT: Increased Fire Strike cooldown back to 100%. Reason: to compensate for now having 2 charges.
 
 ### January 15, 2024
+* Team 1
+	- CASSIDY: Increased Phased Roll cooldown to 3 seconds. Reason: Workshop overload crashes when spammed (this occured in OW1 too, I kept forgetting to fix it).
 
 ### January 12, 2024
+* Super Bots
+  - ORISA: Increasd HP to 475%, decreased Javelin Spin cooldown to 80%. Reason: Needed to be more of a threat.
 
 ### January 8, 2024
 * Team 1
-  - CASSIDY: Increased Phased Roll cooldown to 3 seconds. Reason: Workshop overload crashes when spammed (this occured in OW1 too, I kept forgetting to fix it).
-  - MAUGA: Decreased Ultimate generation (combat)
+	- MAUGA: Decreased Ultimate generation (combat)
 
 * Super Bots
-  - MAUGA: Decreased damage a little.
-  - ORISA: Increasd HP to 475%, decreased Javelin Spin cooldown to 80%. Reason: Needed to be more of a threat.
+	- MAUGA: Decreased damage a little.
 
 ### December 29, 2023
+* Team 1
+	- Reset several heroes' Ult generations back to WEVVY.
 
 ### December 22, 2023
 * Team 1
@@ -103,22 +129,22 @@
 ### October 24, 2023
 * Team 1
 	- Decreased Ultimate generation for:
-    - CASSIDY
-    - GENJI
-    - ILLARI
-    - JUNKRAT
-    - MEI
-    - MOIRA
-    - PHARAH
-    - REINHARDT
-    - SOJOURN
-    - SOMBRA
-    - TRACER
-    - WIDOWMAKER
-    - ZENYATTA
+		- CASSIDY
+		- GENJI
+		- ILLARI
+		- JUNKRAT
+		- MEI
+		- MOIRA
+		- PHARAH
+		- REINHARDT
+		- SOJOURN
+		- SOMBRA
+		- TRACER
+		- WIDOWMAKER
+		- ZENYATTA
 	- Hero Changes:
 		- ORISA: Fixed [ABILITY 1] self-heal and moved it to [ABILITY 2], fixed HUD, tweaked cooldowns.
-    - PHARAH: Decreased power generation slightly
+		- PHARAH: Decreased power generation slightly
 
 * General
   - Updated Game Mode description.
@@ -144,17 +170,17 @@
 
 ### October 3, 2023
 * Team 1
-	- Decreased Ultimate generation for the following heroes:
+	- Decreased Ultimate generation for:
 		- BASTION
 		- CASSIDY
 		- MOIRA
-		SOMBRA
+		- SOMBRA
 	- Hero Changes:
 		- D.VA: Increased Bunny Hop's T chase rate
 
 ### September 30, 2023
 * Team 1
-	- Decreased Ultimate generation for the following heroes:
+	- Decreased Ultimate generation for:
 		- D.VA
 		- JUNKRAT
 		- SOMBRA
@@ -185,7 +211,7 @@
 
 ### September 16, 2023
 * Team 1
-	- Decreased Ultimate generation for the following heroes:
+	- Decreased Ultimate generation for:
 		- D.VA
 		- ILLARI
 		- JUNKER QUEEN
