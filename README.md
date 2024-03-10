@@ -1,4 +1,4 @@
-###### This is an updated version of the OW Superbots page created by the original mode creator, Cel#1115. The original page can be found [here](https://docs.google.com/document/d/1WwOGDoImdErTrU-VU9Pxc0oTp9ALMUmJaqAeW_fBrm8).
+###### This page was created by Arkhanglesk#11200 and is an updated version of the [OW Superbots](https://docs.google.com/document/d/1WwOGDoImdErTrU-VU9Pxc0oTp9ALMUmJaqAeW_fBrm8) page created by the mode creator, Cel#1115.
 
 
 # STOP THE SUPER BOTS!
@@ -47,7 +47,7 @@ PURIFIED is automatically equipped at the start.
 - HACKED!!!: Hacks players within 30m and through walls for 7 seconds.<br>
 
 ## HEROES
-Below is a list of all new abilities for all the heroes you can play.
+Below is a list of all new abilities for all heroes available to play.
 
 #### ANA
 - Exploding Biotic Darts: Shots against any surface or target heals nearby teammates in a 7m radius for 150 HP.  
@@ -85,7 +85,7 @@ Below is a list of all new abilities for all the heroes you can play.
 - Hat Trick: x2 Damage to enemies in the air.
 - Showdown: Once ultimate has been initiated, bots will randomly be launched into the air after 2-5 seconds, shoot after the message “Draw!” is displayed.<br>
   ##### Tip:
-  His Hat Trick synergizes well with Wrecking Ball's ground pound.
+  Cassidy's Hat Trick synergizes well with Wrecking Ball's ground pound.
 
 #### D.VA
 - Bunny Hop: Press [RELOAD] to jump around and deal damage in an area with each hop. Heal 25 HP per hop.
@@ -112,7 +112,7 @@ Below is a list of all new abilities for all the heroes you can play.
 - 200% Ultimate Duration.
 - Medium Armor: 50% Armor.<br>
   ##### Tip:
-  Stack marks for extra damage and healing.
+  Stack Death Marks for extra damage and healing.
 
 #### HANZO
 - Press [SECONDARY FIRE] to switch arrows.
@@ -120,7 +120,7 @@ Below is a list of all new abilities for all the heroes you can play.
   - Burning - Deal damage over time.
   - Freezing - Freeze your target for 1.5 seconds.
 - Dragon’s Breath: Sonic Arrow will explode if it hits an enemy.
-- The explosion will apply a stronger Burning or Freezing effect in a 10m radius.
+  - The explosion will apply a stronger Burning or Freezing effect in a 10m radius.
 - Ultimate: Applies the current element of your arrows and can be switched mid-flight to apply both elements.
 - Automatic Storm Arrows.
 
@@ -171,7 +171,7 @@ Below is a list of all new abilities for all the heroes you can play.
 - Unstoppable Charge: Juggernaut your way through all bots, damaging them for 50 damage and knocking them down.
 - Medium Armor: 50% Armor.
   ##### Tip:
-  Mauga's charge is truly unstoppable. It will even override and stop a Reinhardt charging directly at you!
+  Mauga's charge is truly unstoppable. It will even stop a charging Reinhardt in his tracks!
 
 #### MEI
 - Shatter: Frozen enemies explode on death.
@@ -181,7 +181,7 @@ Below is a list of all new abilities for all the heroes you can play.
 - Medium Armor: 50% Armor.
   ##### Tip:
   - Shatter and Frostburn apply to any enemy frozen from any source. For example, if Hanzo freezes an enemy with his arrows, then they will take damage over time and shatter upon death. All extra damage is awarded to Mei.
-  - Cryonic Blast gives you the option to use Ice Block as an offensive as well as defensive.
+  - Cryonic Blast gives you the option to use Ice Block as an offensive in addition to it being a defensive.
 
 #### MERCY
 - Angelic Presence: 15m AoE Passive Healing 7% HP/sec.
@@ -199,7 +199,7 @@ Below is a list of all new abilities for all the heroes you can play.
   - Energy Sphere: Funnel energy into a point, creating an area that heals your team and damages the enemy.
   - Detonation: The larger the sphere gets, the larger the explosion. Breaking Line of sight, dying, being interrupted or moving too far from the origin point will detonate the bomb.  
   - Reaching 100 bomb radius will provide the most damage (If you accidentally detonate too early, the ultimate will be refunded).
-  - Flight enabled during ultimate. Jump to go up/Crouch to go down.
+  - Flight enabled during Ultimate: [JUMP] to go up, [CROUCH] to go down.
 
 #### ORISA
 - Fortify: Repair 25% HP over 5 seconds.
@@ -249,9 +249,9 @@ Below is a list of all new abilities for all the heroes you can play.
 #### SOJOURN
 - Jump Jets: Afterburn from your jet pack burns nearby bots when you jump after sliding.
 - Rocket Boost Slide: Sweep and damage bots, doing 25 damage to anyone in your path and knocking them down for 1.5 seconds.
-- Ultimate: Super Railgun: Railgun rounds do massive damage and penetrate walls.
+- Ultimate: Super Railgun: [SECONDARY FIRE] rounds do massive damage and penetrate walls.
   ##### Tip:
-  Sojourn excels at hit-and-run guerilla tactics. Slide in, take out the legs, jump out, apply burn, finish with disrupter. Bots won't even know what hit 'em!
+  Sojourn excels at hit-and-run guerilla tactics. Slide in, take out the legs, jump out, apply burn, finish with disrupter. Bots won't ever know what hit 'em!
 
 #### SOLDIER 76
 - Ultimate C-130X Airstrike: Aim pulse cannons from the safety of an aircraft that explode in a 30m area and goes through walls.
