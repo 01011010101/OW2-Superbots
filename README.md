@@ -272,7 +272,7 @@ Below is a list of all new abilities for all the heroes you can play.
 
 #### TORBJÖRN
 - Tank Role: +150% HP
-- Dwarven Leap: [CROUNCH]+[JUMP] to leap forward.
+- Dwarven Leap: [CROUCH]+[JUMP] to leap forward.
 - Dwarven Rage: Overload heals 25% HP over 10 seconds.
   - Dwarven Rage Leap: While under Dwarven Rage, your Dwarven Leap will knock down bots where you land.
 - Heavy Armor: 75% Armor.
