@@ -83,13 +83,23 @@
 * General
   - Updated Flying HUD
 
-### February 13, 2024
+### February 12, 2024
 * Team 1
   - Decreased damage dealt across the board. Reason: Bots are too easy. Also, bots dying too quickly = more levels faster for both teams = more frequent abilities = workshop load crashes.
+  - SOJOURN: New abilities: (Reason: I felt her kit encouraged a hit-and-run playstyle, so I leaned into it with her new abilities)
+  	- Rocket Boost Slide: Sweep and knockdown bots for 2 seconds when you slide into them.
+   	- Jump Jets: Burn nearby bots for 10/sec for 3 seconds.
+	- Ultimate: Super Railgun: Massive damage and shoot through walls. Reason: Unlike Widow, Sojourn cannot see through walls during her Ult, which helps make this Ult not stupid OP.
 
 ### February 11, 2024
 * Team 1
-  - REAPER: Decreased damage by 3%. Reason: Reaper needs to be one of the top DPS, but he continues to do 300k+ damage than everyone else.
+	- ECHO: Reworked: (Reason: Echo went through the most revisions in this mode after OW2 broke two of her abilities. I believe this rework is a good balance of fun/ction at minimal server cost)
+		- Quantum Beam no longer limited to Ultimate. Cooldown set to 14 seconds.
+  		- Ultimate: Overdrive: Free Flight + speed and damage buff. Reason: Enabled 'Buff Effects' extension to give Echo Ana's Nano Boost during her ult. The effect + the temporary buffs helps sell the effect.
+    	- Disabled permament flying, tweaked Flight cooldown. Reason: Echo already gained free flight from her Flight ability. Having her permanently flying meant running the new Flying script constantly, resulting in more frequent workshop overload crashes when she was in play. By decreasing Flight cooldown to 35% she still has the ability to fly freely almost constantly, but at a much, much lower server cost.
+		- Disabled Auto Fire for Sticky Bombs. Reason: Echo's Auto Fire was broken in OW2 with the rate-of-fire changes. After many different iterations, the best way to emulate the OW1 Auto Fire for Sticky Bombs was to set CD=0% and loop the Auto Fire rule every .800 seconds. Unfortunately, this has a high server cost and caused workshop load crashes, so I shelved this for now pending a rework.
+  		- Updated HUD.
+	- REAPER: Decreased damage by 3%. Reason: Reaper needs to be one of the top DPS, but he continues to do 300k+ more damage than everyone else.
 
 ### February 6, 2024
 * Team 1
@@ -237,7 +247,8 @@
 		- BRIGITTE
 
  * General
- 	- Changed Team 1 player slots to 4. Reason: 1) I want something different than the now-standard 5v5, but 6v6 causes a ton of workshop overload crashes. 4v6 loosk like a good compromise and something I can properly balance. 2) Also, I don't advertise this game mode, so filling a full team of 6 people for a few matches almost never happens.
+	- Changed Team 1 player slots to 4.
+		- Reason:<br>1) I want something different than the now-standard 5v5, but 6v6 causes a ton of workshop overload crashes. 4v6 is a good compromise and something I can properly balance and extend safely.<br>2) I don't advertise this game mode, so filling a full team of 6 people for a few matches almost never happens.
 
 ### September 16, 2023 (More OW2 Fixes)
 * Team 1
