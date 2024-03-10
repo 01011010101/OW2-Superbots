@@ -1,23 +1,34 @@
+### March 10, 2024
+* Team 1
+	- Rebalanced Healing Dealt for everyone back to WEVVY.
+	- BRIGITTE: Lowered HP from 250% to 200%.
+	- KIRIKO: Buffed damage for both [PRIMARY] attacks
+		- Ofuda: Damage increased from 10 to 15.
+		- Papercut: Damage tick/sec increased from 28 to 35
+
 ### March 8, 2024
 * Team 1
 	- ECHO: Buffed Quantum Laser damage.
   	- JUNKER QUEEN: Buffed Ultimate damamge from 130 to 150, lowered Ult gen (combat) slightly
   	- KIRIKO: Fixed typo in HUD for her Ultimate
-  	- MEI: Decreased Frostburn damage from .1 to .05. Reason: A good Mei player can absolutely dominate a match, especially if they get lots of headshots.
+  	- MEI: Decreased Frostburn damage from .1 to .05. Reason: A good Mei player can absolutely dominate a match, especially if they get lots of headshots (source: me).
 
 ### March 7, 2024
 * Team 1
   - LIFEWEAVER: New abilites:
-  	- Choice of damage when using Ult
-   	- Replaced Life Grip with teleport. Reason: Lowering Life Grip's CD resulted in trolling, and increasing the CD made it useless, so I replaced it entirely.
+  	- Choice of damage when using Ult: AOE Poison or pulse damage/stun
+   	- Replaced Life Grip with teleport. Reason: Lowering Life Grip's CD resulted in trolling, and increasing the CD made it useless, so I replaced it entirely. I wanted at least another ability for him and this was the cheapest server cost of my ideas to implement.
 
 ### March 3, 2024
 * Team 1
 	- MAUGA: Tweaked Bumrush CD from 4 to 5 seconds.
 
-### March 1, 2024
+### March 1, 2024 (Back to 4v6)
 * Team 1
 	- JUNKER QUEEN: Extended range of shout effects by 1m
+
+* General
+ 	- Removed 7th bot from Team 2. Reason: Increased workshop overload crashes. Will revist as more optimizations are made.
 
 ### February 28, 2024
 * Team 1
@@ -25,9 +36,12 @@
 
 ### February 26, 2024
 * Team 1
-  - BASTION: Added new abilites: Flashbang grenades, Ultimate does massive damage and shoots through walls. Updated HUD.
+	- BASTION: New abilites:
+		- Flashbang grenades stun bots for 1 second
+		- Ultimate: AP Rounds: High damage and shoot through walls
+		- Updated HUD.
   
-### February 23, 2024
+### February 23, 2024 (4v7)
 * Team 1
 	- BASTION: Increased Flashbang CD slightly
 	- ILLARI: Buffed Ultimate damage
@@ -35,16 +49,25 @@
 	- KIRIKO: Lowered Ult gen (combat)
 	- RAMATTRA: New ability: Nemesis Void Punch
 	- REAPER: Decreased damage slightly
+ 
+ * General
+ 	- Added 7th bot to Team 2 slot. Reason: Testing adding max allowed bots for increased challenge.
 
 ### February 22, 2024
 * Team 1
-  - KIRIKO: New abilites: 2x Primary fire damage, added damage and knockdown to Ult. Updated HUD.
-  - GENJI: Update HUD
-  - ZENYATTA: Updated HUD
+	- KIRIKO: New abilites:
+		- 2x [PRIMARY] attacks: direct damage or DoT
+		- Ultimate: Damage and knockdown bots in the path of your Kitsune.
+		- Updated HUD.
+  - GENJI: Update HUD, renamed Detonate Marks and changed the description slightly.
+  - ZENYATTA: Updated HUD, made verbiage for [PRIMARY] and [SECONDARY] attacks to be more in line with Ultimate description.
 
 ### February 21, 2024
 * Team 1
-  - JUNKER QUEEN: Added new abilites: Choice of shout, added damage to Ult. Updated HUD.
+	- JUNKER QUEEN: New abilites:
+		- Choice of shout (stun or knockdown)
+		- Ultimate does massive damage in a straight line
+		- Updated HUD.
   
 ### February 16, 2024
 * Team 1
@@ -52,9 +75,9 @@
   - D.VA: Decreased Ultimate generation (passive, combat)
   - DOOMFIST: Lowered damage back to 100%.
   - HANZO: Lowered damage dealt slightly, lowered Ult gen. Reason: Hanzo in endgame basically gets instant ults.
-  - MAUGA: Added new ability: Bumrush
-  - MOIRA: Fixed flying when firing Ult
-  - REINHARDT: Lowered HP
+  - MAUGA: New ability: Bumrush, an unstoppable charge.
+  - MOIRA: Fixed flying when using Ultimate
+  - REINHARDT: Lowered HP slightly
   - SOMBRA: Fixed HUD icon for Phased Stealth
  
 * General
@@ -62,7 +85,7 @@
 
 ### February 13, 2024
 * Team 1
-  - Decreased damage dealt across the board. Reason: Too easy. Also, bots dying too quickly = more levels faster for both teams = more frequent abilities = workshop load crashes.
+  - Decreased damage dealt across the board. Reason: Bots are too easy. Also, bots dying too quickly = more levels faster for both teams = more frequent abilities = workshop load crashes.
 
 ### February 11, 2024
 * Team 1
@@ -91,6 +114,10 @@
   - ECHO: Made flying permanent (no toggle)
   - JUNKER QUEEN: Increased knockback of Jagged Blade, increased Ultimate generation (passive) cooldown to 100%.
   - MERCY: Decreased damage to 150%.
+  - MOIRA: Ult changes:
+	- Disabled manual cancelling of Ultimate. Reason: Kept being reported as a bug. Removing this does not significantly buff or nerf her.
+ 	- Made Ultimate duration a flat 10 seconds and removed the internal counter/timer. Reason: Moira started causing workshop overload crashes near the endgame as she was Ulting too frequently (never happened in OW1...). I removed the internal chase that made her Ult 20 seconds and the supporting code to cut down on the number of scripts running, and replaced the counter with the in-game Ultimate duration counter (from infinite to 122% = 10 secs).
+	- Now phased while casting Ultimate. Reason: To compensate for the above changes. She Ults less frequently now, but when she does she makes a big bang.
   - REINHARDT: Increased Fire Strike cooldown back to 100%. Reason: to compensate for now having 2 charges.
 
 ### January 15, 2024
@@ -190,7 +217,7 @@
 * Super Bots
 	- Buffed bot HP, damage, and ultimate generation across the board
 		
-### September 24, 2023
+### September 25, 2023 (4v6)
 * Team 1
 	- Decreased Ultimate generation for:
 		- BASTION
@@ -209,7 +236,10 @@
 		- HANZO
 		- BRIGITTE
 
-### September 16, 2023
+ * General
+ 	- Changed Team 1 player slots to 4. Reason: 1) I want something different than the now-standard 5v5, but 6v6 causes a ton of workshop overload crashes. 4v6 loosk like a good compromise and something I can properly balance. 2) Also, I don't advertise this game mode, so filling a full team of 6 people for a few matches almost never happens.
+
+### September 16, 2023 (More OW2 Fixes)
 * Team 1
 	- Decreased Ultimate generation for:
 		- D.VA
@@ -221,6 +251,7 @@
 		- ZENYATTA
 
 * Super Bots
+	- Changed bots from 'Hard' to 'Extreme'. Reason: Hard is not hard anymore in OW2. Lethal was slightly better, and Ultimate and Aimbot were unfair (especially for low HP heroes who would get 1-shot instantly from across the map). Extreme is a good starting point for now, but may change later.
 	- Increased Ultimate generation for:
 		- HANZO
 		- BRIGITTE
@@ -228,7 +259,7 @@
 * General
 	- Decreased PUSH robot speed.
 
-### August 4, 2023
+### August 4, 2023 (Fix everything broken in OW2)
 * Team 1
 	- Enabled OW2 heroes for Team 1
 	- Added new heroes to Armor Classes:
@@ -237,7 +268,7 @@
 		- Kiriko -> 25
 		- Ramatra -> 50
 	- Enabled PUSH mode and associated maps.
-	- Added more maps to the pool. 
+	- Added more maps to the pool.
 	- Fixed HUDs for new OW2 heroes
 	- Modified HUDs for heroes who had abilities disabled
 	- Fixed D.VA's Bunny Hop (downward impulse would not activate)
@@ -245,7 +276,7 @@
 	- Fixed WIDOWMAKER's Ultimate Rail Gun.
 	- Fixed Third Person
 	- Disabled Flying for MOIRA, SIGMA, and ZENYATTA. Reason: The method to enable flying in OW1 (Gravity=0%) is broken in OW2. Need to fix.
-	- Disabled broken abilties:
+	- Disabled broken abilties for:
 		- BAPTISTE
 			- Ultimate: Full-Auto. Reason: Broken in OW2 (rate-of-fire changes).
 		- BASTION
@@ -255,6 +286,7 @@
 
 * Super Bots
 	- Added new OW2 heroes to bot pool.
+ 	- Balanced new OW2 Super Bots.
 	- Disabled SUPERBOTS Torbot Ultimate Auto-Fire. Reason: Broken in OW2.
 	
 * Relics
@@ -262,7 +294,8 @@
 	
 * General
 	- HUD
-		- Removed player death and superbot killed counters. Reason: replaced by scoreboard.
+ 		- Updated button references (made them more generic) for HUDs and abilities to account for console/controller.
+		- Removed player death and superbot killed counters. Reason: Replaced by scoreboard.
 		- Removed Challenge Roulette when challenge is not active. Reason: The HUD in OW2 is jacked. Left and right-side text is centered, so removed this to improve visibility.
 	- PUSH Mode
 		- Increased push bot speed.
