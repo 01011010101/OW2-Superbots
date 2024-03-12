@@ -1,3 +1,9 @@
+### March 12, 2024
+* Team 1
+ 	- JUNKER QUEEN: Buffed Ultimate damage from 150 to 200
+* Super Bots
+	- ROADHOG: Rebalanced after they added him back to the bot pool with the March 12 update
+---
 ### March 10, 2024
 * Team 1
 	- Rebalanced Healing Dealt for everyone back to WEVVY.
@@ -91,6 +97,8 @@
   	- Rocket Boost Slide: Sweep and knockdown bots for 2 seconds when you slide into them.
    	- Jump Jets: Burn nearby bots for 10/sec for 3 seconds.
 	- Ultimate: Super Railgun: Massive damage and shoot through walls. Reason: Unlike Widow, Sojourn cannot see through walls during her Ult, which helps make this Ult not stupid OP.
+* General
+	- Fixed bot names. Bots will no longer show "DAMAGE 3" or "TANK 1" but instead will have their proper names.
 ---
 ### February 11, 2024
 * Team 1
