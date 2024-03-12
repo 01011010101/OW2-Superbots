@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2superbots.\r\n\r\n[WORK IN PROGRESS] Mar 9, 2024: Balancing, testing Lifeweaver changes."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Mar 12, 2024: Balancing, testing Lifeweaver changes."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -76,11 +76,13 @@ settings
 
 			Ana
 			{
-				Biotic Grenade Cooldown Time: 25%
+				Biotic Grenade Cooldown Time: 35%
 				Damage Dealt: 132%
 				Health: 200%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
+				Sleep Dart Cooldown Time: 75%
+				Ultimate Generation - Combat Nano Boost: 50%
 			}
 
 			Ashe
@@ -123,7 +125,7 @@ settings
 				Barrier Shield Cooldown Time: 0%
 				Barrier Shield Recharge Rate: 500%
 				Damage Dealt: 135%
-				Health: 250%
+				Health: 200%
 				Repair Pack Cooldown Time: 35%
 				Shield Bash Cooldown Time: 50%
 				Ultimate Generation - Combat Rally: 20%
@@ -152,7 +154,7 @@ settings
 
 			Doomfist
 			{
-				Health: 165%
+				Health: 150%
 				Infinite Ultimate Duration: On
 				Meteor Strike Knockback Scalar: 150%
 				No Ammunition Requirement: On
@@ -188,14 +190,12 @@ settings
 
 			Hanzo
 			{
-				Damage Dealt: 110%
 				Lunge Cooldown Time: 25%
 				Lunge Distance Scalar: 200%
-				Sonic Arrow Cooldown Time: 50%
 				Storm Arrows Cooldown Time: 25%
 				Storm Arrows Quantity: 12
-				Ultimate Generation - Combat Dragonstrike: 3%
-				Ultimate Generation - Passive Dragonstrike: 45%
+				Ultimate Generation - Combat Dragonstrike: 5%
+				Ultimate Generation - Passive Dragonstrike: 50%
 			}
 
 			Illari
@@ -212,12 +212,13 @@ settings
 			Junker Queen
 			{
 				Carnage Cooldown Time: 35%
-				Commanding Shout Cooldown Time: 40%
+				Commanding Shout Cooldown Time: 50%
 				Damage Dealt: 135%
 				Health: 145%
 				Jagged Blade Cooldown Time: 25%
 				Jagged Blade Knockback Scalar: 125%
 				No Ammunition Requirement: On
+				Ultimate Generation - Combat Rampage: 50%
 			}
 
 			Junkrat
@@ -424,7 +425,7 @@ settings
 
 			Sombra
 			{
-				Damage Dealt: 125%
+				Damage Dealt: 110%
 				Health: 150%
 				No Ammunition Requirement: On
 				Translocator Cooldown Time: 50%
@@ -445,7 +446,7 @@ settings
 			{
 				Damage Dealt: 145%
 				Deploy Turret Cooldown Time: 0%
-				Health: 225%
+				Health: 200%
 				No Ammunition Requirement: On
 				Overload Duration Scalar: 200%
 				Ultimate Generation - Combat Molten Core: 3%
@@ -630,11 +631,6 @@ settings
 				Ultimate Generation - Passive Dragonstrike: 500%
 			}
 
-			Illari
-			{
-				Damage Dealt: 150%
-			}
-
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
@@ -668,15 +664,6 @@ settings
 				Projectile Speed: 300%
 				Ultimate Generation - Combat Kitsune Rush: 500%
 				Ultimate Generation - Passive Kitsune Rush: 300%
-			}
-
-			Lifeweaver
-			{
-				Damage Dealt: 150%
-				Healing Dealt: 150%
-				Rejuvenating Dash Cooldown Time: 15%
-				Rejuvenating Dash Healing: 150%
-				Ultimate Generation - Combat Tree of Life: 2%
 			}
 
 			Lúcio
@@ -784,13 +771,11 @@ settings
 
 			Roadhog
 			{
-				Damage Dealt: 200%
-				Healing Dealt: 200%
+				Damage Dealt: 150%
+				Healing Dealt: 125%
 				Health: 475%
 				No Ammunition Requirement: On
 				Quick Melee: Off
-				Spawn With Ultimate Ready: On
-				Take a Breather Cooldown Time: 150%
 				Ultimate Generation - Combat Whole Hog: 300%
 				Ultimate Generation - Passive Whole Hog: 500%
 				Whole Hog Knockback Scalar: 0%
@@ -1210,7 +1195,7 @@ rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
 			" \n \n \n \n \n \n \n \n \n          WELCOME TO SUPERBOTS!\n \nPRESS [INTERACT] TO SWITCH RELICS\n"), Top, 5, Color(White),
 			Color(White), Color(Yellow), Visible To and String, Default Visibility);
 		"Website link and version info."
-		Create HUD Text(All Players(All Teams), Null, Custom String("tinyurl.com/ow2superbots"), Null, Top, -2, Color(White), Color(
+		Create HUD Text(All Players(All Teams), Null, Custom String("tinyurl.com/ow2-superbots"), Null, Top, -2, Color(White), Color(
 			Lime Green), Color(White), Visible To and String, Default Visibility);
 		"Challenge Roulette HUD (off when Disabled)."
 		Create HUD Text(All Players(All Teams),
@@ -3956,6 +3941,8 @@ rule("JUNKER QUEEN Shout Effects [Added by Arkhanglesk#11200]")
 		Ability Cooldown(Players On Hero(Hero(Junker Queen), Team 1), Button(Ability 1)) == 0;
 		(Is Button Held(Players On Hero(Hero(Junker Queen), Team 1), Button(Ability 1)) == True) == True;
 		Distance Between(Event Player, Position Of(Players On Hero(Hero(Junker Queen), Team 1))) <= 8;
+		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
+			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
 	}
 
 	actions
@@ -3991,7 +3978,7 @@ rule("JUNKER QUEEN Ultimate Charge [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 130);
+		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 200);
 	}
 }
 
@@ -5542,7 +5529,7 @@ rule("REAPER Frozen Shadow Step")
 		Wait(2, Ignore Condition);
 		Set Status(Players Within Radius(Event Player, 10, Team 2, Off), Null, Frozen, 4);
 		Play Effect(All Players(All Teams), Ring Explosion, Color(Purple), Event Player, 20);
-		Small Message(Event Player, Custom String("{0} Frozen Shadow Step", Ability Icon String(Hero(Mei), Button(Ultimate))));
+		Small Message(Event Player, Custom String(" {0} Frozen Shadow Step", Ability Icon String(Hero(Mei), Button(Ultimate))));
 	}
 }
 
@@ -6870,7 +6857,7 @@ rule("WINSTON Venting Rage")
 		Event Player.T -= 35;
 		Skip If(Event Player.T >= 35, 1);
 		Set Ability 1 Enabled(Event Player, False);
-		Small Message(Event Player, Custom String("{0} -35 RAGE", Icon String(Fire)));
+		Small Message(Event Player, Custom String(" {0} -35 RAGE", Icon String(Fire)));
 		Wait(0.250, Ignore Condition);
 		Event Player.R = 1;
 	}
@@ -6894,7 +6881,7 @@ rule("WINSTON Rage Counter")
 	actions
 	{
 		Event Player.T += 5;
-		Small Message(Event Player, Custom String("Rage: {0}", Event Player.T));
+		Small Message(Event Player, Custom String(" Rage: {0}", Event Player.T));
 		Wait(0.500, Ignore Condition);
 	}
 }
@@ -8773,7 +8760,7 @@ rule("Subroutine - (ReaperCreepingDeathOff)")
 		Stop All Damage Over Time(Event Player);
 		Stop Camera(Event Player);
 		Event Player.R = 0;
-		Small Message(Event Player, Custom String("{0} CREEPING DEATH DISABLED", Ability Icon String(Hero(Reaper), Button(Ultimate))));
+		Small Message(Event Player, Custom String(" {0} CREEPING DEATH DISABLED", Ability Icon String(Hero(Reaper), Button(Ultimate))));
 	}
 }
 
