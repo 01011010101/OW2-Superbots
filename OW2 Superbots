@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Mar 12, 2024: Balancing, testing Lifeweaver changes."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Mar 17, 2024: Balancing, testing Lifeweaver changes."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -25,7 +25,6 @@ settings
 
 			enabled maps
 			{
-				Horizon Lunar Colony 972777519512068154
 			}
 		}
 
@@ -168,7 +167,7 @@ settings
 
 			Echo
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 145%
 				Flight Cooldown Time: 30%
 				Focusing Beam Cooldown Time: 160%
 				Health: 135%
@@ -194,26 +193,26 @@ settings
 				Lunge Distance Scalar: 200%
 				Storm Arrows Cooldown Time: 25%
 				Storm Arrows Quantity: 12
-				Ultimate Generation - Combat Dragonstrike: 5%
+				Ultimate Generation - Combat Dragonstrike: 3%
 				Ultimate Generation - Passive Dragonstrike: 50%
 			}
 
 			Illari
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 155%
 				Healing Pylon Cooldown Time: 50%
 				Health: 150%
 				Movement Gravity: 90%
 				No Ammunition Requirement: On
 				Outburst Cooldown Time: 50%
-				Ultimate Generation - Combat Captive Sun: 50%
+				Ultimate Generation - Combat Captive Sun: 20%
 			}
 
 			Junker Queen
 			{
-				Carnage Cooldown Time: 35%
-				Commanding Shout Cooldown Time: 50%
-				Damage Dealt: 135%
+				Carnage Cooldown Time: 50%
+				Commanding Shout Cooldown Time: 75%
+				Damage Dealt: 120%
 				Health: 145%
 				Jagged Blade Cooldown Time: 25%
 				Jagged Blade Knockback Scalar: 125%
@@ -356,11 +355,11 @@ settings
 
 			Reaper
 			{
-				Damage Dealt: 150%
-				Healing Dealt: 200%
+				Damage Dealt: 115%
+				Healing Dealt: 150%
 				Health: 250%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Death Blossom: 5%
+				Ultimate Generation - Combat Death Blossom: 10%
 				Wraith Form Cooldown Time: 50%
 			}
 
@@ -377,13 +376,13 @@ settings
 			Roadhog
 			{
 				Chain Hook Cooldown Time: 50%
-				Damage Dealt: 125%
+				Damage Dealt: 150%
 				Healing Dealt: 200%
 				Health: 145%
 				No Ammunition Requirement: On
 				Take a Breather Cooldown Time: 200%
 				Take a Breather Maximum Time: 50%
-				Ultimate Generation - Combat Whole Hog: 5%
+				Ultimate Generation - Combat Whole Hog: 300%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -430,6 +429,7 @@ settings
 				No Ammunition Requirement: On
 				Translocator Cooldown Time: 50%
 				Ultimate Generation - Combat EMP: 1%
+				Ultimate Generation - Passive EMP: 90%
 				Virus Cooldown Time: 0%
 			}
 
@@ -456,11 +456,11 @@ settings
 			Tracer
 			{
 				Blink Cooldown Time: 25%
-				Damage Dealt: 175%
+				Damage Dealt: 130%
 				Health: 150%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Pulse Bomb: 0%
-				Ultimate Generation - Passive Pulse Bomb: 250%
+				Ultimate Generation - Passive Pulse Bomb: 240%
 			}
 
 			Widowmaker
@@ -631,6 +631,11 @@ settings
 				Ultimate Generation - Passive Dragonstrike: 500%
 			}
 
+			Illari
+			{
+				Damage Dealt: 160%
+			}
+
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
@@ -752,6 +757,7 @@ settings
 				No Ammunition Requirement: On
 				Quick Melee: Off
 				Shadow Step: Off
+				Ultimate Generation - Combat Death Blossom: 200%
 				Ultimate Generation - Passive Death Blossom: 500%
 				Wraith Form Cooldown Time: 200%
 			}
@@ -771,11 +777,12 @@ settings
 
 			Roadhog
 			{
-				Damage Dealt: 150%
-				Healing Dealt: 125%
-				Health: 475%
+				Damage Dealt: 155%
+				Health: 500%
 				No Ammunition Requirement: On
 				Quick Melee: Off
+				Take a Breather Maximum Time: 25%
+				Take a Breather Recharge Rate: 50%
 				Ultimate Generation - Combat Whole Hog: 300%
 				Ultimate Generation - Passive Whole Hog: 500%
 				Whole Hog Knockback Scalar: 0%
@@ -907,8 +914,8 @@ settings
 				Health: 400%
 				No Ammunition Requirement: On
 				Secondary Fire: Off
-				Ultimate Generation - Combat Transcendence: 500%
-				Ultimate Generation - Passive Transcendence: 300%
+				Ultimate Generation - Combat Transcendence: 250%
+				Ultimate Generation - Passive Transcendence: 500%
 			}
 		}
 	}
@@ -1635,7 +1642,7 @@ rule("SUPERBOTS Names (A-O) [Added by Arkhanglesk#11200]")
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Baptiste), Team 2), Custom String("Baptiste"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Bastion), Team 2), Custom String("Bastion"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Brigitte), Team 2), Custom String("Brigitte"));
-		Start Forcing Dummy Bot Name(Players On Hero(Hero(Cassidy), Team 2), Custom String("Cassidy"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Cassidy), Team 2), Custom String("McCree"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Doomfist), Team 2), Custom String("Doomfist"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Genji), Team 2), Custom String("Genji"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Hanzo), Team 2), Custom String("Hanzo"));
@@ -1670,7 +1677,7 @@ rule("SUPERBOTS Names (R-Z) [Added by Arkhanglesk#11200]")
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Ramattra), Team 2), Custom String("Ramattra"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Reaper), Team 2), Custom String("Reaper"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Reinhardt), Team 2), Custom String("Reinhardt"));
-		disabled Start Forcing Dummy Bot Name(Players On Hero(Hero(Roadhog), Team 2), Custom String("Roadhog"));
+		Start Forcing Dummy Bot Name(Players On Hero(Hero(Roadhog), Team 2), Custom String("Roadhog"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Sigma), Team 2), Custom String("Sigma"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Sojourn), Team 2), Custom String("Sojourn"));
 		Start Forcing Dummy Bot Name(Players On Hero(Hero(Soldier: 76), Team 2), Custom String("Soldier: 76"));
@@ -3774,7 +3781,7 @@ rule("HANZO Elemental Dragon Arrows")
 				Play Effect(All Players(All Teams), Ring Explosion, Color(Orange), Victim, 20);
 				Play Effect(All Players(All Teams), Explosion Sound, Color(White), Victim, 200);
 				Set Status(Players Within Radius(Victim, 10, Team 2, Off), Event Player, Burning, 3);
-				Start Damage Over Time(Players Within Radius(Victim, 10, Team 2, Off), Event Player, 3, Max Health(Victim) * 0.200);
+				Start Damage Over Time(Players Within Radius(Victim, 10, Team 2, Off), Event Player, 3, Max Health(Victim) * 0.050);
 			Else If(Event Player.R == True);
 				Play Effect(All Players(All Teams), Ring Explosion, Color(Sky Blue), Victim, 20);
 				Play Effect(All Players(All Teams), Explosion Sound, Color(White), Position Of(Victim), 200);
@@ -3858,7 +3865,7 @@ rule("ILLARI Ultimate BFG 9000 [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Damage(Victim, Event Player, 85);
+		Damage(Victim, Event Player, 115);
 		Set Status(Victim, Event Player, Burning, 5);
 		Start Damage Over Time(Victim, Event Player, 5, 1);
 		disabled Wait(5, Ignore Condition);
@@ -3978,7 +3985,7 @@ rule("JUNKER QUEEN Ultimate Charge [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 200);
+		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 300);
 	}
 }
 
@@ -4397,7 +4404,7 @@ rule("KIRIKO Ultimate Yokai Blast [Added by Arkhanglesk#11200]")
 				Direction Towards(Event Player, Players Within Radius(Event Player, 2, Team 2, Off))), -15), 15, To World,
 				Cancel Contrary Motion);
 			Damage(Event Player.DamageMOD, Event Player, Max Health(Event Player) / 6);
-			Set Status(Event Player.DamageMOD, Event Player, Knocked Down, 2.500);
+			Set Status(Event Player.DamageMOD, Event Player, Knocked Down, 5);
 		End;
 	}
 }
@@ -5682,7 +5689,7 @@ rule("REINHARDT Scorching Wave")
 	}
 }
 
-rule("REINHARDT Sonic charge on")
+rule("REINHARDT Sonic Charge ON")
 {
 	event
 	{
@@ -5704,7 +5711,7 @@ rule("REINHARDT Sonic charge on")
 	}
 }
 
-rule("REINHARDT Sonic charge off")
+rule("REINHARDT Sonic Charge OFF")
 {
 	event
 	{
@@ -7441,10 +7448,12 @@ rule("Doomfist HUD [Updated Arkhanglesk#11200]")
 	{
 		Wait(0.500, Ignore Condition);
 		Disallow Button(Event Player, Button(Ultimate));
-		Event Player.HUDTextHidden = Array(False, True, True, True);
+		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Ultimate)), Custom String("EMPOWERS YOUR NEXT ABILITY"),
-			Custom String("ULTIMATE: SUPER MOVES"));
+			Custom String("ULTIMATE: SUPER MOVES"), Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String(
+			"[SECONDARY] MASSIVE DIRECT DAMAGE"), Custom String("SUPER PUNCH"), Ability Icon String(Hero(Doomfist), Button(Ability 1)),
+			Custom String("[ABILITY 1] PUMMEL AND BURN BOTS"), Custom String("SUPER SLAM"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
