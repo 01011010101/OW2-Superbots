@@ -1,21 +1,22 @@
-###### This page was created by Arkhanglesk#11200 and is an updated version of the [OW Superbots](https://docs.google.com/document/d/1WwOGDoImdErTrU-VU9Pxc0oTp9ALMUmJaqAeW_fBrm8) page created by the mode creator, Cel#1115.
+###### <div align="center">This page was created by Arkhanglesk#11200 and is an updated version of the [OW Superbots](https://docs.google.com/document/d/1WwOGDoImdErTrU-VU9Pxc0oTp9ALMUmJaqAeW_fBrm8) page created by the mode creator, Cel#1115.</div>
+<br>
 
-
-# STOP THE SUPER BOTS!
-Created by Cel#1115<br>
+# <div align="center"> STOP THE SUPER BOTS!</div>
+<div align="center">Created by Cel#1115<br>
 Updated for OW2 by Arkhanglesk#11200
+</div>
 <br>
-<br>
+
 ## DESCRIPTION
 Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!<br>
 
-### Damage increases based on kill
+### 💀 Damage increases based on kill
 You can get a max +9% damage per kill:
 - Bot Deaths: 3% damage (3% if you’re alive and a bot died somewhere)
 - Bot Eliminations: 3% damage (6% if you helped kill a bot)
 - Bot Last Hits: 3% damage (9% if you got the last hit on a bot)
 
-### Damage boost as you level up
+### ⬆️ Damage boost as you level up
 Your Damage% meter is also your XP meter. Every kill boosts your Damage%, and every 100 will level you up.
 
 - 100%-199% Damage = Level 1
@@ -25,7 +26,7 @@ Your Damage% meter is also your XP meter. Every kill boosts your Damage%, and ev
 - 500%-599% Damage = Level 5
 - etc...
 
-### Relic Passives
+### 💚 Relic Passives
 Press [INTERACT] to switch RELICS in spawn.
 <br>
 PURIFIED is automatically equipped at the start.
@@ -36,7 +37,7 @@ PURIFIED is automatically equipped at the start.
 - AEGIS: +100% Healing Received, +10% Armor, Invincibility shield at low HP.
 - HERO: +25% Damage, +25% Movement Speed and +25% Max HP per elimination.<br>
 
-### Super Bot Lucio Ultimates
+### 💥 Super Bot Lucio Ultimates
 - BLAST OFF!: Sends all players flying high into the air.
 - ROOTED!: Roots players 20m in line of sight for 5 seconds.
 - CHILL OUT!: Freezes players 20m in line of sight for 4 seconds.
@@ -45,7 +46,8 @@ PURIFIED is automatically equipped at the start.
 - INVISIBILITY!: Turns all enemies invisible for 10 seconds.
 - WORLD ON FIRE: Burns all players on the map for 12 seconds.
 - STAY AWHILE AND LISTEN: Puts players 20m in line of sight to sleep for 10 seconds.
-- HACKED!!!: Hacks players within 30m and through walls for 7 seconds.<br>
+- HACKED!!!: Hacks players within 30m and through walls for 7 seconds.
+<br>
 
 ## HEROES
 Below is a list of all new abilities for all heroes available to play.
