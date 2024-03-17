@@ -13,20 +13,21 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 You can get a max +9% damage per kill:
 - Bot Deaths: 3% damage (3% if you’re alive and a bot died somewhere)
 - Bot Eliminations: 3% damage (6% if you helped kill a bot)
-- Bot Last Hits: 3% damage (9% if you got the last hit on a bot)<br>
+- Bot Last Hits: 3% damage (9% if you got the last hit on a bot)
 
 ### Damage boost as you level up
-- Level 1: 100% Damage
-- Level 2: 200% Damage
-- Level 3: 300% Damage
-- Level 4: 400% Damage
-- Level 5: 500% Damage
-- Level 6: 600% Damage
-- Level 7: 700% Damage
-- etc...<br>
+Your Damage% meter is also your XP meter. Every kill boosts your Damage%, and every 100 will level you up.
+
+- 100%-199% Damage = Level 1
+- 200%-299% Damage = Level 2
+- 300%-399% Damage = Level 3
+- 400%-499% Damage = Level 4
+- 500%-599% Damage = Level 5
+- etc...
 
 ### Relic Passives
-Press [INTERACT] to switch RELICS in spawn.<br>
+Press [INTERACT] to switch RELICS in spawn.
+<br>
 PURIFIED is automatically equipped at the start.
 
 - PURIFIED: +200% Healing Dealt, +7% HP/sec Regeneration.
@@ -160,7 +161,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Press [RELOAD] to change [PRIMARY] damage.
   - Ofuda: Damage bots with your paper things while healing your allies.
   - Kami No Katto: Your paper ofuda slice bots and applies a bleed.
-- Ultimate: Yōkai Blast: Damage and knockdown all bots in the path of your Kitsune.
+- Ultimate: Yōkai Blast: Damage and knockdown all bots for 5 seconds in the path of your Kitsune.
 - Light Armor: 25% Armor.
 ---
 #### LIFEWEAVER
