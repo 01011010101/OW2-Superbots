@@ -1,3 +1,16 @@
+### March 17, 2024
+* Team 1
+	- DOOMFIST: Updated HUD to show Super Moves
+	- ILLARI: Buffed Damage Dealt by 5%
+  	- JUNKER QUEEN
+		- Buffed Ultimate damage to 300
+  		- Lowered Damage Dealt by 5%
+	- KIRIKO: Yokai Blast's knockdown increased to 5 secs
+  	- SOJOURN: Fixed an issue where Jump Jets would burn longer than intended
+* Super Bots
+	- ROADHOG: Tweaked cooldowns
+ 	- ZENYATTA: Fixed an issue that gave instant Ults in endgame if ZenBot had been in play for more than 5 mins
+ ---
 ### March 12, 2024
 * Team 1
  	- JUNKER QUEEN: Buffed Ultimate damage from 150 to 200
@@ -251,7 +264,7 @@
 		- REINHARDT: Increased Shield Recharge
 
 * Super Bots
-	- Changed Lucio's DANGER HUD element and removed the Warning icon (⚠). Reason: Lucio's ult becomes predictable. I didn't want to change any of his great Ults or the timing, so obscuring when he will exactly ult introduces the illusion of randomness.
+	- Changed Lucio's DANGER HUD element and removed the ⚠️ icon. Reason: Lucio's ult becomes predictable. I didn't want to change any of his great Ults or the timing, so obscuring when he will exactly ult introduces the illusion of randomness.
 	- Increased Ultimate generation for:
 		- HANZO
 		- BRIGITTE
