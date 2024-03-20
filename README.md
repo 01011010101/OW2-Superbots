@@ -10,14 +10,15 @@ Updated for OW2 by Arkhanglesk#11200
 ## DESCRIPTION
 Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!<br>
 
-### 💀 Damage increases based on kill
-You can get a max +9% damage per kill:
-- Bot Deaths: 3% damage (3% if you’re alive and a bot died somewhere)
-- Bot Eliminations: 3% damage (6% if you helped kill a bot)
-- Bot Last Hits: 3% damage (9% if you got the last hit on a bot)
+### 💀 Your damage increases based on kill
+Every type of eliminaton gives you 3 XP + 3% damage increase. You can get up to 9 XP/+9% damage for a single kill:
+- Bot Kill: 3 XP and +3% damage
+- Bot Assist: 3 XP and +3% damage
+- Bot Last Hit: 3 XP and +3% damage
+
 
 ### ⬆️ Damage boost as you level up
-Your Damage% meter is also your XP meter. Every kill boosts your Damage%, and every 100 will level you up.
+For every 100 XP/100% Damage you level up!
 
 - 100%-199% Damage = Level 1
 - 200%-299% Damage = Level 2
@@ -31,11 +32,11 @@ Press [INTERACT] to switch RELICS in spawn.
 <br>
 PURIFIED is automatically equipped at the start.
 
-- PURIFIED: +200% Healing Dealt, +7% HP/sec Regeneration.
-- VORTEX: +100% Movement speed, -7 second Respawn.
-- CORRUPTED: +100% Damage, -50% Armor.
-- AEGIS: +100% Healing Received, +10% Armor, Invincibility shield at low HP.
-- HERO: +25% Damage, +25% Movement Speed and +25% Max HP per elimination.<br>
+- ➕ PURIFIED: +200% Healing Dealt, +7% HP/sec Regeneration.
+- 🌀 VORTEX: +100% Movement speed, -7 second Respawn.
+- ⚔️ CORRUPTED: +100% Damage, -50% Armor.
+- 🛡️ AEGIS: +100% Healing Received, +10% Armor, Invincibility shield at low HP.
+- ⚡ HERO: +25% Damage, +25% Movement Speed and +25% Max HP per elimination.<br>
 
 ### 💥 Super Bot Lucio Ultimates
 - BLAST OFF!: Sends all players flying high into the air.
@@ -72,15 +73,16 @@ Below is a list of all new abilities for all heroes available to play.
 - 150% Jump Height.
 ---
 #### BASTION
+- Tank Role with 🛡️AEGIS Relic.
 - Flashbang: Grenades knockback and daze bots.
 - Auto-Repairs: Tank mode heals you 35% of your total HP over 5 seconds.
 - Ultimate: AP Rounds: Load high-velocity rounds that penetrate walls and shields.
 - Heavy Armor: +75% Armor.
-  ##### Tip:
+  ##### 💬 Tip:
   Your Flashbang works well with MEI and ILLARI, setting them up for headshots which applies a DoT to bots.
 ---
 #### BRIGITTE
-- Tank Role: +200% Health
+- 🛡️ Tank Role: +200% Health
 - Vampire Killer: Flail shot explodes three times on impact dealing AoE damage and knocking the target back as far as possible.
 - Ultimate Heroic Presence: Stun all enemies within 10m for 7 seconds and increase your damage by 400%.
 - Medium Armor: 50% Armor.
@@ -90,7 +92,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Launching Flashbang: Enemies are launched into the air.
 - Hat Trick: x2 Damage to enemies in the air.
 - Showdown: Once ultimate has been initiated, bots will randomly be launched into the air after 2-5 seconds, shoot after the message “Draw!” is displayed.<br>
-  ##### Tip:
+  ##### 💬 Tip:
   Cassidy's Hat Trick synergizes well with Wrecking Ball's ground pound.
 ---
 #### D.VA
@@ -109,15 +111,15 @@ Below is a list of all new abilities for all heroes available to play.
 - Quantum Beam: Powerful laser that increases in damage based on max HP of the target.
 - Ultimate: Overdrive: Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
 - Light Armor: 25% Armor.
-  ##### Tip:
-  Echo excels at staying out of the fray and delivering massive damage from afar, but can also be a devastating dive-bomber when using Flying/Quantum Beam combo + Vortex relic.
+  ##### 💬 Tip:
+  Echo excels at staying out of the fray and delivering massive damage from afar, but can also be a devastating dive-bomber when using Flying/Quantum Beam combo +🌀 Vortex relic.
 ---
 #### GENJI
 - Dragon Strike: Heal for 50 HP and explode Mark of Death.
 - Mark of Death: Mark an enemy by dealing damage. Marked enemies will explode for extra damage when damaged by Swift Strike.
 - 200% Ultimate Duration.
 - Medium Armor: 50% Armor.<br>
-  ##### Tip:
+  ##### 💬 Tip:
   Stack Death Marks for extra damage and healing.
 ---
 #### HANZO
@@ -134,7 +136,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Heat Blast: Headshots set bots on fire.
 - Solar Flare: Knocks back and burns bots.
 - Ultimate: BFG 9000: Fire a massive plasma round that does 85 damage and then scorches for additional 5 damage over 5 seconds. If bots sustain any damage they will instantly die after 5 seconds.
-  ##### Tip:
+  ##### 💬 Tip:
   Take advantage of stuns from BASTION's Flashbangs, JUNKER QUEEN's Banshee Scream, or LIFEWEAVER's paralitic Nightshade ultimate to get in free headshots.
 ---
 #### JUNKER QUEEN
@@ -142,7 +144,7 @@ Below is a list of all new abilities for all heroes available to play.
   - Sonic Tremors: Damage and knockdown all bots within 8m for 3 seconds.
   - Banshee Scream: Damage and stun all bots within 8m for 3 seconds.
 - Ultimate: Bushwhack: Cut through all bots in your path, doing massive damage and applying a bleed.
-  ##### Tip:
+  ##### 💬 Tip:
   Banshee Scream's stun is particularly helpful for MEI and ILLARI who do extra damage with critical headshots.
 ---
 #### JUNKRAT 
@@ -156,7 +158,7 @@ Below is a list of all new abilities for all heroes available to play.
   - Sky High - Send all bots into the sky and make them float.
   - Protection - Turn all players invincible for 10 seconds.
   - Kill Pile - Teleport Junkrat and bots to objective and root them for 6 seconds so they can work out their differences.
-  ##### Tip:
+  ##### 💬 Tip:
   Junkrat and his old running buddy Roadhog are a good team. Roadhog earns money for Junkrat's Chaos Roulette with every kill and Hook Combo.
 ---
 #### KIRIKO
@@ -171,7 +173,7 @@ Below is a list of all new abilities for all heroes available to play.
   - Hemlock: Poison all bots within 12.5m of your tree.
   - Nightshade: Every pulse from the tree paralyzes and damages bots.
 - Euphorbia: Teleport to any ally in your LOS and daze any nearby bots.
-  ##### Tip:
+  ##### 💬 Tip:
   Nightshade's paralyze is very helpful to line up heroes like MEI and ILLARI for extra damage with headshots.
 ---
 #### LÚCIO 
@@ -182,7 +184,7 @@ Below is a list of all new abilities for all heroes available to play.
 #### MAUGA
 - Unstoppable Charge: Juggernaut your way through all bots, damaging them for 50 damage and knocking them down.
 - Medium Armor: 50% Armor.
-  ##### Tip:
+  ##### 💬 Tip:
   Mauga's charge is truly unstoppable. It will even stop a charging Reinhardt in his tracks!
 ---
 #### MEI
@@ -191,7 +193,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Brainfreeze: Headshots deal extra damage and instantly freeze.
 - Cryonic Blast: Release a freezing explosion when your Ice Block breaks.
 - Medium Armor: 50% Armor.
-  ##### Tip:
+  ##### 💬 Tip:
   - Shatter and Frostburn apply to any enemy frozen from any source. For example, if Hanzo freezes an enemy with his arrows, then they will take damage over time and shatter upon death. All extra damage is awarded to Mei.
   - Cryonic Blast gives you the option to use Ice Block as an offensive in addition to it being a defensive.
 ---
@@ -248,7 +250,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Asthmatic Trample: Charge forward, damaging and knocking down any bots that you come in contact with.
 - Ultimate: Warthog: Stun any bot damaged by your ultimate.
 - Heavy Armor: 75% Armor.
-  ##### Tip:
+  ##### 💬 Tip:
   If Junkrat is on your team, you'll earn him money he can use in Chaos Roulette every time you use Hook Combo or get a kill.
 ---
 #### SIGMA
@@ -262,7 +264,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Jump Jets: Afterburn from your jet pack burns nearby bots when you jump after sliding.
 - Rocket Boost Slide: Sweep and damage bots, doing 25 damage to anyone in your path and knocking them down for 1.5 seconds.
 - Ultimate: Super Railgun: [SECONDARY FIRE] rounds do massive damage and penetrate walls.
-  ##### Tip:
+  ##### 💬 Tip:
   - Hanzo's Sonic Arrow can help you find targets while firing Super Railgun.
   - Sojourn excels at hit-and-run guerilla tactics. Slide in, take out the legs, jump out, apply burn, finish with disrupter. Bots won't ever know what hit 'em!
 ---
@@ -284,7 +286,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Medium Armor: 50% Armor.
 ---
 #### TORBJÖRN
-- Tank Role: +150% HP
+- Tank Role with 🛡️AEGIS Relic.
 - Dwarven Leap: [CROUCH]+[JUMP] to leap forward.
 - Dwarven Rage: Overload heals 25% HP over 10 seconds.
   - Dwarven Rage Leap: While under Dwarven Rage, your Dwarven Leap will knock down bots where you land.
