@@ -79,7 +79,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Ultimate: AP Rounds: Load high-velocity rounds that penetrate walls and shields.
 - Heavy Armor: +75% Armor.
   ##### 💬 Tip:
-  Your Flashbang works well with MEI and ILLARI, setting them up for headshots which applies a DoT to bots.
+  Your Flashbang stuns can help set MEI and ILLARI up for easy headshots.
 ---
 #### BRIGITTE
 - 🛡️ Tank Role: +200% Health
@@ -137,11 +137,11 @@ Below is a list of all new abilities for all heroes available to play.
 - Solar Flare: Knocks back and burns bots.
 - Ultimate: BFG 9000: Fire a massive plasma round that does 85 damage and then scorches for additional 5 damage over 5 seconds. If bots sustain any damage they will instantly die after 5 seconds.
   ##### 💬 Tip:
-  Take advantage of stuns from BASTION's Flashbangs, JUNKER QUEEN's Banshee Scream, or LIFEWEAVER's paralitic Nightshade ultimate to get in free headshots.
+  Take advantage of stuns from BASTION's Flashbangs, JUNKER QUEEN's Banshee Scream, or LIFEWEAVER's paralitic Nightshade ultimate to get free headshots.
 ---
 #### JUNKER QUEEN
 - Press [RELOAD] to swap shouts.
-  - Sonic Tremors: Damage and knockdown all bots within 8m for 3 seconds.
+  - Sonic Tremors: Damage and knockdown all bots within 8m for 2.5 seconds.
   - Banshee Scream: Damage and stun all bots within 8m for 3 seconds.
 - Ultimate: Bushwhack: Cut through all bots in your path, doing massive damage and applying a bleed.
   ##### 💬 Tip:
@@ -182,6 +182,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Medium Armor: 50% Armor.
 ---
 #### MAUGA
+- Ego Boost: Cardiac Overdrive buffs nearby allies.
 - Unstoppable Charge: Juggernaut your way through all bots, damaging them for 50 damage and knocking them down.
 - Medium Armor: 50% Armor.
   ##### 💬 Tip:
@@ -261,7 +262,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Light Armor: 25% Armor.
 ---
 #### SOJOURN
-- Jump Jets: Afterburn from your jet pack burns nearby bots when you jump after sliding.
+- Jump Jets: Afterburn from your jet pack burns nearby bots for 3 seconds when you jump after sliding.
 - Rocket Boost Slide: Sweep and damage bots, doing 25 damage to anyone in your path and knocking them down for 1.5 seconds.
 - Ultimate: Super Railgun: [SECONDARY FIRE] rounds do massive damage and penetrate walls.
   ##### 💬 Tip:
@@ -269,7 +270,7 @@ Below is a list of all new abilities for all heroes available to play.
   - Sojourn excels at hit-and-run guerilla tactics. Slide in, take out the legs, jump out, apply burn, finish with disrupter. Bots won't ever know what hit 'em!
 ---
 #### SOLDIER 76
-- Ultimate C-130X Airstrike: Aim pulse cannons from the safety of an aircraft that explode in a 30m area and goes through walls.
+- Ultimate: C-130X Airstrike: Aim pulse cannons from the safety of an aircraft that explode in a 30m area and goes through walls.
   - 12 second duration.  
   - Recharges roughly every 2 minutes.
 ---
@@ -287,6 +288,7 @@ Below is a list of all new abilities for all heroes available to play.
 ---
 #### TORBJÖRN
 - Tank Role with 🛡️AEGIS Relic.
+- Molten Punch: [MELEE] sets bots on fire.
 - Dwarven Leap: [CROUCH]+[JUMP] to leap forward.
 - Dwarven Rage: Overload heals 25% HP over 10 seconds.
   - Dwarven Rage Leap: While under Dwarven Rage, your Dwarven Leap will knock down bots where you land.
@@ -295,19 +297,19 @@ Below is a list of all new abilities for all heroes available to play.
 #### TRACER
 - Blink Stasis: Blinking into an enemy will put them in stasis for 4 seconds.
 - Total Recall: Recall always heals to full health.
-- Ultimate Time Slow: Slow down time to a crawl for 5 seconds and deal lethal damage to any target shot while moving faster than everyone else.
+- Ultimate: Chronostasis: Freeze time for 5 seconds and insta-kill any target shot while moving faster than everyone else.
 - Medium Armor: 50% Armor.
 ---
 #### WIDOWMAKER
 - Anti-Materiel Rifle: Scoped charged shots will deal explosive damage based on the amount of charge accumulated, up to 12m.
 - Frozen Mine: Freezes enemies that trigger the mine.
-- Ultimate Railgun: Loads 4 insta-kill bullets that go through walls.
+- Ultimate: Railgun: Loads 4 insta-kill bullets that go through walls.
 ---
 #### WINSTON
 - Rage: Dealing damage increases your Rage resource by 5.
 - Venting Rage: (35 Rage) Your Jump Pack becomes a slam attack that knocks down enemies and deals 100 base damage when you hit the ground.
 - Healing Barrier: Activating the shield will heal you for 25% HP over 5 seconds.
-- Ultimate Harambe’s Revenge: Heal to full, knock down enemies upon activation, and regenerate 20 HP/sec for 10 seconds.
+- Ultimate: Harambe’s Revenge: Heal to full, knock down enemies upon activation, and regenerate 20 HP/sec for 10 seconds.
 - Heavy Armor: 75% Armor.
 ---
 #### WRECKING BALL
