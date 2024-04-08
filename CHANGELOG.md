@@ -1,3 +1,9 @@
+### April 8, 2024
+* Team 1
+	- JUNKER QUEEN: Buffed Ultimate damage
+	- MAUGA: New ability: Ego Boost: Cardiac Overdrive also buffs nearby allies.
+	- SOJOURN: Fixed Jump Jet damage over time duration.
+---
 ### March 17, 2024
 * Team 1
 	- DOOMFIST: Updated HUD to show Super Moves
