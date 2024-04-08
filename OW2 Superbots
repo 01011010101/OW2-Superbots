@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Mar 17, 2024: Balancing, testing Lifeweaver changes."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] April 7, 2024: Balancing, testing Lifeweaver changes."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -81,7 +81,8 @@ settings
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
 				Sleep Dart Cooldown Time: 75%
-				Ultimate Generation - Combat Nano Boost: 50%
+				Ultimate Generation - Combat Nano Boost: 25%
+				Ultimate Generation - Passive Nano Boost: 50%
 			}
 
 			Ashe
@@ -167,7 +168,7 @@ settings
 
 			Echo
 			{
-				Damage Dealt: 145%
+				Damage Dealt: 135%
 				Flight Cooldown Time: 30%
 				Focusing Beam Cooldown Time: 160%
 				Health: 135%
@@ -212,12 +213,12 @@ settings
 			{
 				Carnage Cooldown Time: 50%
 				Commanding Shout Cooldown Time: 75%
-				Damage Dealt: 120%
+				Damage Dealt: 110%
 				Health: 145%
 				Jagged Blade Cooldown Time: 25%
 				Jagged Blade Knockback Scalar: 125%
 				No Ammunition Requirement: On
-				Ultimate Generation - Combat Rampage: 50%
+				Ultimate Generation - Combat Rampage: 10%
 			}
 
 			Junkrat
@@ -376,13 +377,13 @@ settings
 			Roadhog
 			{
 				Chain Hook Cooldown Time: 50%
-				Damage Dealt: 150%
+				Damage Dealt: 155%
 				Healing Dealt: 200%
 				Health: 145%
 				No Ammunition Requirement: On
 				Take a Breather Cooldown Time: 200%
 				Take a Breather Maximum Time: 50%
-				Ultimate Generation - Combat Whole Hog: 300%
+				Ultimate Generation - Combat Whole Hog: 25%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -498,7 +499,7 @@ settings
 			Zarya
 			{
 				Damage Dealt: 150%
-				Health: 145%
+				Health: 140%
 				No Ammunition Requirement: On
 				Particle Barrier Cooldown Time: 50%
 				Projected Barrier Cooldown Time: 75%
@@ -3961,7 +3962,7 @@ rule("JUNKER QUEEN Shout Effects [Added by Arkhanglesk#11200]")
 				15, To Player, Cancel Contrary Motion);
 			Set Status(Players Within Radius(Event Player, 8, Team 2, Off), Event Player, Knocked Down, 2);
 		Else If(Players On Hero(Hero(Junker Queen), Team 1).R == True);
-			Set Status(Players Within Radius(Players On Hero(Hero(Junker Queen), Team 1), 8, Team 2, Off), Event Player, Stunned, 3);
+			Set Status(Players Within Radius(Players On Hero(Hero(Junker Queen), Team 1), 8, Team 2, Off), Event Player, Stunned, 2.500);
 		End;
 		Wait(10, Ignore Condition);
 		Allow Button(Players On Hero(Hero(Junker Queen), Team 1), Button(Ability 1));
@@ -3985,7 +3986,7 @@ rule("JUNKER QUEEN Ultimate Charge [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 300);
+		Damage(Players Within Radius(Event Player, 3, Team 2, Off), Players On Hero(Hero(Junker Queen), Team 1), 1000);
 	}
 }
 
@@ -6047,7 +6048,7 @@ rule("SOJOURN Jump Jets Burn [Added by Arkhanglesk#11200]")
 
 	conditions
 	{
-		Event Player.Q == 0;
+		disabled Event Player.Q == 0;
 		Is Alive(Event Player) == True;
 		Ability Cooldown(Event Player, Button(Ability 1)) > 0;
 		Is Button Held(Event Player, Button(Jump)) == True;
@@ -6060,10 +6061,10 @@ rule("SOJOURN Jump Jets Burn [Added by Arkhanglesk#11200]")
 		Play Effect(All Players(All Teams), Ring Explosion, Color(Orange), Position Of(Event Player), 3);
 		Play Effect(All Players(All Teams), Bad Explosion, Color(Orange), Position Of(Event Player), 3);
 		Set Status(Players Within Radius(Event Player, 5, Team 2, Surfaces), Null, Burning, 3);
-		Start Damage Over Time(Players Within Radius(Event Player, 5, Team 2, Off), Event Player, 30, 3);
-		Event Player.Q = 1;
-		Wait(3, Ignore Condition);
-		Event Player.Q = 0;
+		Start Damage Over Time(Players Within Radius(Event Player, 5, Team 2, Off), Event Player, 3, 25);
+		disabled Event Player.Q = 1;
+		Wait(1, Ignore Condition);
+		disabled Event Player.Q = 0;
 	}
 }
 
@@ -7667,7 +7668,8 @@ rule("Lifeweaver HUD [Added by Arkhanglesk#11200]")
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Lifeweaver), Button(Ultimate)), Custom String(
 			"[RELOAD] TO SWITCH [ULTIMATE] DAMAGE"), Custom String("ULTIMATE: HEMLOCK"), Ability Icon String(Hero(Lifeweaver), Button(
 			Ultimate)), Custom String("[RELOAD] TO SWITCH [ULTIMATE] DAMAGE"), Custom String("ULTIMATE: NIGHTSHADE"), Ability Icon String(
-			Hero(Lifeweaver), Button(Ability 2)), Custom String("TELEPORT TO ALLY & DAZE BOTS"), Custom String("[ABILITY 2] EUPHORBIA"));
+			Hero(Lifeweaver), Button(Ability 2)), Custom String("TELEPORT TO LOS ALLY & DAZE BOTS"), Custom String(
+			"[ABILITY 2] EUPHORBIA"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 		Set Ultimate Charge(Event Player, Ultimate Charge Percent(Event Player) + 1);
 	}
@@ -7715,12 +7717,16 @@ rule("Mauga HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		disabled Event Player.HUDTextHidden = Array(True, True, True, True);
-		Event Player.HUDTextHidden = Array(False, True, True, True);
-		Event Player.HeroOfPlayer = Hero Of(Event Player);
+		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String("[ABILITY 1] UNSTOPPABLE CHARGE",
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String(
+			"[ABILITY 1] UNSTOPPABLE CHARGE"), Custom String("BUMRUSH"), Ability Icon String(Hero(Mauga), Button(Ability 2)),
+			Custom String("[ABILITY 2] BUFF NEARBY ALLIES"), Custom String("EGO BOOST"));
+		disabled Event Player.HUDTextHidden = Array(False, True, True, True);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String("[ABILITY 1] UNSTOPPABLE CHARGE",
 			Ability Icon String(Hero(Mauga), Button(Ability 1))), Custom String("BUMRUSH"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
 
