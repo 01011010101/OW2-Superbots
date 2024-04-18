@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] April 7, 2024: Balancing, testing Lifeweaver changes."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Apr 18, 2024: Testing Venture."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -185,7 +185,7 @@ settings
 				No Ammunition Requirement: On
 				Swift Strike Cooldown Time: 25%
 				Ultimate Duration: 200%
-				Ultimate Generation - Combat Dragonblade: 10%
+				Ultimate Generation - Combat Dragonblade: 300%
 			}
 
 			Hanzo
@@ -211,9 +211,8 @@ settings
 
 			Junker Queen
 			{
-				Carnage Cooldown Time: 50%
 				Commanding Shout Cooldown Time: 75%
-				Damage Dealt: 110%
+				Damage Dealt: 165%
 				Health: 145%
 				Jagged Blade Cooldown Time: 25%
 				Jagged Blade Knockback Scalar: 125%
@@ -224,7 +223,7 @@ settings
 			Junkrat
 			{
 				Concussion Mine Cooldown Time: 50%
-				Damage Dealt: 145%
+				Damage Dealt: 135%
 				Health: 350%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat RIP-Tire: 25%
@@ -276,6 +275,7 @@ settings
 				No Ammunition Requirement: On
 				Overrun Cooldown Time: 65%
 				Overrun Knockback: 110%
+				Spawn With Ultimate Ready: On
 				Ultimate Duration: 200%
 				Ultimate Generation - Combat Cage Fight: 10%
 			}
@@ -302,8 +302,6 @@ settings
 				No Ammunition Requirement: On
 				Resurrect Cooldown Time: 25%
 				Ultimate Generation - Combat Valkyrie: 0%
-				Ultimate Generation - Passive Valkyrie: 200%
-				Ultimate Generation Valkyrie: 50%
 				Weapons Enabled: Caduceus Blaster Only
 			}
 
@@ -464,6 +462,15 @@ settings
 				Ultimate Generation - Passive Pulse Bomb: 240%
 			}
 
+			Venture
+			{
+				Burrow Cooldown Time: 50%
+				Burrow Duration Scalar: 
+				Damage Dealt: 110%
+				Drill Dash Cooldown Time: 0%
+				Ultimate Generation - Combat Tectonic Shock: 50%
+			}
+
 			Widowmaker
 			{
 				Damage Dealt: 165%
@@ -522,7 +529,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 200%
 				Biotic Grenade Cooldown Time: 150%
-				Damage Dealt: 165%
+				Damage Dealt: 170%
 				Health: 500%
 				Sleep Dart Cooldown Time: 200%
 				Ultimate Generation - Combat Nano Boost: 500%
@@ -534,7 +541,7 @@ settings
 				Ammunition Clip Size Scalar: 250%
 				Coach Gun Knockback Scalar Enemy: 50%
 				Coach Gun Knockback Scalar Self: 125%
-				Damage Dealt: 160%
+				Damage Dealt: 165%
 				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
 				Health: 500%
@@ -548,7 +555,7 @@ settings
 			Baptiste
 			{
 				Ammunition Clip Size Scalar: 200%
-				Damage Dealt: 155%
+				Damage Dealt: 160%
 				Health: 500%
 				Immortality Field Cooldown Time: 300%
 				Projectile Gravity: 60%
@@ -561,7 +568,7 @@ settings
 			Bastion
 			{
 				A-36 Tactical Grenade: Off
-				Damage Dealt: 160%
+				Damage Dealt: 165%
 				Health: 500%
 				Movement Gravity: 110%
 				Movement Speed: 95%
@@ -576,7 +583,7 @@ settings
 			{
 				Barrier Shield Cooldown Time: 150%
 				Barrier Shield Recharge Rate: 50%
-				Damage Dealt: 160%
+				Damage Dealt: 165%
 				Health: 500%
 				Shield Bash Cooldown Time: 150%
 				Shield Bash Knockback Scalar: 50%
@@ -613,7 +620,7 @@ settings
 
 			Genji
 			{
-				Damage Dealt: 160%
+				Damage Dealt: 165%
 				Health: 500%
 				Movement Gravity: 90%
 				Ultimate Generation - Combat Dragonblade: 300%
@@ -632,16 +639,11 @@ settings
 				Ultimate Generation - Passive Dragonstrike: 500%
 			}
 
-			Illari
-			{
-				Damage Dealt: 160%
-			}
-
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
 				Commanding Shout Cooldown Time: 35%
-				Damage Dealt: 160%
+				Damage Dealt: 165%
 				Health: 500%
 				Jagged Blade Cooldown Time: 75%
 				Jagged Blade Knockback Scalar: 50%
@@ -778,7 +780,7 @@ settings
 
 			Roadhog
 			{
-				Damage Dealt: 155%
+				Damage Dealt: 160%
 				Health: 500%
 				No Ammunition Requirement: On
 				Quick Melee: Off
@@ -872,7 +874,7 @@ settings
 
 			Widowmaker
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 155%
 				Grappling Hook Cooldown Time: 25%
 				Health: 500%
 				Movement Speed: 110%
@@ -1352,7 +1354,7 @@ rule("PLAYER HUD and [Join Late Script by SCOURGE#11437]")
 	}
 }
 
-rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%)")
+rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%) [Updated by Arkhanglesk#11200]")
 {
 	event
 	{
@@ -1362,7 +1364,7 @@ rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%)")
 	actions
 	{
 		Global.Armor0 = Array(Hero(Ashe), Hero(Hanzo), Hero(Junkrat), Hero(Cassidy), Hero(Moira), Hero(Pharah), Hero(Sigma), Hero(
-			Soldier: 76), Hero(Widowmaker), Hero(Sojourn));
+			Soldier: 76), Hero(Widowmaker), Hero(Sojourn), Hero(Venture));
 		Global.Armor25 = Array(Hero(Ana), Hero(Baptiste), Hero(Brigitte), Hero(Echo), Hero(Lúcio), Hero(Mercy), Hero(Zenyatta), Hero(
 			Kiriko), Hero(Illari));
 		Global.Armor50 = Array(Hero(Doomfist), Hero(Genji), Hero(Mei), Hero(Reaper), Hero(Sombra), Hero(Symmetra), Hero(Torbjörn), Hero(
@@ -7907,9 +7909,14 @@ rule("Ramattra HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(False, True, True, True);
+		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Ramattra), Button(Ability 1)), Custom String(
+			"[MELEE] PUMMEL BOTS WHILE IN NEMESIS FORM"), Custom String("VOID PUNCH"), Ability Icon String(Hero(Orisa), Button(Ability 2)),
+			Custom String("LEECH HP FROM BOTS WHILE IN NEMESIS FORM"), Custom String("RAVENOUS AURA"));
+		disabled Event Player.HUDTextHidden = Array(False, True, True, True);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Ramattra), Button(Ability 1)), Custom String(
 			"[ABILITY 1] PUMMEL BOTS WITH [MELEE]"), Custom String("VOID PUNCH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -8165,6 +8172,29 @@ rule("Tracer HUD")
 			"BLINK INTO A BOT TO FREEZE THEM"), Custom String("BLINK STASIS"), Ability Icon String(Hero(Tracer), Button(Ability 2)),
 			Custom String("RECALL ALWAYS HEALS MAX HP"), Custom String("TOTAL RECALL"), Ability Icon String(Hero(Tracer), Button(
 			Ultimate)), Custom String("SLOW TIME AND INSTANTLY KILL"), Custom String("ULTIMATE: CHRONOKINESIS"));
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Venture HUD [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Venture;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		disabled Event Player.HUDTextHidden = Array(False, False, False, True);
+		"Set Hero HUD text."
+		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Venture), Button(Primary Fire)), Custom String("[ABILITY 1]"),
+			Custom String("ABILITY 1 TEXT"), Ability Icon String(Hero(Venture), Button(Secondary Fire)), Custom String("[ABILITY 2]"),
+			Custom String("ABILITY 2 TEXT"), Ability Icon String(Hero(Venture), Button(Ultimate)), Custom String("SOMETHING IDK YET"),
+			Custom String("ULTIMATE: SOMETHING"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
