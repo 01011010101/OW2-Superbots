@@ -1,7 +1,14 @@
+### April 18, 2024
+* Team 1
+	- Added VENTURE as playable hero.
+ 	- RAMATTRA: New ability: Ravenous Aura: Leech HP from Super Bots while in Nemesis Form (testing).
+* Super Bots
+	- Buffed damage slightly.
+---
 ### April 8, 2024
 * Team 1
 	- JUNKER QUEEN: Buffed Ultimate damage
-	- MAUGA: New ability: Ego Boost: Cardiac Overdrive also buffs nearby allies.
+	- MAUGA: New ability: Ego Boost: Cardiac Overdrive also buffs nearby allies (testing).
 	- SOJOURN: Fixed Jump Jet damage over time duration.
 ---
 ### March 17, 2024
