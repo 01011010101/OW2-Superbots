@@ -231,6 +231,8 @@ Below is a list of all new abilities for all heroes available to play.
 ---
 #### RAMATTRA
 - Nemesis Void Punch: Pummel bots and send them flying with [MELEE] while in Nemesis form.
+- Ravenous Aura: Leech 10 HP/sec from each bot within 3m while in Nemesis form.
+- Heavy Armor: 75% Armor.
 ---
 #### REAPER
 - Wraith Succor: Heal 15% HP/sec while in Wraith Form.
@@ -299,6 +301,11 @@ Below is a list of all new abilities for all heroes available to play.
 - Total Recall: Recall always heals to full health.
 - Ultimate: Chronostasis: Freeze time for 5 seconds and insta-kill any target shot while moving faster than everyone else.
 - Medium Armor: 50% Armor.
+---
+#### VENTURE
+- Burrow Duration: 500%
+- Drill Dash CD: 0%
+- _WORK IN PROGRESS_
 ---
 #### WIDOWMAKER
 - Anti-Materiel Rifle: Scoped charged shots will deal explosive damage based on the amount of charge accumulated, up to 12m.
