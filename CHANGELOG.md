@@ -1,3 +1,12 @@
+### April 29, 2024
+* Team 1
+	- Fixed Player HUD formatting for abilties. Reason: The formatting looked fine in OW1 but broke in OW2. While left/right justifying HUD text will appear on the correct side of the screen, the text itself is centered, making it ugly. Fixing the Relic, Player Level, and Superbots HUD will be trickier because they all change in size during the game, but it is in progress.
+  	- ANA: Updated Biotic Poison Gas ability description.
+   	- TORBJORN: Updated HUD to clarify Dwarven Rage abilities.
+  	 	
+* Super Bots
+	- Buffed damage and ultgen slightly for some bots.
+---
 ### April 18, 2024
 * Team 1
 	- Added VENTURE as playable hero.
