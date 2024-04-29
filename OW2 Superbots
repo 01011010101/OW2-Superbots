@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Apr 18, 2024: Testing Venture."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Apr 28, 2024: Testing Venture."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -76,11 +76,11 @@ settings
 			Ana
 			{
 				Biotic Grenade Cooldown Time: 35%
-				Damage Dealt: 132%
+				Damage Dealt: 170%
 				Health: 200%
 				Jump Vertical Speed: 250%
 				No Ammunition Requirement: On
-				Sleep Dart Cooldown Time: 75%
+				Sleep Dart Cooldown Time: 50%
 				Ultimate Generation - Combat Nano Boost: 25%
 				Ultimate Generation - Passive Nano Boost: 50%
 			}
@@ -111,9 +111,9 @@ settings
 
 			Bastion
 			{
-				A-36 Tactical Grenade Cooldown Time: 40%
+				A-36 Tactical Grenade Cooldown Time: 65%
 				A-36 Tactical Grenade Knockback Scalar: 115%
-				Damage Dealt: 78%
+				Damage Dealt: 165%
 				Health: 140%
 				No Ammunition Requirement: On
 				Reconfigure Cooldown Time: 0%
@@ -211,9 +211,9 @@ settings
 
 			Junker Queen
 			{
-				Commanding Shout Cooldown Time: 75%
-				Damage Dealt: 165%
-				Health: 145%
+				Commanding Shout Cooldown Time: 30%
+				Damage Dealt: 160%
+				Health: 140%
 				Jagged Blade Cooldown Time: 25%
 				Jagged Blade Knockback Scalar: 125%
 				No Ammunition Requirement: On
@@ -268,7 +268,7 @@ settings
 
 			Mauga
 			{
-				Cardiac Overdrive Cooldown Time: 75%
+				Cardiac Overdrive Cooldown Time: 80%
 				Damage Dealt: 138%
 				Health: 180%
 				Incendiary Chaingun Ignite Rate: 150%
@@ -294,7 +294,7 @@ settings
 
 			Mercy
 			{
-				Damage Dealt: 175%
+				Damage Dealt: 165%
 				Guardian Angel Cooldown Time: 25%
 				Health: 200%
 				Jump Vertical Speed: 250%
@@ -343,7 +343,7 @@ settings
 			Ramattra
 			{
 				Damage Dealt: 110%
-				Health: 150%
+				Health: 135%
 				Nemesis Form Cooldown Time: 50%
 				No Ammunition Requirement: On
 				Ravenous Vortex Cooldown Time: 25%
@@ -389,7 +389,7 @@ settings
 			{
 				Accretion Cooldown Time: 25%
 				Accretion Knockback Scalar: 300%
-				Damage Dealt: 130%
+				Damage Dealt: 125%
 				Experimental Barrier Cooldown Time: 25%
 				Health: 150%
 				Jump Vertical Speed: 250%
@@ -642,13 +642,13 @@ settings
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
-				Commanding Shout Cooldown Time: 35%
+				Commanding Shout Cooldown Time: 30%
 				Damage Dealt: 165%
 				Health: 500%
 				Jagged Blade Cooldown Time: 75%
 				Jagged Blade Knockback Scalar: 50%
-				Ultimate Generation - Combat Rampage: 400%
-				Ultimate Generation - Passive Rampage: 200%
+				Ultimate Generation - Combat Rampage: 200%
+				Ultimate Generation - Passive Rampage: 400%
 			}
 
 			Junkrat
@@ -709,8 +709,8 @@ settings
 				Damage Dealt: 165%
 				Health: 500%
 				Ice Wall Cooldown Time: 200%
-				Ultimate Generation - Combat Blizzard: 400%
-				Ultimate Generation - Passive Blizzard: 200%
+				Ultimate Generation - Combat Blizzard: 200%
+				Ultimate Generation - Passive Blizzard: 500%
 				Weapon Freeze Rate Scalar: 75%
 			}
 
@@ -748,8 +748,8 @@ settings
 				Health: 500%
 				Projectile Gravity: 110%
 				Ravenous Vortex Cooldown Time: 50%
-				Ultimate Generation - Combat Annihilation: 450%
-				Ultimate Generation - Passive Annihilation: 200%
+				Ultimate Generation - Combat Annihilation: 250%
+				Ultimate Generation - Passive Annihilation: 500%
 				Void Barrier Omnic Form Cooldown Time: 25%
 			}
 
@@ -903,7 +903,7 @@ settings
 
 			Zarya
 			{
-				Damage Dealt: 165%
+				Damage Dealt: 170%
 				Health: 475%
 				No Ammunition Requirement: On
 				Particle Barrier: Off
@@ -1226,8 +1226,8 @@ rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
 			Null, Right, Null, Color(Red), Color(White), Color(White), Visible To and String, Default Visibility);
 		"Flying HUD."
 		Create HUD Text(Filtered Array(All Players(Team 1), Hero Of(Current Array Element) == Hero(Sigma) || Hero Of(Current Array Element)
-			== Hero(Zenyatta)), Custom String("{0}", Icon String(Arrow: Up)), Custom String("[RELOAD] TO TOGGLE FLYING"), Custom String(
-			"FREE FLIGHT"), Left, 9, Color(White), Color(Yellow), Color(White), Visible To and String, Default Visibility);
+			== Hero(Zenyatta)), Custom String("{0}", Icon String(Arrow: Up)), Custom String("[RELOAD] TO TOGGLE FLYING        "),
+			Custom String("FREE FLIGHT"), Left, 9, Color(White), Color(Yellow), Color(White), Visible To and String, Default Visibility);
 		"Player Relic HUD info."
 		Create HUD Text(All Players(Team 1), Null, Custom String("(HOLD [CROUCH] FOR MORE INFO)"), Null, Left, 11, Color(White), Color(
 			Yellow), Color(White), Visible To and String, Default Visibility);
@@ -1710,7 +1710,7 @@ rule("SUPERBOT Enraged Kill Message")
 
 	actions
 	{
-		Small Message(Victim, Custom String("{0} KILLED YOU WHILE ENRAGED", Hero Icon String(Hero Of(Event Player))));
+		Small Message(Victim, Custom String(" {0} KILLED YOU WHILE ENRAGED!", Hero Icon String(Hero Of(Event Player))));
 	}
 }
 
@@ -4355,7 +4355,7 @@ rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
 		If(Event Player.R == False);
 			Abort If Condition Is False;
 			Wait(Random Real(0.100, 0.250), Ignore Condition);
-			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 15);
+			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 20);
 			Loop;
 		Else If(Event Player.R == True);
 			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 1);
@@ -4396,7 +4396,7 @@ rule("KIRIKO Ultimate Yokai Blast [Added by Arkhanglesk#11200]")
 			Current Array Element, Barriers Do Not Block LOS) == True && Distance Between(Event Player, Current Array Element) < 30);
 		If(Distance Between(Event Player, Event Player.DamageMOD) < 30);
 			"Like Sigma's melee"
-			Apply Impulse(Event Player.DamageMOD, Direction From Angles(Horizontal Facing Angle Of(Event Player), -20), 0.400 * Event Player.T,
+			disabled Apply Impulse(Event Player.DamageMOD, Direction From Angles(Horizontal Facing Angle Of(Event Player), -20), 0.400 * Event Player.T,
 				To Player, Cancel Contrary Motion);
 			"Like Sym's mine"
 			disabled Apply Impulse(Players Within Radius(Event Player.U, 7, Team 2, Off), Direction From Angles(Horizontal Angle From Direction(
@@ -4406,8 +4406,8 @@ rule("KIRIKO Ultimate Yokai Blast [Added by Arkhanglesk#11200]")
 			disabled Apply Impulse(Players Within Radius(Event Player, 2, Team 2, Off), Direction From Angles(Horizontal Angle From Direction(
 				Direction Towards(Event Player, Players Within Radius(Event Player, 2, Team 2, Off))), -15), 15, To World,
 				Cancel Contrary Motion);
+			Set Status(Event Player.DamageMOD, Event Player, Knocked Down, 4);
 			Damage(Event Player.DamageMOD, Event Player, Max Health(Event Player) / 6);
-			Set Status(Event Player.DamageMOD, Event Player, Knocked Down, 5);
 		End;
 	}
 }
@@ -4519,7 +4519,7 @@ rule("LIFEWEAVER Teleport [Added by Arkhanglesk#11200]")
 
 	conditions
 	{
-		Players Within Radius(Event Player, 30, Team 1, Surfaces) == True;
+		disabled Players Within Radius(Event Player, 30, Team 1, Surfaces) == True;
 		Is Button Held(Event Player, Button(Ability 2)) == True;
 		Ability Cooldown(Event Player, Button(Ability 2)) == 0;
 	}
@@ -4537,8 +4537,11 @@ rule("LIFEWEAVER Teleport [Added by Arkhanglesk#11200]")
 				Cancel Contrary Motion);
 			Damage(Players Within Radius(Event Player, 5, Team 2, Off), Event Player, 50);
 			Set Status(Players Within Radius(Event Player, 5, Team 2, Off), Event Player, Stunned, 2);
-			disabled Destroy All Effects;
 			Set Ability Cooldown(Event Player, Button(Ability 2), 10);
+			Wait(1, Ignore Condition);
+		Else;
+			Small Message(Event Player, Custom String(" {0} I MUST HAVE LINE OF SIGHT TO TELEPORT", Hero Icon String(Hero(Lifeweaver))));
+			Wait(1, Ignore Condition);
 	}
 }
 
@@ -4728,7 +4731,7 @@ rule("MCCREE Ultimate Hat Trick Launch")
 	actions
 	{
 		Wait(Random Real(2, 5), Ignore Condition);
-		Small Message(Event Player, Custom String(" DRAW!"));
+		Small Message(Event Player, Custom String(" {0} DRAW!", Hero Icon String(Hero(Cassidy))));
 		Apply Impulse(Filtered Array(All Players(Team 2), Is In Line of Sight(Eye Position(Event Player), Current Array Element,
 			Barriers Do Not Block LOS) == True), Up, 15, To World, Cancel Contrary Motion);
 		Wait(3, Ignore Condition);
@@ -6050,9 +6053,8 @@ rule("SOJOURN Jump Jets Burn [Added by Arkhanglesk#11200]")
 
 	conditions
 	{
-		disabled Event Player.Q == 0;
 		Is Alive(Event Player) == True;
-		Ability Cooldown(Event Player, Button(Ability 1)) > 0;
+		Ability Cooldown(Event Player, Button(Ability 1)) > 2;
 		Is Button Held(Event Player, Button(Jump)) == True;
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Rooted) || Has Status(
 			Event Player, Knocked Down) || Has Status(Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
@@ -6064,9 +6066,7 @@ rule("SOJOURN Jump Jets Burn [Added by Arkhanglesk#11200]")
 		Play Effect(All Players(All Teams), Bad Explosion, Color(Orange), Position Of(Event Player), 3);
 		Set Status(Players Within Radius(Event Player, 5, Team 2, Surfaces), Null, Burning, 3);
 		Start Damage Over Time(Players Within Radius(Event Player, 5, Team 2, Off), Event Player, 3, 25);
-		disabled Event Player.Q = 1;
 		Wait(1, Ignore Condition);
-		disabled Event Player.Q = 0;
 	}
 }
 
@@ -7302,8 +7302,8 @@ rule("Ana HUD [Updated Arkhanglesk#11200]")
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Soldier: 76), Button(Ability 2)), Custom String(
-			"PRIMARY SHOTS HEAL IN AN AREA"), Custom String("BIOTIC DARTS"), Icon String(Poison), Custom String(
-			"PRESS [ABILITY 1] TO USE"), Custom String("BIOTIC POISON GAS"));
+			"PRIMARY SHOTS HEAL IN AN AREA             "), Custom String("BIOTIC DARTS"), Icon String(Poison), Custom String(
+			"[ABILITY 1] AOE POISON AROUND TARGET"), Custom String("BIOTIC POISON GAS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7322,9 +7322,9 @@ rule("Ashe HUD")
 		Wait(0.500, Ignore Condition);
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Tracer), Button(Ability 2)), Custom String("SCOPE IN THE AIR TO FLOAT"),
-			Custom String("REFLEX SENSE"), Ability Icon String(Hero(Cassidy), Button(Ability 2)), Custom String("X2 DAMAGE WHILE SCOPED"),
-			Custom String("EXPLOSIVE ROUNDS"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Tracer), Button(Ability 2)), Custom String(
+			"SCOPE IN THE AIR TO FLOAT          "), Custom String("REFLEX SENSE"), Ability Icon String(Hero(Cassidy), Button(Ability 2)),
+			Custom String("X2 DAMAGE WHILE SCOPED          "), Custom String("EXPLOSIVE ROUNDS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7348,9 +7348,9 @@ rule("Baptiste HUD")
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Baptiste), Button(Secondary Fire)), Custom String(
-			"GRENADES ALSO DEAL DAMAGE"), Custom String("NANO GRENADES"), Ability Icon String(Hero(Baptiste), Button(Crouch)),
-			Custom String("HOLD [JUMP] TO FLOAT"), Custom String("HOVER BOOTS"), Ability Icon String(Hero(Baptiste), Button(Ultimate)),
-			Custom String("RIFLE BECOMES FULL AUTO"), Custom String("ULTIMATE: FULL-AUTO"));
+			"GRENADES ALSO DEAL DAMAGE "), Custom String("NANO GRENADES"), Ability Icon String(Hero(Baptiste), Button(Crouch)),
+			Custom String("HOLD [JUMP] TO FLOAT                  "), Custom String("HOVER BOOTS"), Ability Icon String(Hero(Baptiste),
+			Button(Ultimate)), Custom String("RIFLE BECOMES FULL AUTO"), Custom String("ULTIMATE: FULL-AUTO"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7368,14 +7368,14 @@ rule("Bastion HUD [Updated Arkhanglesk#11200]")
 	{
 		Wait(0.500, Ignore Condition);
 		Disallow Button(Event Player, Button(Ultimate));
+		"For Minigun Ammo - Work in progress"
 		disabled Event Player.R = False;
-		disabled Event Player.HUDTextHidden = Array(True, True, True, True);
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] KNOCKBACK & STUNS"), Custom String("FLASHBANG"), Ability Icon String(Hero(Baptiste), Button(Ability 1)),
+			"[SECONDARY] KNOCKBACK & STUNS    "), Custom String("FLASHBANG"), Ability Icon String(Hero(Baptiste), Button(Ability 1)),
 			Custom String("[ABILITY 1] TANK MODE HEALS 35% HP"), Custom String("AUTO-REPAIRS"), Ability Icon String(Hero(Baptiste), Button(
-			Ultimate)), Custom String("ROUNDS PENETRATE WALLS/SHIELDS"), Custom String("ULTIMATE: AP ROUNDS"));
+			Ultimate)), Custom String("ROUNDS PENETRATE WALLS/SHIELDS "), Custom String("ULTIMATE: AP ROUNDS"));
 		"Work in progress - needs rework/optimizing. Very high server cost."
 		disabled Event Player.HUDTextHidden = Array(False, True, False, True);
 		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Bastion), Button(Primary Fire)), Custom String(
@@ -7404,9 +7404,9 @@ rule("Brigitte HUD")
 		Event Player.UltimateThirdPerson = True;
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Brigitte), Button(Ability 1)), Custom String("FLAIL SHOT EXPLODES BOTS"),
-			Custom String("VAMPIRE KILLER"), Ability Icon String(Hero(Brigitte), Button(Ultimate)), Custom String(
-			"STUN BOTS AND GAIN X4 DMG"), Custom String("ULTIMATE: HEROIC PRESENCE"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Brigitte), Button(Ability 1)), Custom String(
+			"FLAIL SHOT EXPLODES BOTS                        "), Custom String("VAMPIRE KILLER"), Ability Icon String(Hero(Brigitte),
+			Button(Ultimate)), Custom String("STUN BOTS AND GAIN X4 DMG"), Custom String("ULTIMATE: HEROIC PRESENCE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7453,10 +7453,10 @@ rule("Doomfist HUD [Updated Arkhanglesk#11200]")
 		Disallow Button(Event Player, Button(Ultimate));
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Ultimate)), Custom String("EMPOWERS YOUR NEXT ABILITY"),
-			Custom String("ULTIMATE: SUPER MOVES"), Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String(
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String(
 			"[SECONDARY] MASSIVE DIRECT DAMAGE"), Custom String("SUPER PUNCH"), Ability Icon String(Hero(Doomfist), Button(Ability 1)),
-			Custom String("[ABILITY 1] PUMMEL AND BURN BOTS"), Custom String("SUPER SLAM"));
+			Custom String("[ABILITY 1] PUMMEL AND BURN BOTS       "), Custom String("SUPER SLAM"), Ability Icon String(Hero(Doomfist),
+			Button(Ultimate)), Custom String("EMPOWERS YOUR NEXT ABILITY                 "), Custom String("ULTIMATE: SUPER MOVES"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7476,9 +7476,9 @@ rule("Echo HUD [Updated by Arkhanglesk#11200]")
 		Disallow Button(Event Player, Button(Ultimate));
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Echo), Button(Secondary Fire)), Custom String(
-			"ALL ABILITIES (+DMG)(+SPD)"), Custom String("ULTIMATE: OVERDRIVE"), Ability Icon String(Hero(Echo), Button(Ability 2)),
-			Custom String("[ABILITY 2] POWERFUL LASER MELTS BOTS"), Custom String("QUANTUM BEAM"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Echo), Button(Ability 2)), Custom String(
+			"[ABILITY 2] POWERFUL LASER MELTS BOTS"), Custom String("QUANTUM BEAM"), Ability Icon String(Hero(Echo), Button(Ultimate)),
+			Custom String("ALL ABILITIES (+DMG)(+SPD)                             "), Custom String("ULTIMATE: OVERDRIVE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7497,10 +7497,10 @@ rule("Genji HUD [Updated Arkhanglesk#11200]")
 		Wait(0.500, Ignore Condition);
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Custom String("死"), Custom String("DEAL DAMAGE TO MARK BOTS"), Custom String("MARK OF DEATH"),
-			Ability Icon String(Hero(Genji), Button(Ability 1)), Custom String("[ABILITY 1] DETONATES MARKS"), Custom String(
-			"BAKUGŌ SA SERU"), Ability Icon String(Hero(Genji), Button(Ultimate)), Custom String("DOUBLE MARKS ARE APPLIED"),
-			Custom String("ULTIMATE: DRAGON'S CURSE"));
+		Event Player.PlayerHUD = Array(Custom String("死"), Custom String("DEAL DAMAGE TO MARK BOTS                 "), Custom String(
+			"MARK OF DEATH"), Ability Icon String(Hero(Genji), Button(Ability 1)), Custom String(
+			"[ABILITY 1] DETONATES MARKS                "), Custom String("BAKUGŌ SA SERU"), Ability Icon String(Hero(Genji), Button(
+			Ultimate)), Custom String("DOUBLE MARKS ARE APPLIED"), Custom String("ULTIMATE: DRAGON'S CURSE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7521,9 +7521,9 @@ rule("Hanzo HUD")
 		Event Player.HUDTextHidden = Array(False, True, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Icon String(Fire), Custom String("[SECONDARY] SWAP TO FROST ARROWS"), Custom String("FIRE ARROWS"),
-			Ability Icon String(Hero(Mei), Button(Ultimate)), Custom String("[SECONDARY] SWAP TO FIRE ARROWS"), Custom String(
-			"FROST ARROWS"), Ability Icon String(Hero(Hanzo), Button(Ability 1)), Custom String("[ABILITY 1] EXPLODES TARGET"),
-			Custom String("DRAGON'S BREATH"));
+			Ability Icon String(Hero(Mei), Button(Ultimate)), Custom String("[SECONDARY] SWAP TO FIRE ARROWS    "), Custom String(
+			"FROST ARROWS"), Ability Icon String(Hero(Hanzo), Button(Ability 1)), Custom String(
+			"[ABILITY 1] EXPLODES TARGET                     "), Custom String("DRAGON'S BREATH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7550,10 +7550,10 @@ rule("Illari HUD [Added by Arkhanglesk#11200]")
 		disabled Event Player.P = Last Created Entity;
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ultimate)), Custom String("HEADSHOTS SET BOTS ABLAZE"),
-			Custom String("HEAT BLAST"), Ability Icon String(Hero(Lifeweaver), Button(Jump)), Custom String(
-			"[ABILITY 1] BURNING KNOCKBACK & HEAL"), Custom String("SOLAR FLARE"), Ability Icon String(Hero(Illari), Button(Ultimate)),
-			Custom String("MASSIVE INCENDIARY DAMAGE"), Custom String("ULTIMATE: BFG 9000"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ultimate)), Custom String(
+			"HEADSHOTS SET BOTS ABLAZE                      "), Custom String("HEAT BLAST"), Ability Icon String(Hero(Lifeweaver), Button(
+			Jump)), Custom String("[ABILITY 1] BURNING KNOCKBACK & HEAL"), Custom String("SOLAR FLARE"), Ability Icon String(Hero(Illari),
+			Button(Ultimate)), Custom String("MASSIVE INCENDIARY DAMAGE                    "), Custom String("ULTIMATE: BFG 9000"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7575,8 +7575,8 @@ rule("Junker Queen HUD [Added by Arkhanglesk#11200]")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Lúcio), Button(Secondary Fire)), Custom String("[RELOAD] TO SWAP SHOUT"),
 			Custom String("SONIC TREMORS: KNOCKDOWN"), Ability Icon String(Hero(Junker Queen), Button(Ability 1)), Custom String(
-			"[RELOAD] TO SWAP SHOUT"), Custom String("BANSHEE SCREAM: STUN"), Ability Icon String(Hero(Hanzo), Button(Ability 1)),
-			Custom String("EVISCERATE ALL BOTS IN YOUR PATH"), Custom String("ULTIMATE: BUSHWHACK"));
+			"[RELOAD] TO SWAP SHOUT                               "), Custom String("BANSHEE SCREAM: STUN"), Ability Icon String(Hero(
+			Hanzo), Button(Ability 1)), Custom String("EVISCERATE ALL BOTS IN YOUR PATH          "), Custom String("ULTIMATE: BUSHWHACK"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7619,10 +7619,10 @@ rule("Junkrat HUD")
 		End;
 		Event Player.HUDTextHidden = Array(False, False, False, False);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Icon String(Happy), Custom String("PRESS [INTERACT] TO TROLL FOR $1000"), Custom String(
+		Event Player.PlayerHUD = Array(Icon String(Happy), Custom String("PRESS [INTERACT] TO TROLL FOR $1000   "), Custom String(
 			"CHAOS ROULETTE"), Icon String(Skull), Custom String("YOUR DEATHS EMPOWER TOTAL MAYHEM"), Custom String("MAXIMUM MAYHEM"),
-			Ability Icon String(Hero(Junkrat), Button(Ultimate)), Custom String("PHASED-OUT AND 150% SPEED"), Custom String(
-			"SUPER RIP-TIRE"));
+			Ability Icon String(Hero(Junkrat), Button(Ultimate)), Custom String("PHASED-OUT AND 150% SPEED                     "),
+			Custom String("SUPER RIP-TIRE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7645,7 +7645,8 @@ rule("Kiriko HUD [Added by Arkhanglesk#11200]")
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Kiriko), Button(Primary Fire)), Custom String(
 			"[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("OFUDA: DIRECT DAMAGE"), Ability Icon String(Hero(Junker Queen), Button(
 			Ability 2)), Custom String("[RELOAD] TO SWITCH [PRIMARY] DAMAGE"), Custom String("KAMI NO KATTO: BLEED"), Ability Icon String(
-			Hero(Hanzo), Button(Ability 1)), Custom String("DAMAGE AND KNOCKDOWN BOTS"), Custom String("ULTIMATE: YŌKAI BLAST"));
+			Hero(Hanzo), Button(Ability 1)), Custom String("DAMAGE AND KNOCKDOWN BOTS                 "), Custom String(
+			"ULTIMATE: YŌKAI BLAST"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7664,14 +7665,13 @@ rule("Lifeweaver HUD [Added by Arkhanglesk#11200]")
 		Wait(0.500, Ignore Condition);
 		Event Player.R = False;
 		Disallow Button(Event Player, Button(Ability 2));
-		disabled Event Player.HUDTextHidden = Array(True, True, True, True);
 		Event Player.HUDTextHidden = Array(False, True, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Lifeweaver), Button(Ultimate)), Custom String(
-			"[RELOAD] TO SWITCH [ULTIMATE] DAMAGE"), Custom String("ULTIMATE: HEMLOCK"), Ability Icon String(Hero(Lifeweaver), Button(
-			Ultimate)), Custom String("[RELOAD] TO SWITCH [ULTIMATE] DAMAGE"), Custom String("ULTIMATE: NIGHTSHADE"), Ability Icon String(
-			Hero(Lifeweaver), Button(Ability 2)), Custom String("TELEPORT TO LOS ALLY & DAZE BOTS"), Custom String(
-			"[ABILITY 2] EUPHORBIA"));
+			"[RELOAD] TO SWITCH [ULTIMATE] DAMAGE   "), Custom String("ULTIMATE: HEMLOCK"), Ability Icon String(Hero(Lifeweaver), Button(
+			Ultimate)), Custom String("[RELOAD] TO SWITCH [ULTIMATE] DAMAGE   "), Custom String("ULTIMATE: NIGHTSHADE"),
+			Ability Icon String(Hero(Lifeweaver), Button(Ability 2)), Custom String("[ABILITY 2] TELEPORT TO ALLY & DAZE BOTS"),
+			Custom String("EUPHORBIA"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 		Set Ultimate Charge(Event Player, Ultimate Charge Percent(Event Player) + 1);
 	}
@@ -7699,10 +7699,10 @@ rule("Lucio HUD")
 		Event Player.DamageMOD[1] = Last Damage Modification ID;
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Lúcio), Button(Ability 2)), Custom String("X2 DMG DURING AMP IT UP"),
-			Custom String("GOTTA GO FAST"), Ability Icon String(Hero(Lúcio), Button(Secondary Fire)), Custom String(
-			"[PRIMARY/SECONDARY] HEAL/DAMAGE"), Custom String("TINNITUS"), Ability Icon String(Hero(Lúcio), Button(Ultimate)),
-			Custom String("RESURRECT ALL TEAMMATES"), Custom String("ULTIMATE: PARTY ALL NIGHT"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Lúcio), Button(Ability 2)), Custom String(
+			"[ABILITY 2] X2 DMG BUFF TO ALLIES        "), Custom String("GOTTA GO FAST"), Ability Icon String(Hero(Lúcio), Button(
+			Secondary Fire)), Custom String("[PRIMARY/SECONDARY] HEAL/DAMAGE"), Custom String("TINNITUS"), Ability Icon String(Hero(Mercy),
+			Button(Ability 2)), Custom String("RESURRECT ALL TEAMMATES                     "), Custom String("ULTIMATE: PARTY ALL NIGHT"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7723,7 +7723,7 @@ rule("Mauga HUD [Added by Arkhanglesk#11200]")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String(
 			"[ABILITY 1] UNSTOPPABLE CHARGE"), Custom String("BUMRUSH"), Ability Icon String(Hero(Mauga), Button(Ability 2)),
-			Custom String("[ABILITY 2] BUFF NEARBY ALLIES"), Custom String("EGO BOOST"));
+			Custom String("[ABILITY 2] BUFF NEARBY ALLIES   "), Custom String("EGO BOOST"));
 		disabled Event Player.HUDTextHidden = Array(False, True, True, True);
 		"Set Hero HUD text."
 		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String("[ABILITY 1] UNSTOPPABLE CHARGE",
@@ -7750,10 +7750,10 @@ rule("McCree HUD")
 		Event Player.UltimateThirdPerson = True;
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ability 1)), Custom String("HEALS AND AVOIDS DAMAGE"),
-			Custom String("PHASING ROLL"), Icon String(Arrow: Up), Custom String("MASSIVE DAMAGE VS AIRBORNE TARGETS"), Custom String(
-			"HAT TRICK"), Ability Icon String(Hero(Cassidy), Button(Ultimate)), Custom String("ACTIVATE THEN WAIT FOR THE MESSAGE"),
-			Custom String("ULTIMATE: SHOWDOWN"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ability 1)), Custom String(
+			"HEALS AND AVOIDS DAMAGE                            "), Custom String("PHASING ROLL"), Icon String(Arrow: Up), Custom String(
+			"MASSIVE DAMAGE VS AIRBORNE TARGETS"), Custom String("HAT TRICK"), Ability Icon String(Hero(Cassidy), Button(Ultimate)),
+			Custom String("ACTIVATE THEN WAIT FOR THE MESSAGE   "), Custom String("ULTIMATE: SHOWDOWN"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7772,10 +7772,10 @@ rule("Mei HUD")
 		Wait(0.500, Ignore Condition);
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ultimate)), Custom String("HEADSHOTS INSTANTLY FREEZE"),
-			Custom String("BRAINFREEZE"), Ability Icon String(Hero(Mei), Button(Ability 1)), Custom String(
-			"[ABILITY 1] FREEZES WHEN BREAKS"), Custom String("CRYONIC BLAST"), Ability Icon String(Hero(Mei), Button(Ultimate)),
-			Custom String("FROZEN BOTS TAKE DMG OVER TIME"), Custom String("FROSTBURN"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ultimate)), Custom String(
+			"HEADSHOTS INSTANTLY FREEZE        "), Custom String("BRAINFREEZE"), Ability Icon String(Hero(Mei), Button(Ability 1)),
+			Custom String("[ABILITY 1] FREEZES WHEN BREAKS"), Custom String("CRYONIC BLAST"), Ability Icon String(Hero(Mei), Button(
+			Ultimate)), Custom String("FROZEN BOTS TAKE DMG OVER TIME"), Custom String("FROSTBURN"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7802,10 +7802,10 @@ rule("Mercy HUD")
 		Set Projectile Speed(Event Player, 500);
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Icon String(Heart), Custom String("[MELEE] +10% DMG/KILL"), Custom String("CHARM PUNCH"),
-			Ability Icon String(Hero(Mercy), Button(Ability 2)), Custom String("RESURRECTIONS GRANT +10% DMG"), Custom String(
-			"REDEMPTION"), Ability Icon String(Hero(Baptiste), Button(Ability 1)), Custom String("15M PASSIVE HEALING AURA"),
-			Custom String("ANGELIC PRESENCE"));
+		Event Player.PlayerHUD = Array(Icon String(Heart), Custom String("[MELEE] +10% DMG/KILL                      "), Custom String(
+			"CHARM PUNCH"), Ability Icon String(Hero(Mercy), Button(Ability 2)), Custom String("RESURRECTIONS GRANT +10% DMG"),
+			Custom String("REDEMPTION"), Ability Icon String(Hero(Baptiste), Button(Ability 1)), Custom String(
+			"15M PASSIVE HEALING AURA              "), Custom String("ANGELIC PRESENCE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7837,9 +7837,9 @@ rule("Moira HUD [Updated by Arkhanglesk#11200]")
 		Set Projectile Speed(Event Player, 10);
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Moira), Button(Secondary Fire)), Custom String("ROOTS ENEMIES WITH DRAIN"),
-			Custom String("LETHARGIC DRAIN"), Ability Icon String(Hero(Zarya), Button(Ultimate)), Custom String(
-			"CHANNEL ENERGY TO CREATE A BOMB"), Custom String("ULTIMATE: COALESCENCE BOMB"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Moira), Button(Secondary Fire)), Custom String(
+			"ROOTS ENEMIES WITH DRAIN                            "), Custom String("LETHARGIC DRAIN"), Ability Icon String(Hero(Zarya),
+			Button(Ultimate)), Custom String("CHANNEL ENERGY TO CREATE A BOMB"), Custom String("ULTIMATE: COALESCENCE BOMB"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7860,9 +7860,9 @@ rule("Orisa HUD [Updated for OW2 rework by Arkhanglesk#11200]")
 		Chase Player Variable At Rate(Event Player, T, 100, 4, None);
 		Event Player.HUDTextHidden = Array(False, False, True, False);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String("[MELEE] TO KNOCKBACK"),
-			Custom String("ROCKET PUNCH"), Ability Icon String(Hero(Soldier: 76), Button(Ability 2)), Custom String(
-			"[ABILITY 1] HEAL 25% HP"), Custom String("FORTIFYING REPAIRS"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String(
+			"[MELEE] TO KNOCKBACK                    "), Custom String("ROCKET PUNCH"), Ability Icon String(Hero(Soldier: 76), Button(
+			Ability 2)), Custom String("[ABILITY 1] HEAL 25% HP                    "), Custom String("FORTIFYING REPAIRS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7889,10 +7889,10 @@ rule("Pharah HUD")
 		Event Player.DamageMOD[1] = Last Damage Modification ID;
 		Event Player.HUDTextHidden = Array(False, False, False, False);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Icon String(Radioactive), Custom String("INCREASES DAMAGE THE HIGHER IT IS"), Custom String(
-			"FUSION REACTOR [100-999]"), Ability Icon String(Hero(Moira), Button(Ultimate)), Custom String(
+		Event Player.PlayerHUD = Array(Icon String(Radioactive), Custom String("INCREASES DAMAGE THE HIGHER IT IS           "),
+			Custom String("FUSION REACTOR [100-999]"), Ability Icon String(Hero(Moira), Button(Ultimate)), Custom String(
 			"[SECONDARY] CREATES A DELAYED BLAST"), Custom String("BUNKER BUSTER: -100% POWER"), Ability Icon String(Hero(Pharah), Button(
-			Ability 1)), Custom String("[ABILITY 1] HOLD TO BOOST"), Custom String("BOOSTER DASH"));
+			Ability 1)), Custom String("[ABILITY 1] HOLD TO BOOST                                  "), Custom String("BOOSTER DASH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7913,7 +7913,7 @@ rule("Ramattra HUD [Added by Arkhanglesk#11200]")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Ramattra), Button(Ability 1)), Custom String(
 			"[MELEE] PUMMEL BOTS WHILE IN NEMESIS FORM"), Custom String("VOID PUNCH"), Ability Icon String(Hero(Orisa), Button(Ability 2)),
-			Custom String("LEECH HP FROM BOTS WHILE IN NEMESIS FORM"), Custom String("RAVENOUS AURA"));
+			Custom String("LEECH HP FROM BOTS WHILE IN NEMESIS FORM   "), Custom String("RAVENOUS AURA"));
 		disabled Event Player.HUDTextHidden = Array(False, True, True, True);
 		"Set Hero HUD text."
 		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Ramattra), Button(Ability 1)), Custom String(
@@ -7942,10 +7942,11 @@ rule("Reaper HUD")
 		Event Player.P = Last Created Entity;
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Reaper), Button(Ability 1)), Custom String("[ABILITY 1] HEALS 10% HP/SEC"),
-			Custom String("WRAITH SUCCOR"), Ability Icon String(Hero(Reaper), Button(Ability 2)), Custom String(
-			"[ABILITY 2] FREEZES ENEMIES"), Custom String("FROZEN SHADOWSTEP"), Ability Icon String(Hero(Reaper), Button(Ultimate)),
-			Custom String("[INTERACT] X3 DAMAGE -15% HP/SEC"), Custom String("CREEPING DEATH"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Reaper), Button(Ability 1)), Custom String(
+			"[ABILITY 1] HEALS 10% HP/SEC               "), Custom String("WRAITH SUCCOR"), Ability Icon String(Hero(Reaper), Button(
+			Ability 2)), Custom String("[ABILITY 2] FREEZES ENEMIES                "), Custom String("FROZEN SHADOWSTEP"),
+			Ability Icon String(Hero(Reaper), Button(Ultimate)), Custom String("[INTERACT] X3 DAMAGE -15% HP/SEC"), Custom String(
+			"CREEPING DEATH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7969,8 +7970,8 @@ rule("Reinhardt HUD")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Reinhardt), Button(Secondary Fire)), Custom String(
 			"HEAL 5% HP/SEC WHILE DEPLOYED"), Custom String("HEALING SHIELD"), Ability Icon String(Hero(Reinhardt), Button(Ability 1)),
-			Custom String("[ABILITY 1] (X6 DMG) & (X3 SPEED)"), Custom String("SONIC CHARGE"), Ability Icon String(Hero(Reinhardt), Button(
-			Ability 2)), Custom String("[ABILITY 2] LIGHTS BOTS ON FIRE"), Custom String("FLAMING STRIKE"));
+			Custom String("[ABILITY 1] (X6 DMG) & (X3 SPEED)  "), Custom String("SONIC CHARGE"), Ability Icon String(Hero(Reinhardt),
+			Button(Ability 2)), Custom String("[ABILITY 2] LIGHTS BOTS ON FIRE     "), Custom String("FLAMING STRIKE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7999,7 +8000,7 @@ rule("Roadhog HUD")
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Roadhog), Button(Ability 1)), Custom String(
 			"[ABILITY 1] SHOOT/MELEE AFTER HOOK"), Custom String("HOOK COMBO"), Ability Icon String(Hero(Roadhog), Button(Ability 2)),
 			Custom String("[SECONDARY] HOLD TO TRAMPLE BOTS"), Custom String("ASTHMATIC TRAMPLE"), Ability Icon String(Hero(Roadhog),
-			Button(Ultimate)), Custom String("STUNS DAMAGED BOTS"), Custom String("ULTIMATE: WARTHOG"));
+			Button(Ultimate)), Custom String("SHRED AND STUN BOTS                                "), Custom String("ULTIMATE: WARTHOG"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8020,9 +8021,9 @@ rule("Sigma HUD")
 		Chase Player Variable At Rate(Event Player, T, 100, 10, Destination and Rate);
 		Event Player.HUDTextHidden = Array(False, False, True, False);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String("[MELEE] TO PUSH"),
-			Custom String("KINETIC REPULSION"), Ability Icon String(Hero(Sigma), Button(Ability 1)), Custom String("[ABILITY 1] TO PULL"),
-			Custom String("KINETIC ATTRACTION"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String(
+			"[MELEE] TO PUSH                                "), Custom String("KINETIC REPULSION"), Ability Icon String(Hero(Sigma),
+			Button(Ability 1)), Custom String("[ABILITY 1] TO PULL                            "), Custom String("KINETIC ATTRACTION"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8041,10 +8042,11 @@ rule("Sojourn HUD [Added by Arkhanglesk#11200]")
 		Wait(0.500, Ignore Condition);
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Pharah), Button(Ability 1)), Custom String("JUMP AFTER SLIDE BURNS BOTS"),
-			Custom String("JUMP JETS"), Ability Icon String(Hero(Sojourn), Button(Ability 1)), Custom String(
-			"[ABILITY 1] SLIDE SWEEPS BOTS"), Custom String("ROCKET BOOST SLIDE"), Ability Icon String(Hero(Sojourn), Button(
-			Secondary Fire)), Custom String("[SECONDARY] ROUNDS PENETRATE WALLS"), Custom String("ULTIMATE: SUPER RAILGUN"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Pharah), Button(Ability 1)), Custom String(
+			"JUMP AFTER SLIDE BURNS BOTS                      "), Custom String("JUMP JETS"), Ability Icon String(Hero(Sojourn), Button(
+			Ability 1)), Custom String("[ABILITY 1] SLIDE SWEEPS BOTS                       "), Custom String("ROCKET BOOST SLIDE"),
+			Ability Icon String(Hero(Sojourn), Button(Secondary Fire)), Custom String("[SECONDARY] ROUNDS PENETRATE WALLS"), Custom String(
+			"ULTIMATE: SUPER RAILGUN"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8084,9 +8086,9 @@ rule("Sombra HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Sombra), Button(Secondary Fire)), Custom String(
-			"X2 DMG TO HACKED OR FLANKED BOTS"), Custom String("1337 HACKER"), Ability Icon String(Hero(Echo), Button(Ultimate)),
-			Custom String("AVOID DMG AND HEAL 10% HP/SEC"), Custom String("PHASED STEALTH"), Ability Icon String(Hero(Sombra), Button(
-			Ultimate)), Custom String("ROOT ALL BOTS AND GAIN INVISIBILITY"), Custom String("ULTIMATE: SUPER EMP"));
+			"X2 DMG TO HACKED OR FLANKED BOTS "), Custom String("1337 HACKER"), Ability Icon String(Hero(Echo), Button(Ultimate)),
+			Custom String("AVOID DMG AND HEAL 10% HP/SEC         "), Custom String("PHASED STEALTH"), Ability Icon String(Hero(Sombra),
+			Button(Ultimate)), Custom String("ROOT ALL BOTS AND GAIN INVISIBILITY"), Custom String("ULTIMATE: SUPER EMP"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8120,7 +8122,7 @@ rule("Symmetra HUD")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Wrecking Ball), Button(Ability 2)), Custom String(
 			"[ABILITY 2] TO PLACE MINE"), Custom String("PROXIMITY IMPULSE MINE"), Ability Icon String(Hero(Symmetra), Button(
-			Secondary Fire)), Custom String("[SECONDARY] FIRE AIR MINES"), Custom String("PHOTON BOMBS"));
+			Secondary Fire)), Custom String("[SECONDARY] FIRE AIR MINES     "), Custom String("PHOTON BOMBS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8143,10 +8145,11 @@ rule("Torbjorn HUD [Updated by Arkhanglesk#11200]")
 			Receivers Damagers and Damage Percent);
 		Event Player.DamageMOD[0] = Last Damage Modification ID;
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Torbjörn), Button(Melee)), Custom String("[MELEE] TO SET ON FIRE"),
-			Custom String("MOLTEN PUNCH"), Ability Icon String(Hero(Winston), Button(Ability 1)), Custom String("[CROUCH]+[JUMP] TO LEAP"),
-			Custom String("DWARVEN LEAP"), Ability Icon String(Hero(Torbjörn), Button(Ability 2)), Custom String(
-			"[ABILITY 2] ENHANCES ABILITIES"), Custom String("DWARVEN RAGE"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Torbjörn), Button(Melee)), Custom String(
+			"[MELEE] SETS BOTS ON FIRE                               "), Custom String("MOLTEN PUNCH"), Ability Icon String(Hero(Winston),
+			Button(Ability 1)), Custom String("[CROUCH]+[JUMP] TO LEAP                                "), Custom String("DWARVEN LEAP"),
+			Ability Icon String(Hero(Torbjörn), Button(Ability 2)), Custom String("[ABILITY 2] OVERLOADS [MELEE] AND LEAP"), Custom String(
+			"DWARVEN RAGE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8169,8 +8172,8 @@ rule("Tracer HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Tracer), Button(Ability 1)), Custom String(
-			"BLINK INTO A BOT TO FREEZE THEM"), Custom String("BLINK STASIS"), Ability Icon String(Hero(Tracer), Button(Ability 2)),
-			Custom String("RECALL ALWAYS HEALS MAX HP"), Custom String("TOTAL RECALL"), Ability Icon String(Hero(Tracer), Button(
+			"BLINK INTO A BOT TO FREEZE THEM    "), Custom String("BLINK STASIS"), Ability Icon String(Hero(Tracer), Button(Ability 2)),
+			Custom String("RECALL ALWAYS HEALS MAX HP          "), Custom String("TOTAL RECALL"), Ability Icon String(Hero(Tracer), Button(
 			Ultimate)), Custom String("SLOW TIME AND INSTANTLY KILL"), Custom String("ULTIMATE: CHRONOKINESIS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -8216,8 +8219,9 @@ rule("Widowmaker HUD")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ability 2)), Custom String(
 			"CHARGED SHOTS DEAL EXPLOSIVE DMG"), Custom String("ANTI-MATERIEL RIFLE"), Ability Icon String(Hero(Widowmaker), Button(
-			Ability 2)), Custom String("[ABILITY 2] FREEZES BOTS"), Custom String("FROST MINE"), Ability Icon String(Hero(Baptiste),
-			Button(Ultimate)), Custom String("LOADS 4 WALL-PENETRATING ROUNDS"), Custom String("ULTIMATE: RAILGUN"));
+			Ability 2)), Custom String("[ABILITY 2] FREEZES BOTS                           "), Custom String("FROST MINE"),
+			Ability Icon String(Hero(Baptiste), Button(Ultimate)), Custom String("LOADS 4 WALL-PENETRATING ROUNDS "), Custom String(
+			"ULTIMATE: RAILGUN"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8239,9 +8243,9 @@ rule("Winston HUD")
 		Event Player.HUDTextHidden = Array(False, False, False, False);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Winston), Button(Ultimate)), Custom String("DEAL DAMAGE TO INCREASE RAGE"),
-			Custom String("RAGE"), Ability Icon String(Hero(Doomfist), Button(Ability 2)), Custom String("[ABILITY 1] SLAM TO KNOCKDOWN"),
+			Custom String("RAGE"), Ability Icon String(Hero(Doomfist), Button(Ability 1)), Custom String("[ABILITY 1] SLAM TO KNOCKDOWN"),
 			Custom String("VENTING RAGE"), Ability Icon String(Hero(Winston), Button(Ability 2)), Custom String(
-			"[ABILITY 2] HEALS 25% HP"), Custom String("HEALING BARRIER"));
+			"[ABILITY 2] HEALS 25% HP               "), Custom String("HEALING BARRIER"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8261,9 +8265,9 @@ rule("Wrecking Ball HUD")
 		Disallow Button(Event Player, Button(Ultimate));
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Baptiste), Button(Ability 1)), Custom String("[ABILITY 2] HEAL 35% HP"),
-			Custom String("AUTO-REPAIRS"), Ability Icon String(Hero(Moira), Button(Ultimate)), Custom String(
-			"MASSIVE DAMAGE FROM THE SKY"), Custom String("ULTIMATE: ORBITAL DROP"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Baptiste), Button(Ability 1)), Custom String(
+			"[ABILITY 2] HEAL 35% HP                  "), Custom String("AUTO-REPAIRS"), Ability Icon String(Hero(Moira), Button(
+			Ultimate)), Custom String("MASSIVE DAMAGE FROM THE SKY"), Custom String("ULTIMATE: ORBITAL DROP"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8284,7 +8288,7 @@ rule("Zarya HUD")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zarya), Button(Ability 1)), Custom String(
 			"[ABILITY 1] KNOCKDOWN AND HEAL"), Custom String("BARRIER TACKLE"), Ability Icon String(Hero(Zarya), Button(Ability 2)),
-			Custom String("EXTRA DMG PER BOT TACKLED"), Custom String("MAGNETIC CRUSH"));
+			Custom String("EXTRA DMG PER BOT TACKLED          "), Custom String("MAGNETIC CRUSH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8304,10 +8308,11 @@ rule("Zenyatta HUD")
 		Set Projectile Speed(Event Player, 500);
 		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Primary Fire)), Custom String("[PRIMARY] AOE HEAL"),
-			Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(Zenyatta), Button(Secondary Fire)), Custom String(
-			"[SECONDARY] AOE DAMAGE"), Custom String("ORBS OF ANNIHILATION"), Ability Icon String(Hero(Zenyatta), Button(Ultimate)),
-			Custom String("MASSIVE AOE DMG & HEAL"), Custom String("ULTIMATE: YING-YANG"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Zenyatta), Button(Primary Fire)), Custom String(
+			"[PRIMARY] AOE HEAL                            "), Custom String("ORBS OF TRANQUILITY"), Ability Icon String(Hero(Zenyatta),
+			Button(Secondary Fire)), Custom String("[SECONDARY] AOE DAMAGE               "), Custom String("ORBS OF ANNIHILATION"),
+			Ability Icon String(Hero(Zenyatta), Button(Ultimate)), Custom String("MASSIVE AOE DMG & HEAL             "), Custom String(
+			"ULTIMATE: YING-YANG"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
