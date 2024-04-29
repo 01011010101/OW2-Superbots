@@ -112,7 +112,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Ultimate: Overdrive: Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
 - Light Armor: 25% Armor.
   ##### 💬 Tip:
-  Echo excels at staying out of the fray and delivering massive damage from afar, but can also be a devastating dive-bomber when using Flying/Quantum Beam combo +🌀 Vortex relic.
+  Echo excels at staying out of the fray and delivering massive damage from afar, but she can also be a devastating dive-bomber with the 🌀 Vortex relic.
 ---
 #### GENJI
 - Dragon Strike: Heal for 50 HP and explode Mark of Death.
@@ -292,7 +292,8 @@ Below is a list of all new abilities for all heroes available to play.
 - Tank Role with 🛡️AEGIS Relic.
 - Molten Punch: [MELEE] sets bots on fire.
 - Dwarven Leap: [CROUCH]+[JUMP] to leap forward.
-- Dwarven Rage: Overload heals 25% HP over 10 seconds.
+- Dwarven Rage: [ABILITY 2] Overloads your abilities and heal 25% HP over 10 seconds.
+  - Dwarven Rage Punch: Sets bots on fire and knocks them down for 3 seconds.
   - Dwarven Rage Leap: While under Dwarven Rage, your Dwarven Leap will knock down bots where you land.
 - Heavy Armor: 75% Armor.
 ---
