@@ -249,7 +249,9 @@ Below is a list of all new abilities for all heroes available to play.
 - Heavy Armor: 75% Armor.
 ---
 #### ROADHOG
-- Hook Combo: Shoot or Melee after a hook to deal extra damage.  Shooting a bot knocks them back while Melee earns money for Junkrat.
+- Hook Combo:
+  - Shoot bots after hook to pop them up in the air.
+  - Melee bots after hook to knock them down. Earns money for Junkrat.
 - Asthmatic Trample: Charge forward, damaging and knocking down any bots that you come in contact with.
 - Ultimate: Warthog: Stun any bot damaged by your ultimate.
 - Heavy Armor: 75% Armor.
