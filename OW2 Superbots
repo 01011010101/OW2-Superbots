@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] June 14, 2024: Testing HUD changes, testing Venture."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] July 20, 2024: Testing Juno; testing Venture changes."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -57,6 +57,11 @@ settings
 		{
 			TS-1 Push Speed Modifier: 125%
 			TS-1 Walk Speed Modifier: 125%
+
+			disabled maps
+			{
+				Runasapi
+			}
 		}
 
 		General
@@ -112,7 +117,7 @@ settings
 
 			Bastion
 			{
-				A-36 Tactical Grenade Cooldown Time: 65%
+				A-36 Tactical Grenade Cooldown Time: 75%
 				A-36 Tactical Grenade Knockback Scalar: 115%
 				Damage Dealt: 165%
 				Health: 140%
@@ -231,6 +236,18 @@ settings
 				Ultimate Generation - Passive RIP-Tire: 75%
 			}
 
+			Juno
+			{
+				Damage Dealt: 115%
+				Glide Boost Cooldown Time: 50%
+				Glide Boost Duration Scalar: 
+				Health: 200%
+				Hyper Ring Cooldown Time: 75%
+				No Ammunition Requirement: On
+				Pulsar Torpedoes Cooldown Time: 50%
+				Ultimate Generation - Combat Orbital Ray: 50%
+			}
+
 			Kiriko
 			{
 				Damage Dealt: 150%
@@ -294,7 +311,7 @@ settings
 
 			Mercy
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 130%
 				Guardian Angel Cooldown Time: 25%
 				Health: 200%
 				Jump Vertical Speed: 250%
@@ -345,8 +362,9 @@ settings
 				Health: 135%
 				Nemesis Form Cooldown Time: 90%
 				No Ammunition Requirement: On
-				Ravenous Vortex Cooldown Time: 25%
-				Ultimate Generation - Combat Annihilation: 25%
+				Ravenous Vortex Cooldown Time: 35%
+				Ultimate Duration: 300%
+				Ultimate Generation - Combat Annihilation: 50%
 				Void Barrier Omnic Form Cooldown Time: 25%
 			}
 
@@ -463,11 +481,15 @@ settings
 
 			Venture
 			{
-				Burrow Cooldown Time: 50%
+				Burrow Cooldown Time: 30%
 				Burrow Duration Scalar: 500%
-				Damage Dealt: 110%
-				Drill Dash Cooldown Time: 0%
-				Ultimate Generation - Combat Tectonic Shock: 50%
+				Damage Dealt: 115%
+				Drill Dash Cooldown Time: 15%
+				Health: 175%
+				Infinite Ultimate Duration: On
+				No Ammunition Requirement: On
+				Projectile Speed: 500%
+				Ultimate Generation - Combat Tectonic Shock: 25%
 			}
 
 			Widowmaker
@@ -595,8 +617,8 @@ settings
 				Ammunition Clip Size Scalar: 150%
 				Combat Roll Cooldown Time: 150%
 				Damage Dealt: 150%
+				Flashbang Cooldown Time: 200%
 				Health: 500%
-				Magnetic Grenade Cooldown Time: 200%
 				Ultimate Generation - Combat Deadeye: 300%
 				Ultimate Generation - Passive Deadeye: 150%
 			}
@@ -662,6 +684,12 @@ settings
 				Steel Trap Cooldown Time: 200%
 				Ultimate Duration: 500%
 				Ultimate Generation - Passive RIP-Tire: 500%
+			}
+
+			Juno
+			{
+				Damage Dealt: 115%
+				Hyper Ring Cooldown Time: 75%
 			}
 
 			Kiriko
@@ -745,7 +773,7 @@ settings
 			{
 				Damage Dealt: 160%
 				Health: 500%
-				Nemesis Form Cooldown Time: 80%
+				Nemesis Form Cooldown Time: 75%
 				Ravenous Vortex Cooldown Time: 50%
 				Ultimate Duration: 300%
 				Ultimate Generation - Combat Annihilation: 300%
@@ -870,6 +898,14 @@ settings
 				Movement Speed: 110%
 				Ultimate Generation - Combat Pulse Bomb: 400%
 				Ultimate Generation - Passive Pulse Bomb: 300%
+			}
+
+			Venture
+			{
+				Burrow Cooldown Time: 15%
+				Damage Dealt: 130%
+				Drill Dash Cooldown Time: 5%
+				Health: 175%
 			}
 
 			Widowmaker
@@ -1155,13 +1191,21 @@ rule("LOOKING FOR MATCH / AUTO RESTART [Added by Arkhanglesk#11200]")
 	conditions
 	{
 		(Number Of Players(Team Of(Event Player)) == 1) == True;
-		Total Time Elapsed < 45;
+		Total Time Elapsed < 40;
 		Is Game In Progress == True;
 	}
 
 	actions
 	{
 		Abort If Condition Is False;
+		Small Message(All Players(All Teams), Custom String("  NOT ENOUGH PLAYERS"));
+		Wait(2, Ignore Condition);
+		Big Message(All Players(All Teams), Custom String("LOOKING FOR NEW MATCH IN\r\n                       3"));
+		Wait(1, Abort When False);
+		Big Message(All Players(All Teams), Custom String("LOOKING FOR NEW MATCH IN\r\n                       2"));
+		Wait(1, Abort When False);
+		Big Message(All Players(All Teams), Custom String("LOOKING FOR NEW MATCH IN\r\n                       1"));
+		Wait(3, Abort When False);
 		Restart Match;
 	}
 }
@@ -1374,9 +1418,9 @@ rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%) [Updated b
 	actions
 	{
 		Global.Armor0 = Array(Hero(Ashe), Hero(Hanzo), Hero(Junkrat), Hero(Cassidy), Hero(Moira), Hero(Pharah), Hero(Sigma), Hero(
-			Soldier: 76), Hero(Widowmaker), Hero(Sojourn));
+			Soldier: 76), Hero(Widowmaker), Hero(Sojourn), Hero(Lifeweaver));
 		Global.Armor25 = Array(Hero(Ana), Hero(Baptiste), Hero(Brigitte), Hero(Echo), Hero(Lúcio), Hero(Mercy), Hero(Zenyatta), Hero(
-			Kiriko), Hero(Illari), Hero(Venture));
+			Kiriko), Hero(Illari), Hero(Venture), Hero(Juno));
 		Global.Armor50 = Array(Hero(Doomfist), Hero(Genji), Hero(Mei), Hero(Reaper), Hero(Sombra), Hero(Symmetra), Hero(Torbjörn), Hero(
 			Tracer), Hero(Ramattra), Hero(Mauga));
 		Global.Armor75 = Array(Hero(Bastion), Hero(D.Va), Hero(Orisa), Hero(Reinhardt), Hero(Roadhog), Hero(Winston), Hero(Wrecking Ball),
@@ -3168,13 +3212,12 @@ rule("BASTION Flashbang [Added by Arkhanglesk#11200]")
 
 	conditions
 	{
-		disabled Ability Cooldown(Event Player, Button(Secondary Fire)) > 0;
 		Event Ability == Button(Secondary Fire);
 	}
 
 	actions
 	{
-		Set Status(Victim, Event Player, Stunned, 1);
+		Set Status(Victim, Event Player, Stunned, 1.500);
 	}
 }
 
@@ -3830,7 +3873,6 @@ rule("ILLARI Solar Flare [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Set Status(Victim, Null, Burning, 3);
-		disabled Start Damage Over Time(Victim, Event Player, 3, Max Health(Victim) * 0.100);
 		Start Damage Over Time(Victim, Event Player, 3, 5);
 		Start Heal Over Time(Event Player, Null, 4, Max Health(Event Player) * 0.100);
 	}
@@ -3869,7 +3911,6 @@ rule("ILLARI Ultimate BFG 9000 [Added by Arkhanglesk#11200]")
 
 	conditions
 	{
-		disabled Event Ability == Button(Ultimate);
 		Is Alive(Event Player) == True;
 		Is Using Ultimate(Event Player) == True;
 		Is Button Held(Event Player, Button(Primary Fire)) == True;
@@ -3879,11 +3920,9 @@ rule("ILLARI Ultimate BFG 9000 [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Damage(Victim, Event Player, 115);
+		Damage(Victim, Event Player, 130);
 		Set Status(Victim, Event Player, Burning, 5);
 		Start Damage Over Time(Victim, Event Player, 5, 1);
-		disabled Wait(5, Ignore Condition);
-		disabled Stop All Damage Over Time(Victim);
 		Set Ultimate Ability Enabled(Event Player, True);
 	}
 }
@@ -4366,7 +4405,7 @@ rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
 		If(Event Player.R == False);
 			Abort If Condition Is False;
 			Wait(Random Real(0.100, 0.250), Ignore Condition);
-			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 20);
+			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 30);
 			Loop;
 		Else If(Event Player.R == True);
 			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 1);
@@ -4444,10 +4483,10 @@ rule("LIFEWEAVER Ultimate Switch [Added by Arkhanglesk#11200]")
 		Event Player.R = !Event Player.R;
 		If(Event Player.R == False);
 			Event Player.HUDTextHidden = Array(False, True, False, True);
-			Small Message(Event Player, Custom String(" {0} Hemlock: Poison All Bots Around Tree", Icon String(Poison)));
+			Small Message(Event Player, Custom String(" {0} HEMLOCK: Poison All Bots Around Tree", Icon String(Poison)));
 		Else If(Event Player.R == True);
 			Event Player.HUDTextHidden = Array(True, False, False, True);
-			Small Message(Event Player, Custom String(" {0} Nightshade: Paralyze & Damage Bots Around Tree", Ability Icon String(Hero(Kiriko),
+			Small Message(Event Player, Custom String(" {0} NIGHTSHADE: Paralyze & Damage Bots Around Tree", Ability Icon String(Hero(Kiriko),
 				Button(Ability 2))));
 		End;
 		Play Effect(Event Player, Buff Explosion Sound, Color(White), Event Player, 50);
@@ -4506,7 +4545,7 @@ rule("LIFEWEAVER Ultimate Damage [Added by Arkhanglesk#11200]")
 	{
 		If(Event Player.R == False);
 			Abort If Condition Is False;
-			Start Damage Over Time(Players Within Radius(Event Player.U, 12.500, Team 2, Off), Event Player, 1, 10);
+			Start Damage Over Time(Players Within Radius(Event Player.U, 12.500, Team 2, Off), Event Player, 1, 20);
 			Wait(1, Ignore Condition);
 			Loop;
 		Else If(Event Player.R == True);
@@ -4530,9 +4569,10 @@ rule("LIFEWEAVER Teleport [Added by Arkhanglesk#11200]")
 
 	conditions
 	{
-		disabled Players Within Radius(Event Player, 30, Team 1, Surfaces) == True;
 		Is Button Held(Event Player, Button(Ability 2)) == True;
 		Ability Cooldown(Event Player, Button(Ability 2)) == 0;
+		"Set a range if desired"
+		disabled Players Within Radius(Event Player, 30, Team 1, Surfaces) == True;
 	}
 
 	actions
@@ -5782,8 +5822,6 @@ rule("ROADHOG Asthmatic Knockdown")
 		Ability Cooldown(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == 0;
 		(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == True) == True;
 		Distance Between(Event Player, Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3;
-		disabled Is True For Any(Is Button Held(Event Player, Button(Secondary Fire)), Distance Between(Position Of(Event Player), Position Of(
-			Current Array Element)) <= 3) == True;
 	}
 
 	actions
@@ -6656,6 +6694,89 @@ rule("TRACER Ultimate (Destabilizing Time) Off On Death")
 	}
 }
 
+rule("VENTURE Ultimate Shockwave")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Venture;
+	}
+
+	conditions
+	{
+		Is Using Ultimate(Event Player) == True;
+	}
+
+	actions
+	{
+		Apply Impulse(Victim, Direction From Angles(Horizontal Angle From Direction(Direction Towards(Event Player, Victim)), -20), 15,
+			To World, Cancel Contrary Motion);
+		Set Status(Victim, Event Player, Knocked Down, 2);
+	}
+}
+
+rule("VENTURE Geode Burst")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Venture;
+	}
+
+	conditions
+	{
+		Is Using Ability 1(Event Player) == True;
+	}
+
+	actions
+	{
+		Apply Impulse(Players Within Radius(Event Player, 5, Team 2, Surfaces), Up, 3, To World, Incorporate Contrary Motion);
+	}
+}
+
+rule("VENTURE Camouflage ON")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Venture;
+	}
+
+	conditions
+	{
+		Ability Cooldown(Event Player, Button(Ability 1)) == 0;
+		Is Button Held(Event Player, Button(Ability 1)) == True;
+	}
+
+	actions
+	{
+		Set Invisible(Event Player, Enemies);
+	}
+}
+
+rule("VENTURE Camouflage OFF")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Venture;
+	}
+
+	conditions
+	{
+		Is Using Ability 1(Event Player) == False;
+	}
+
+	actions
+	{
+		Set Invisible(Event Player, None);
+	}
+}
+
 rule("WIDOWMAKER Charge counter [Created by jaytheyggdrasil]")
 {
 	event
@@ -7302,7 +7423,7 @@ rule("Ana HUD [Updated Arkhanglesk#11200]")
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Soldier: 76), Button(Ability 2)), Custom String(
-			"PRIMARY SHOTS HEAL IN AN AREA                    "), Custom String("BIOTIC DARTS"), Icon String(Poison), Custom String(
+			"[PRIMARY] SHOTS HEAL IN AN AREA                "), Custom String("BIOTIC DARTS"), Icon String(Poison), Custom String(
 			"[ABILITY 1] AOE POISON AROUND TARGET      "), Custom String("BIOTIC POISON GAS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -7505,9 +7626,8 @@ rule("Genji HUD [Updated Arkhanglesk#11200]")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Custom String("死"), Custom String("DEAL DAMAGE TO MARK BOTS                           "),
 			Custom String("MARK OF DEATH"), Ability Icon String(Hero(Genji), Button(Ability 1)), Custom String(
-			"[ABILITY 1] DETONATES MARKS                          "), Custom String("BAKUGŌ SA SERU"), Ability Icon String(Hero(Genji),
-			Button(Ultimate)), Custom String("DOUBLE MARKS ARE APPLIED                             "), Custom String(
-			"ULTIMATE: DRAGON'S CURSE"));
+			"[ABILITY 1] DETONATES MARKS                          "), Custom String("BAKUHATSU"), Ability Icon String(Hero(Genji), Button(
+			Ultimate)), Custom String("DOUBLE MARKS ARE APPLIED                             "), Custom String("ULTIMATE: DRAGON'S CURSE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7636,6 +7756,23 @@ rule("Junkrat HUD")
 	}
 }
 
+rule("Juno HUD")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Juno;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
 rule("Kiriko HUD [Added by Arkhanglesk#11200]")
 {
 	event
@@ -7653,7 +7790,7 @@ rule("Kiriko HUD [Added by Arkhanglesk#11200]")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Kiriko), Button(Primary Fire)), Custom String(
 			"[RELOAD] TO SWITCH [PRIMARY] DAMAGE    "), Custom String("OFUDA: DIRECT DAMAGE"), Ability Icon String(Hero(Junker Queen),
-			Button(Ability 2)), Custom String("[RELOAD] TO SWITCH [PRIMARY] DAMAGE    "), Custom String("KAMI NO KATTO: BLEED"),
+			Button(Ability 2)), Custom String("[RELOAD] TO SWITCH [PRIMARY] DAMAGE    "), Custom String("KAMI KIRI KIZU: BLEED"),
 			Ability Icon String(Hero(Hanzo), Button(Ability 1)), Custom String("DAMAGE AND KNOCKDOWN BOTS                     "),
 			Custom String("ULTIMATE: YŌKAI BLAST"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
@@ -7763,7 +7900,7 @@ rule("McCree HUD")
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Cassidy), Button(Ability 1)), Custom String(
 			"HEALS AND AVOIDS DAMAGE                               "), Custom String("PHASING ROLL"), Icon String(Arrow: Up),
 			Custom String("MASSIVE DAMAGE VS AIRBORNE TARGETS   "), Custom String("HAT TRICK"), Ability Icon String(Hero(Cassidy), Button(
-			Ultimate)), Custom String("ACTIVATE THEN WAIT FOR THE MESSAGE      "), Custom String("ULTIMATE: SHOWDOWN"));
+			Ultimate)), Custom String("FIRE WHEN \"DRAW!\" MESSAGE APPEARS      "), Custom String("ULTIMATE: SHOWDOWN"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7923,13 +8060,9 @@ rule("Ramattra HUD [Added by Arkhanglesk#11200]")
 		Wait(0.500, Ignore Condition);
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
-		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Ramattra), Button(Ability 1)), Custom String(
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Doomfist), Button(Secondary Fire)), Custom String(
 			"[MELEE] PUMMEL BOTS IN NEMESIS FORM   "), Custom String("VOID PUNCH"), Ability Icon String(Hero(Orisa), Button(Ability 2)),
 			Custom String("LEECH HP WHILE IN NEMESIS FORM                 "), Custom String("RAVENOUS AURA"));
-		disabled Event Player.HUDTextHidden = Array(False, True, True, True);
-		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Ramattra), Button(Ability 1)), Custom String(
-			"[ABILITY 1] PUMMEL BOTS WITH [MELEE]"), Custom String("VOID PUNCH"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8209,13 +8342,13 @@ rule("Venture HUD [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
-		disabled Event Player.HUDTextHidden = Array(False, False, False, True);
+		Event Player.HUDTextHidden = Array(False, False, False, True);
 		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Venture), Button(Primary Fire)), Custom String("[ABILITY 1]"),
-			Custom String("ABILITY 1 TEXT"), Ability Icon String(Hero(Venture), Button(Secondary Fire)), Custom String("[ABILITY 2]"),
-			Custom String("ABILITY 2 TEXT"), Ability Icon String(Hero(Venture), Button(Ultimate)), Custom String("SOMETHING IDK YET"),
-			Custom String("ULTIMATE: SOMETHING"));
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Venture), Button(Ability 1)), Custom String(
+			"INVISIBLE WHILE BURROWED                              "), Custom String("CAMOFLAUGE"), Ability Icon String(Hero(Baptiste),
+			Button(Crouch)), Custom String("[ABILITY 1] EMERGE HURLS BOTS SKYWARD "), Custom String("GEODE BURST"), Ability Icon String(
+			Hero(Venture), Button(Ultimate)), Custom String("SHRED AND KNOCK BACK BOTS                          "), Custom String(
+			"ULTIMATE: SHOCKWAVE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8874,7 +9007,7 @@ rule("Flying Toggle [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ] - High server cost")
+rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ] - High server cost, use sparingly")
 {
 	event
 	{
