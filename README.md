@@ -316,7 +316,7 @@ Below is a list of all new abilities for all heroes available to play.
 - Geode Burst: Empowers your Emerge and Drill Dash abilties
   - Emerge: Hurls bots in the air. The longer the charge, the higher they go.
   - Drill Dash: Barrels through bots and makes a path
-- Ultimate: Shockwave: Create an earthwake in a cone in front of you that knocks bots back and knocks them down for 3 seconds.
+- Ultimate: Shockwave: Create an earthquake in a cone in front of you that knocks bots back and knocks them down for 3 seconds.
 - Light Armor: 25% Armor.
 ---
 #### WIDOWMAKER
