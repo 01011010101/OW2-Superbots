@@ -161,10 +161,16 @@ Below is a list of all new abilities for all heroes available to play.
   ##### 💬 Tip:
   Junkrat and his old running buddy Roadhog are a good team. Roadhog earns money for Junkrat's Chaos Roulette with every kill and Hook Combo.
 ---
+#### JUNO
+- Glide Boost CD: 50%
+- Pulsar Torpedoes CD: 50%
+- Light Armor: 25% Armor.
+- _WORK IN PROGRESS_
+---
 #### KIRIKO
 - Press [RELOAD] to change [PRIMARY] damage.
   - Ofuda: Damage bots with your paper things while healing your allies.
-  - Kami No Katto: Your paper ofuda slice bots and applies a bleed.
+  - Kami Kiri Kizu: Your paper ofuda slice bots and applies a bleed.
 - Ultimate: Yōkai Blast: Damage and knockdown all bots for 5 seconds in the path of your Kitsune.
 - Light Armor: 25% Armor.
 ---
@@ -306,9 +312,12 @@ Below is a list of all new abilities for all heroes available to play.
 - Medium Armor: 50% Armor.
 ---
 #### VENTURE
-- Burrow Duration: 500%
-- Drill Dash CD: 0%
-- _WORK IN PROGRESS_
+- Camouflage: Bots cannot see you while burrowed.
+- Geode Burst: Empowers your Emerge and Drill Dash abilties
+  - Emerge: Hurls bots in the air. The longer the charge, the higher they go.
+  - Drill Dash: Barrels through bots and makes a path
+- Ultimate: Shockwave: Create an earthwake in a cone in front of you that knocks bots back and knocks them down for 3 seconds.
+- Light Armor: 25% Armor.
 ---
 #### WIDOWMAKER
 - Anti-Materiel Rifle: Scoped charged shots will deal explosive damage based on the amount of charge accumulated, up to 12m.
