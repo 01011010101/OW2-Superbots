@@ -124,13 +124,13 @@ PURIFIED is automatically equipped at the start.
     <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/a/a9/Icon-Reaper.png/revision/latest?cb=20221005170219" alt="Reaper" style="width:60px; height:60px; border-radius:0%;">
   </a>
   <a href="#sojourn" style="display: inline-block; margin: 0 20px;">
-    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/2b/Icon-Soldier_76.png/revision/latest?cb=20221005170355" alt="Sojourn" style="width:60px; height:60px; border-radius:0%;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/e/e0/Icon-Sojourn.png/revision/latest?cb=20221005170226" alt="Sojourn" style="width:60px; height:60px; border-radius:0%;">
   </a>
   <a href="#soldier-76" style="display: inline-block; margin: 0 20px;">
-    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/70/Icon-Sombra.png/revision/latest?cb=20221005170556" alt="Soldier: 76" style="width:60px; height:60px; border-radius:0%;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/2b/Icon-Soldier_76.png/revision/latest?cb=20221005170355" alt="Soldier: 76" style="width:60px; height:60px; border-radius:0%;">
   </a>
   <a href="#sombra" style="display: inline-block; margin: 0 20px;">
-    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/e/e0/Icon-Sojourn.png/revision/latest?cb=20221005170226" alt="Sombra" style="width:60px; height:60px; border-radius:0%;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/70/Icon-Sombra.png/revision/latest?cb=20221005170556" alt="Sombra" style="width:60px; height:60px; border-radius:0%;">
   </a>
   <a href="#symmetra" style="display: inline-block; margin: 0 20px;">
     <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/0/06/Icon-Symmetra.png/revision/latest?cb=20221005170604" alt="Symmetra" style="width:60px; height:60px; border-radius:0%;">
