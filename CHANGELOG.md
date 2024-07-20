@@ -1,4 +1,21 @@
-### June 14, 2023
+### July 20, 2024
+* Team 1
+ 	- Added JUNO as a playable hero.
+	- CASSIDY: Updated HUD to clarify Ult.
+	- GENJI: Updated name of [Ability 1].
+	- KIRIKO: Buffed [Primary] (Ofuda) damage, update name of bleed attack (Kami Kiri Kizu).
+	- LIGHTWEAVER: Buffed Hemlock damage from 15 to 25 dps.
+  	- VENTURE: New abilites:
+		- Camouflage: Bots cannot see you while burrowed.
+		- Geode Burst: Empowers your Emerge and Drill Dash abilties
+  			- Emerge: Hurls bots in the air. The longer the charge, the higher they are launched.
+  			- Drill Dash: Barrels through bots and makes a path
+		- Ultimate: Shockwave: Create an earthwake in a cone in front of you that knocks bots back and knocks them down for 3 seconds.
+
+* General:
+   	- Fixed Player HUD formatting for relics to align with abilities.
+---
+### June 14, 2024
 * Team 1
 	- BASTION: Fixed an issue where the Ult effect persisted after death.
   	- MOIRA: Fixed HUD
@@ -6,17 +23,20 @@
 ---
 ### April 29, 2024
 * Team 1
-	- Fixed Player HUD formatting for abilties. Reason: The formatting looked fine in OW1 but broke in OW2. While left/right justifying HUD text will appear on the correct side of the screen, the text itself is centered, making it ugly. Fixing the Relic, Player Level, and Superbots HUD will be trickier because they all change in size during the game, but it is in progress.
   	- ANA: Updated Biotic Poison Gas ability description.
    	- TORBJORN: Updated HUD to clarify Dwarven Rage abilities.
   	 	
 * Super Bots
 	- Buffed damage and ultgen slightly for some bots.
+
+* General
+	- Fixed Player HUD formatting for abilties. Reason: The formatting looked fine in OW1 but broke in OW2. While left/right justifying HUD text will appear on the correct side of the screen, the text itself is centered, making it ugly. Fixing the Relic, Player Level, and Superbots HUD will be trickier because they all change in size during the game, but it is in progress.
 ---
 ### April 18, 2024
 * Team 1
 	- Added VENTURE as playable hero.
  	- RAMATTRA: New ability: Ravenous Aura: Leech HP from Super Bots while in Nemesis Form (testing).
+
 * Super Bots
 	- Buffed damage slightly.
 ---
@@ -35,6 +55,7 @@
   		- Lowered Damage Dealt by 5%
 	- KIRIKO: Yokai Blast's knockdown increased to 5 secs
   	- SOJOURN: Fixed an issue where Jump Jets would burn longer than intended
+
 * Super Bots
 	- ROADHOG: Tweaked cooldowns
  	- ZENYATTA: Fixed an issue that gave instant Ults in endgame if ZenBot had been in play for more than 5 mins
@@ -42,6 +63,7 @@
 ### March 12, 2024
 * Team 1
  	- JUNKER QUEEN: Buffed Ultimate damage from 150 to 200
+
 * Super Bots
 	- ROADHOG: Rebalanced after they added him back to the bot pool with the March 12 update
 ---
@@ -107,8 +129,8 @@
 		- 2x [PRIMARY] attacks: direct damage or DoT
 		- Ultimate: Damage and knockdown bots in the path of your Kitsune.
 		- Updated HUD.
-  - GENJI: Update HUD, renamed Detonate Marks and changed the description slightly.
-  - ZENYATTA: Updated HUD, made verbiage for [PRIMARY] and [SECONDARY] attacks to be more in line with Ultimate description.
+  	- GENJI: Update HUD, renamed Detonate Marks and changed the description slightly.
+  	- ZENYATTA: Updated HUD, made verbiage for [PRIMARY] and [SECONDARY] attacks to be more in line with Ultimate description.
 ---
 ### February 21, 2024
 * Team 1
@@ -138,6 +160,7 @@
   	- Rocket Boost Slide: Sweep and knockdown bots for 2 seconds when you slide into them.
    	- Jump Jets: Burn nearby bots for 10/sec for 3 seconds.
 	- Ultimate: Super Railgun: Massive damage and shoot through walls. Reason: Unlike Widow, Sojourn cannot see through walls during her Ult, which helps make this Ult not stupid OP.
+
 * General
 	- Fixed bot names. Bots will no longer show "DAMAGE 3" or "TANK 1" but instead will have their proper names.
 ---
@@ -165,6 +188,7 @@
 ### February 3, 2024
 * Team 1
 	- JUNKER QUEEN: Increased Ultimate knockback impulse slightly
+
 * Super Bots
 	- KIRIKO: Buffed HP to 500%
 ---
