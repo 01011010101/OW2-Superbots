@@ -53,52 +53,137 @@ PURIFIED is automatically equipped at the start.
 ## HEROES
 <h3 align="center">TANKS</h3>
 <p align="center">
-  [ <a href="#dva">D.Va</a> |
-  <a href="#doomfist">Doomfist</a> | 
-  <a href="#junker-queen">Junker Queen</a> | 
-  <a href="#orisa">Orisa</a> | 
-  <a href="#ramattra">Ramattra</a> | 
-  <a href="#reinhardt">Reinhardt</a> | 
-  <a href="#roadhog">Roadhog</a> | 
-  <a href="#sigma">Sigma</a> | 
-  <a href="#winston">Winston</a> | 
-  <a href="#wrecking-ball">Wrecking Ball</a> | 
-  <a href="#zarya">Zarya</a> ]
+  <a href="#dva" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/19/Icon-D.Va.png/revision/latest?cb=20221005161600" alt="D.Va" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#doomfist" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/a/a1/Icon-Doomfist.png/revision/latest?cb=20221005161638" alt="Doomfist" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#junker-queen" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/2b/Icon-Junker_Queen.png/revision/latest?cb=20221005161646" alt="Junker Queen" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#mauga" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/3/39/Icon-Mauga.png/revision/latest?cb=20231205235708" alt="Mauga" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#orisa" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/11/Icon-Orisa.png/revision/latest?cb=20221005161652" alt="Orisa" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#ramattra" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/6/6f/Icon-Ramattra.png/revision/latest?cb=20221206190323" alt="Ramattra" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#reinhardt" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/8/83/Icon-Reinhardt.png/revision/latest?cb=20221005161659" alt="Reinhardt" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#roadhog" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/16/Icon-Roadhog.png/revision/latest?cb=20221005161706" alt="Roadhog" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#sigma" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/e/e0/Icon-Sigma.png/revision/latest?cb=20221005161714" alt="Sigma" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#winston" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/f/f8/Icon-Winston.png/revision/latest?cb=20221005161721" alt="Winston" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#wrecking-ball" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/c/ca/Icon-Wrecking_Ball.png/revision/latest?cb=20221005161727" alt="Wrecking Ball" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#zarya" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/75/Icon-Zarya.png/revision/latest?cb=20221005161732" alt="Zarya" style="width:60px; height:60px; border-radius:0%;">
+  </a>
 </p>
 
 <h3 align="center">DPS</h3>
 <p align="center">
-  [ <a href="#ashe">Ashe</a> | 
-  <a href="#bastion">Bastion</a> | 
-  <a href="#cassidy">Cassidy</a> | 
-  <a href="#echo">Echo</a> | 
-  <a href="#genji">Genji</a> | 
-  <a href="#hanzo">Hanzo</a> | 
-  <a href="#junkrat">Junkrat</a> | 
-  <a href="#mei">Mei</a> | 
-  <a href="#pharah">Pharah</a> | 
-  <a href="#reaper">Reaper</a> | 
-  <a href="#sojourn">Sojourn</a> | 
-  <a href="#soldier-76">Soldier: 76</a> | 
-  <a href="#sombra">Sombra</a> | 
-  <a href="#symmetra">Symmetra</a> | 
-  <a href="#torbjörn">Torbjörn</a> | 
-  <a href="#tracer">Tracer</a> | 
-  <a href="#venture">Venture</a> | 
-  <a href="#widowmaker">Widowmaker</a> ]
+  <a href="#ashe" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/b/be/Icon-Ashe.png/revision/latest?cb=20221005165904" alt="Ashe" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#bastion" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/5/51/Icon-Bastion.png/revision/latest?cb=20221005165909" alt="Bastion" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#cassidy" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/5/5b/Icon-cassidy.png/revision/latest?cb=20221006034952" alt="Cassidy" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#echo" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/d/d6/Icon-Echo.png/revision/latest?cb=20221005165920" alt="Echo" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#genji" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/1c/Icon-Genji.png/revision/latest?cb=20221005165931" alt="Genji" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#hanzo" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/71/Icon-Hanzo.png/revision/latest?cb=20221005165925" alt="Hanzo" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#junkrat" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/9/99/Icon-Junkrat.png/revision/latest?cb=20221005170201" alt="Junkrat" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#mei" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/9/99/Icon-Mei.png/revision/latest?cb=20221005170206" alt="Mei" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#pharah" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/29/Icon-Pharah.png/revision/latest?cb=20221005170211" alt="Pharah" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#reaper" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/a/a9/Icon-Reaper.png/revision/latest?cb=20221005170219" alt="Reaper" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#sojourn" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/2b/Icon-Soldier_76.png/revision/latest?cb=20221005170355" alt="Sojourn" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#soldier-76" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/7/70/Icon-Sombra.png/revision/latest?cb=20221005170556" alt="Soldier: 76" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#sombra" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/e/e0/Icon-Sojourn.png/revision/latest?cb=20221005170226" alt="Sombra" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#symmetra" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/0/06/Icon-Symmetra.png/revision/latest?cb=20221005170604" alt="Symmetra" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#torbjörn" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/c/ca/Icon-Torbj%C3%B6rn.png/revision/latest?cb=20221005170611" alt="Torbjörn" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#tracer" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/29/Icon-Tracer.png/revision/latest?cb=20221005170620" alt="Tracer" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#venture" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/a/a0/Icon-Venture.png/revision/latest?cb=20240417102123" alt="Venture" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#widowmaker" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/5/54/Icon-Widowmaker.png/revision/latest?cb=20221005170629" alt="Widowmaker" style="width:60px; height:60px; border-radius:0%;">
+  </a>
 </p>
 
 <h3 align="center">HEALERS</h3>
 <p align="center">
-  [ <a href="#ana">Ana</a> | 
-  <a href="#baptiste">Baptiste</a> | 
-  <a href="#brigitte">Brigitte</a> | 
-  <a href="#juno">Juno</a> | 
-  <a href="#kiriko">Kiriko</a> | 
-  <a href="#lúcio">Lúcio</a> | 
-  <a href="#mercy">Mercy</a> | 
-  <a href="#moira">Moira</a> | 
-  <a href="#zenyatta">Zenyatta</a> ]
+  <a href="#ana" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/3/3d/Icon-Ana.png/revision/latest?cb=20221005160847" alt="Ana" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#baptiste" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/f/fb/Icon-Baptiste.png/revision/latest?cb=20221005160910" alt="Baptiste" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#brigitte" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/a/a6/Icon-Brigitte.png/revision/latest?cb=20221005160917" alt="Brigitte" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#illari" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/8/86/Icon-Illari.png/revision/latest?cb=20230811015354" alt="Illari" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#juno" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/c/c7/Icon-Juno.png/revision/latest?cb=20240719191309" alt="Juno" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#kiriko" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/c/ca/Icon-kiriko.png/revision/latest?cb=20221004202610" alt="Kiriko" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#lúcio" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/5/51/Icon-L%C3%BAcio.png/revision/latest?cb=20221004204914" alt="Lúcio" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#lifeweaver" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/8/86/Icon-Lifeweaver.png/revision/latest?cb=20230411181321" alt="Lifeweaver" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#mercy" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/0/03/Icon-Mercy.png/revision/latest?cb=20221005160926" alt="Mercy" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#moira" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/5/55/Icon-Moira.png/revision/latest?cb=20221005160935" alt="Moira" style="width:60px; height:60px; border-radius:0%;">
+  </a>
+  <a href="#zenyatta" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/f/f7/Icon-Zenyatta.png/revision/latest?cb=20221005160943" alt="Zenyatta" style="width:60px; height:60px; border-radius:0%;">
+  </a>
 </p>
 
 ---
