@@ -51,9 +51,57 @@ PURIFIED is automatically equipped at the start.
 <br>
 
 ## HEROES
-Below is a list of all new abilities for all heroes available to play.
-<br>
-<br>
+<h3 align="center">TANKS</h3>
+<p align="center">
+  [ <a href="#dva">D.Va</a> |
+  <a href="#doomfist">Doomfist</a> | 
+  <a href="#junker-queen">Junker Queen</a> | 
+  <a href="#orisa">Orisa</a> | 
+  <a href="#ramattra">Ramattra</a> | 
+  <a href="#reinhardt">Reinhardt</a> | 
+  <a href="#roadhog">Roadhog</a> | 
+  <a href="#sigma">Sigma</a> | 
+  <a href="#winston">Winston</a> | 
+  <a href="#wrecking-ball">Wrecking Ball</a> | 
+  <a href="#zarya">Zarya</a> ]
+</p>
+
+<h3 align="center">DPS</h3>
+<p align="center">
+  [ <a href="#ashe">Ashe</a> | 
+  <a href="#bastion">Bastion</a> | 
+  <a href="#cassidy">Cassidy</a> | 
+  <a href="#echo">Echo</a> | 
+  <a href="#genji">Genji</a> | 
+  <a href="#hanzo">Hanzo</a> | 
+  <a href="#junkrat">Junkrat</a> | 
+  <a href="#mei">Mei</a> | 
+  <a href="#pharah">Pharah</a> | 
+  <a href="#reaper">Reaper</a> | 
+  <a href="#sojourn">Sojourn</a> | 
+  <a href="#soldier-76">Soldier: 76</a> | 
+  <a href="#sombra">Sombra</a> | 
+  <a href="#symmetra">Symmetra</a> | 
+  <a href="#torbjörn">Torbjörn</a> | 
+  <a href="#tracer">Tracer</a> | 
+  <a href="#venture">Venture</a> | 
+  <a href="#widowmaker">Widowmaker</a> ]
+</p>
+
+<h3 align="center">HEALERS</h3>
+<p align="center">
+  [ <a href="#ana">Ana</a> | 
+  <a href="#baptiste">Baptiste</a> | 
+  <a href="#brigitte">Brigitte</a> | 
+  <a href="#juno">Juno</a> | 
+  <a href="#kiriko">Kiriko</a> | 
+  <a href="#lúcio">Lúcio</a> | 
+  <a href="#mercy">Mercy</a> | 
+  <a href="#moira">Moira</a> | 
+  <a href="#zenyatta">Zenyatta</a> ]
+</p>
+
+---
 #### ANA
 - Exploding Biotic Darts: Shots against any surface or target heals nearby teammates in a 7m radius for 150 HP.  
 - Poison Gas: Carpet a 10m area with your sleep dart that poisons all enemies who walk inside it.
