@@ -1,3 +1,9 @@
+### February 14, 2025
+* Team 1
+ 	- Added HAZARD as a playable hero.
+* General:
+   	- Added Runasapi to map pool.
+---
 ### July 20, 2024
 * Team 1
  	- Added JUNO as a playable hero.
