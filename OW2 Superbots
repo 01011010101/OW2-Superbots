@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] July 20, 2024: Testing Juno; testing Venture changes."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Feb 14, 2025: Tuning Juno and Hazard."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -25,6 +25,7 @@ settings
 
 			enabled maps
 			{
+				Horizon Lunar Colony 972777519512068154
 			}
 		}
 
@@ -49,7 +50,7 @@ settings
 				Eichenwalde Halloween
 				Hollywood Halloween
 				King's Row Winter
-				Paraíso
+			
 			}
 		}
 
@@ -58,10 +59,10 @@ settings
 			TS-1 Push Speed Modifier: 125%
 			TS-1 Walk Speed Modifier: 125%
 
-			disabled maps
-			{
-				Runasapi
-			}
+				
+	
+			
+	
 		}
 
 		General
@@ -205,6 +206,19 @@ settings
 				Ultimate Generation - Passive Dragonstrike: 50%
 			}
 
+			Hazard
+			{
+				Damage Dealt: 110%
+				Health: 200%
+				Jagged Wall Cooldown Time: 50%
+				Jagged Wall Knockback Scalar: 
+				Projectile Speed: 150%
+				Spike Guard Resource Cost Scalar: 50%
+				Spike Guard Resource Regeneration Scalar: 150%
+				Violent Leap Cooldown Time: 50%
+				Violent Leap Distance Scalar: 150%
+			}
+
 			Illari
 			{
 				Damage Dealt: 155%
@@ -240,7 +254,7 @@ settings
 			{
 				Damage Dealt: 115%
 				Glide Boost Cooldown Time: 50%
-				Glide Boost Duration Scalar: 
+								 
 				Health: 200%
 				Hyper Ring Cooldown Time: 75%
 				No Ammunition Requirement: On
@@ -483,13 +497,13 @@ settings
 			{
 				Burrow Cooldown Time: 30%
 				Burrow Duration Scalar: 500%
-				Damage Dealt: 115%
+				Damage Dealt: 110%
 				Drill Dash Cooldown Time: 15%
-				Health: 175%
+				Health: 150%
 				Infinite Ultimate Duration: On
 				No Ammunition Requirement: On
 				Projectile Speed: 500%
-				Ultimate Generation - Combat Tectonic Shock: 25%
+				Ultimate Generation - Combat Tectonic Shock: 15%
 			}
 
 			Widowmaker
@@ -686,11 +700,11 @@ settings
 				Ultimate Generation - Passive RIP-Tire: 500%
 			}
 
-			Juno
-			{
-				Damage Dealt: 115%
-				Hyper Ring Cooldown Time: 75%
-			}
+	   
+	
+					  
+								 
+	
 
 			Kiriko
 			{
@@ -773,9 +787,9 @@ settings
 			{
 				Damage Dealt: 160%
 				Health: 500%
-				Nemesis Form Cooldown Time: 75%
+				Nemesis Form Cooldown Time: 80%
 				Ravenous Vortex Cooldown Time: 50%
-				Ultimate Duration: 300%
+				Ultimate Duration: 500%
 				Ultimate Generation - Combat Annihilation: 300%
 				Ultimate Generation - Passive Annihilation: 500%
 				Void Barrier Omnic Form Cooldown Time: 25%
@@ -900,13 +914,13 @@ settings
 				Ultimate Generation - Passive Pulse Bomb: 300%
 			}
 
-			Venture
-			{
-				Burrow Cooldown Time: 15%
-				Damage Dealt: 130%
-				Drill Dash Cooldown Time: 5%
-				Health: 175%
-			}
+		  
+	
+							 
+					  
+								
+				
+	
 
 			Widowmaker
 			{
@@ -955,6 +969,17 @@ settings
 				Secondary Fire: Off
 				Ultimate Generation - Combat Transcendence: 250%
 				Ultimate Generation - Passive Transcendence: 500%
+			}
+
+			disabled heroes
+			{
+				D.Va
+				Echo
+				Hazard
+				Juno
+				Pharah
+				Venture
+				Wrecking Ball
 			}
 		}
 	}
@@ -1417,14 +1442,14 @@ rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%) [Updated b
 
 	actions
 	{
-		Global.Armor0 = Array(Hero(Ashe), Hero(Hanzo), Hero(Junkrat), Hero(Cassidy), Hero(Moira), Hero(Pharah), Hero(Sigma), Hero(
-			Soldier: 76), Hero(Widowmaker), Hero(Sojourn), Hero(Lifeweaver));
+		Global.Armor0 = Array(Hero(Ashe), Hero(Hanzo), Hero(Junkrat), Hero(Cassidy), Hero(Moira), Hero(Pharah), Hero(Soldier: 76), Hero(
+			Widowmaker), Hero(Sojourn), Hero(Lifeweaver), Hero(Venture));
 		Global.Armor25 = Array(Hero(Ana), Hero(Baptiste), Hero(Brigitte), Hero(Echo), Hero(Lúcio), Hero(Mercy), Hero(Zenyatta), Hero(
-			Kiriko), Hero(Illari), Hero(Venture), Hero(Juno));
+			Kiriko), Hero(Illari), Hero(Juno));
 		Global.Armor50 = Array(Hero(Doomfist), Hero(Genji), Hero(Mei), Hero(Reaper), Hero(Sombra), Hero(Symmetra), Hero(Torbjörn), Hero(
-			Tracer), Hero(Ramattra), Hero(Mauga));
+			Tracer), Hero(Hazard));
 		Global.Armor75 = Array(Hero(Bastion), Hero(D.Va), Hero(Orisa), Hero(Reinhardt), Hero(Roadhog), Hero(Winston), Hero(Wrecking Ball),
-			Hero(Zarya), Hero(Junker Queen));
+			Hero(Zarya), Hero(Junker Queen), Hero(Mauga), Hero(Roadhog), Hero(Sigma));
 	}
 }
 
@@ -7655,7 +7680,24 @@ rule("Hanzo HUD")
 	}
 }
 
-rule("Illari HUD [Added by Arkhanglesk#11200]")
+rule("Hazard HUD [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Hazard;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
+rule("Illari HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7686,7 +7728,7 @@ rule("Illari HUD [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("Junker Queen HUD [Added by Arkhanglesk#11200]")
+rule("Junker Queen HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7756,7 +7798,7 @@ rule("Junkrat HUD")
 	}
 }
 
-rule("Juno HUD")
+rule("Juno HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -9007,7 +9049,7 @@ rule("Flying Toggle [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ] - High server cost, use sparingly")
+rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ] - High server cost")
 {
 	event
 	{
