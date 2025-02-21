@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Feb 14, 2025: Tuning Juno and Hazard."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Feb 20, 2025: Tuning Juno and Hazard."
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -50,7 +50,6 @@ settings
 				Eichenwalde Halloween
 				Hollywood Halloween
 				King's Row Winter
-			
 			}
 		}
 
@@ -58,17 +57,12 @@ settings
 		{
 			TS-1 Push Speed Modifier: 125%
 			TS-1 Walk Speed Modifier: 125%
-
-				
-	
-			
-	
 		}
 
 		General
 		{
 			Game Mode Start: Immediately
-			Kill Cam: Off
+			Kill Cam: Disabled
 			Spawn Health Packs: Disabled
 			Tank Role Passive Health Bonus: Disabled
 		}
@@ -162,12 +156,12 @@ settings
 			Doomfist
 			{
 				Health: 150%
-				Infinite Ultimate Duration: On
+				Infinite Ultimate Duration: Enabled
 				Meteor Strike Knockback Scalar: 150%
 				No Ammunition Requirement: On
 				Power Block Charge Rate: 50%
 				Power Block Cooldown Time: 15%
-				Quick Melee: Off
+				Quick Melee: Disabled
 				Rocket Punch Cooldown Time: 25%
 				Seismic Slam Cooldown Time: 15%
 				Ultimate Duration: 110%
@@ -254,7 +248,6 @@ settings
 			{
 				Damage Dealt: 115%
 				Glide Boost Cooldown Time: 50%
-								 
 				Health: 200%
 				Hyper Ring Cooldown Time: 75%
 				No Ammunition Requirement: On
@@ -290,7 +283,7 @@ settings
 			Lúcio
 			{
 				Amp It Up Cooldown Time: 30%
-				Crossfade: Off
+				Crossfade: Disabled
 				Damage Dealt: 180%
 				No Ammunition Requirement: On
 				Soundwave Knockback Scalar: 115%
@@ -300,9 +293,9 @@ settings
 
 			Mauga
 			{
-				Cardiac Overdrive Cooldown Time: 80%
+				Cardiac Overdrive Cooldown Time: 110%
 				Damage Dealt: 138%
-				Health: 180%
+				Health: 110%
 				Incendiary Chaingun Ignite Rate: 150%
 				No Ammunition Requirement: On
 				Overrun Cooldown Time: 65%
@@ -315,7 +308,7 @@ settings
 			{
 				Cryo-Freeze Cooldown Time: 75%
 				Damage Dealt: 95%
-				Freeze Stacking: On
+				Freeze Stacking: Enabled
 				Health: 150%
 				No Ammunition Requirement: On
 				Ultimate Generation - Combat Blizzard: 1%
@@ -364,7 +357,7 @@ settings
 			Pharah
 			{
 				Concussive Blast Knockback Scalar: 25%
-				Hover Jets Unlimited Fuel: On
+				Hover Jets Unlimited Fuel: Enabled
 				Jump Jet Cooldown Time: 0%
 				No Ammunition Requirement: On
 				Rocket Launcher Knockback Scalar: 0%
@@ -500,7 +493,7 @@ settings
 				Damage Dealt: 110%
 				Drill Dash Cooldown Time: 15%
 				Health: 150%
-				Infinite Ultimate Duration: On
+				Infinite Ultimate Duration: Enabled
 				No Ammunition Requirement: On
 				Projectile Speed: 500%
 				Ultimate Generation - Combat Tectonic Shock: 15%
@@ -531,7 +524,7 @@ settings
 				Damage Dealt: 160%
 				Grappling Claw Cooldown Time: 0%
 				Grappling Claw Knockback Scalar: 120%
-				Infinite Ultimate Duration: On
+				Infinite Ultimate Duration: Enabled
 				Minefield Knockback Scalar: 0%
 				No Ammunition Requirement: On
 				Piledriver Cooldown Time: 0%
@@ -602,7 +595,7 @@ settings
 
 			Bastion
 			{
-				A-36 Tactical Grenade: Off
+				A-36 Tactical Grenade: Disabled
 				Damage Dealt: 165%
 				Health: 500%
 				Movement Gravity: 110%
@@ -667,7 +660,7 @@ settings
 				Damage Dealt: 150%
 				Health: 500%
 				Movement Gravity: 95%
-				Spawn With Ultimate Ready: On
+				Spawn With Ultimate Ready: Enabled
 				Storm Arrows Cooldown Time: 15%
 				Storm Arrows Quantity: 12
 				Ultimate Generation - Combat Dragonstrike: 400%
@@ -700,12 +693,6 @@ settings
 				Ultimate Generation - Passive RIP-Tire: 500%
 			}
 
-	   
-	
-					  
-								 
-	
-
 			Kiriko
 			{
 				Damage Dealt: 160%
@@ -717,7 +704,7 @@ settings
 
 			Lúcio
 			{
-				Crossfade: Off
+				Crossfade: Disabled
 				Damage Dealt: 200%
 				No Ammunition Requirement: On
 				Soundwave Cooldown Time: 150%
@@ -737,7 +724,7 @@ settings
 				Incendiary Chaingun Ignite Rate: 150%
 				Overrun Cooldown Time: 65%
 				Overrun Knockback: 50%
-				Quick Melee: Off
+				Quick Melee: Disabled
 				Ultimate Duration: 75%
 				Ultimate Generation - Combat Cage Fight: 40%
 				Ultimate Generation - Passive Cage Fight: 500%
@@ -761,7 +748,7 @@ settings
 				Guardian Angel Cooldown Time: 0%
 				Health: 500%
 				No Ammunition Requirement: On
-				Resurrect: Off
+				Resurrect: Disabled
 			}
 
 			Moira
@@ -800,8 +787,8 @@ settings
 				Damage Dealt: 175%
 				Health: 500%
 				No Ammunition Requirement: On
-				Quick Melee: Off
-				Shadow Step: Off
+				Quick Melee: Disabled
+				Shadow Step: Disabled
 				Ultimate Generation - Combat Death Blossom: 200%
 				Ultimate Generation - Passive Death Blossom: 500%
 				Wraith Form Cooldown Time: 200%
@@ -825,7 +812,7 @@ settings
 				Damage Dealt: 160%
 				Health: 500%
 				No Ammunition Requirement: On
-				Quick Melee: Off
+				Quick Melee: Disabled
 				Take a Breather Maximum Time: 25%
 				Take a Breather Recharge Rate: 50%
 				Ultimate Generation - Combat Whole Hog: 300%
@@ -875,7 +862,7 @@ settings
 				Health: 500%
 				Projectile Speed: 300%
 				Translocator Cooldown Time: 50%
-				Ultimate Ability EMP: Off
+				Ultimate Ability EMP: Disabled
 				Virus Cooldown Time: 50%
 			}
 
@@ -886,7 +873,7 @@ settings
 				Health: 500%
 				Projectile Speed: 60%
 				Sentry Turret Cooldown Time: 300%
-				Teleporter: Off
+				Teleporter: Disabled
 				Ultimate Generation - Passive Photon Barrier: 500%
 			}
 
@@ -897,7 +884,7 @@ settings
 				Deploy Turret Cooldown Time: 500%
 				Health: 450%
 				No Ammunition Requirement: On
-				Quick Melee: Off
+				Quick Melee: Disabled
 				Ultimate Duration: 500%
 				Ultimate Generation - Combat Molten Core: 500%
 				Ultimate Generation - Passive Molten Core: 400%
@@ -914,14 +901,6 @@ settings
 				Ultimate Generation - Passive Pulse Bomb: 300%
 			}
 
-		  
-	
-							 
-					  
-								
-				
-	
-
 			Widowmaker
 			{
 				Damage Dealt: 155%
@@ -929,8 +908,8 @@ settings
 				Health: 500%
 				Movement Speed: 110%
 				No Ammunition Requirement: On
-				No Automatic Fire: On
-				Ultimate Ability Infra-Sight: Off
+				No Automatic Fire: Enabled
+				Ultimate Ability Infra-Sight: Disabled
 				Venom Mine Cooldown Time: 25%
 			}
 
@@ -940,12 +919,12 @@ settings
 				Barrier Projector Cooldown Time: 150%
 				Damage Dealt: 200%
 				Health: 475%
-				Infinite Ultimate Duration: On
+				Infinite Ultimate Duration: Enabled
 				Jump Pack Acceleration Scalar: 75%
 				Jump Pack Cooldown Time: 50%
 				Jump Pack Knockback Scalar: 50%
 				Primal Rage Melee Knockback Scalar: 50%
-				Spawn With Ultimate Ready: On
+				Spawn With Ultimate Ready: Enabled
 				Ultimate Duration: 500%
 				Ultimate Generation - Combat Primal Rage: 500%
 				Ultimate Generation - Passive Primal Rage: 500%
@@ -956,9 +935,9 @@ settings
 				Damage Dealt: 170%
 				Health: 475%
 				No Ammunition Requirement: On
-				Particle Barrier: Off
+				Particle Barrier: Disabled
 				Projected Barrier Cooldown Time: 49%
-				Quick Melee: Off
+				Quick Melee: Disabled
 			}
 
 			Zenyatta
@@ -966,7 +945,7 @@ settings
 				Damage Dealt: 170%
 				Health: 400%
 				No Ammunition Requirement: On
-				Secondary Fire: Off
+				Secondary Fire: Disabled
 				Ultimate Generation - Combat Transcendence: 250%
 				Ultimate Generation - Passive Transcendence: 500%
 			}
@@ -1029,6 +1008,7 @@ variables
 		24: RelicSelected
 		25: RelicEquipped
 		26: ID_Array
+		27: EgoBoosted
 		28: GenjiMarkofDeath
 		29: GenjiMarkofDeathStacks
 		30: EnableFlying
@@ -4722,6 +4702,55 @@ rule("MAUGA Charge [Added by Arkhanglesk#11200]")
 	}
 }
 
+rule("MAUGA Ego Boost Activate [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Mauga;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Is Using Ability 2(Event Player) == True;
+	}
+
+	actions
+	{
+		"Shield all players within 12m (except you)"
+		Filtered Array(Players Within Radius(Event Player, 12, Team 1, Off), Remove From Array(Current Array Element, Event Player))
+			.EgoBoosted = True;
+	}
+}
+
+rule("MAUGA Ego Boost (Effect) [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Event Player.EgoBoosted == True;
+	}
+
+	actions
+	{
+		Small Message(Event Player, Custom String("{0} Mauga Makes You Feel Invicible!", Hero Icon String(Hero(Mauga))));
+		Play Effect(Event Player, Good Pickup Effect, Color(Yellow), Event Player, 1);
+		Set Status(Event Player, Null, Phased Out, 6);
+		Wait(6, Ignore Condition);
+		Small Message(Event Player, Custom String("{0} Mauga's Ego Boost Ended", Hero Icon String(Hero(Mauga))));
+		Event Player.EgoBoosted = False;
+	}
+}
+
 rule("MCCREE Phasing Roll")
 {
 	event
@@ -6758,6 +6787,7 @@ rule("VENTURE Geode Burst")
 	actions
 	{
 		Apply Impulse(Players Within Radius(Event Player, 5, Team 2, Surfaces), Up, 3, To World, Incorporate Contrary Motion);
+		Set Status(Victim, Event Player, Stunned, 1);
 	}
 }
 
@@ -7912,11 +7942,7 @@ rule("Mauga HUD [Added by Arkhanglesk#11200]")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String(
 			"[ABILITY 1] UNSTOPPABLE CHARGE                    "), Custom String("BUMRUSH"), Ability Icon String(Hero(Mauga), Button(
-			Ability 2)), Custom String("[ABILITY 2] BUFF NEARBY ALLIES                       "), Custom String("EGO BOOST"));
-		disabled Event Player.HUDTextHidden = Array(False, True, True, True);
-		"Set Hero HUD text."
-		disabled Event Player.PlayerHUD = Array(Ability Icon String(Hero(Mauga), Button(Ability 1)), Custom String("[ABILITY 1] UNSTOPPABLE CHARGE",
-			Ability Icon String(Hero(Mauga), Button(Ability 1))), Custom String("BUMRUSH"));
+			Ability 2)), Custom String("[ABILITY 2] +DMG +SHIELD TO ALLIES              "), Custom String("EGO BOOST"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8388,9 +8414,9 @@ rule("Venture HUD [Added by Arkhanglesk#11200]")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Venture), Button(Ability 1)), Custom String(
 			"INVISIBLE WHILE BURROWED                              "), Custom String("CAMOFLAUGE"), Ability Icon String(Hero(Baptiste),
-			Button(Crouch)), Custom String("[ABILITY 1] EMERGE HURLS BOTS SKYWARD "), Custom String("GEODE BURST"), Ability Icon String(
-			Hero(Venture), Button(Ultimate)), Custom String("SHRED AND KNOCK BACK BOTS                          "), Custom String(
-			"ULTIMATE: SHOCKWAVE"));
+			Button(Crouch)), Custom String("[ABILITY 1] LAUNCH AND STUN BOTS                "), Custom String("GEODE BURST"),
+			Ability Icon String(Hero(Venture), Button(Ultimate)), Custom String("KNOCK BACK AND SHRED BOTS                          "),
+			Custom String("ULTIMATE: SHOCKWAVE"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
