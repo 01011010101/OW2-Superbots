@@ -4,7 +4,7 @@
 * Team 1
  	- MAUGA
 		- Ego Boost now correctly notifies players within 12m that they are invincible.
-    		- Decreased Health from 150% to 110%. Reason: Mauga's Two Hearts perk makes him literally unkillable when standing on the point.
+  		- Decreased Health from 150% to 110%. Reason: Mauga's Two Hearts perk makes him literally unkillable when standing on the point.
 ---
 ### February 14, 2025 (Hazard)
 * Team 1
