@@ -59,6 +59,9 @@ PURIFIED is automatically equipped at the start.
   <a href="#doomfist" style="display: inline-block; margin: 0 20px;">
     <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/a/a1/Icon-Doomfist.png/revision/latest?cb=20221005161638" alt="Doomfist" style="width:60px; height:60px; border-radius:0%;">
   </a>
+  <a href="#hazard" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/5/54/Icon-Hazard.png/revision/latest" alt="Doomfist" style="width:60px; height:60px; border-radius:0%;">
+  </a>
   <a href="#junker-queen" style="display: inline-block; margin: 0 20px;">
     <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/2/2b/Icon-Junker_Queen.png/revision/latest?cb=20221005161646" alt="Junker Queen" style="width:60px; height:60px; border-radius:0%;">
   </a>
@@ -245,7 +248,7 @@ PURIFIED is automatically equipped at the start.
 - Ultimate: Overdrive: Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
 - Light Armor: 25% Armor.
   ##### 💬 Tip:
-  Echo excels at staying out of the fray and delivering massive damage from afar, but she can also be a devastating dive-bomber with the 🌀 Vortex relic.
+  Echo excels at staying out of the fray and delivering massive damage from afar, but she can also be a devastating dive bomber with the 🌀 Vortex relic.
 ---
 #### GENJI
 - Dragon Strike: Heal for 50 HP and explode Mark of Death.
@@ -265,12 +268,18 @@ PURIFIED is automatically equipped at the start.
 - Ultimate: Applies the current element of your arrows and can be switched mid-flight to apply both elements.
 - Automatic Storm Arrows.
 ---
+#### HAZARD
+- Jagged Wall CD: 50%
+- Violent Leap CD: 50%
+- Medium Armor: 50% Armor.
+- _WORK IN PROGRESS_
+---
 #### ILLARI
 - Heat Blast: Headshots set bots on fire.
 - Solar Flare: Knocks back and burns bots.
 - Ultimate: BFG 9000: Fire a massive plasma round that does 85 damage and then scorches for additional 5 damage over 5 seconds. If bots sustain any damage they will instantly die after 5 seconds.
   ##### 💬 Tip:
-  Take advantage of stuns from BASTION's Flashbangs, JUNKER QUEEN's Banshee Scream, or LIFEWEAVER's paralitic Nightshade ultimate to get free headshots.
+  Take advantage of stuns from BASTION's Flashbangs, JUNKER QUEEN's Banshee Scream, or LIFEWEAVER's paralitic Nightshade ultimate to get free headshots!
 ---
 #### JUNKER QUEEN
 - Press [RELOAD] to swap shouts.
@@ -292,7 +301,7 @@ PURIFIED is automatically equipped at the start.
   - Protection - Turn all players invincible for 10 seconds.
   - Kill Pile - Teleport Junkrat and bots to objective and root them for 6 seconds so they can work out their differences.
   ##### 💬 Tip:
-  Junkrat and his old running buddy Roadhog are a good team. Roadhog earns money for Junkrat's Chaos Roulette with every kill and Hook Combo.
+  Junkrat and his old running buddy Roadhog are a good team. With every kill and Hook Combo, Roadhog earns money for Junkrat's Chaos Roulette.
 ---
 #### JUNO
 - Glide Boost CD: 50%
@@ -321,7 +330,7 @@ PURIFIED is automatically equipped at the start.
 - Medium Armor: 50% Armor.
 ---
 #### MAUGA
-- Ego Boost: Cardiac Overdrive buffs nearby allies.
+- Ego Boost: Cardiac Overdrive buffs allies within 12m and makes them invincible for 6 seconds.
 - Unstoppable Charge: Juggernaut your way through all bots, damaging them for 50 damage and knocking them down.
 - Medium Armor: 50% Armor.
   ##### 💬 Tip:
