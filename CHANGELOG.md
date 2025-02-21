@@ -1,10 +1,18 @@
-### February 14, 2025
+### February 20, 2025 (Perks)
+* General:
+	- The Feb 18 update introduced the Perk systen, which somewhat messes with the balance of some heroes in this mode. Some heroes and abilities will need to be tweaked slightly.
+* Team 1
+ 	- MAUGA
+		- Ego Boost now correctly notifies players within 12m that they are invincible.
+    		- Decreased Health from 150% to 110%. Reason: Mauga's Two Hearts perk makes him literally unkillable when standing on the point.
+---
+### February 14, 2025 (Hazard)
 * Team 1
  	- Added HAZARD as a playable hero.
 * General:
    	- Added Runasapi to map pool.
 ---
-### July 20, 2024
+### July 20, 2024 (Juno)
 * Team 1
  	- Added JUNO as a playable hero.
 	- CASSIDY: Updated HUD to clarify Ult.
@@ -38,7 +46,7 @@
 * General
 	- Fixed Player HUD formatting for abilties. Reason: The formatting looked fine in OW1 but broke in OW2. While left/right justifying HUD text will appear on the correct side of the screen, the text itself is centered, making it ugly. Fixing the Relic, Player Level, and Superbots HUD will be trickier because they all change in size during the game, but it is in progress.
 ---
-### April 18, 2024
+### April 18, 2024 (Venture)
 * Team 1
 	- Added VENTURE as playable hero.
  	- RAMATTRA: New ability: Ravenous Aura: Leech HP from Super Bots while in Nemesis Form (testing).
