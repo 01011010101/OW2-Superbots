@@ -1,6 +1,6 @@
 ### February 20, 2025 (Perks)
 * General:
-	- The Feb 18 update introduced the Perk systen, which somewhat messes with the balance of some heroes in this mode. Some heroes and abilities will need to be tweaked slightly.
+	- The Feb 18 update introduced the Perk system, which somewhat messes with the balance of some heroes in this mode. Some heroes and abilities will need to be tweaked slightly.
 * Team 1
  	- MAUGA
 		- Ego Boost now correctly notifies players within 12m that they are invincible.
