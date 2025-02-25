@@ -8,47 +8,101 @@ Updated for OW2 by Arkhanglesk#11200
 <br>
 
 ## DESCRIPTION
-Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!<br>
+Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lúcio's ult! Every character has been tweaked in one way or another, play them to find out what's new!<br>
 
-### 💀 Your damage increases based on kill
-Every type of eliminaton gives you 3 XP + 3% damage increase. You can get up to 9 XP/+9% damage for a single kill:
-- Bot Kill: 3 XP and +3% damage
-- Bot Assist: 3 XP and +3% damage
-- Bot Last Hit: 3 XP and +3% damage
+<table style="width: 100%; margin: auto; border: none; border-collapse: collapse;">
+
+  <tr>
+    <td style="width: 60%; padding: 1px; text-align: left; border-right: 2px solid #000;">
+      <h3>💀 Your damage increases based on kill</h3>
+      <p>Every type of elimination gives you 3 XP + 3% damage increase:</p>
+      <ul>
+        <li>Bot Kill: 3 XP + 3% damage</li>
+        <li>Bot Assist: 3 XP + 3% damage</li>
+        <li>Bot Last Hit: 3 XP + 3% damage</li>
+      </ul>
+      <p>You can get up to 9 XP/+9% damage for a single kill!</p>
+    <br>
+    </td>
+    <td style="width: 40%; padding: 1px; text-align: center; vertical-align: middle;">
+      <img src="https://github.com/user-attachments/assets/78f1a573-79f0-4a91-a087-2f607bd6c8e8" alt="dmg_kills" style="width: 650px; height: auto; display: block; margin: 0 auto;">
+    </td>
+  </tr>
+
+  <tr>
+    <td style="width: 60%; padding: 1px; text-align: left; border-right: 2px solid #000;">
+      <h3>⬆️ Damage boost as you level up</h3>
+      <p>For every 100 XP/100% Damage you level up!</p>
+      <ul>
+        <li>100%-199% Damage = Level 1</li>
+        <li>200%-299% Damage = Level 2</li>
+        <li>300%-399% Damage = Level 3</li>
+        <li>400%-499% Damage = Level 4</li>
+        <li>500%-599% Damage = Level 5</li>
+        <li>etc...</li>
+      </ul>
+    <br>
+    </td>
+    <td style="width: 40%; padding: 1px; text-align: center; vertical-align: middle; display: flex; justify-content: center;">
+      <img src="https://github.com/user-attachments/assets/0f9fa96a-b973-4afd-9d31-ea5d43297e92" alt="level_up" style="width: 100%; height: auto;">
+    </td>
+  </tr>
+
+  <tr>
+    <td style="width: 60%; padding: 1px; text-align: left; border-right: 2px solid #000;">
+      <h3>💚 Relic Passives</h3>
+      <p>Press [INTERACT] to switch RELICS in spawn.<br>
+      PURIFIED is automatically equipped at the start.</p>
+      <ul>
+        <li>➕ PURIFIED: +200% Healing Dealt, +7% HP/sec Regeneration.
+        <li>🌀 VORTEX: +100% Movement speed, -7 second Respawn.
+        <li>⚔️ CORRUPTED: +100% Damage, -50% Armor.
+        <li>🛡️ AEGIS: +100% Healing Received, +10% Armor, Invincibility shield at low HP.
+        <li>⚡ HERO: +25% Damage, +25% Movement Speed and +25% Max HP per elimination.
+      </ul>
+    <br>
+    </td>
+    <td style="width: 40%; padding: 1px; text-align: center; vertical-align: middle;">
+      <img src="https://github.com/user-attachments/assets/415ed60c-8353-438e-a08e-881ea6f73116" alt="relics" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    </td>
+  </tr>
+
+  <tr>
+    <td style="width: 60%; padding: 1px; text-align: left; border-right: 2px solid #000;">
+      <h3>💥 Super Bot Lúcio Ultimates</h3>
+      <ul>
+        <li>BLAST OFF!: Sends all players flying high into the air.
+        <li>ROOTED!: Roots players 20m in line of sight for 5 seconds.
+        <li>CHILL OUT!: Freezes players 20m in line of sight for 4 seconds.
+        <li>KNOCKDOWN!: Knocks down players 20m in line of sight for 3 seconds.
+        <li>GET OVER HERE!: Teleports players 20m in line of sight to Lúcio’s position.
+        <li>INVISIBILITY!: Turns all enemies invisible for 10 seconds.
+        <li>WORLD ON FIRE: Burns all players on the map for 12 seconds.
+        <li>STAY AWHILE AND LISTEN: Puts players 20m in line of sight to sleep for 10 seconds.
+        <li>HACKED!!!: Hacks players within 30m and through walls for 7 seconds.
+      </ul>
+          <br>
+      </p>
+    </td>
+    <td style="width: 40%; padding: 1px; text-align: center; vertical-align: middle;">
+      <img src="https://github.com/user-attachments/assets/f24d0982-a37f-47e8-a44d-d973cb4beef7" alt="Lúcio_ult" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    </td>
+  </tr>
+</table>
 
 
-### ⬆️ Damage boost as you level up
-For every 100 XP/100% Damage you level up!
 
-- 100%-199% Damage = Level 1
-- 200%-299% Damage = Level 2
-- 300%-399% Damage = Level 3
-- 400%-499% Damage = Level 4
-- 500%-599% Damage = Level 5
-- etc...
 
-### 💚 Relic Passives
-Press [INTERACT] to switch RELICS in spawn.
-<br>
-PURIFIED is automatically equipped at the start.
 
-- ➕ PURIFIED: +200% Healing Dealt, +7% HP/sec Regeneration.
-- 🌀 VORTEX: +100% Movement speed, -7 second Respawn.
-- ⚔️ CORRUPTED: +100% Damage, -50% Armor.
-- 🛡️ AEGIS: +100% Healing Received, +10% Armor, Invincibility shield at low HP.
-- ⚡ HERO: +25% Damage, +25% Movement Speed and +25% Max HP per elimination.<br>
 
-### 💥 Super Bot Lucio Ultimates
-- BLAST OFF!: Sends all players flying high into the air.
-- ROOTED!: Roots players 20m in line of sight for 5 seconds.
-- CHILL OUT!: Freezes players 20m in line of sight for 4 seconds.
-- KNOCKDOWN!: Knocks down players 20m in line of sight for 3 seconds.
-- GET OVER HERE!: Teleports players 20m in line of sight to Lucio’s position.
-- INVISIBILITY!: Turns all enemies invisible for 10 seconds.
-- WORLD ON FIRE: Burns all players on the map for 12 seconds.
-- STAY AWHILE AND LISTEN: Puts players 20m in line of sight to sleep for 10 seconds.
-- HACKED!!!: Hacks players within 30m and through walls for 7 seconds.
-<br>
+
+
+
+
+
+
+
+
 
 ## HEROES
 <h3 align="center">TANKS</h3>
@@ -326,7 +380,7 @@ PURIFIED is automatically equipped at the start.
 ---
 #### LÚCIO 
 - Tinnitus: [SECONDARY FIRE] deals a ton of damage while knocking back and heals 150 HP in a 10m radius. This damage is increased by your current movement speed.
-- Ultimate: Party All Night: Resurrect all dead players and teleport them next to Lucio, Heal 100 health to everyone every second, deal damage to all enemies (20m) during the rapid bass part of his beat. Lucio becomes Phased Out for the duration. Lasts 10 seconds.
+- Ultimate: Party All Night: Resurrect all dead players and teleport them next to Lúcio, Heal 100 health to everyone every second, deal damage to all enemies (20m) during the rapid bass part of his beat. Lúcio becomes Phased Out for the duration. Lasts 10 seconds.
 - Medium Armor: 50% Armor.
 ---
 #### MAUGA
@@ -408,7 +462,7 @@ PURIFIED is automatically equipped at the start.
 ---
 #### SIGMA
 - Kinetic Attraction: Using Kinetic Grasp pulls enemies towards you and knocks them into the ground at the end. (Created by Scourge)
-- Kinetic Repulsion: The Melee punch pushes enemies back and deals damage, similar to Lucio’s Boop.  This ability always deals full damage, but the knockback is reduced if you use it back to back.  It needs to recharge for 10 seconds for a full knockback charge.
+- Kinetic Repulsion: The Melee punch pushes enemies back and deals damage, similar to Lúcio’s Boop.  This ability always deals full damage, but the knockback is reduced if you use it back to back.  It needs to recharge for 10 seconds for a full knockback charge.
 - Flying: Press [RELOAD] to turn on/off flying. [JUMP] to go up, [CROUCH] to go down.
 - 250% Jump Height.
 - Light Armor: 25% Armor.
