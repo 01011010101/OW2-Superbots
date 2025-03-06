@@ -1,3 +1,15 @@
+### March 5, 2025
+* Team 1
+	- BASTION
+ 		- Ultimate can now be triggered if the player is in Assault Configuration.
+   		- Ult duration increased to 7 seconds (up from 4s).
+  	- MAUGA: Increased Cardiac Overdrive CD to 120%. [Reason: To balance how OP Ego Boost is.]
+* Super Bots
+	- Buffed damage for some bots:
+		- JUNKRAT: 175% -> 200%
+		- RAMATTRA: 160% -> 200%
+		- SIGMA: 200%- > 225%
+---
 ### February 20, 2025 (Perks)
 * General:
 	- The Feb 18 update introduced the Perk system, which somewhat messes with the balance of some heroes in this mode. Some heroes and abilities will need to be tweaked slightly.
