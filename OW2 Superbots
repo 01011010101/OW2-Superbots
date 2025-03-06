@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[WORK IN PROGRESS] Feb 20, 2025: Tuning Juno and Hazard."
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[March 5, 2025: Tuning after Perk update.]"
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -155,7 +155,7 @@ settings
 
 			Doomfist
 			{
-				Health: 150%
+				Health: 120%
 				Infinite Ultimate Duration: Enabled
 				Meteor Strike Knockback Scalar: 150%
 				No Ammunition Requirement: On
@@ -293,7 +293,7 @@ settings
 
 			Mauga
 			{
-				Cardiac Overdrive Cooldown Time: 110%
+				Cardiac Overdrive Cooldown Time: 120%
 				Damage Dealt: 138%
 				Health: 110%
 				Incendiary Chaingun Ignite Rate: 150%
@@ -366,7 +366,7 @@ settings
 
 			Ramattra
 			{
-				Health: 135%
+				Health: 115%
 				Nemesis Form Cooldown Time: 90%
 				No Ammunition Requirement: On
 				Ravenous Vortex Cooldown Time: 35%
@@ -670,7 +670,7 @@ settings
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
-				Commanding Shout Cooldown Time: 30%
+				Commanding Shout Cooldown Time: 75%
 				Damage Dealt: 165%
 				Health: 500%
 				Jagged Blade Cooldown Time: 75%
@@ -684,7 +684,7 @@ settings
 				Ammunition Clip Size Scalar: 150%
 				Concussion Mine Cooldown Time: 200%
 				Concussion Mine Knockback Scalar: 50%
-				Damage Dealt: 175%
+				Damage Dealt: 200%
 				Frag Launcher Knockback Scalar: 60%
 				Health: 500%
 				Movement Gravity: 50%
@@ -772,7 +772,7 @@ settings
 
 			Ramattra
 			{
-				Damage Dealt: 160%
+				Damage Dealt: 200%
 				Health: 500%
 				Nemesis Form Cooldown Time: 80%
 				Ravenous Vortex Cooldown Time: 50%
@@ -823,7 +823,7 @@ settings
 			Sigma
 			{
 				Accretion Knockback Scalar: 65%
-				Damage Dealt: 200%
+				Damage Dealt: 225%
 				Experimental Barrier Cooldown Time: 125%
 				Experimental Barrier Recharge Rate: 50%
 				Health: 500%
@@ -3239,7 +3239,6 @@ rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework 
 	{
 		Ultimate Charge Percent(Event Player) == 100;
 		Is Button Held(Event Player, Button(Ultimate)) == True;
-		Is Using Ability 1(Event Player) == False;
 	}
 
 	actions
@@ -3250,21 +3249,19 @@ rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework 
 		Wait(0.150, Ignore Condition);
 		Set Ultimate Charge(Event Player, 0);
 		Press Button(Event Player, Button(Ability 1));
+		"Pops Bastion in and out of Reconfigure, resetting CD so you get a full 7 secs of Ult"
+		If(Is Using Ability 1(Event Player) == True);
+			Press Button(Event Player, Button(Ability 1));
+			Set Ability Cooldown(Event Player, Button(Ability 1), 0.300);
+			Wait(0.450, Ignore Condition);
+			Press Button(Event Player, Button(Ability 1));
+		End;
 		Wait(0.150, Ignore Condition);
 		Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 100, Visible To);
 		Event Player.ID_Array[0] = Last Created Entity;
-		If(Players Within Radius(Event Player, 10, Team 2, Surfaces) >= 5);
-			Small Message(Event Player, Custom String(" {0} MULTIPLE BOTS DETECTED", Ability Icon String(Hero(Cassidy), Button(Ultimate))));
-			Wait(1, Ignore Condition);
-			Small Message(Event Player, Custom String(" {0} ADVISE AGGRESSIVE SUSTAINED COUNTERFIRE", Ability Icon String(Hero(Baptiste),
-				Button(Ultimate))));
-			Wait(1, Ignore Condition);
-		Else;
-			Small Message(Event Player, Custom String(" {0} HIGH-VELOCITY ROUNDS LOADED!", Ability Icon String(Hero(Sojourn), Button(
-				Secondary Fire))));
-			Wait(2, Ignore Condition);
-		End;
-		Wait(4, Ignore Condition);
+		Small Message(Event Player, Custom String(" {0} HIGH-VELOCITY ROUNDS LOADED!", Ability Icon String(Hero(Sojourn), Button(
+			Secondary Fire))));
+		Wait(7, Ignore Condition);
 		Destroy Effect(Event Player.ID_Array[0]);
 		Event Player.FullAutoFire = False;
 		Stop Forcing Player To Be Hero(Event Player);
@@ -4744,8 +4741,8 @@ rule("MAUGA Ego Boost (Effect) [Added by Arkhangelsk#11200]")
 	{
 		Small Message(Event Player, Custom String("{0} Mauga Makes You Feel Invicible!", Hero Icon String(Hero(Mauga))));
 		Play Effect(Event Player, Good Pickup Effect, Color(Yellow), Event Player, 1);
-		Set Status(Event Player, Null, Phased Out, 6);
-		Wait(6, Ignore Condition);
+		Set Status(Event Player, Null, Phased Out, 8);
+		Wait(8, Ignore Condition);
 		Small Message(Event Player, Custom String("{0} Mauga's Ego Boost Ended", Hero Icon String(Hero(Mauga))));
 		Event Player.EgoBoosted = False;
 	}
