@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[March 5, 2025: Tuning after Perk update.]"
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[April 5, 2025: Perk update tuning, testing Juno and Hazard changes.]"
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -91,7 +91,7 @@ settings
 				Coach Gun Cooldown Time: 50%
 				Coach Gun Knockback Scalar Enemy: 200%
 				Coach Gun Knockback Scalar Self: 200%
-				Damage Dealt: 150%
+				Damage Dealt: 155%
 				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
 				Health: 150%
@@ -126,9 +126,9 @@ settings
 				Barrier Shield Cooldown Time: 0%
 				Barrier Shield Recharge Rate: 500%
 				Damage Dealt: 135%
-				Health: 200%
+				Health: 150%
 				Repair Pack Cooldown Time: 35%
-				Shield Bash Cooldown Time: 50%
+				Shield Bash Knockback Scalar: 175%
 				Ultimate Generation - Combat Rally: 20%
 				Whip Shot Knockback Scalar: 200%
 			}
@@ -202,15 +202,15 @@ settings
 
 			Hazard
 			{
-				Damage Dealt: 110%
-				Health: 200%
+				Health: 120%
 				Jagged Wall Cooldown Time: 50%
-				Jagged Wall Knockback Scalar: 
-				Projectile Speed: 150%
-				Spike Guard Resource Cost Scalar: 50%
-				Spike Guard Resource Regeneration Scalar: 150%
+				Jagged Wall Knockback: 
+				Spike Guard Movement Speed Penalty: 50%
+				Spike Guard Resource Cost: 50%
+				Spike Guard Resource Regeneration: 150%
+				Ultimate Generation - Combat Downpour: 50%
 				Violent Leap Cooldown Time: 50%
-				Violent Leap Distance Scalar: 150%
+				Violent Leap Distance: 125%
 			}
 
 			Illari
@@ -246,13 +246,14 @@ settings
 
 			Juno
 			{
-				Damage Dealt: 115%
-				Glide Boost Cooldown Time: 50%
+				Damage Dealt: 110%
+				Glide Boost Cooldown Time: 65%
+				Glide Boost Duration Scalar: 
 				Health: 200%
 				Hyper Ring Cooldown Time: 75%
 				No Ammunition Requirement: On
-				Pulsar Torpedoes Cooldown Time: 50%
-				Ultimate Generation - Combat Orbital Ray: 50%
+				Pulsar Torpedoes Cooldown Time: 75%
+				Ultimate Generation - Combat Orbital Ray: 40%
 			}
 
 			Kiriko
@@ -366,7 +367,7 @@ settings
 
 			Ramattra
 			{
-				Health: 115%
+				Damage Dealt: 125%
 				Nemesis Form Cooldown Time: 90%
 				No Ammunition Requirement: On
 				Ravenous Vortex Cooldown Time: 35%
@@ -424,7 +425,7 @@ settings
 			Sojourn
 			{
 				Damage Dealt: 150%
-				Disruptor Shot Cooldown Time: 25%
+				Disruptor Shot Cooldown Time: 35%
 				Health: 275%
 				No Ammunition Requirement: On
 				Power Slide Cooldown Time: 35%
@@ -575,7 +576,7 @@ settings
 				Health: 500%
 				No Ammunition Requirement: On
 				Projectile Speed: 90%
-				Ultimate Duration: 150%
+				Ultimate Duration: 200%
 				Ultimate Generation - Combat B.O.B.: 300%
 				Ultimate Generation - Passive B.O.B.: 500%
 			}
@@ -667,6 +668,13 @@ settings
 				Ultimate Generation - Passive Dragonstrike: 500%
 			}
 
+			Hazard
+			{
+				Health: 120%
+				Spike Guard Movement Speed Penalty: 10%
+				Violent Leap Distance: 150%
+			}
+
 			Junker Queen
 			{
 				Carnage Cooldown Time: 50%
@@ -737,7 +745,7 @@ settings
 				Damage Dealt: 165%
 				Health: 500%
 				Ice Wall Cooldown Time: 200%
-				Ultimate Generation - Combat Blizzard: 200%
+				Ultimate Generation - Combat Blizzard: 250%
 				Ultimate Generation - Passive Blizzard: 500%
 				Weapon Freeze Rate Scalar: 75%
 			}
@@ -836,6 +844,7 @@ settings
 			{
 				Ammunition Clip Size Scalar: 200%
 				Damage Dealt: 160%
+				Disruptor Shot Cooldown Time: 35%
 				Health: 500%
 				Power Slide Cooldown Time: 50%
 				Ultimate Duration: 200%
@@ -1018,6 +1027,7 @@ variables
 		34: SuperbotEnrageCounter
 		35: UltimateThirdPerson
 		36: FullAutoFire
+		37: HazardMark
 		38: RandomEmote
 		39: PlayerHUD
 		125: Flight
@@ -1034,6 +1044,7 @@ subroutines
 	4: DvaBunnyHopDeactivate
 	5: MoiraExplosion
 	6: ReaperCreepingDeathOff
+	8: JunoBeamMovement
 }
 
 rule("CREATED BY CEL#1115")
@@ -2527,6 +2538,10 @@ rule("SUPERBOTS Setup (Health, Movement, Effects and Icons) [Updated by Arkhangl
 		Create Icon(Filtered Array(All Players(All Teams), Event Player.MercyCharm == 1), Event Player + Vector(0, 0, 0), Heart,
 			Visible To and Position, Color(Red), True);
 		Wait(1, Ignore Condition);
+		"Hazard Marks"
+		Create Icon(Filtered Array(Players On Hero(Hero(Hazard), Team 1), Event Player.HazardMark == 1), Event Player + Vector(0, 0, 0),
+			Skull, Visible To Position and Color, Color(Purple), True);
+		"Genji Marks"
 		Create In-World Text(Filtered Array(Players On Hero(Hero(Genji), Team 1), Event Player.GenjiMarkofDeath == 1), Custom String(
 			"{0}死", Event Player.GenjiMarkofDeathStacks), Event Player + Vector(0, 0, 0), 4, Do Not Clip, Visible To Position and String,
 			Color(Lime Green), Default Visibility);
@@ -2607,7 +2622,7 @@ rule("SUPERBOTS ZARYA Radiation Damage")
 	actions
 	{
 		Set Status(Event Player, Null, Burning, 1);
-		Start Damage Over Time(Event Player, Null, 1, Max Health(Event Player) * 0.350);
+		Start Damage Over Time(Event Player, Players On Hero(Hero(Zarya), Team 2), 1, Max Health(Event Player) * 0.350);
 		Wait(1, Ignore Condition);
 		Loop If Condition Is True;
 	}
@@ -3858,6 +3873,70 @@ rule("HANZO Elemental Dragon Arrows")
 	}
 }
 
+rule("HAZARD Phreak Flag Mark [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Hazard;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		(Event Ability == Button(Ability 1)) == True;
+	}
+
+	actions
+	{
+		If(Victim.HazardMark == 0);
+			Victim.HazardMark = 1;
+		End;
+	}
+}
+
+rule("HAZARD Bot Died While Marked [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Player Died;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Event Player.HazardMark == 1;
+	}
+
+	actions
+	{
+		Event Player.HazardMark = 0;
+	}
+}
+
+rule("HAZARD Double Damage While Marked [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Player Took Damage;
+		Team 2;
+		All;
+	}
+
+	conditions
+	{
+		Event Player.HazardMark == 1;
+		Attacker == Players On Hero(Hero(Hazard), Team 1);
+	}
+
+	actions
+	{
+		Set Damage Received(Event Player, 250);
+	}
+}
+
 rule("ILLARI Solar Flare [Added by Arkhanglesk#11200]")
 {
 	event
@@ -3922,7 +4001,7 @@ rule("ILLARI Ultimate BFG 9000 [Added by Arkhanglesk#11200]")
 
 	actions
 	{
-		Damage(Victim, Event Player, 130);
+		Damage(Victim, Event Player, 150);
 		Set Status(Victim, Event Player, Burning, 5);
 		Start Damage Over Time(Victim, Event Player, 5, 1);
 		Set Ultimate Ability Enabled(Event Player, True);
@@ -4354,6 +4433,142 @@ rule("JUNKRAT Elimination Money Script [Broken in OW2; updated by Arkhanglesk#11
 		Wait(0.050, Ignore Condition);
 		Event Player.U = 0;
 		Loop If Condition Is True;
+	}
+}
+
+rule("JUNO Ultimate Switch [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Juno;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Is Button Held(Event Player, Button(Reload)) == True;
+		Ultimate Charge Percent(Event Player) >= 1;
+	}
+
+	actions
+	{
+		Event Player.R = !Event Player.R;
+		If(Event Player.R == False);
+			Event Player.HUDTextHidden = Array(False, True, False, True);
+			Small Message(Event Player, Custom String(" {0} LOW ORBIT ION CANNON: Nuke Bots From Space", Ability Icon String(Hero(Moira),
+				Button(Ultimate))));
+		Else If(Event Player.R == True);
+			Event Player.HUDTextHidden = Array(True, False, False, True);
+			Small Message(Event Player, Custom String(" {0} ENERGIZE: Beams Bots into Space", Ability Icon String(Hero(Juno), Button(
+				Ultimate))));
+		End;
+		Play Effect(Event Player, Buff Explosion Sound, Color(White), Event Player, 50);
+		Wait(1, Ignore Condition);
+	}
+}
+
+rule("JUNO Ultimate Placement and Movement [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Juno;
+	}
+
+	conditions
+	{
+		Is Using Ultimate(Event Player) == True;
+	}
+
+	actions
+	{
+		"Freeze angle and trajectory. Pevents U drifting off from beam if the player turns mid-cast."
+		Event Player.I = Facing Direction Of(Event Player);
+		Wait(0.100, Ignore Condition);
+		"Start following beam path starting 4m in front of player"
+		Event Player.U = Position Of(Event Player) + Event Player.I * 4;
+		Wait(0.100, Ignore Condition);
+		"Renegotiate ground. Fix for U sinking into the ground when cast on an decline."
+		Event Player.U = Ray Cast Hit Position(Event Player.U, Event Player.U + Vector(0, -100, 0), Null, Null, False);
+		"Debug"
+		disabled Wait(0.100, Ignore Condition);
+		disabled Create Effect(All Players(Team 1), Sphere, Color(White), Event Player.U, 5, Visible To Position and Radius);
+		disabled Event Player.V = Last Created Entity;
+		Set Reload Enabled(Event Player, False);
+		Wait(1.500, Ignore Condition);
+		Call Subroutine(JunoBeamMovement);
+		Set Reload Enabled(Event Player, True);
+		disabled Destroy Effect(Last Created Entity);
+	}
+}
+
+rule("JUNO Ultimate Damage [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Juno;
+	}
+
+	conditions
+	{
+		Is Using Ultimate(Event Player) == True;
+	}
+
+	actions
+	{
+		"Low Orbit Ion Cannon"
+		If(Event Player.R == False);
+			Abort If Condition Is False;
+			Wait(1, Ignore Condition);
+			Damage(Players Within Radius(Event Player.U, 5, Team 2, Off), Event Player, 500);
+			Loop;
+		"Energize"
+		Else If(Event Player.R == True);
+			Abort If Condition Is False;
+			Event Player.T = Players Within Radius(Event Player.U, 5, Team 2, Off);
+			Wait(0.100, Ignore Condition);
+			Apply Impulse(Event Player.T, Vector(0, 50, 0), 27, To World, Cancel Contrary Motion XYZ);
+			Wait(0.250, Ignore Condition);
+			Play Effect(All Players(Team 1), Bad Pickup Effect, Color(Lime Green), Event Player.T, 20);
+			Wait(0.400, Ignore Condition);
+			Teleport(Event Player.T, Vector(0, 150, 0));
+			If(Count Of(Event Player.T) > 1);
+				Small Message(Event Player, Custom String(" {0} BOTS BEAMED UP!", Count Of(Event Player.T)));
+			End;
+			Wait(0.500, Ignore Condition);
+			Kill(Event Player.T, Event Player);
+			Loop;
+		End;
+	}
+}
+
+rule("JUNO Zero-G [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Juno;
+	}
+
+	conditions
+	{
+		Is In Air(Event Player) == True;
+		Is Button Held(Event Player, Button(Jump)) == True;
+		Vertical Speed Of(Event Player) < -1;
+	}
+
+	actions
+	{
+		Set Gravity(Event Player, 0);
+		Wait(0.250, Ignore Condition);
+		Loop If Condition Is True;
+		Set Gravity(Event Player, 100);
 	}
 }
 
@@ -7719,7 +7934,11 @@ rule("Hazard HUD [Added by Arkhangelsk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HUDTextHidden = Array(False, False, True, True);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Baptiste), Button(Ability 2)), Custom String(
+			"MARKED TARGETS TAKE 3X DMG                        "), Custom String("NO FUTURE"), Icon String(Skull), Custom String(
+			"[ABILITY 1] SLASHED TARGETS ARE MARKED"), Custom String("PHREAK FLAG"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -7837,7 +8056,13 @@ rule("Juno HUD [Added by Arkhangelsk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.R = False;
+		Event Player.HUDTextHidden = Array(False, True, False, True);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Moira), Button(Ultimate)), Custom String(
+			"[RELOAD] TO SWITCH [ULTIMATE] DAMAGE   "), Custom String("ULTIMATE: ION CANNON"), Ability Icon String(Hero(Juno), Button(
+			Ultimate)), Custom String("[RELOAD] TO SWITCH [ULTIMATE] DAMAGE   "), Custom String("ULTIMATE: ENERGIZE"), Ability Icon String(
+			Hero(Juno), Button(Jump)), Custom String("HOLD [JUMP] TO ACTIVATE ZERO-G                   "), Custom String("GRAV BOOTS"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8960,6 +9185,26 @@ rule("Subroutine - (DisableButtons) [Broken in OW2; updated by Arkhanglesk#11200
 	}
 }
 
+rule("Subroutine - (Juno Beam Movement) [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Subroutine;
+		JunoBeamMovement;
+	}
+
+	actions
+	{
+		"Note: Juno's Ult beam animation moves 2.25 m/s for 8 seconds (total 18m)"
+		Event Player.U = Event Player.U + Event Player.I * 2.400;
+		Wait(0.100, Ignore Condition);
+		"Renegotiate solid ground (incline or decline)"
+		Event Player.U = Ray Cast Hit Position(Event Player.U + Vector(0, 2, 0), Event Player.U + Vector(0, -100, 0), Null, Null, False);
+		Wait(1, Ignore Condition);
+		Loop If Condition Is True;
+	}
+}
+
 rule("Subroutine - (ResetRelicStatus)")
 {
 	event
@@ -9236,5 +9481,29 @@ rule("PLAYER Third Person During Ultimate OFF [Broken in OW2; updated by Arkhang
 	actions
 	{
 		Stop Camera(Event Player);
+	}
+}
+
+rule("SUDDEN DEATH Message to Dead Players [Added by Arkhanglesk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		All;
+	}
+
+	conditions
+	{
+		Global.ChallengeRoulette[0] == 5;
+		Is Dead(Event Player) == True;
+	}
+
+	actions
+	{
+		Abort If Condition Is False;
+		Small Message(All Dead Players(Team 1), Custom String(" SUDDEN DEATH: Respawn Disabled for Players"));
+		Wait(30, Ignore Condition);
+		Loop;
 	}
 }
