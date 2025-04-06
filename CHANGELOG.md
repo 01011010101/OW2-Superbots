@@ -1,62 +1,104 @@
+### April 5, 2025
+
+#### General
+- Added a message for all dead players while the Sudden Death OT challenge is active.
+
+#### Team 1
+- **JUNO – New Abilities:**
+  - **Ultimate Choice:**
+    - **Low Orbit Ion Cannon** – Nukes bots from space! Orbital Ray now deals **5,000 DPS** over 8 seconds to any bot in its path.
+    - **Energize** – Bots are beamed up into space.
+  - **Grav Boots** – Press **[JUMP]** in midair to activate zero gravity.
+
+- **HAZARD – New Abilities:**
+  - **Phreak Flag** – Slashed targets are marked with a 💀.
+  - **No Future** – Marked targets take **300%** damage from all sources.
+
+---
 ### March 5, 2025
-* Team 1
-	- BASTION
- 		- Ultimate can now be triggered if the player is in Assault Configuration.
-   		- Ult duration increased to 7 seconds (up from 4s).
-  	- MAUGA: Increased Cardiac Overdrive CD to 120%. [Reason: To balance how OP Ego Boost is.]
-* Super Bots
-	- Buffed damage for some bots:
-		- JUNKRAT: 175% -> 200%
-		- RAMATTRA: 160% -> 200%
-		- SIGMA: 200%- > 225%
+
+#### Team 1
+- **BASTION**
+  - Ultimate can now be triggered if the player is in Assault Configuration.
+  - Ult duration increased to **7 seconds** (up from 4s).
+- **MAUGA**
+  - Increased **Cardiac Overdrive cooldown** to **120%**.  
+    _Reason: To balance how OP Ego Boost is._
+
+#### Super Bots
+- **Buffed damage for select bots:**
+  - **JUNKRAT:** 175% → 200%
+  - **RAMATTRA:** 160% → 200%
+  - **SIGMA:** 200% → 225%
+
 ---
+
 ### February 20, 2025 (Perks)
-* General:
-	- The Feb 18 update introduced the Perk system, which somewhat messes with the balance of some heroes in this mode. Some heroes and abilities will need to be tweaked slightly.
-* Team 1
- 	- MAUGA
-		- Ego Boost now correctly notifies players within 12m that they are invincible.
-  		- Decreased Health from 150% to 110%. Reason: Mauga's Two Hearts perk makes him literally unkillable when standing on the point.
+
+#### General
+- The Feb 18 update introduced the **Perk system**, which affects hero balance in this mode.  
+  Some heroes and abilities will need to be tweaked slightly.
+
+#### Team 1
+- **MAUGA**
+  - Ego Boost now correctly notifies players within **12m** that they are invincible.
+  - Decreased **Health** from **150%** to **110%**.  
+	- _Reason: Mauga's Two Hearts perk makes him literally unkillable when standing on the point._
+
 ---
+
 ### February 14, 2025 (Hazard)
-* Team 1
- 	- Added HAZARD as a playable hero.
-* General:
-   	- Added Runasapi to map pool.
+
+#### Team 1
+- Added **HAZARD** as a playable hero.
+
+#### General
+- Added **Runasapi** to the map pool.
+
 ---
+
 ### July 20, 2024 (Juno)
-* Team 1
- 	- Added JUNO as a playable hero.
-	- CASSIDY: Updated HUD to clarify Ult.
-	- GENJI: Updated name of [Ability 1].
-	- KIRIKO: Buffed [Primary] (Ofuda) damage, update name of bleed attack (Kami Kiri Kizu).
-	- LIGHTWEAVER: Buffed Hemlock damage from 15 to 25 dps.
-  	- VENTURE: New abilites:
-		- Camouflage: Bots cannot see you while burrowed.
-		- Geode Burst: Empowers your Emerge and Drill Dash abilties
-  			- Emerge: Hurls bots in the air. The longer the charge, the higher they are launched.
-  			- Drill Dash: Barrels through bots and makes a path
-		- Ultimate: Shockwave: Create an earthwake in a cone in front of you that knocks bots back and knocks them down for 3 seconds.
 
-* General:
-   	- Fixed Player HUD formatting for relics to align with abilities.
+#### Team 1
+- Added **JUNO** as a playable hero.
+- **CASSIDY** – Updated HUD to clarify Ult.
+- **GENJI** – Updated name of [Ability 1].
+- **KIRIKO** – Buffed [Primary] (Ofuda) damage. Updated name of bleed attack to **Kami Kiri Kizu**.
+- **LIGHTWEAVER** – Buffed **Hemlock** damage from **15** to **25 DPS**.
+- **VENTURE – New Abilities:**
+  - **Camouflage** – Bots cannot see you while burrowed.
+  - **Geode Burst** – Empowers your **Emerge** and **Drill Dash** abilities:
+    - **Emerge** – Hurls bots into the air. The longer the charge, the higher they are launched.
+    - **Drill Dash** – Barrels through bots and clears a path.
+  - **Ultimate – Shockwave** – Create an earthwake in a cone in front of you that knocks bots back and knocks them down for 3 seconds.
+
+#### General
+- Fixed **Player HUD** formatting for relics to align with abilities.
+
 ---
+
 ### June 14, 2024
-* Team 1
-	- BASTION: Fixed an issue where the Ult effect persisted after death.
-  	- MOIRA: Fixed HUD
- 	- RAMATTRA: Nemesis Void Punch works during ult now (not just while in Nemesis Form)
----
-### April 29, 2024
-* Team 1
-  	- ANA: Updated Biotic Poison Gas ability description.
-   	- TORBJORN: Updated HUD to clarify Dwarven Rage abilities.
-  	 	
-* Super Bots
-	- Buffed damage and ultgen slightly for some bots.
 
-* General
-	- Fixed Player HUD formatting for abilties. Reason: The formatting looked fine in OW1 but broke in OW2. While left/right justifying HUD text will appear on the correct side of the screen, the text itself is centered, making it ugly. Fixing the Relic, Player Level, and Superbots HUD will be trickier because they all change in size during the game, but it is in progress.
+#### Team 1
+- **BASTION** – Fixed an issue where the Ult effect persisted after death.
+- **MOIRA** – Fixed HUD.
+- **RAMATTRA** – Nemesis **Void Punch** now works during Ult (not just while in Nemesis Form).
+
+---
+
+### April 29, 2024
+
+#### Team 1
+- **ANA** – Updated **Biotic Poison Gas** ability description.
+- **TORBJORN** – Updated HUD to clarify **Dwarven Rage** abilities.
+
+#### Super Bots
+- Buffed **damage and ult generation** slightly for some bots.
+
+#### General
+- Fixed **Player HUD** formatting for abilities.  
+  _Reason: The formatting looked fine in OW1 but broke in OW2. While left/right-justifying HUD text will appear on the correct side of the screen, the text itself is centered, making it ugly. Fixing the Relic, Player Level, and Superbots HUD will be trickier because they all change in size during the game, but it is in progress._
+
 ---
 ### April 18, 2024 (Venture)
 * Team 1
