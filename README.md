@@ -91,19 +91,6 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 </table>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## HEROES
 <h3 align="center">TANKS</h3>
 <p align="center">
@@ -257,7 +244,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - No fuse on dynamite.
 ---
 #### BAPTISTE
-- Hover Boots: Hold Jump in the air to float down.
+- Hover Boots: Hold [JUMP] in the air to float down.
 - Nano Grenades: Healing grenades also deal damage.
 - Light Armor: +25% Armor.
 - 150% Jump Height.
@@ -269,7 +256,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Ultimate: AP Rounds: Load high-velocity rounds that penetrate walls and shields.
 - Heavy Armor: +75% Armor.
   ##### 💬 Tip:
-  Your Flashbang stuns can help set MEI and ILLARI up for easy headshots.
+  Your Flashbang helps set up MEI and ILLARI for headshots.
 ---
 #### BRIGITTE
 - 🛡️ Tank Role: +200% Health
@@ -283,7 +270,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Hat Trick: x2 Damage to enemies in the air.
 - Showdown: Once ultimate has been initiated, bots will randomly be launched into the air after 2-5 seconds, shoot after the message “Draw!” is displayed.<br>
   ##### 💬 Tip:
-  Cassidy's Hat Trick synergizes well with Wrecking Ball's ground pound.
+  Wrecking Ball's ground pound can set you up to get more Hat Tricks.
 ---
 #### D.VA
 - Bunny Hop: Press [RELOAD] to jump around and deal damage in an area with each hop. Heal 25 HP per hop.
@@ -302,7 +289,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Ultimate: Overdrive: Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
 - Light Armor: 25% Armor.
   ##### 💬 Tip:
-  Echo excels at staying out of the fray and delivering massive damage from afar, but she can also be a devastating dive bomber with the 🌀 Vortex relic.
+  Echo likes to stay out of the fray and deliver massive damage from afar, but she's also a devastating dive bomber when using 🌀 Vortex relic.
 ---
 #### GENJI
 - Dragon Strike: Heal for 50 HP and explode Mark of Death.
@@ -310,7 +297,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - 200% Ultimate Duration.
 - Medium Armor: 50% Armor.<br>
   ##### 💬 Tip:
-  Stack Death Marks for extra damage and healing.
+  Stack Death Marks for extra damage and healing!
 ---
 #### HANZO
 - Press [SECONDARY FIRE] to switch arrows.
@@ -323,17 +310,16 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Automatic Storm Arrows.
 ---
 #### HAZARD
-- Jagged Wall CD: 50%
-- Violent Leap CD: 50%
+- Phreak Flag: Slashed targets are marked with a 💀.
+- No Future: Marked targets take 300% damage from all sources.
 - Medium Armor: 50% Armor.
-- _WORK IN PROGRESS_
 ---
 #### ILLARI
 - Heat Blast: Headshots set bots on fire.
 - Solar Flare: Knocks back and burns bots.
 - Ultimate: BFG 9000: Fire a massive plasma round that does 85 damage and then scorches for additional 5 damage over 5 seconds. If bots sustain any damage they will instantly die after 5 seconds.
   ##### 💬 Tip:
-  Take advantage of stuns from BASTION's Flashbangs, JUNKER QUEEN's Banshee Scream, or LIFEWEAVER's paralitic Nightshade ultimate to get free headshots!
+  Take advantage of stuns from BASTION's Flashbangs, JUNKER QUEEN's Banshee Scream, or LIFEWEAVER's paralitic Nightshade ultimate to get headshots!
 ---
 #### JUNKER QUEEN
 - Press [RELOAD] to swap shouts.
@@ -341,7 +327,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
   - Banshee Scream: Damage and stun all bots within 8m for 3 seconds.
 - Ultimate: Bushwhack: Cut through all bots in your path, doing massive damage and applying a bleed.
   ##### 💬 Tip:
-  Banshee Scream's stun is particularly helpful for MEI and ILLARI who do extra damage with critical headshots.
+  Banshee Scream's stun helps MEI and ILLARI do extra damage with headshots.
 ---
 #### JUNKRAT 
 - Total Mayhem: Root bots near your corpse when you die. Your dropped grenades deal more damage the more you have died in the match.
@@ -355,13 +341,14 @@ Level up by getting assists and killing blows. Damage increases as you level up,
   - Protection - Turn all players invincible for 10 seconds.
   - Kill Pile - Teleport Junkrat and bots to objective and root them for 6 seconds so they can work out their differences.
   ##### 💬 Tip:
-  Junkrat and his old running buddy Roadhog are a good team. With every kill and Hook Combo, Roadhog earns money for Junkrat's Chaos Roulette.
+  Junkrat and his old running mate Roadhog are a good team. With every kill and Hook Combo, Roadhog earns money for Junkrat's Chaos Roulette.
 ---
 #### JUNO
-- Glide Boost CD: 50%
-- Pulsar Torpedoes CD: 50%
+- Press [RELOAD] to switch Ultimate damage.
+  - Low Orbit Ion Cannon: Nukes Bots from space! Orbital Ray does 5K DPS over 8 secs to any bot that touches the beam along its path.
+  - Energize: Any bots caught inside Orbital Ray will be beamed up. Warning: Bots cannot breath in space.
+- Grav Boots: Hold [JUMP] in the air to activate Zero G.
 - Light Armor: 25% Armor.
-- _WORK IN PROGRESS_
 ---
 #### KIRIKO
 - Press [RELOAD] to change [PRIMARY] damage.
@@ -376,7 +363,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
   - Nightshade: Every pulse from the tree paralyzes and damages bots.
 - Euphorbia: Teleport to any ally in your LOS and daze any nearby bots.
   ##### 💬 Tip:
-  Nightshade's paralyze is very helpful to line up heroes like MEI and ILLARI for extra damage with headshots.
+  Nightshade's paralyze is helpful to MEI and ILLARI to get extra damage from headshots.
 ---
 #### LÚCIO 
 - Tinnitus: [SECONDARY FIRE] deals a ton of damage while knocking back and heals 150 HP in a 10m radius. This damage is increased by your current movement speed.
@@ -472,8 +459,8 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Rocket Boost Slide: Sweep and damage bots, doing 25 damage to anyone in your path and knocking them down for 1.5 seconds.
 - Ultimate: Super Railgun: [SECONDARY FIRE] rounds do massive damage and penetrate walls.
   ##### 💬 Tip:
-  - Hanzo's Sonic Arrow can help you find targets while firing Super Railgun.
-  - Sojourn excels at hit-and-run guerilla tactics. Slide in, take out the legs, jump out, apply burn, finish with disrupter. Bots won't ever know what hit 'em!
+  - Hanzo's Sonic Arrow can help you find targets for the Super Railgun.
+  - Sojourn excels at hit-and-run guerilla tactics: slide in, take out the legs, jump out and apply burn, finish with disrupter.
 ---
 #### SOLDIER 76
 - Ultimate: C-130X Airstrike: Aim pulse cannons from the safety of an aircraft that explode in a 30m area and goes through walls.
@@ -489,7 +476,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 ---
 #### SYMMETRA
 - Photon Bombs: [SECONDARY FIRE] deploys slow-moving air mines when fully charged. Any bot struck by a fully-charged bomb will be knocked down.
-- Impulse Mine: Press [ABILITY 2] to place an impulse mine. The mine deals area damage and stuns enemies for 7 seconds.  ooldown will not start until an enemy has activated it.
+- Impulse Mine: Press [ABILITY 2] to place an impulse mine. The mine deals area damage and stuns enemies for 7 seconds. Cooldown will not start until an enemy has activated it.
 - Medium Armor: 50% Armor.
 ---
 #### TORBJÖRN
