@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[April 5, 2025: Perk update tuning, testing Juno and Hazard changes.]"
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115.Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[June 1, 2025: Tuning after Perk update, testing Freja.]"
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -91,7 +91,7 @@ settings
 				Coach Gun Cooldown Time: 50%
 				Coach Gun Knockback Scalar Enemy: 200%
 				Coach Gun Knockback Scalar Self: 200%
-				Damage Dealt: 155%
+				Damage Dealt: 165%
 				Dynamite Cooldown Time: 15%
 				Dynamite Fuse Time Scalar: 1%
 				Health: 150%
@@ -123,14 +123,14 @@ settings
 
 			Brigitte
 			{
-				Barrier Shield Cooldown Time: 0%
-				Barrier Shield Recharge Rate: 500%
-				Damage Dealt: 135%
+				Barrier Shield Cooldown Time: 15%
+				Barrier Shield Recharge Rate: 400%
+				Damage Dealt: 140%
 				Health: 150%
 				Repair Pack Cooldown Time: 35%
-				Shield Bash Knockback Scalar: 175%
+				Shield Bash Knockback Scalar: 150%
 				Ultimate Generation - Combat Rally: 20%
-				Whip Shot Knockback Scalar: 200%
+				Whip Shot Knockback Scalar: 175%
 			}
 
 			Cassidy
@@ -177,6 +177,19 @@ settings
 				No Ammunition Requirement: On
 				Sticky Bombs Cooldown Time: 15%
 				Ultimate Generation - Combat Duplicate: 2%
+			}
+
+			Freja
+			{
+				Damage Dealt: 110%
+				Health: 120%
+				Quick Dash Cooldown Time: 75%
+				Quick Dash Distance: 150%
+				Take Aim Cooldown Time: 75%
+				Take Aim Duration: 150%
+				Ultimate Generation - Combat Bola Shot: 25%
+				Updraft Cooldown Time: 50%
+				Updraft Height: 150%
 			}
 
 			Genji
@@ -424,7 +437,7 @@ settings
 
 			Sojourn
 			{
-				Damage Dealt: 150%
+				Damage Dealt: 160%
 				Disruptor Shot Cooldown Time: 35%
 				Health: 275%
 				No Ammunition Requirement: On
@@ -618,6 +631,7 @@ settings
 				Shield Bash Knockback Scalar: 50%
 				Ultimate Generation - Combat Rally: 500%
 				Ultimate Generation - Passive Rally: 300%
+				Whip Shot Knockback Scalar: 175%
 			}
 
 			Cassidy
@@ -666,13 +680,6 @@ settings
 				Storm Arrows Quantity: 12
 				Ultimate Generation - Combat Dragonstrike: 400%
 				Ultimate Generation - Passive Dragonstrike: 500%
-			}
-
-			Hazard
-			{
-				Health: 120%
-				Spike Guard Movement Speed Penalty: 10%
-				Violent Leap Distance: 150%
 			}
 
 			Junker Queen
@@ -848,6 +855,7 @@ settings
 				Health: 500%
 				Power Slide Cooldown Time: 50%
 				Ultimate Duration: 200%
+				Ultimate Generation - Combat Overclock: 500%
 				Ultimate Generation - Passive Overclock: 500%
 			}
 
@@ -963,6 +971,7 @@ settings
 			{
 				D.Va
 				Echo
+				Freja
 				Hazard
 				Juno
 				Pharah
@@ -1436,7 +1445,7 @@ rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%) [Updated b
 		Global.Armor0 = Array(Hero(Ashe), Hero(Hanzo), Hero(Junkrat), Hero(Cassidy), Hero(Moira), Hero(Pharah), Hero(Soldier: 76), Hero(
 			Widowmaker), Hero(Sojourn), Hero(Lifeweaver), Hero(Venture));
 		Global.Armor25 = Array(Hero(Ana), Hero(Baptiste), Hero(Brigitte), Hero(Echo), Hero(Lúcio), Hero(Mercy), Hero(Zenyatta), Hero(
-			Kiriko), Hero(Illari), Hero(Juno));
+			Kiriko), Hero(Illari), Hero(Juno), Hero(Freja));
 		Global.Armor50 = Array(Hero(Doomfist), Hero(Genji), Hero(Mei), Hero(Reaper), Hero(Sombra), Hero(Symmetra), Hero(Torbjörn), Hero(
 			Tracer), Hero(Hazard));
 		Global.Armor75 = Array(Hero(Bastion), Hero(D.Va), Hero(Orisa), Hero(Reinhardt), Hero(Roadhog), Hero(Winston), Hero(Wrecking Ball),
@@ -3130,7 +3139,7 @@ rule("BAPTISTE Hover Boots")
 	{
 		Set Gravity(Event Player, 0);
 		Play Effect(All Players(All Teams), Ring Explosion, Color(Blue), Position Of(Event Player), 1);
-		Wait(0.250, Ignore Condition);
+		Wait(0.500, Ignore Condition);
 		Loop If Condition Is True;
 		Set Gravity(Event Player, 100);
 	}
@@ -4449,7 +4458,8 @@ rule("JUNO Ultimate Switch [Added by Arkhanglesk#11200]")
 	{
 		Is Alive(Event Player) == True;
 		Is Button Held(Event Player, Button(Reload)) == True;
-		Ultimate Charge Percent(Event Player) >= 1;
+		disabled Ultimate Charge Percent(Event Player) >= 1;
+		Is Using Ultimate(Event Player) == False;
 	}
 
 	actions
@@ -4492,7 +4502,7 @@ rule("JUNO Ultimate Placement and Movement [Added by Arkhanglesk#11200]")
 		Event Player.U = Position Of(Event Player) + Event Player.I * 4;
 		Wait(0.100, Ignore Condition);
 		"Renegotiate ground. Fix for U sinking into the ground when cast on an decline."
-		Event Player.U = Ray Cast Hit Position(Event Player.U, Event Player.U + Vector(0, -100, 0), Null, Null, False);
+		Event Player.U = Ray Cast Hit Position(Event Player.U, Event Player.U + Vector(0, -1, 0), Null, Null, False);
 		"Debug"
 		disabled Wait(0.100, Ignore Condition);
 		disabled Create Effect(All Players(Team 1), Sphere, Color(White), Event Player.U, 5, Visible To Position and Radius);
@@ -4622,7 +4632,7 @@ rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
 		If(Event Player.R == False);
 			Abort If Condition Is False;
 			Wait(Random Real(0.100, 0.250), Ignore Condition);
-			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 30);
+			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 40);
 			Loop;
 		Else If(Event Player.R == True);
 			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 1);
@@ -4692,7 +4702,7 @@ rule("LIFEWEAVER Ultimate Switch [Added by Arkhanglesk#11200]")
 	{
 		Is Alive(Event Player) == True;
 		Is Button Held(Event Player, Button(Reload)) == True;
-		Ultimate Charge Percent(Event Player) >= 1;
+		Is Using Ultimate(Event Player) == False;
 	}
 
 	actions
@@ -7877,6 +7887,23 @@ rule("Echo HUD [Updated by Arkhanglesk#11200]")
 	}
 }
 
+rule("Freja HUD [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Freja;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
 rule("Genji HUD [Updated Arkhanglesk#11200]")
 {
 	event
@@ -8113,7 +8140,6 @@ rule("Lifeweaver HUD [Added by Arkhanglesk#11200]")
 			Ability Icon String(Hero(Lifeweaver), Button(Ability 2)), Custom String("[ABILITY 2] TELEPORT TO ALLY & DAZE BOTS"),
 			Custom String("EUPHORBIA"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
-		Set Ultimate Charge(Event Player, Ultimate Charge Percent(Event Player) + 1);
 	}
 }
 
@@ -8265,10 +8291,6 @@ rule("Moira HUD [Updated by Arkhanglesk#11200]")
 		Event Player.Q = Last Created Entity;
 		Create Effect(All Players(All Teams), Sphere, Color(Purple), Event Player.U, Event Player.T / 4, Visible To Position and Radius);
 		Event Player.P = Last Created Entity;
-		"Disabled to save server resources. Replaced by disabling inf ult duration & using in-game ult timer"
-		disabled Create In-World Text(Filtered Array(All Players(All Teams), Is Using Ultimate(Event Player) == True), Custom String("",
-			Round To Integer(Event Player.T, Down)), Event Player.U + Vector(0, 1, 0), 2, Do Not Clip, Visible To Position and String,
-			Color(White), Default Visibility);
 		Event Player.I = Last Text ID;
 		Event Player.T = 0;
 		Event Player.UltimateThirdPerson = True;
@@ -8276,7 +8298,7 @@ rule("Moira HUD [Updated by Arkhanglesk#11200]")
 		Event Player.HUDTextHidden = Array(False, False, True, True);
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Moira), Button(Secondary Fire)), Custom String(
-			"ROOTS ENEMIES WITH DRAIN                              "), Custom String("LETHARGIC DRAIN"), Ability Icon String(Hero(Zarya),
+			"ROOT ENEMIES WITH DRAIN                                 "), Custom String("LETHARGIC DRAIN"), Ability Icon String(Hero(Zarya),
 			Button(Ultimate)), Custom String("CHANNEL ENERGY TO CREATE A BOMB            "), Custom String("ULTIMATE: COALESCENCE BOMB"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
@@ -9503,7 +9525,7 @@ rule("SUDDEN DEATH Message to Dead Players [Added by Arkhanglesk#11200]")
 	{
 		Abort If Condition Is False;
 		Small Message(All Dead Players(Team 1), Custom String(" SUDDEN DEATH: Respawn Disabled for Players"));
-		Wait(30, Ignore Condition);
+		Wait(45, Ignore Condition);
 		Loop;
 	}
 }
