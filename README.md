@@ -149,6 +149,9 @@ Level up by getting assists and killing blows. Damage increases as you level up,
   <a href="#echo" style="display: inline-block; margin: 0 20px;">
     <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/d/d6/Icon-Echo.png/revision/latest?cb=20221005165920" alt="Echo" style="width:60px; height:60px; border-radius:0%;">
   </a>
+  <a href="#freja" style="display: inline-block; margin: 0 20px;">
+    <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/6/63/Icon-freja.png/revision/latest?cb=20250323085739" alt="Freja" style="width:60px; height:60px; border-radius:0%;">
+  </a>
   <a href="#genji" style="display: inline-block; margin: 0 20px;">
     <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/1/1c/Icon-Genji.png/revision/latest?cb=20221005165931" alt="Genji" style="width:60px; height:60px; border-radius:0%;">
   </a>
@@ -290,6 +293,10 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Light Armor: 25% Armor.
   ##### 💬 Tip:
   Echo likes to stay out of the fray and deliver massive damage from afar, but she's also a devastating dive bomber when using 🌀 Vortex relic.
+---
+#### FREJA
+- Light Armor: 25% Armor.
+- _WORK IN PROGRESS_
 ---
 #### GENJI
 - Dragon Strike: Heal for 50 HP and explode Mark of Death.
