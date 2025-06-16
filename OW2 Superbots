@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115.Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[June 1, 2025: Tuning after Perk update, testing Freja.]"
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115.Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[June 15, 2025: Tuning after Perk update, testing Freja.]"
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -97,6 +97,7 @@ settings
 				Health: 150%
 				Ultimate Duration: 250%
 				Ultimate Generation - Combat B.O.B.: 10%
+				Ultimate Generation - Passive B.O.B.: 50%
 			}
 
 			Baptiste
@@ -220,7 +221,6 @@ settings
 				Jagged Wall Knockback: 
 				Spike Guard Movement Speed Penalty: 50%
 				Spike Guard Resource Cost: 50%
-				Spike Guard Resource Regeneration: 150%
 				Ultimate Generation - Combat Downpour: 50%
 				Violent Leap Cooldown Time: 50%
 				Violent Leap Distance: 125%
@@ -4467,7 +4467,7 @@ rule("JUNO Ultimate Switch [Added by Arkhanglesk#11200]")
 		Event Player.R = !Event Player.R;
 		If(Event Player.R == False);
 			Event Player.HUDTextHidden = Array(False, True, False, True);
-			Small Message(Event Player, Custom String(" {0} LOW ORBIT ION CANNON: Nuke Bots From Space", Ability Icon String(Hero(Moira),
+			Small Message(Event Player, Custom String(" {0} LOW ORBIT ION CANNON: Nuke Bots From Orbit", Ability Icon String(Hero(Moira),
 				Button(Ultimate))));
 		Else If(Event Player.R == True);
 			Event Player.HUDTextHidden = Array(True, False, False, True);
