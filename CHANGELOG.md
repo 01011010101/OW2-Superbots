@@ -1,3 +1,11 @@
+### June 15, 2025
+
+#### Team 1
+- Added **FREJA** as playable hero.
+- **JUNO** - Ultimate beam will now adapt to terrain elevation along its path
+
+---
+
 ### April 5, 2025
 
 #### General
