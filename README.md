@@ -317,14 +317,14 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 ---
 
 #### FREJA
-- **Ammo** – Press **[INTERACT]** to load ammo.  
-  - **Repulsor Darts** – Repel bots and knock them down.  
-    - [PRIMARY] – Every bolt knocks bots back **2m**.  
-    - [SECONDARY] – Every charged shot knocks back and knocks down the target for **1.5s**.  
-  - **Arc Bolts** – Hack, stun, and knockdown bots.  
+- **Ammo** – Press **[INTERACT]** to load ammo.
+  - **Repulsor Darts**:
+    - [PRIMARY] – Every bolt knocks bots back **2m**.
+    - [SECONDARY] – Every charged shot knocks back and knocks down the target for **1.5s**.
+  - **Arc Bolts**:
     - [PRIMARY] – Every shot hacks and stuns bots temporarily.  
-    - [SECONDARY] – Every charged shot that lands stuns bots within **4m** of target.  
-- **Ultimate: Skæbnefald** – Bolas create a black hole within **10m** sucking bots in then detonating.  
+    - [SECONDARY] – Every charged shot that lands stuns bots within **4m** of target.
+- **Ultimate: Skæbnefald** – Bolas create a black hole within **10m** sucking bots in then detonating.
 - **Light Armor** – +25% Armor.
 
 ---
