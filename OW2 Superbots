@@ -2,7 +2,7 @@ settings
 {
 	main
 	{
-		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115.Updated for OW2 by Arkhanglesk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[June 15, 2025: Tuning after Perk update, testing Freja.]"
+		Description: "Level up by getting assists and killing blows. Damage increases as you level up, but bots get tougher as they die! Team comp is everything here. Stay alive, try to kill everything that moves and watch out for Lucio's ult! Every character has been tweaked in one way or another, play them to find out what's new!\n\r\nCreated by Cel#1115. Updated for OW2 by Arkhangelsk#11200. Full list of hero abilities: https://tinyurl.com/ow2-superbots.\r\n\r\n[September 7, 2025: Testing Freja abilities, tuning Wuyang.]"
 		Mode Name: "STOP THE SUPERBOTS!"
 	}
 
@@ -25,7 +25,7 @@ settings
 
 			enabled maps
 			{
-				Horizon Lunar Colony 972777519512068154
+				Volskaya Industries 972777519512068292
 			}
 		}
 
@@ -97,7 +97,7 @@ settings
 				Health: 150%
 				Ultimate Duration: 250%
 				Ultimate Generation - Combat B.O.B.: 10%
-				Ultimate Generation - Passive B.O.B.: 50%
+				Ultimate Generation - Passive B.O.B.: 40%
 			}
 
 			Baptiste
@@ -182,15 +182,15 @@ settings
 
 			Freja
 			{
-				Damage Dealt: 110%
+					  
 				Health: 120%
-				Quick Dash Cooldown Time: 75%
-				Quick Dash Distance: 150%
-				Take Aim Cooldown Time: 75%
-				Take Aim Duration: 150%
-				Ultimate Generation - Combat Bola Shot: 25%
-				Updraft Cooldown Time: 50%
-				Updraft Height: 150%
+				Quick Dash Cooldown Time: 70%
+				Quick Dash Distance: 125%
+							   
+				Take Aim Duration: 300%
+				Ultimate Generation - Combat Bola Shot: 10%
+				Updraft Cooldown Time: 60%
+				Updraft Height: 125%
 			}
 
 			Genji
@@ -221,7 +221,7 @@ settings
 				Jagged Wall Knockback: 
 				Spike Guard Movement Speed Penalty: 50%
 				Spike Guard Resource Cost: 50%
-				Ultimate Generation - Combat Downpour: 50%
+				Ultimate Generation - Combat Downpour: 30%
 				Violent Leap Cooldown Time: 50%
 				Violent Leap Distance: 125%
 			}
@@ -307,13 +307,13 @@ settings
 
 			Mauga
 			{
-				Cardiac Overdrive Cooldown Time: 120%
+										 
 				Damage Dealt: 138%
 				Health: 110%
 				Incendiary Chaingun Ignite Rate: 150%
 				No Ammunition Requirement: On
 				Overrun Cooldown Time: 65%
-				Overrun Knockback: 110%
+				Overrun Knockback: 120%
 				Ultimate Duration: 200%
 				Ultimate Generation - Combat Cage Fight: 10%
 			}
@@ -380,12 +380,12 @@ settings
 
 			Ramattra
 			{
-				Damage Dealt: 125%
-				Nemesis Form Cooldown Time: 90%
+				Damage Dealt: 110%
+								   
 				No Ammunition Requirement: On
 				Ravenous Vortex Cooldown Time: 35%
 				Ultimate Duration: 300%
-				Ultimate Generation - Combat Annihilation: 50%
+				Ultimate Generation - Combat Annihilation: 40%
 				Void Barrier Omnic Form Cooldown Time: 25%
 			}
 
@@ -412,13 +412,13 @@ settings
 			Roadhog
 			{
 				Chain Hook Cooldown Time: 50%
-				Damage Dealt: 155%
+				Damage Dealt: 150%
 				Healing Dealt: 200%
-				Health: 145%
+				Health: 140%
 				No Ammunition Requirement: On
-				Take a Breather Cooldown Time: 200%
-				Take a Breather Maximum Time: 50%
-				Ultimate Generation - Combat Whole Hog: 25%
+				Take a Breather Cooldown Time: 175%
+									 
+				Ultimate Generation - Combat Whole Hog: 20%
 				Whole Hog Knockback Scalar: 0%
 			}
 
@@ -543,6 +543,14 @@ settings
 				No Ammunition Requirement: On
 				Piledriver Cooldown Time: 0%
 				Ultimate Generation - Combat Minefield: 15%
+			}
+
+			Wuyang
+			{
+				Damage Dealt: 115%
+				Health: 110%
+				No Ammunition Requirement: On
+				Ultimate Generation - Combat Tidal Blast: 25%
 			}
 
 			Zarya
@@ -828,8 +836,9 @@ settings
 				Health: 500%
 				No Ammunition Requirement: On
 				Quick Melee: Disabled
-				Take a Breather Maximum Time: 25%
-				Take a Breather Recharge Rate: 50%
+				Scrap Gun Maximum Time: 25%
+				Scrap Gun Recharge Rate: 50%
+				Take a Breather Cooldown Time: 175%
 				Ultimate Generation - Combat Whole Hog: 300%
 				Ultimate Generation - Passive Whole Hog: 500%
 				Whole Hog Knockback Scalar: 0%
@@ -977,6 +986,7 @@ settings
 				Pharah
 				Venture
 				Wrecking Ball
+				Wuyang
 			}
 		}
 	}
@@ -1067,12 +1077,12 @@ rule("CREATED BY CEL#1115")
 	{
 		Disable Inspector Recording;
 		"Relic descriptions."
-		disabled Global.RelicDescriptions = Array(Custom String("+200% HEALING DEALT/RECEIVED \r\n+50% DAMAGE AT FULL HP \r\n+10% HP/SEC"),
-			Custom String("+100% MOVEMENT SPEED \r\n+DAMAGE BASED ON SPEED \r\n-7 SECOND RESPAWN TIMER"), Custom String(
-			"+100% DAMAGE \r\n-25% ARMOR \r\n+5% ULT ON LAST HIT"), Custom String(
-			"+10-25 ARMOR BASED ON ROLE \r\n+25% DMG PER NEARBY BOT \r\n+SHIELD WHEN LOW HP"), Custom String(
-			"+25% DAMAGE \r\n+25% SPEED \r\n+25% HP PER ELIMINATION \r\n-1 SEC COOLDOWN ON DMG"));
-		"Relic descriptions."
+																																	 
+																											   
+																		 
+																									
+																						 
+					   
 		Global.RelicDescriptions = Array(Custom String(
 			"+200% HEALING DEALT/RECEIVED\n+50% DAMAGE AT FULL HP \r\n+10% HP/SEC                                                              "),
 			Custom String("+100% MOVEMENT SPEED \r\n+DAMAGE BASED ON SPEED \r\n-7 SECOND RESPAWN TIMER                               "),
@@ -1204,7 +1214,7 @@ rule("GAME IN PROGRESS PHASE")
 	}
 }
 
-rule("LOOKING FOR MATCH / AUTO RESTART [Added by Arkhanglesk#11200]")
+rule("LOOKING FOR MATCH / AUTO RESTART [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -1269,7 +1279,7 @@ rule("Clear Status on Respawn or Resurrect")
 	}
 }
 
-rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
+rule("GLOBAL HUDS [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -1293,11 +1303,11 @@ rule("GLOBAL HUDS [Updated by Arkhanglesk#11200]")
 		Create HUD Text(All Players(All Teams), String("{0} {1}", String("{0} {1}", Custom String("SUPERBOT LEVEL:"),
 			Global.SuperbotLevel), Hero Icon String(Hero(Roadhog))), Null, Null, Right, -2, Color(Purple), Color(White), Color(White),
 			Visible To and String, Default Visibility);
-		"Lucio Ultimate charge percent HUD (\"Lucio's Ult: x%\") [Disabled by Arkhanglesk#11200]"
+		"Lucio Ultimate charge percent HUD (\"Lucio's Ult: x%\") [Disabled by Arkhangelsk#11200]"
 		disabled Create HUD Text(All Players(All Teams), Custom String("LUCIO ULT: {0}%{1}", Ultimate Charge Percent(Players On Hero(Hero(Lúcio),
 			Team 2)), Hero Icon String(Hero(Lúcio))), Null, Null, Right, Null, Color(Red), Color(White), Color(White),
 			Visible To and String, Default Visibility);
-		"Lucio Ultimate charge percent HUD (Dynamic) [Added by Arkhanglesk#11200]"
+		"Lucio Ultimate charge percent HUD (Dynamic) [Added by Arkhangelsk#11200]"
 		Create HUD Text(All Players(All Teams), Custom String("LUCIO ULT: {0}{1}{2}", Ultimate Charge Percent(Players On Hero(Hero(Lúcio),
 			Team 2)) < 74 ? Ultimate Charge Percent(Players On Hero(Hero(Lúcio), Team 2)) : String("Danger"), Ultimate Charge Percent(
 			Players On Hero(Hero(Lúcio), Team 2)) < 74 ? Custom String("%") : Custom String(""), Hero Icon String(Hero(Lúcio))), Null,
@@ -1338,7 +1348,7 @@ rule("HOST HUD")
 	}
 }
 
-disabled rule("DEBUG HUD [Added by Arkhanglesk#11200] - High server cost")
+disabled rule("DEBUG HUD [Added by Arkhangelsk#11200] - High server cost")
 {
 	event
 	{
@@ -1360,6 +1370,7 @@ disabled rule("DEBUG HUD [Added by Arkhanglesk#11200] - High server cost")
 			"Server Load Peak (Max/2s)"
 			Create HUD Text(All Players(All Teams), Null, Custom String("{0} :Server Load (MAX/2s)", Server Load Peak), Null, Right, 3, Color(
 				White), Color(White), Color(White), Visible To and String, Default Visibility);
+			Wait(2, Ignore Condition);
 	}
 }
 
@@ -1433,7 +1444,7 @@ rule("PLAYER HUD and [Join Late Script by SCOURGE#11437]")
 	}
 }
 
-rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%) [Updated by Arkhanglesk#11200]")
+rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%) [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -1443,7 +1454,7 @@ rule("PLAYER Create Lists of Heroes by Armor Tier (0%, 25%, 50%, 75%) [Updated b
 	actions
 	{
 		Global.Armor0 = Array(Hero(Ashe), Hero(Hanzo), Hero(Junkrat), Hero(Cassidy), Hero(Moira), Hero(Pharah), Hero(Soldier: 76), Hero(
-			Widowmaker), Hero(Sojourn), Hero(Lifeweaver), Hero(Venture));
+			Widowmaker), Hero(Sojourn), Hero(Lifeweaver), Hero(Venture), Hero(Wuyang));
 		Global.Armor25 = Array(Hero(Ana), Hero(Baptiste), Hero(Brigitte), Hero(Echo), Hero(Lúcio), Hero(Mercy), Hero(Zenyatta), Hero(
 			Kiriko), Hero(Illari), Hero(Juno), Hero(Freja));
 		Global.Armor50 = Array(Hero(Doomfist), Hero(Genji), Hero(Mei), Hero(Reaper), Hero(Sombra), Hero(Symmetra), Hero(Torbjörn), Hero(
@@ -1702,7 +1713,7 @@ rule("SUPERBOTS Respawn time - 1 second")
 	}
 }
 
-rule("SUPERBOTS Names (A-O) [Added by Arkhanglesk#11200]")
+rule("SUPERBOTS Names (A-O) [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -1739,7 +1750,7 @@ rule("SUPERBOTS Names (A-O) [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("SUPERBOTS Names (R-Z) [Added by Arkhanglesk#11200]")
+rule("SUPERBOTS Names (R-Z) [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -1793,7 +1804,7 @@ rule("SUPERBOT Enraged Kill Message")
 	}
 }
 
-disabled rule("SUPERBOTS Final Challenge ON (Control) [Added by Arkhanglesk#11200; work in progress]")
+disabled rule("SUPERBOTS Final Challenge ON (Control) [Added by Arkhangelsk#11200; work in progress]")
 {
 	event
 	{
@@ -1856,7 +1867,7 @@ disabled rule("SUPERBOTS Final Challenge ON (Control) [Added by Arkhanglesk#1120
 	}
 }
 
-disabled rule("SUPERBOTS Final Challenge OFF (Control) [Added by Arkhanglesk#11200; work in progress]")
+disabled rule("SUPERBOTS Final Challenge OFF (Control) [Added by Arkhangelsk#11200; work in progress]")
 {
 	event
 	{
@@ -2525,7 +2536,7 @@ rule("============== SUPERBOT PASSIVE ABILITIES ==============")
 	}
 }
 
-rule("SUPERBOTS Setup (Health, Movement, Effects and Icons) [Updated by Arkhanglesk#11200]")
+rule("SUPERBOTS Setup (Health, Movement, Effects and Icons) [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3065,7 +3076,7 @@ rule("ASHE Explosive Small Rounds")
 	}
 }
 
-disabled rule("BAPTISTE Ultimate [Broken in OW2 (rate-of-fire changes); disabled by Arkhanglesk#11200, needs rework]")
+disabled rule("BAPTISTE Ultimate [Broken in OW2 (rate-of-fire changes); disabled by Arkhangelsk#11200, needs rework]")
 {
 	event
 	{
@@ -3093,7 +3104,7 @@ disabled rule("BAPTISTE Ultimate [Broken in OW2 (rate-of-fire changes); disabled
 	}
 }
 
-disabled rule("BAPTISTE Ultimate Full-Auto [Broken in OW2 (rate-of-fire changes); disabled by Arkhanglesk#11200, needs rework]")
+disabled rule("BAPTISTE Ultimate Full-Auto [Broken in OW2 (rate-of-fire changes); disabled by Arkhangelsk#11200, needs rework]")
 {
 	event
 	{
@@ -3168,7 +3179,7 @@ rule("BAPTISTE Grenade Shots")
 	}
 }
 
-rule("BASTION Auto Repair (Previously \"Laser\") [Broken in OW2, rework by Arkhanglesk#11200]")
+rule("BASTION Auto Repair (Previously \"Laser\") [Broken in OW2, rework by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3199,7 +3210,7 @@ rule("BASTION Auto Repair (Previously \"Laser\") [Broken in OW2, rework by Arkha
 	}
 }
 
-disabled rule("BASTION Ammo Effects [Added by Arkhanglesk#11200; work in progress]")
+disabled rule("BASTION Ammo Effects [Added by Arkhangelsk#11200; work in progress]")
 {
 	event
 	{
@@ -3230,7 +3241,7 @@ disabled rule("BASTION Ammo Effects [Added by Arkhanglesk#11200; work in progres
 	}
 }
 
-rule("BASTION Flashbang [Added by Arkhanglesk#11200]")
+rule("BASTION Flashbang [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3250,7 +3261,7 @@ rule("BASTION Flashbang [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework by Arkhanglesk#11200]")
+rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2; rework by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3283,7 +3294,7 @@ rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework 
 		Wait(0.150, Ignore Condition);
 		Create Effect(All Players(Team 1), Ana Nano Boosted Effect, Color(Team 1), Event Player, 100, Visible To);
 		Event Player.ID_Array[0] = Last Created Entity;
-		Small Message(Event Player, Custom String(" {0} HIGH-VELOCITY ROUNDS LOADED!", Ability Icon String(Hero(Sojourn), Button(
+		Small Message(Event Player, Custom String(" {0} RAIL-PIERCER ROUNDS LOADED", Ability Icon String(Hero(Sojourn), Button(
 			Secondary Fire))));
 		Wait(7, Ignore Condition);
 		Destroy Effect(Event Player.ID_Array[0]);
@@ -3292,7 +3303,7 @@ rule("BASTION Ultimate ON (Previously \"Proton Cannon\") [Broken in OW2, rework 
 	}
 }
 
-rule("BASTION Ultimate High-Velocity Rounds [Added by Arkhanglesk#11200]")
+rule("BASTION Ultimate High-Velocity Rounds [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3310,8 +3321,9 @@ rule("BASTION Ultimate High-Velocity Rounds [Added by Arkhanglesk#11200]")
 	actions
 	{
 		Abort If Condition Is False;
+		Wait(0.200, Ignore Condition);
 		Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, Event Player.DAMAGE);
-		Wait(0.150, Ignore Condition);
+								
 		Loop;
 	}
 }
@@ -3389,7 +3401,7 @@ rule("D.VA Heal to Full when entering Mech")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Activation [Broken in OW2; fixed by Arkhanglesk#11200]")
+rule("D.VA Mech Bunny Hop Activation [Broken in OW2; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3427,7 +3439,7 @@ rule("D.VA Mech Bunny Hop Activation [Broken in OW2; fixed by Arkhanglesk#11200]
 	}
 }
 
-rule("D.VA Mech Bunny Hop Jump [Broken in OW2; fixed by Arkhanglesk#11200]")
+rule("D.VA Mech Bunny Hop Jump [Broken in OW2; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3457,7 +3469,7 @@ rule("D.VA Mech Bunny Hop Jump [Broken in OW2; fixed by Arkhanglesk#11200]")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Dive [Broken in OW2; fixed by Arkhanglesk#11200]")
+rule("D.VA Mech Bunny Hop Dive [Broken in OW2; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3482,7 +3494,7 @@ rule("D.VA Mech Bunny Hop Dive [Broken in OW2; fixed by Arkhanglesk#11200]")
 	}
 }
 
-rule("D.VA Mech Bunny Hop Deactivation Subroutine [Broken in OW2; fixed by Arkhanglesk#11200]")
+rule("D.VA Mech Bunny Hop Deactivation Subroutine [Broken in OW2; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3550,7 +3562,7 @@ rule("DOOMFIST Reset Ult on Death")
 	}
 }
 
-rule("DOOMFIST Super 1 - Super Slam (previously \"Uppercut\") [Broken in OW2; fixed by Arkhanglesk#11200]")
+rule("DOOMFIST Super 1 - Super Slam (previously \"Uppercut\") [Broken in OW2; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3610,7 +3622,7 @@ rule("DOOMFIST Super 2 - Super Punch")
 	}
 }
 
-rule("ECHO Laser [Updated by Arkhanglesk#11200]")
+rule("ECHO Laser [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3637,7 +3649,7 @@ rule("ECHO Laser [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("ECHO Ultimate Overdrive [Updated by Arkhanglesk#11200]")
+rule("ECHO Ultimate Overdrive [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3669,10 +3681,10 @@ rule("ECHO Ultimate Overdrive [Updated by Arkhanglesk#11200]")
 		Event Player.Flight = True;
 		Wait(0.150, Ignore Condition);
 		Set Move Speed(Event Player, Event Player.MOVEMENT + 200);
-		"Enable Sticky Bomb auto fire during ult [Added/Disabled by Arkhanglesk#11200; not very fun, needs rework]"
+		"Enable Sticky Bomb auto fire during ult [Added/Disabled by Arkhangelsk#11200; not very fun, needs rework]"
 		disabled Event Player.FullAutoFire = True;
 		Wait(10, Ignore Condition);
-		"Disable Sticky Bomb auto fire [Added/Disabled by Arkhanglesk#11200]"
+		"Disable Sticky Bomb auto fire [Added/Disabled by Arkhangelsk#11200]"
 		disabled Event Player.FullAutoFire = False;
 		Small Message(Event Player, Custom String(" {0} Flying Off", Hero Icon String(Hero(Echo))));
 		Wait(0.100, Ignore Condition);
@@ -3686,7 +3698,7 @@ rule("ECHO Ultimate Overdrive [Updated by Arkhanglesk#11200]")
 	}
 }
 
-disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (rate-of-fire changes); fixed by Arkhanglesk#11200. Works, but not very fun.]")
+disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (rate-of-fire changes); fixed by Arkhangelsk#11200. Works, but not very fun.]")
 {
 	event
 	{
@@ -3711,6 +3723,138 @@ disabled rule("ECHO Auto Fire Secondary [Broken in OW2 (rate-of-fire changes); f
 		Wait(2, Ignore Condition);
 		Press Button(Event Player, Button(Secondary Fire));
 		Loop;
+	}
+}
+
+rule("FREJA Ammo Switch [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Freja;
+	}
+
+	conditions
+	{
+		Is Button Held(Event Player, Button(Interact)) == True;
+		Is Alive(Event Player) == True;
+		Is In Spawn Room(Event Player) == False;
+	}
+
+	actions
+	{
+		Event Player.R = !Event Player.R;
+		"Plays Reload Animation to Mimic Loading New Ammo"
+		Set Ammo(Event Player, 0, 0);
+		If(Event Player.R == False);
+			Event Player.HUDTextHidden = Array(False, True, False, True);
+			Small Message(Event Player, Custom String("  {0}KNOCKBACK & {1}KNOCKDOWN", Ability Icon String(Hero(Freja), Button(Primary Fire)),
+				Ability Icon String(Hero(Freja), Button(Secondary Fire))));
+		Else If(Event Player.R == True);
+			Event Player.HUDTextHidden = Array(True, False, False, True);
+			Small Message(Event Player, Custom String("  {0}HACK+ROOT & {1}AOE STUN", Ability Icon String(Hero(Freja), Button(Primary Fire)),
+				Ability Icon String(Hero(Freja), Button(Secondary Fire))));
+		End;
+		Play Effect(Event Player, Buff Explosion Sound, Color(White), Event Player, 50);
+		Wait(0.500, Ignore Condition);
+		Set Ammo(Event Player, Max Ammo(Event Player, 0), 0);
+		Wait(1, Ignore Condition);
+	}
+}
+
+rule("FREJA Primary Damage [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Freja;
+	}
+
+	conditions
+	{
+		Event Ability == Button(Primary Fire);
+	}
+
+	actions
+	{
+		If(Event Player.R == False);
+			Apply Impulse(Victim, Direction Towards(Event Player, Victim), 30, To World, Cancel Contrary Motion);
+			Wait(0.100, Ignore Condition);
+			Set Status(Victim, Event Player, Rooted, 0.100);
+		Else If(Event Player.R == True);
+			Set Status(Victim, Event Player, Hacked, 0.100);
+			Wait(0.100, Ignore Condition);
+			Set Status(Victim, Event Player, Stunned, 0.100);
+		End;
+	}
+}
+
+rule("FREJA Secondary Damage [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Player Dealt Damage;
+		Team 1;
+		Freja;
+	}
+
+	conditions
+	{
+		Event Ability == Button(Secondary Fire);
+	}
+
+	actions
+	{
+		If(Event Player.R == False);
+			Set Status(Victim, Event Player, Rooted, 1);
+			Wait(0.100, Ignore Condition);
+			Apply Impulse(Victim, Direction Towards(Event Player, Victim), 70, To World, Cancel Contrary Motion);
+			Wait(0.800, Ignore Condition);
+			Set Status(Victim, Event Player, Knocked Down, 1.500);
+		Else If(Event Player.R == True);
+			Wait(1, Ignore Condition);
+			Set Status(Players Within Radius(Victim, 4, Team 2, Off), Event Player, Stunned, 1.500);
+		End;
+	}
+}
+
+rule("FREJA Ultimate Bolas [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Freja;
+	}
+
+	conditions
+	{
+		Is Alive(Event Player) == True;
+		Is Using Ultimate(Event Player) == True;
+		Is Button Held(Event Player, Button(Ultimate)) == True;
+	}
+
+	actions
+	{
+		Event Player.U = Ray Cast Hit Position(Eye Position(Event Player), 100 * Facing Direction Of(Event Player) + Eye Position(
+			Event Player), Null, All Players(All Teams), False);
+		"Debug"
+		disabled Create Effect(Event Player, Ring, Color(White), Event Player.U, 10, Visible To Position and Radius);
+		Apply Impulse(Players Within Radius(Event Player.U, 10, Team 2, Off), Direction Towards(Position Of(Players Within Radius(
+			Event Player.U, 10, Team 2, Off)), Null), 70, To World, Cancel Contrary Motion);
+		Wait(0.700, Ignore Condition);
+		Apply Impulse(Players Within Radius(Event Player.U, 10, Team 2, Off), Direction Towards(Position Of(Players Within Radius(
+			Event Player.U, 10, Team 2, Off)), Null), 70, To World, Cancel Contrary Motion);
+		Wait(0.700, Ignore Condition);
+		Apply Impulse(Players Within Radius(Event Player.U, 10, Team 2, Off), Direction Towards(Position Of(Players Within Radius(
+			Event Player.U, 10, Team 2, Off)), Null), 70, To World, Cancel Contrary Motion);
+		Wait(0.700, Ignore Condition);
+		disabled Apply Impulse(Players Within Radius(Event Player.U, 10, Team 2, Off), Direction Towards(Position Of(Players Within Radius(
+			Event Player.U, 10, Team 2, Off)), Null), 70, To World, Cancel Contrary Motion);
+		disabled Wait(0.500, Ignore Condition);
+		Damage(Players Within Radius(Event Player.U, 10, Team 2, Surfaces), Event Player, 500);
 	}
 }
 
@@ -3882,7 +4026,7 @@ rule("HANZO Elemental Dragon Arrows")
 	}
 }
 
-rule("HAZARD Phreak Flag Mark [Added by Arkhanglesk#11200]")
+rule("HAZARD Phreak Flag Mark [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3905,7 +4049,7 @@ rule("HAZARD Phreak Flag Mark [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("HAZARD Bot Died While Marked [Added by Arkhanglesk#11200]")
+rule("HAZARD Bot Died While Marked [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3925,7 +4069,7 @@ rule("HAZARD Bot Died While Marked [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("HAZARD Double Damage While Marked [Added by Arkhanglesk#11200]")
+rule("HAZARD Double Damage While Marked [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3946,7 +4090,7 @@ rule("HAZARD Double Damage While Marked [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("ILLARI Solar Flare [Added by Arkhanglesk#11200]")
+rule("ILLARI Solar Flare [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3968,7 +4112,7 @@ rule("ILLARI Solar Flare [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("ILLARI Heat Blast [Added by Arkhanglesk#11200]")
+rule("ILLARI Heat Blast [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -3990,7 +4134,7 @@ rule("ILLARI Heat Blast [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("ILLARI Ultimate BFG 9000 [Added by Arkhanglesk#11200]")
+rule("ILLARI Ultimate BFG 9000 [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4017,7 +4161,7 @@ rule("ILLARI Ultimate BFG 9000 [Added by Arkhanglesk#11200]")
 	}
 }
 
-disabled rule("ILLARI Ultimate Scorched Earth [Added by Arkhanglesk#11200; work in progress]")
+disabled rule("ILLARI Ultimate Scorched Earth [Added by Arkhangelsk#11200; work in progress]")
 {
 	event
 	{
@@ -4047,7 +4191,7 @@ disabled rule("ILLARI Ultimate Scorched Earth [Added by Arkhanglesk#11200; work 
 	}
 }
 
-rule("JUNKER QUEEN Shout Swap [Added by Arkhanglesk#11200]")
+rule("JUNKER QUEEN Shout Swap [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4077,7 +4221,7 @@ rule("JUNKER QUEEN Shout Swap [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("JUNKER QUEEN Shout Effects [Added by Arkhanglesk#11200]")
+rule("JUNKER QUEEN Shout Effects [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4111,7 +4255,7 @@ rule("JUNKER QUEEN Shout Effects [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("JUNKER QUEEN Ultimate Charge [Added by Arkhanglesk#11200]")
+rule("JUNKER QUEEN Ultimate Charge [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4417,7 +4561,7 @@ rule("JUNKRAT Chaos Roulette - Kill Pile 6")
 	}
 }
 
-rule("JUNKRAT Elimination Money Script [Broken in OW2; updated by Arkhanglesk#11200]")
+rule("JUNKRAT Elimination Money Script [Broken in OW2; updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4445,7 +4589,7 @@ rule("JUNKRAT Elimination Money Script [Broken in OW2; updated by Arkhanglesk#11
 	}
 }
 
-rule("JUNO Ultimate Switch [Added by Arkhanglesk#11200]")
+rule("JUNO Ultimate Switch [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4479,7 +4623,7 @@ rule("JUNO Ultimate Switch [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("JUNO Ultimate Placement and Movement [Added by Arkhanglesk#11200]")
+rule("JUNO Ultimate Placement and Movement [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4515,7 +4659,7 @@ rule("JUNO Ultimate Placement and Movement [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("JUNO Ultimate Damage [Added by Arkhanglesk#11200]")
+rule("JUNO Ultimate Damage [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4557,7 +4701,7 @@ rule("JUNO Ultimate Damage [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("JUNO Zero-G [Added by Arkhanglesk#11200]")
+rule("JUNO Zero-G [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4582,7 +4726,7 @@ rule("JUNO Zero-G [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("KIRIKO Primary Switch [Added by Arkhanglesk#11200]")
+rule("KIRIKO Primary Switch [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4612,7 +4756,7 @@ rule("KIRIKO Primary Switch [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
+rule("KIRIKO Primary Damage [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4632,7 +4776,7 @@ rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
 		If(Event Player.R == False);
 			Abort If Condition Is False;
 			Wait(Random Real(0.100, 0.250), Ignore Condition);
-			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 40);
+			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 55);
 			Loop;
 		Else If(Event Player.R == True);
 			Damage(Player Closest To Reticle(Event Player, Team 2), Event Player, 1);
@@ -4641,7 +4785,7 @@ rule("KIRIKO Primary Attack [Added by Arkhanglesk#11200]")
 	}
 }
 
-disabled rule("KIRIKO Secondary Mark Targets for Genji [Added by Arkhanglesk#11200, work in progress]")
+disabled rule("KIRIKO Secondary Mark Targets for Genji [Added by Arkhangelsk#11200, work in progress]")
 {
 	event
 	{
@@ -4649,7 +4793,7 @@ disabled rule("KIRIKO Secondary Mark Targets for Genji [Added by Arkhanglesk#112
 	}
 }
 
-rule("KIRIKO Ultimate Yokai Blast [Added by Arkhanglesk#11200]")
+rule("KIRIKO Ultimate Yokai Blast [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4689,7 +4833,7 @@ rule("KIRIKO Ultimate Yokai Blast [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("LIFEWEAVER Ultimate Switch [Added by Arkhanglesk#11200]")
+rule("LIFEWEAVER Ultimate Switch [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4721,7 +4865,7 @@ rule("LIFEWEAVER Ultimate Switch [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("LIFEWEAVER Ultimate Placement [Added by Arkhanglesk#11200]")
+rule("LIFEWEAVER Ultimate Placement [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4754,7 +4898,7 @@ rule("LIFEWEAVER Ultimate Placement [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("LIFEWEAVER Ultimate Damage [Added by Arkhanglesk#11200]")
+rule("LIFEWEAVER Ultimate Damage [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4785,7 +4929,7 @@ rule("LIFEWEAVER Ultimate Damage [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("LIFEWEAVER Teleport [Added by Arkhanglesk#11200]")
+rule("LIFEWEAVER Teleport [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -4898,7 +5042,7 @@ rule("LUCIO Ultimate Epic Bass Drop")
 	}
 }
 
-rule("MAUGA Charge [Added by Arkhanglesk#11200]")
+rule("MAUGA Charge [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5322,7 +5466,7 @@ rule("MOIRA Lethargic Drain")
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb Activation [Broken in OW2; fixed and updated T chase rate by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb Activation [Broken in OW2; fixed and updated T chase rate by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5354,7 +5498,7 @@ rule("MOIRA Ultimate Coalescence Bomb Activation [Broken in OW2; fixed and updat
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb Deactivation [Updated by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb Deactivation [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5425,7 +5569,7 @@ rule("MOIRA Ultimate Coalescence Bomb Healing and Damage LOOP")
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb Explosion at 100 [Updated by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb Explosion at 100 [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5449,7 +5593,7 @@ rule("MOIRA Ultimate Coalescence Bomb Explosion at 100 [Updated by Arkhanglesk#1
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF on Death [Updated by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb OFF on Death [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5472,7 +5616,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Death [Updated by Arkhanglesk#11200
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF on Line of Sight [Updated by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb OFF on Line of Sight [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5495,7 +5639,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Line of Sight [Updated by Arkhangle
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF on Distance [Updated by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb OFF on Distance [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5518,7 +5662,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Distance [Updated by Arkhanglesk#11
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF on Interruption [Updated by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb OFF on Interruption [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5543,7 +5687,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF on Interruption [Updated by Arkhangles
 	}
 }
 
-disabled rule("MOIRA Ultimate Coalescence Bomb OFF on Button Press [Disabled by Arkhanglesk#11200; people kept reporting this as a bug]")
+disabled rule("MOIRA Ultimate Coalescence Bomb OFF on Button Press [Disabled by Arkhangelsk#11200; people kept reporting this as a bug]")
 {
 	event
 	{
@@ -5565,7 +5709,7 @@ disabled rule("MOIRA Ultimate Coalescence Bomb OFF on Button Press [Disabled by 
 	}
 }
 
-rule("MOIRA Ultimate Coalescence Bomb OFF in Spawn Room [Updated by Arkhanglesk#11200]")
+rule("MOIRA Ultimate Coalescence Bomb OFF in Spawn Room [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5589,7 +5733,7 @@ rule("MOIRA Ultimate Coalescence Bomb OFF in Spawn Room [Updated by Arkhanglesk#
 	}
 }
 
-rule("ORISA Fortify heal [Broken with OW2 rework; fixed by Arkhanglesk#11200]")
+rule("ORISA Fortify heal [Broken with OW2 rework; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5713,7 +5857,7 @@ rule("PHARAH Fusion Reactor Bunker Buster")
 	}
 }
 
-disabled rule("PHARAH Booster Dash ON [Broken after 2024-Feb-12 update; disabled by Arkhanglesk#11200 - replaced by Jet Dash]")
+disabled rule("PHARAH Booster Dash ON [Broken after 2024-Feb-12 update; disabled by Arkhangelsk#11200 - replaced by Jet Dash]")
 {
 	event
 	{
@@ -5743,7 +5887,7 @@ disabled rule("PHARAH Booster Dash ON [Broken after 2024-Feb-12 update; disabled
 	}
 }
 
-disabled rule("PHARAH Booster Dash OFF [Broken after 2024-Feb-12 update; disabled by Arkhanglesk#11200 - replaced by Jet Dash]")
+disabled rule("PHARAH Booster Dash OFF [Broken after 2024-Feb-12 update; disabled by Arkhangelsk#11200 - replaced by Jet Dash]")
 {
 	event
 	{
@@ -5769,7 +5913,7 @@ disabled rule("PHARAH Booster Dash OFF [Broken after 2024-Feb-12 update; disable
 	}
 }
 
-rule("RAMATTRA Nemesis Void Punch [Added by Arkhanglesk#11200]")
+rule("RAMATTRA Nemesis Void Punch [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -5794,6 +5938,26 @@ rule("RAMATTRA Nemesis Void Punch [Added by Arkhanglesk#11200]")
 		Set Status(Victim, Null, Knocked Down, 1);
 		Wait(0.100, Ignore Condition);
 		Damage(Victim, Event Player, Event Damage * 8);
+	}
+}
+
+rule("RAMATTRA Nemesis Punch Online [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Ramattra;
+	}
+
+	conditions
+	{
+		Is True For Any(Event Player, Is Using Ability 1(Event Player) || Is Using Ultimate(Event Player)) == True;
+	}
+
+	actions
+	{
+		Small Message(Event Player, Custom String(" {0} VOID PUNCH ONLINE", Ability Icon String(Hero(Doomfist), Button(Secondary Fire))));
 	}
 }
 
@@ -6054,7 +6218,7 @@ rule("REINHARDT Sonic Charge OFF")
 	}
 }
 
-rule("ROADHOG Asthmatic Trample [Broken after Nov-4-2023 Hog update; fixed by Arkhanglesk#11200]")
+disabled rule("ROADHOG Asthmatic Trample [Broken after Nov-4-2023 update then again Aug-26-2025; fixed by Arkhangelsk#11200, but needs rework]")
 {
 	event
 	{
@@ -6066,25 +6230,26 @@ rule("ROADHOG Asthmatic Trample [Broken after Nov-4-2023 Hog update; fixed by Ar
 	conditions
 	{
 		Is Alive(Event Player) == True;
-		Ability Cooldown(Event Player, Button(Secondary Fire)) == 0;
-		Is Button Held(Event Player, Button(Secondary Fire)) == True;
+															  
+															   
 		(Has Status(Event Player, Hacked) || Has Status(Event Player, Frozen) || Has Status(Event Player, Knocked Down) || Has Status(
 			Event Player, Stunned) || Has Status(Event Player, Asleep)) == False;
+		Is Button Held(Event Player, Button(Ability 2)) == True;
 	}
 
 	actions
 	{
 		Set Move Speed(Event Player, Event Player.MOVEMENT + 100);
-		"Broken after 11/4/2023 Hog update"
-		disabled Start Forcing Throttle(Event Player, 1, 1, 0, 0, 0, 0.500);
+									 
+																	  
 		Wait(1, Ignore Condition);
-		"Broken after 11/4/2023 Hog update"
-		disabled Stop Forcing Throttle(Event Player);
+									 
+											   
 		Set Move Speed(Event Player, Event Player.MOVEMENT);
 	}
 }
 
-rule("ROADHOG Asthmatic Knockdown")
+rule("ROADHOG Asthmatic Knockdown [Broken after Nov-4-2023 Hog update; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -6095,14 +6260,14 @@ rule("ROADHOG Asthmatic Knockdown")
 
 	conditions
 	{
-		Ability Cooldown(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == 0;
-		(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Secondary Fire)) == True) == True;
+		Ability Cooldown(Players On Hero(Hero(Roadhog), Team 1), Button(Ability 2)) >= 0;
+		(Is Button Held(Players On Hero(Hero(Roadhog), Team 1), Button(Ability 2)) == True) == True;
 		Distance Between(Event Player, Position Of(Players On Hero(Hero(Roadhog), Team 1))) <= 3;
 	}
 
 	actions
 	{
-		Set Status(Event Player, Null, Knocked Down, 1.500);
+		Set Status(Event Player, Event Player, Knocked Down, 1.500);
 		Wait(1.500, Ignore Condition);
 	}
 }
@@ -6356,7 +6521,7 @@ rule("SIGMA Stone Knockdown")
 	}
 }
 
-rule("SOJOURN Jump Jets Burn [Added by Arkhanglesk#11200]")
+rule("SOJOURN Jump Jets Burn [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -6384,7 +6549,7 @@ rule("SOJOURN Jump Jets Burn [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("SOJOURN Rocket Slide [Added by Arkhanglesk#11200]")
+rule("SOJOURN Rocket Slide [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -6410,7 +6575,7 @@ rule("SOJOURN Rocket Slide [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("SOJOURN Super Railgun [Added by Arkhanglesk#11200]")
+rule("SOJOURN Super Railgun [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -6689,7 +6854,7 @@ rule("SYMMETRA Impulse Mine Activation")
 	}
 }
 
-rule("SYMMETRA Secondary (Previously \"Rapid Fire\") [Broken in OW2; rework by Arkhanglesk#11200]")
+rule("SYMMETRA Secondary (Previously \"Rapid Fire\") [Broken in OW2; rework by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7146,7 +7311,7 @@ rule("WIDOWMAKER Frozen Mine")
 	}
 }
 
-rule("WIDOWMAKER Ultimate Rail Gun [Broken in OW2; fixed by Arkhanglesk#11200]")
+rule("WIDOWMAKER Ultimate Rail Gun [Broken in OW2; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7676,7 +7841,7 @@ rule("============== RESET HUD SCRIPT ==============")
 	}
 }
 
-rule("Ana HUD [Updated Arkhanglesk#11200]")
+rule("Ana HUD [Updated Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7755,7 +7920,7 @@ rule("Baptiste HUD")
 	}
 }
 
-rule("Bastion HUD [Updated Arkhanglesk#11200]")
+rule("Bastion HUD [Updated Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7813,7 +7978,7 @@ rule("Brigitte HUD")
 	}
 }
 
-rule("D.Va HUD [Updated Arkhanglesk#11200]")
+rule("D.Va HUD [Updated Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7841,7 +8006,7 @@ rule("D.Va HUD [Updated Arkhanglesk#11200]")
 	}
 }
 
-rule("Doomfist HUD [Updated Arkhanglesk#11200]")
+rule("Doomfist HUD [Updated Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7865,7 +8030,7 @@ rule("Doomfist HUD [Updated Arkhanglesk#11200]")
 	}
 }
 
-rule("Echo HUD [Updated by Arkhanglesk#11200]")
+rule("Echo HUD [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -7899,12 +8064,19 @@ rule("Freja HUD [Added by Arkhangelsk#11200]")
 	actions
 	{
 		Wait(0.500, Ignore Condition);
-		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.R = False;
+		Event Player.HUDTextHidden = Array(False, True, False, True);
+		"Set Hero HUD text."
+		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Reinhardt), Button(Ability 1)), Custom String(
+			"[INTERACT] TO CHANGE AMMO                           "), Custom String("REPULSOR DARTS"), Ability Icon String(Hero(Reinhardt),
+			Button(Ultimate)), Custom String("[INTERACT] TO CHANGE AMMO                           "), Custom String("ARC BOLTS"),
+			Ability Icon String(Hero(Freja), Button(Ultimate)), Custom String("BOLAS DRAWS BOTS IN AND EXPLODE             "),
+			Custom String("ULTIMATE: Skæbnefald"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
 
-rule("Genji HUD [Updated Arkhanglesk#11200]")
+rule("Genji HUD [Updated Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8094,7 +8266,7 @@ rule("Juno HUD [Added by Arkhangelsk#11200]")
 	}
 }
 
-rule("Kiriko HUD [Added by Arkhanglesk#11200]")
+rule("Kiriko HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8118,7 +8290,7 @@ rule("Kiriko HUD [Added by Arkhanglesk#11200]")
 	}
 }
 
-rule("Lifeweaver HUD [Added by Arkhanglesk#11200]")
+rule("Lifeweaver HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8174,7 +8346,7 @@ rule("Lucio HUD")
 	}
 }
 
-rule("Mauga HUD [Added by Arkhanglesk#11200]")
+rule("Mauga HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8274,7 +8446,7 @@ rule("Mercy HUD")
 	}
 }
 
-rule("Moira HUD [Updated by Arkhanglesk#11200]")
+rule("Moira HUD [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8304,7 +8476,7 @@ rule("Moira HUD [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("Orisa HUD [Updated for OW2 rework by Arkhanglesk#11200]")
+rule("Orisa HUD [Updated for OW2 rework by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8358,7 +8530,7 @@ rule("Pharah HUD")
 	}
 }
 
-rule("Ramattra HUD [Added by Arkhanglesk#11200]")
+rule("Ramattra HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8457,9 +8629,9 @@ rule("Roadhog HUD")
 		"Set Hero HUD text."
 		Event Player.PlayerHUD = Array(Ability Icon String(Hero(Roadhog), Button(Ability 1)), Custom String(
 			"[ABILITY 1] SHOOT/MELEE AFTER HOOK         "), Custom String("HOOK COMBO"), Ability Icon String(Hero(Roadhog), Button(
-			Ability 2)), Custom String("[SECONDARY] HOLD TO TRAMPLE BOTS         "), Custom String("ASTHMATIC TRAMPLE"),
-			Ability Icon String(Hero(Roadhog), Button(Ultimate)), Custom String(
-			"SHRED AND STUN BOTS                                         "), Custom String("ULTIMATE: WARTHOG"));
+			Ability 2)), Custom String("[ABILITY 2] HOLD TO STOMP NEARBY BOTS  "), Custom String("ASTHMATIC TRAMPLE"), Ability Icon String(
+			Hero(Roadhog), Button(Ultimate)), Custom String("SHRED AND STUN BOTS                                         "), Custom String(
+			"ULTIMATE: WARTHOG"));
 		Event Player.HeroOfPlayer = Hero Of(Event Player);
 	}
 }
@@ -8488,7 +8660,7 @@ rule("Sigma HUD")
 	}
 }
 
-rule("Sojourn HUD [Added by Arkhanglesk#11200]")
+rule("Sojourn HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8589,7 +8761,7 @@ rule("Symmetra HUD")
 	}
 }
 
-rule("Torbjorn HUD [Updated by Arkhanglesk#11200]")
+rule("Torbjorn HUD [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8642,7 +8814,7 @@ rule("Tracer HUD")
 	}
 }
 
-rule("Venture HUD [Added by Arkhanglesk#11200]")
+rule("Venture HUD [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -8737,6 +8909,23 @@ rule("Wrecking Ball HUD")
 	}
 }
 
+rule("Wuyang HUD [Added by Arkhangelsk#11200]")
+{
+	event
+	{
+		Ongoing - Each Player;
+		Team 1;
+		Wuyang;
+	}
+
+	actions
+	{
+		Wait(0.500, Ignore Condition);
+		Event Player.HUDTextHidden = Array(True, True, True, True);
+		Event Player.HeroOfPlayer = Hero Of(Event Player);
+	}
+}
+
 rule("Zarya HUD")
 {
 	event
@@ -8802,7 +8991,7 @@ rule("============== RELIC HUD and Effects ==============")
 			Is Button Held(Event Player, Button(Crouch)) == True ? Global.RelicDescriptions[1] : Custom String(
 			"(+SPD)(+DMG)(-RESPAWN)                                   "), Custom String("VORTEX RELIC: {0}% DMG", Speed Of(Event Player)
 			* 5 + 100), Left, 10, Color(Sky Blue), Color(Yellow), Color(Sky Blue), Visible To and String, Default Visibility);
-		"Rounded Player Speed (to make HUD neater). Added by Arkhanglesk#11200."
+		"Rounded Player Speed (to make HUD neater). Added by Arkhangelsk#11200."
 		disabled Create HUD Text(Filtered Array(Event Player, Event Player.RelicSelected == 1), Custom String("{0}", Icon String(Spiral)),
 			Is Button Held(Event Player, Button(Crouch)) == True ? Global.RelicDescriptions[1] : Custom String(
 			"(+SPD)(+DMG)(-RESPAWN)                             "), Custom String("VORTEX RELIC: {0}% DMG", Round To Integer(Speed Of(
@@ -9157,7 +9346,7 @@ rule("Subroutine - (ClearAllStatus)")
 	}
 }
 
-rule("Subroutine - (EnableButtons) [Broken in OW2; fixed by Arkhanglesk#11200]")
+rule("Subroutine - (EnableButtons) [Broken in OW2; fixed by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -9182,7 +9371,7 @@ rule("Subroutine - (EnableButtons) [Broken in OW2; fixed by Arkhanglesk#11200]")
 	}
 }
 
-rule("Subroutine - (DisableButtons) [Broken in OW2; updated by Arkhanglesk#11200]")
+rule("Subroutine - (DisableButtons) [Broken in OW2; updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -9207,7 +9396,7 @@ rule("Subroutine - (DisableButtons) [Broken in OW2; updated by Arkhanglesk#11200
 	}
 }
 
-rule("Subroutine - (Juno Beam Movement) [Added by Arkhanglesk#11200]")
+rule("Subroutine - (Juno Beam Movement) [Added by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -9306,7 +9495,7 @@ rule("Subroutine - (ReaperCreepingDeathOff)")
 	}
 }
 
-rule("Flying Toggle [Updated by Arkhanglesk#11200]")
+rule("Flying Toggle [Updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -9339,7 +9528,7 @@ rule("Flying Toggle [Updated by Arkhanglesk#11200]")
 	}
 }
 
-rule("Flying [Broken in OW2; updated by Arkhanglesk#11200 using code from XWJQQ] - High server cost")
+rule("Flying [Broken in OW2; updated by Arkhangelsk#11200 using code from XWJQQ] - High server cost")
 {
 	event
 	{
@@ -9454,7 +9643,7 @@ rule("Flying OFF on hero change")
 	}
 }
 
-rule("PLAYER Third Person During Ultimate ON [Broken in OW2; updated by Arkhanglesk#11200]")
+rule("PLAYER Third Person During Ultimate ON [Broken in OW2; updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -9485,7 +9674,7 @@ rule("PLAYER Third Person During Ultimate ON [Broken in OW2; updated by Arkhangl
 	}
 }
 
-rule("PLAYER Third Person During Ultimate OFF [Broken in OW2; updated by Arkhanglesk#11200]")
+rule("PLAYER Third Person During Ultimate OFF [Broken in OW2; updated by Arkhangelsk#11200]")
 {
 	event
 	{
@@ -9506,7 +9695,7 @@ rule("PLAYER Third Person During Ultimate OFF [Broken in OW2; updated by Arkhang
 	}
 }
 
-rule("SUDDEN DEATH Message to Dead Players [Added by Arkhanglesk#11200]")
+rule("SUDDEN DEATH Message to Dead Players [Added by Arkhangelsk#11200]")
 {
 	event
 	{
