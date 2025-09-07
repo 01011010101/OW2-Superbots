@@ -1,4 +1,27 @@
-### June 15, 2025
+### September 7, 2025 (Wuyang)
+
+#### Team 1
+- Added **WUYANG** as playable hero.
+
+- **FREJA – New Abilities:**
+	- **Load Ammo:**
+		- **Repulsor Darts** – Repel bots and knock them down.
+        	- **[PRIMARY]** – Every bolt knocks bots back 2m.
+        	- **[SECONDARY]** – Every charged shot knocks back and knocks down the target for 1.5s.
+   
+		- **Arc Bolts** – Hack, stun, and knockdown bots.
+        	- **[PRIMARY]** – Every shot hacks and stuns bots temporarily.
+        	- **[SECONDARY]** – Every charged shot that lands stuns bots within 4m of target.
+
+	- **Ultimate: Skæbnefald** – Bolas create a black hole within 10m sucking bots in then detonating.
+
+- **RAMATTRA** – Added a message when in Nemesis Form that Void Punch is available.
+
+- **ROADHOG** – Fixed **Take a Breather** (broken after August 26, 2025 update).
+
+---
+
+### June 15, 2025 (Freja)
 
 #### Team 1
 - Added **FREJA** as playable hero.
