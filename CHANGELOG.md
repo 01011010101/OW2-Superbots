@@ -1,3 +1,32 @@
+### October 11, 2025 (+3 Game Modes)
+
+#### General
+- **Added 3 Game Modes:**
+  - **Clash**, **Control**, and **Flashpoint**.
+    - **Final Challenge** for **Control** triggers when Team 1’s score > **70%**.
+    - **Final Challenge** for **Flashpoint** triggers when Team 1 has captured **50%** of the final flashpoint.
+    - Disabled Final Challenges for **Clash**.  
+		- *Reason: None of the 'Objective', 'Score', or 'Capture%' conditions work to determine progress in Clash. Will keep working on it.*
+
+#### Team 1
+- **D.VA** - D.Va is now unkillable while bunny hopping.
+- **FREJA** – **Repulsor Dart's** **[SECONDARY]** fire is now an AOE knockdown.
+- **JUNO** – Updated HUD to clarify Ultimate damage.
+- **RAMATTRA** – **Ravenous Aura** now correctly leeches HP from bots within **5m**.
+
+#### **Optimizations and Improvements:**
+  - Bots now correctly auto-balance for 2, 3, and 4 human players.
+  - Refactored LucioBot check.
+  - Refactored bot naming function.
+  - Added a short delay to **Reinhardt’s** healing message.
+  - Added Server CPU monitors (host only).
+  - Refactored ReaperBot Ultimate stun.
+	- *Reason: The old function was running constantly even if Reaper was not in play.*
+  - Reworked Echo’s laser damage to reduce calculations and scale better as she levels.
+  - Improved Hazard’s Phreak Flag behavior and how it marks bots.
+
+---
+
 ### September 7, 2025 (Wuyang)
 
 #### Team 1
@@ -16,7 +45,6 @@
 	- **Ultimate: Skæbnefald** – Bolas create a black hole within 10m sucking bots in then detonating.
 
 - **RAMATTRA** – Added a message when in Nemesis Form that Void Punch is available.
-
 - **ROADHOG** – Fixed **Take a Breather** (broken after August 26, 2025 update).
 
 ---
@@ -37,7 +65,7 @@
 #### Team 1
 - **JUNO – New Abilities:**
   - **Ultimate Choice:**
-    - **Low Orbit Ion Cannon** – Nukes bots from space! Orbital Ray now deals **5,000 DPS** over 8 seconds to any bot in its path.
+    - **Low Orbit Ion Cannon** – Nukes bots from space! Orbital Ray now deals **1000 DPS** over 8 seconds to any bot in its path.
     - **Energize** – Bots are beamed up into space.
   - **Grav Boots** – Press **[JUMP]** in midair to activate zero gravity.
 
@@ -180,13 +208,15 @@
 	- ECHO: Buffed Quantum Laser damage.
   	- JUNKER QUEEN: Buffed Ultimate damage from 130 to 150, lowered Ult gen (combat) slightly
   	- KIRIKO: Fixed typo in HUD for her Ultimate
-  	- MEI: Decreased Frostburn damage from .1 to .05. Reason: A good Mei player can absolutely dominate a match, especially if they get lots of headshots (source: me).
+  	- MEI: Decreased Frostburn damage from .1 to .05.
+  		- _Reason: A good Mei player can absolutely dominate a match, especially if they get lots of headshots (source: me)._
 ---
 ### March 7, 2024
 * Team 1
   - LIFEWEAVER: New abilites:
   	- Choice of damage when using Ult: AOE Poison or pulse damage/stun
-   	- Replaced Life Grip with teleport. Reason: Lowering Life Grip's CD resulted in trolling, and increasing the CD made it useless, so I replaced it entirely. I wanted at least another ability for him and this was the cheapest server cost of my ideas to implement.
+   	- Replaced Life Grip with teleport.
+    	- _Reason: Lowering Life Grip's CD resulted in trolling, and increasing the CD made it useless, so I replaced it entirely. I wanted at least another ability for him and this was the cheapest server cost of my ideas to implement._
 ---
 ### March 3, 2024
 * Team 1
@@ -197,7 +227,8 @@
 	- JUNKER QUEEN: Extended range of shout effects by 1m
 
 * General
- 	- Removed 7th bot from Team 2. Reason: Increased workshop overload crashes. Will revist as more optimizations are made.
+ 	- Removed 7th bot from Team 2.
+		- _Reason: Increased workshop overload crashes. Will revist as more optimizations are made._
 ---
 ### February 28, 2024
 * Team 1
@@ -220,7 +251,8 @@
 	- REAPER: Decreased damage slightly
  
  * General
- 	- Added 7th bot to Team 2 slot. Reason: Testing adding max allowed bots for increased challenge.
+ 	- Added 7th bot to Team 2 slot.
+		- _Reason: Testing adding max allowed bots for increased challenge._
 ---
 ### February 22, 2024
 * Team 1
@@ -243,7 +275,8 @@
   - BAPTISTE: Lowered damage dealt
   - D.VA: Decreased Ultimate generation (passive, combat)
   - DOOMFIST: Lowered damage back to 100%.
-  - HANZO: Lowered damage dealt slightly, lowered Ult gen. Reason: Hanzo in endgame basically gets instant ults.
+  - HANZO: Lowered damage dealt slightly, lowered Ult gen.
+	  - _Reason: Hanzo in endgame basically gets instant ults._
   - MAUGA: New ability: Bumrush, an unstoppable charge.
   - MOIRA: Fixed flying when using Ultimate
   - REINHARDT: Lowered HP slightly
@@ -254,24 +287,30 @@
 ---
 ### February 12, 2024
 * Team 1
-  - Decreased damage dealt across the board. Reason: Bots are too easy. Also, bots dying too quickly = more levels faster for both teams = more frequent abilities = workshop load crashes.
-  - SOJOURN: New abilities: (Reason: I felt her kit encouraged a hit-and-run playstyle, so I leaned into it with her new abilities)
+  - Decreased damage dealt across the board.
+	  - _Reason: Bots are too easy. Also, bots dying too quickly = more levels faster for both teams = more frequent abilities = workshop load crashes._
+  - SOJOURN - New abilities:
   	- Rocket Boost Slide: Sweep and knockdown bots for 2 seconds when you slide into them.
    	- Jump Jets: Burn nearby bots for 10/sec for 3 seconds.
-	- Ultimate: Super Railgun: Massive damage and shoot through walls. Reason: Unlike Widow, Sojourn cannot see through walls during her Ult, which helps make this Ult not stupid OP.
+	- Ultimate: Super Railgun: Massive damage and shoot through walls.
+		- _Reason: Unlike Widow, Sojourn cannot see through walls during her Ult, which helps make this Ult not be stupidly OP._
 
 * General
 	- Fixed bot names. Bots will no longer show "DAMAGE 3" or "TANK 1" but instead will have their proper names.
 ---
 ### February 11, 2024
 * Team 1
-	- ECHO: Reworked: (Reason: Echo went through the most revisions in this mode after OW2 broke two of her abilities. I believe this rework is a good balance of fun/ction at minimal server cost)
+	- ECHO: Reworked:
 		- Quantum Beam no longer limited to Ultimate. Cooldown set to 14 seconds.
-		- Ultimate: Overdrive: Free Flight + speed and damage buff. Reason: Enabled 'Buff Effects' extension to give Echo Ana's Nano Boost effect during her ult. The effect + the temporary buffs helps sell the effect.
-		- Disabled permament flying, tweaked Flight cooldown. Reason: Echo already gained free flight from her Flight ability. Having her permanently flying (something I did to make her unique) meant running the new Flying script constantly, resulting in more frequent workshop overload crashes when she was in play. Decreasing Flight cooldown to 35% stills gives her almost constant free flight but at a much, much lower server cost.
-		- Disabled Auto Fire for Sticky Bombs. Reason: Echo's Auto and Rapid Fire were broken in OW2 with the rate-of-fire changes. After many different iterations, the best way to emulate the OW1 Auto Fire for Sticky Bombs was to set CD=0% and loop the Auto Fire rule every .800 seconds. Unfortunately, this has a high server cost and caused workshop load crashes, so I shelved this for now pending a rework.
+		- Ultimate: Overdrive: Free Flight + speed and damage buff.
+			- _Reason: Enabled 'Buff Effects' extension to give Echo Ana's Nano Boost effect during her ult. The effect + the temporary buffs helps sell the effect._
+		- Disabled permament flying, tweaked Flight cooldown.
+			- _Reason: Echo already gained free flight from her Flight ability. Having her permanently flying (something I did to make her unique) meant running the new Flying script constantly, resulting in more frequent workshop overload crashes when she was in play. Decreasing Flight cooldown to 35% stills gives her almost constant free flight but at a much, much lower server cost._
+		- Disabled Auto Fire for Sticky Bombs.
+			- _Reason: Echo's Auto and Rapid Fire were broken in OW2 with the rate-of-fire changes. After many different iterations, the best way to emulate the OW1 Auto Fire for Sticky Bombs was to set CD=0% and loop the Auto Fire rule every .800 seconds. Unfortunately, this has a high server cost and caused workshop load crashes, so I shelved this for now pending a rework._
 		- Updated HUD.
-	- REAPER: Decreased damage by 3%. Reason: Reaper needs to be one of the top DPS, but he continues to do 300k+ more damage than everyone else.
+	- REAPER: Decreased damage by 3%.
+		- _Reason: Reaper needs to be one of the top DPS, but he continues to do 300k+ more damage than everyone else._
 ---
 ### February 6, 2024
 * Team 1
@@ -293,15 +332,20 @@
 ---
 ### January 27, 2024
 * Team 1
-  - Fixed Flying. You now move at 0 speed when enabling flying. Reason: This is how flying worked in WEVVY.
+  - Fixed Flying. You now move at 0 speed when enabling flying.
+	- _Reason: This is how flying worked in WEVVY._
   - ECHO: Made flying permanent (no toggle)
   - JUNKER QUEEN: Increased knockback of Jagged Blade, increased Ultimate generation (passive) cooldown to 100%.
   - MERCY: Decreased damage to 150%.
   - MOIRA: Ult changes:
-	- Disabled manual cancelling of Ultimate. Reason: Kept being reported as a bug. Removing this does not significantly change her gameplay.
- 	- Made Ultimate duration a flat 10 seconds and removed the internal counter/timer. Reason: Moira started causing workshop overload crashes near the endgame as she was Ulting too frequently (did not happened in OW1). I removed the internal variable chase that made her Ult 20 seconds and the supporting code to cut down on the number of scripts running, and replaced the counter with the in-game Ultimate duration counter (accomplished by changing her Ult duration from 'infinite' to 122%, which is exactly 10 secs).
-	- Now phased while casting Ultimate. Reason: To compensate for the above changes. She Ults less frequently now, but when she does she makes a big bang.
-  - REINHARDT: Increased Fire Strike cooldown back to 100%. Reason: to compensate for now having 2 charges.
+	- Disabled manual cancelling of Ultimate.
+		- _Reason: Kept being reported as a bug. Removing this does not significantly change her gameplay._
+ 	- Made Ultimate duration a flat 10 seconds and removed the internal counter/timer.
+		- _Reason: Moira started causing workshop overload crashes near the endgame as she was Ulting too frequently (did not happened in OW1). I removed the internal variable chase that made her Ult 20 seconds and the supporting code to cut down on the number of scripts running, and replaced the counter with the in-game Ultimate duration counter (accomplished by changing her Ult duration from 'infinite' to 122%, which is exactly 10 secs)._
+	- Now phased while casting Ultimate.
+		- _Reason: To compensate for the above changes. She Ults less frequently now, but when she does she makes a big bang._
+  - REINHARDT: Increased Fire Strike cooldown back to 100%.
+	- _Reason: to compensate for now having 2 charges._
 ---
 ### January 15, 2024
 * Team 1
@@ -326,7 +370,8 @@
 * Team 1
   - D.VA: Increased Bunny Hop chase rate
   - HANZO: Fixed Sonic Arrow explosion
-  - JUNKRAT: Modified money earned from kills. Reason: Workshop overload issues from frequent use.
+  - JUNKRAT: Modified money earned from kills.
+  	- _Reason: Workshop overload issues from frequent Chaos Roulette use._
   - MAUGA: Lowered Health from 300% to 200%.
 ---
 ### December 2, 2023
@@ -415,14 +460,15 @@
 		- REINHARDT: Increased Shield Recharge
 
 * Super Bots
-	- Changed Lucio's DANGER HUD element and removed the ⚠️ icon. Reason: Lucio's ult becomes predictable. I didn't want to change any of his great Ults or the timing, so obscuring when he will exactly ult introduces the illusion of randomness.
+	- Changed Lucio's DANGER HUD element and removed the ⚠️ icon.
+		- _Reason: Lucio's ult becomes predictable. I didn't want to change any of his great Ults or the timing, so obscuring when he will exactly ult introduces the illusion of randomness._
 	- Increased Ultimate generation for:
 		- HANZO
 		- BRIGITTE
 
  * General
 	- Changed Team 1 player slots to 4.
-		- Reason:<br>1) I want something different than the now-standard 5v5, but 6v6 causes a ton of workshop overload crashes. 4v6 is a good compromise and something I can properly balance and extend safely.<br>2) I don't advertise this game mode, so filling a full team of 6 people for a few matches almost never happens.
+		- _Reason:<br>1) I want something different than the now-standard 5v5, but 6v6 causes a ton of workshop overload crashes. 4v6 is a good compromise and something I can properly balance and extend safely.<br>2) I don't advertise this game mode, so filling a full team of 6 people for a few matches almost never happens._
 ---
 ### September 16, 2023 (More OW2 Fixes)
 * Team 1
@@ -436,7 +482,8 @@
 		- ZENYATTA
 
 * Super Bots
-	- Changed bots from 'Hard' to 'Extreme'. Reason: Hard is not hard anymore in OW2. Lethal was slightly better, and Ultimate and Aimbot were unfair (especially for low HP heroes who would get 1-shot instantly from across the map). Extreme is a good starting point for now, but may change later.
+	- Changed bots from 'Hard' to 'Extreme'.
+		- _Reason: Hard is not hard anymore in OW2. Lethal was slightly better, and Ultimate and Aimbot were unfair (especially for low HP heroes who would get 1-shot instantly from across the map). Extreme is a good starting point for now, but may change later._
 	- Increased Ultimate generation for:
 		- HANZO
 		- BRIGITTE
@@ -460,19 +507,24 @@
 	- Fixed ECHO's Auto Fire and Ultimate
 	- Fixed WIDOWMAKER's Ultimate Rail Gun.
 	- Fixed Third Person
-	- Disabled Flying for MOIRA, SIGMA, and ZENYATTA. Reason: The method to enable flying in OW1 (Gravity=0%) is broken in OW2. Need to fix.
+	- Disabled Flying for MOIRA, SIGMA, and ZENYATTA.
+		- _Reason: The method to enable flying in OW1 (Gravity=0%) is broken in OW2. Need to fix._
 	- Disabled broken abilties for:
 		- BAPTISTE
-			- Ultimate: Full-Auto. Reason: Broken in OW2 (rate-of-fire changes).
+			- Ultimate: Full-Auto.
+				- _Reason: Broken in OW2 (rate-of-fire changes)._
 		- BASTION
-			- Ultimate: Proton Cannon. Reason: Beam needs "Beam Effect" extension to be enabled.
+			- Ultimate: Proton Cannon.
+				- _Reason: Beam needs "Beam Effect" extension to be enabled._
 		- DOOMFIST
-			- Super 1 - Super Uppercut. Reason: Broken with OW2 rework. Needs fixes.
+			- Super 1 - Super Uppercut.
+				- _Reason: Broken with OW2 rework. Needs fixes._
 
 * Super Bots
 	- Added new OW2 heroes to bot pool.
  	- Balanced new OW2 Super Bots.
-	- Disabled SUPERBOTS Torbot Ultimate Auto-Fire. Reason: Broken in OW2.
+	- Disabled SUPERBOTS Torbot Ultimate Auto-Fire.
+		- _Reason: Broken in OW2._
 	
 * Relics
 	- Fixed Vortex resetting speed to 100% when respawning.
@@ -480,8 +532,10 @@
 * General
 	- HUD
  		- Updated button references (made them more generic) for HUDs and abilities to account for console/controller.
-		- Removed player death and superbot killed counters. Reason: Replaced by scoreboard.
-		- Removed Challenge Roulette when challenge is not active. Reason: The HUD in OW2 is jacked. Left and right-side text is centered, so removed this to improve visibility.
+		- Removed player death and superbot killed counters.
+			- _Reason: Replaced by scoreboard._
+		- Removed Challenge Roulette when challenge is not active.
+			- _Reason: The HUD in OW2 is jacked. Left and right-side text is centered, so removed this to improve visibility._
 	- PUSH Mode
 		- Increased push bot speed.
 ---
