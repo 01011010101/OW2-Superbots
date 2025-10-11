@@ -266,7 +266,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Tank Role with 🛡️AEGIS Relic.
 - **Flashbang** – Grenades knockback and daze bots.
 - **Auto-Repairs** – Tank mode heals you 35% of your total HP over 5 seconds.
-- **Ultimate - AP Rounds** – Load high-velocity rounds that penetrate walls and shields.
+- **Ultimate: AP Rounds** – Load high-velocity rounds that penetrate walls and shields.
 - **Heavy Armor** – +75% Armor.
   ##### 💬 Tip:
   Your Flashbang helps set MEI and ILLARI up for headshots.
@@ -276,7 +276,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 #### BRIGITTE
 - 🛡️ Tank Role – +200% Health
 - **Vampire Killer** – Flail shot explodes three times on impact dealing AoE damage and knocking the target back as far as possible.
-- **Ultimate - Heroic Presence** – Stun all enemies within 10m for 7 seconds and increase your damage by 400%.
+- **Ultimate: Heroic Presence** – Stun all enemies within 10m for 7 seconds and increase your damage by 400%.
 - **Medium Armor** – +50% Armor.
 
 ---
@@ -285,7 +285,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - **Phasing Roll** – Avoids damage and heals **50 HP**.
 - **Launching Flashbang** – Enemies are launched into the air.
 - **Hat Trick** – x2 Damage to enemies in the air.
-- **Ultimate - Showdown** – Once ultimate has been initiated, bots will randomly be launched into the air after 2-5 seconds, shoot after the message “Draw!” is displayed.<br>
+- **Ultimate: Showdown** – Once ultimate has been initiated, bots will randomly be launched into the air after 2-5 seconds, shoot after the message “Draw!” is displayed.<br>
   ##### 💬 Tip:
   Wrecking Ball's ground pound can set you up to get more Hat Tricks.
   
@@ -300,7 +300,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 ---
 
 #### DOOMFIST 
-- **Ultimate - Super Moves** – Use your ultimate to power your regular abilities.
+- **Ultimate: Super Moves** – Use your ultimate to power your regular abilities.
   - **Super Slam** – Heal yourself while pummeling and burning bots.
   - **Super Punch** – Massive direct damage.
 - **Medium Armor** – +50% Armor.
@@ -309,7 +309,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 
 #### ECHO
 - **Quantum Beam** – Powerful laser that increases in damage based on max HP of the target.
-- **Ultimate - Overdrive** – Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
+- **Ultimate: Overdrive** – Echo overclocks her systems and gains free flight, increased speed, and 500% projectile speed.
 - **Light Armor** – +25% Armor.
   ##### 💬 Tip:
   Echo likes to stay out of the fray and deliver massive damage from afar, but she's also a devastating dive bomber when using 🌀 Vortex relic.
@@ -317,10 +317,10 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 ---
 
 #### FREJA
-- **Ammo** – Press **[INTERACT]** to load ammo.
+- **Load Ammo** – Press **[INTERACT]** to change ammo.
   - **Repulsor Darts**:
     - [PRIMARY] – Every bolt knocks bots back **2m**.
-    - [SECONDARY] – Every charged shot knocks back and knocks down the target for **1.5s**.
+    - [SECONDARY] – Every charged shot that lands knocks back and knocks down any bot within **4m** for **1.5s**.
   - **Arc Bolts**:
     - [PRIMARY] – Every shot hacks and stuns bots temporarily.  
     - [SECONDARY] – Every charged shot that lands stuns bots within **4m** of target.
@@ -361,7 +361,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 #### ILLARI
 - **Heat Blast** – Headshots set bots on fire.
 - **Solar Flare** – Knocks back and burns bots.
-- **Ultimate - BFG 9000** – Fire a massive plasma round that does 85 damage and then scorches for additional 5 damage over 5 seconds. If bots sustain any damage they will instantly die after 5 seconds.
+- **Ultimate: BFG 9000** – Fire a massive plasma round that does 85 damage and then scorches for additional 5 damage over 5 seconds. If bots sustain any damage they will instantly die after 5 seconds.
   ##### 💬 Tip:
   Take advantage of stuns from BASTION's Flashbangs, JUNKER QUEEN's Banshee Scream, or LIFEWEAVER's paralitic Nightshade ultimate to get headshots!
 
@@ -371,7 +371,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Press **[RELOAD]** to swap shouts.
   - **Sonic Tremors** – Damage and knockdown all bots within 8m for **2.5 seconds**.
   - **Banshee Scream** – Damage and stun all bots within 8m for **3 seconds**.
-- **Ultimate - Bushwhack** – Cut through all bots in your path, doing massive damage and applying a bleed.
+- **Ultimate: Bushwhack** – Cut through all bots in your path, doing massive damage and applying a bleed.
   ##### 💬 Tip:
   Banshee Scream's stun helps MEI and ILLARI do extra damage with headshots.
   
@@ -406,13 +406,13 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - Press **[RELOAD]** to change **[PRIMARY]** damage.
   - **Ofuda** – Damage bots with your paper things while healing your allies.
   - **Kami Kiri Kizu** – Your paper ofuda slice bots and applies a bleed.
-- **Ultimate - Yōkai Blast** – Damage and knockdown all bots for 5 seconds in the path of your Kitsune.
+- **Ultimate: Yōkai Blast** – Damage and knockdown all bots for 5 seconds in the path of your Kitsune.
 - **Light Armor** – +25% Armor.
 
 ---
 
 #### LIFEWEAVER
-- **Ultimate - Tree of Corruption** – Press **[RELOAD]** to change **[ULTIMATE]** damage.
+- **Ultimate: Tree of Corruption** – Press **[RELOAD]** to change **[ULTIMATE]** damage.
   - **Hemlock** – Poison all bots within **12.5m** of your tree.
   - **Nightshade** – Every pulse from the tree paralyzes and damages bots.
 - **Euphorbia** – Teleport to any ally in your LOS and daze any nearby bots.
@@ -423,7 +423,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 
 #### LÚCIO 
 - **Tinnitus** – **[SECONDARY FIRE]** deals a ton of damage while knocking back and heals **150 HP** in a **10m** radius. This damage is increased by your current movement speed.
-- **Ultimate - Party All Night** – Resurrect all dead players and teleport them next to Lúcio, Heal **100 health** to everyone every second, deal damage to all enemies (20m) during the rapid bass part of his beat. Lúcio becomes Phased Out for the duration. Lasts 10 seconds.
+- **Ultimate: Party All Night** – Resurrect all dead players and teleport them next to Lúcio, Heal **100 health** to everyone every second, deal damage to all enemies (20m) during the rapid bass part of his beat. Lúcio becomes Phased Out for the duration. Lasts 10 seconds.
 - **Medium Armor** – +50% Armor.
 
 ---
@@ -453,7 +453,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - **Angelic Presence** – **15m** AoE Passive Healing **7% HP/sec**.
 - **Charm** – **[MELEE]** charms one enemy, stunning for 10 seconds.  
 	- **Charmed Kills** – +20% Damage.
-- **Ultimate - Angelic Wrath** – Double damage while using ultimate and enemies constantly take damage while inside of her aura.
+- **Ultimate: Angelic Wrath** – Double damage while using ultimate and enemies constantly take damage while inside of her aura.
 - **Medium Armor** – +50% Armor.
 - 250% Jump Speed.
 - 75% Gravity speed.
@@ -463,7 +463,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 #### MOIRA
 - Orbs are much slower.
 - **Lethargic Drain** – **[SECONDARY FIRE]** roots enemies while dealing damage.
-- **Ultimate - Dark Coalescence Bomb**:
+- **Ultimate: Dark Coalescence Bomb**:
   - Energy Sphere – Funnel energy into a point, creating an area that heals your team and damages the enemy.
   - Detonation – The larger the sphere gets, the larger the explosion. Breaking Line of sight, dying, being interrupted or moving too far from the origin point will detonate the bomb.  
   - Flight enabled during Ultimate – **[JUMP]** to go up, **[CROUCH]** to go down.
@@ -490,7 +490,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 #### RAMATTRA
 - **Nemesis Void Punch** – Pummel bots and send them flying with **[MELEE]** while in Nemesis form.
 - **Ravenous Aura** – Leech **10 HP/sec** from each bot within **3m** while in Nemesis form.
-- **Heavy Armor** – +75% Armor.
+- **Medium Armor** – +50% Armor.
 
 ---
 
@@ -517,7 +517,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
   - Shoot bots after hook to pop them up in the air.
   - Melee bots after hook to knock them down. Earns money for Junkrat.
 - **Asthmatic Trample** – Knock down any bots that you come in contact with.
-- **Ultimate - Warthog** – Stun any bot damaged by your ultimate.
+- **Ultimate: Warthog** – Stun any bot damaged by your ultimate.
 - **Heavy Armor** – 75% Armor.
   ##### 💬 Tip:
   If Junkrat is on your team, you'll earn him money he can use in Chaos Roulette every time you use Hook Combo or get a kill.
@@ -536,7 +536,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 #### SOJOURN
 - **Jump Jets** – Afterburn from your jet pack burns nearby bots for 3 seconds when you jump after sliding.
 - **Rocket Boost Slide** – Sweep and damage bots, doing 25 damage to anyone in your path and knocking them down for 1.5 seconds.
-- **Ultimate - Super Railgun** – **[SECONDARY FIRE]** rounds do massive damage and penetrate walls.
+- **Ultimate: Super Railgun** – **[SECONDARY FIRE]** rounds do massive damage and penetrate walls.
   ##### 💬 Tip:
   - Hanzo's Sonic Arrow can help you find targets for the Super Railgun.
   - Sojourn excels at hit-and-run guerilla tactics - slide in, take out the legs, jump out and apply burn, finish with disrupter.
@@ -544,7 +544,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 ---
 
 #### SOLDIER 76
-- **Ultimate - C-130X Airstrike** – Aim pulse cannons from the safety of an aircraft that explode in a 30m area and goes through walls.
+- **Ultimate: C-130X Airstrike** – Aim pulse cannons from the safety of an aircraft that explode in a 30m area and goes through walls.
   - 12 second duration.  
   - Recharges roughly every 2 minutes.
   
@@ -554,7 +554,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - **Hack** – Stuns enemies.
 - **Phased Stealth** – Avoids all damage and heals 10% HP/sec.
 - **1337 Hacker** – Double damage when attacking a hacked enemy or when attacking from behind.
-- **Ultimate - Super EMP** – Root and Hack enemies for 10 seconds. Become invisible while root is active.
+- **Ultimate: Super EMP** – Root and Hack enemies for 10 seconds. Become invisible while root is active.
 - **Light Armor** – +25% Armor.
 
 ---
@@ -580,7 +580,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 #### TRACER
 - **Blink Stasis** – Blinking into an enemy will put them in stasis for 4 seconds.
 - **Total Recall** – Recall always heals to full health.
-- **Ultimate - Chronostasis** – Freeze time for 5 seconds and insta-kill any target shot while moving faster than everyone else.
+- **Ultimate: Chronostasis** – Freeze time for 5 seconds and insta-kill any target shot while moving faster than everyone else.
 - **Medium Armor** – +50% Armor.
 
 ---
@@ -590,7 +590,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - **Geode Burst** – Empowers your Emerge and Drill Dash abilties
   - **Emerge** – Hurls bots in the air. The longer the charge, the higher they go.
   - **Drill Dash** – Barrels through bots and makes a path
-- **Ultimate - Shockwave** – Create an earthquake in a cone in front of you that knocks bots back and knocks them down for 3 seconds.
+- **Ultimate: Shockwave** – Create an earthquake in a cone in front of you that knocks bots back and knocks them down for 3 seconds.
 - **Light Armor** – +25% Armor.
 
 ---
@@ -598,7 +598,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 #### WIDOWMAKER
 - **Anti-Materiel Rifle** – Scoped charged shots will deal explosive damage based on the amount of charge accumulated, up to **12m**.
 - **Frozen Mine** – Freezes enemies that trigger the mine.
-- **Ultimate - Railgun** – Loads 4 insta-kill bullets that go through walls.
+- **Ultimate: Railgun** – Loads 4 insta-kill bullets that go through walls.
 
 ---
 
@@ -606,15 +606,15 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 - **Rage** – Dealing damage increases your Rage resource by 5.
 - **Venting Rage** – (35 Rage) Your Jump Pack becomes a slam attack that knocks down enemies and deals 100 base damage when you hit the ground.
 - **Healing Barrier** – Activating the shield will heal you for 25% HP over 5 seconds.
-- **Ultimate - Harambe’s Revenge** – Heal to full, knock down enemies upon activation, and regenerate **20 HP/sec** for 10 seconds.
-- Heavy Armor – +75% Armor.
+- **Ultimate: Harambe’s Revenge** – Heal to full, knock down enemies upon activation, and regenerate **20 HP/sec** for 10 seconds.
+- **Heavy Armor** – +75% Armor.
 
 ---
 
 #### WRECKING BALL
 - Grapple has no cooldown.
 - **Auto-Repairs** – Heal 35% HP/s over 7 seconds after activating shield.
-- **Ultimate - Orbital Drop** – Teleport above the map then crash down towards the position you ulted from, dealing massive damage to all enemies within a 5m radius and deploying mines upon landing.
+- **Ultimate: Orbital Drop** – Teleport above the map then crash down towards the position you ulted from, dealing massive damage to all enemies within a 5m radius and deploying mines upon landing.
   - You are unkillable for 1.5 seconds after landing.
   - Mines last forever.
 - **Heavy Armor** – +75% Armor.
@@ -622,7 +622,7 @@ Level up by getting assists and killing blows. Damage increases as you level up,
 ---
 
 #### WUYANG
-_WORK IN PROGRESS_
+- _WORK IN PROGRESS_
 
 ---
 
@@ -634,7 +634,7 @@ _WORK IN PROGRESS_
 #### ZENYATTA 
 - **Orbs of Tranquility** – Heal in a 10m radius of impact for **100 HP **.
 - **Orbs of Annihilation** – Each orb you charge up is stronger than the last one and the explosion radius is also increased.
-- **Ultimate - Ying-Yang** – Deal damage four times a second in a large area on top of the regular healing from his ultimate.
+- **Ultimate: Ying-Yang** – Deal damage four times a second in a large area on top of the regular healing from his ultimate.
 - **Flying** – Press **[RELOAD]** to turn on/off flying. **[JUMP]** to go up, **[CROUCH]** to go down.
 - **Light Armor** – +25% Armor.
 
